@@ -2,6 +2,7 @@
 // Posuvnik "miera rizika" filtruje kandidatov NAZIVO (bez noveho stahovania).
 
 const DATA_URL = "../data/predictions.json"; // na GitHub Pages uprav podla nasadenia
+const STATS_URL = "../data/stats.json";
 
 let DATA = null;
 let OFFICIAL = new Set(); // kluce oficialnych tipov (default prahy)
@@ -73,19 +74,53 @@ function card(p) {
   return el;
 }
 
-function renderPerf(perf) {
-  const box = document.getElementById("perf");
-  if (!perf) { box.classList.add("hidden"); return; }
-  const roiCls = perf.roi_pct >= 0 ? "pos" : "neg";
-  const parts = [
-    `<div class="stat"><b class="${roiCls}">${perf.roi_pct > 0 ? "+" : ""}${perf.roi_pct} %</b><span>ROI</span></div>`,
-    `<div class="stat"><b>${perf.win_rate_pct} %</b><span>úspešnosť</span></div>`,
-    `<div class="stat"><b>${perf.settled_bets}</b><span>tipov</span></div>`,
-  ];
-  if (perf.clv_beat_pct != null)
-    parts.push(`<div class="stat"><b>${perf.clv_beat_pct} %</b><span>CLV beat</span></div>`);
-  box.innerHTML = parts.join("");
-  box.classList.remove("hidden");
+function sparkline(equity) {
+  if (!equity || equity.length < 2) return "";
+  const vals = equity.map(e => e.bankroll);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const span = max - min || 1;
+  const W = 300, H = 48;
+  const pts = vals.map((v, i) => {
+    const x = (i / (vals.length - 1)) * W;
+    const y = H - ((v - min) / span) * H;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+  const up = vals[vals.length - 1] >= vals[0];
+  const col = up ? "var(--accent)" : "#f85149";
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+    <polyline points="${pts}" fill="none" stroke="${col}" stroke-width="2" /></svg>`;
+}
+
+function renderGlobal(s) {
+  const box = document.getElementById("global");
+  if (!s) { box.innerHTML = ""; return; }
+
+  if (!s.settled) {
+    box.innerHTML = `<div class="g-head">📊 Globálne výsledky (všetky moje tipy)</div>
+      <p class="g-empty">Začíname zbierať výsledky. Tu uvidíš, ako by si dopadol, keby dávaš
+      <b>všetko</b> podľa mňa — celkový zisk/strata, úspešnosť a vývoj banku.
+      ${s.pending ? `<br>Práve čaká na vyhodnotenie: <b>${s.pending}</b> tip(ov).` : ""}</p>`;
+    return;
+  }
+  const prof = s.profit_units;
+  const cls = prof >= 0 ? "pos" : "neg";
+  box.innerHTML = `
+    <div class="g-head">📊 Globálne výsledky (keby dávaš všetko podľa mňa)</div>
+    <div class="g-hero">
+      <div class="g-bank"><span>Virtuálny bank</span>
+        <b class="${cls}">${s.virtual_bankroll.toFixed(0)} €</b>
+        <small class="${cls}">${prof >= 0 ? "+" : ""}${prof.toFixed(0)} € (${s.roi_pct > 0 ? "+" : ""}${s.roi_pct} % ROI)</small>
+      </div>
+      ${sparkline(s.equity)}
+    </div>
+    <div class="g-stats">
+      <div><b>${s.settled}</b><span>tipov</span></div>
+      <div><b>${s.win_rate_pct}%</b><span>úspech</span></div>
+      <div><b>${s.wins}-${s.losses}${s.pushes ? "-" + s.pushes : ""}</b><span>V-P${s.pushes ? "-R" : ""}</span></div>
+      ${s.clv_beat_pct != null ? `<div><b>${s.clv_beat_pct}%</b><span>CLV beat</span></div>` : ""}
+      ${s.pending ? `<div><b>${s.pending}</b><span>čaká</span></div>` : ""}
+    </div>
+    <p class="g-note">Štart banku ${s.start_bankroll} € · vklady podľa odporúčaného Kelly.</p>`;
 }
 
 function applyRisk() {
@@ -122,7 +157,10 @@ async function main() {
       `Aktualizované: ${fmtTime(DATA.generated_at)} · bank ${DATA.bankroll} € · ` +
       `${(DATA.candidates || []).length} kandidátov z ${DATA.n_events_considered} zápasov`;
 
-    renderPerf(DATA.performance);
+    try {
+      const sres = await fetch(STATS_URL, { cache: "no-store" });
+      if (sres.ok) renderGlobal(await sres.json());
+    } catch (e) { /* stats.json este nemusi existovat */ }
     document.getElementById("risk").addEventListener("input", applyRisk);
     applyRisk();
   } catch (e) {

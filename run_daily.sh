@@ -17,9 +17,12 @@ python3 engine/reconcile.py || echo "reconcile preskoceny"
 # 3: nove predikcie na zajtra
 python3 engine/predict.py
 
-# 4: ulozit do gitu (predictions.json + history.jsonl)
+# 4: prepocitaj globalne statistiky + virtualny bankroll
+python3 engine/stats.py || echo "stats preskocene"
+
+# 5: ulozit do gitu (predictions.json + history.jsonl + stats.json)
 if [ -d .git ]; then
-  git add data/predictions.json data/history.jsonl
+  git add data/predictions.json data/history.jsonl data/stats.json
   if ! git diff --cached --quiet; then
     git commit -q -m "predikcie $(date -u +%F)" || true
     if git remote | grep -q origin; then

@@ -46,6 +46,30 @@ h1 { font-size: 1.5rem; margin: 0 0 4px; }
 .perf .pos { color: var(--accent); }
 .perf .neg { color: #f85149; }
 
+.global {
+  max-width: 680px;
+  margin: 12px auto 0;
+  padding: 0 16px;
+}
+.g-head { font-size: 0.95rem; font-weight: 600; margin-bottom: 8px; }
+.g-empty { color: var(--muted); font-size: 0.85rem; background: var(--card);
+  border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin: 0; }
+.g-hero { display: flex; align-items: center; gap: 14px; background: var(--card);
+  border: 1px solid var(--border); border-radius: 12px 12px 0 0; padding: 14px 16px; }
+.g-bank { display: flex; flex-direction: column; flex: 0 0 auto; }
+.g-bank span { color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: .04em; }
+.g-bank b { font-size: 1.7rem; line-height: 1.1; }
+.g-bank small { font-size: 0.8rem; }
+.spark { flex: 1 1 auto; height: 48px; min-width: 0; }
+.g-stats { display: flex; gap: 4px; background: var(--card-2); border: 1px solid var(--border);
+  border-top: none; border-radius: 0 0 12px 12px; padding: 10px 8px; flex-wrap: wrap; }
+.g-stats > div { flex: 1 1 0; min-width: 60px; text-align: center; }
+.g-stats b { display: block; font-size: 1rem; }
+.g-stats span { color: var(--muted); font-size: 0.66rem; text-transform: uppercase; letter-spacing: .03em; }
+.g-note { color: var(--muted); font-size: 0.72rem; margin: 6px 2px 0; }
+.pos { color: var(--accent); }
+.neg { color: #f85149; }
+
 .risk {
   max-width: 680px;
   margin: 12px auto 0;
