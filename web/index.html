@@ -8,9 +8,14 @@
 </head>
 <body>
   <header>
-    <h1>⚽ Value tipy</h1>
+    <div class="topbar">
+      <h1>⚽ Value tipy</h1>
+      <div id="auth" class="auth"></div>
+    </div>
     <p id="meta" class="meta">Načítavam…</p>
   </header>
+
+  <section id="personal" class="personal hidden"></section>
 
   <section id="global" class="global"></section>
 
@@ -42,6 +47,8 @@
     </p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
