@@ -1,0 +1,41 @@
+{
+  "_comment": "Jediné miesto na ladenie. Po MS staci zmenit 'sports' na inu ligu/sport.",
+
+  "sports": [
+    "soccer_fifa_world_cup"
+  ],
+
+  "_sports_examples": [
+    "soccer_fifa_world_cup", "soccer_epl", "soccer_spain_la_liga",
+    "soccer_uefa_champs_league", "basketball_nba", "tennis_atp_french_open",
+    "icehockey_nhl", "americanfootball_nfl"
+  ],
+
+  "regions": "eu,uk",
+  "markets": ["h2h", "totals"],
+  "odds_format": "decimal",
+
+  "sharp_books": ["pinnacle", "betfair_ex_eu", "smarkets"],
+  "_sharp_note": "Z tychto knih sa odhaduje PRAVDIVA pravdepodobnost (devig). Beru sa tie, ktore su dostupne.",
+
+  "horizon_hours": 36,
+  "_horizon_note": "Berie zapasy s vykopom do X hodin (default ~zajtra + dnesny vecer).",
+
+  "bankroll": 1000,
+  "kelly_fraction": 0.25,
+  "max_stake_pct": 2.5,
+
+  "thresholds": {
+    "min_ev_pct": 3.0,
+    "max_ev_pct": 15.0,
+    "min_odds": 1.50,
+    "max_odds": 3.50,
+    "min_books": 4
+  },
+  "_thresholds_note": "max_ev_pct: nad tymto je to skor chyba v datach nez value -> tip sa zahodi.",
+
+  "blend": {
+    "market_weight": 0.85,
+    "_weight_note": "podiel ostreho trhu vs vlastny model; pre MS vysoky (blizko trhu). Doladi sa backtestom."
+  }
+}

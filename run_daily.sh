@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Denny beh (vola ho cloud routine / lokalny cron):
+#   1. vyhodnoti vcerajsie tipy (vysledky + ROI)
+#   2. zaloguje uz hotove tipy
+#   3. vygeneruje nove tipy na zajtra
+#   4. commitne a (volitelne) pushne -> web sa obnovi
+#
+# Vyzaduje: export ODDS_API_KEY=...   (live rezim)
+set -euo pipefail
+cd "$(dirname "$0")"
+
+echo "=== value-bets daily $(date -u +%FT%TZ) ==="
+
+# 1+2: vyhodnotenie + logovanie predoslych tipov
+python3 engine/reconcile.py || echo "reconcile preskoceny"
+
+# 3: nove predikcie na zajtra
+python3 engine/predict.py
+
+# 4: ulozit do gitu (predictions.json + history.jsonl)
+if [ -d .git ]; then
+  git add data/predictions.json data/history.jsonl
+  if ! git diff --cached --quiet; then
+    git commit -q -m "predikcie $(date -u +%F)" || true
+    if git remote | grep -q origin; then
+      git push -q origin HEAD || echo "push zlyhal (skontroluj token/remote)"
+    fi
+  else
+    echo "ziadne zmeny na commit"
+  fi
+fi
+echo "=== hotovo ==="

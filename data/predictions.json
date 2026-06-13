@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-06-13T21:13:02.834291+00:00",
+  "bankroll": 1000,
+  "kelly_fraction": 0.25,
+  "sports": [
+    "soccer_fifa_world_cup"
+  ],
+  "thresholds": {
+    "min_ev_pct": 3.0,
+    "max_ev_pct": 15.0,
+    "min_odds": 1.5,
+    "max_odds": 3.5,
+    "min_books": 4
+  },
+  "requests_remaining": "n/a (cache)",
+  "n_events_considered": 3,
+  "n_picks": 1,
+  "performance": null,
+  "picks": [
+    {
+      "league": "FIFA World Cup",
+      "sport_key": "soccer_fifa_world_cup",
+      "home": "Germany",
+      "away": "Japan",
+      "commence": "2026-06-14T18:00:00Z",
+      "market": "h2h",
+      "selection": "Germany",
+      "best_odds": 2.3,
+      "bookmaker": "bet365",
+      "fair_prob": 0.4614,
+      "fair_odds": 2.167,
+      "ev_pct": 6.12,
+      "stake_pct": 1.18,
+      "stake_amount": 11.76,
+      "confidence": 0.613,
+      "n_books": 5
+    }
+  ],
+  "notes": [
+    "Offline rezim z cache: data/cache/sample_raw.json",
+    "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS)."
+  ]
+}
