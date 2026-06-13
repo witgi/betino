@@ -48,64 +48,74 @@ def confidence(p_final, p_market, p_model, n_books):
     return round(0.5 * book_score + 0.5 * agree_score, 3)
 
 
+def _evaluate_outcome(event, i, fair_probs, p_market, p_model, cfg):
+    """Spocita kompletny zaznam pre jeden vyber (bez filtrov). None ak su kurzy neplatne."""
+    oc = event["outcomes"][i]
+    odds = oc["best_odds"]
+    n_books = oc.get("n_books", 0)
+    p = fair_probs[i]
+    if odds is None or odds <= 1.0 or p <= 0:
+        return None
+
+    ev_pct = ev(p, odds) * 100.0
+    full_k = kelly_fraction(p, odds)
+    stake_pct = min(full_k * cfg["kelly_fraction"] * 100.0, cfg["max_stake_pct"])
+    conf = confidence(fair_probs, p_market, p_model, n_books)
+
+    return {
+        "league": event.get("league", ""),
+        "sport_key": event.get("sport_key", ""),
+        "home": event["home"],
+        "away": event["away"],
+        "commence": event["commence"],
+        "market": event.get("market", "h2h"),
+        "selection": oc["name"],
+        "best_odds": round(odds, 3),
+        "bookmaker": oc.get("best_book", ""),
+        "fair_prob": round(p, 4),
+        "fair_odds": round(1.0 / p, 3),
+        "ev_pct": round(ev_pct, 2),
+        "stake_pct": round(stake_pct, 2),
+        "stake_amount": round(cfg["bankroll"] * stake_pct / 100.0, 2),
+        "confidence": conf,
+        "n_books": n_books,
+    }
+
+
+def _passes(rec, th):
+    return (rec["n_books"] >= th["min_books"]
+            and th["min_odds"] <= rec["best_odds"] <= th["max_odds"]
+            and th["min_ev_pct"] <= rec["ev_pct"] <= th["max_ev_pct"]
+            and rec["stake_pct"] > 0)
+
+
 def find_value_picks(event, fair_probs, p_market, p_model, cfg):
-    """
-    event: {'home','away','commence','league','outcomes':[{'name','best_odds','best_book','n_books'}...]}
-            poradie outcomes zodpoveda poradiu fair_probs.
-    Vrati zoznam tipov (najcastejsie 0 alebo 1 na zapas/trh).
-    """
+    """Oficialne tipy: vybery, ktore prejdu prahmi v configu (na logovanie/ROI)."""
     th = cfg["thresholds"]
-    bankroll = cfg["bankroll"]
-    kf = cfg["kelly_fraction"]
-    max_stake_pct = cfg["max_stake_pct"]
-
     picks = []
-    for i, oc in enumerate(event["outcomes"]):
-        odds = oc["best_odds"]
-        n_books = oc.get("n_books", 0)
-        p = fair_probs[i]
-
-        if odds is None or odds <= 1.0:
-            continue
-        if n_books < th["min_books"]:
-            continue
-        if not (th["min_odds"] <= odds <= th["max_odds"]):
-            continue
-
-        e = ev(p, odds)
-        ev_pct = e * 100.0
-        if ev_pct < th["min_ev_pct"]:
-            continue
-        if ev_pct > th["max_ev_pct"]:
-            # podozrenie na chybu v datach, nie realna value -> preskocit
-            continue
-
-        full_k = kelly_fraction(p, odds)
-        stake_pct = min(full_k * kf * 100.0, max_stake_pct)
-        if stake_pct <= 0:
-            continue
-
-        conf = confidence(fair_probs, p_market, p_model, n_books)
-
-        picks.append({
-            "league": event.get("league", ""),
-            "sport_key": event.get("sport_key", ""),
-            "home": event["home"],
-            "away": event["away"],
-            "commence": event["commence"],
-            "market": event.get("market", "h2h"),
-            "selection": oc["name"],
-            "best_odds": round(odds, 3),
-            "bookmaker": oc.get("best_book", ""),
-            "fair_prob": round(p, 4),
-            "fair_odds": round(1.0 / p, 3) if p > 0 else None,
-            "ev_pct": round(ev_pct, 2),
-            "stake_pct": round(stake_pct, 2),
-            "stake_amount": round(bankroll * stake_pct / 100.0, 2),
-            "confidence": conf,
-            "n_books": n_books,
-        })
+    for i in range(len(event["outcomes"])):
+        rec = _evaluate_outcome(event, i, fair_probs, p_market, p_model, cfg)
+        if rec and _passes(rec, th):
+            picks.append(rec)
     return picks
+
+
+def build_candidates(event, fair_probs, p_market, p_model, cfg):
+    """
+    Vsetci kandidati pre posuvnik rizika vo webe: kladne EV, rozumny strop kurzu.
+    Web ich filtruje nazivo (bez noveho stahovania). Default prahy z configu su 'oficialne'.
+    """
+    floor_ev = cfg.get("candidate", {}).get("min_ev_pct", 0.0)
+    max_odds = cfg.get("candidate", {}).get("max_odds", 8.0)
+    min_books = cfg.get("candidate", {}).get("min_books", 3)
+    out = []
+    for i in range(len(event["outcomes"])):
+        rec = _evaluate_outcome(event, i, fair_probs, p_market, p_model, cfg)
+        if not rec:
+            continue
+        if rec["ev_pct"] >= floor_ev and rec["best_odds"] <= max_odds and rec["n_books"] >= min_books:
+            out.append(rec)
+    return out
 
 
 if __name__ == "__main__":

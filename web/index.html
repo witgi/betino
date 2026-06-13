@@ -14,18 +14,31 @@
 
   <section id="perf" class="perf hidden"></section>
 
+  <section class="risk">
+    <div class="risk-head">
+      <span>Miera rizika</span>
+      <span id="risk-zone" class="risk-zone">Vyvážené</span>
+    </div>
+    <input id="risk" type="range" min="0" max="100" value="57" />
+    <div class="risk-scale"><span>Bezpečné</span><span>Vyvážené</span><span>Riskantné</span></div>
+    <p id="risk-info" class="risk-info"></p>
+    <p id="risk-warn" class="risk-warn hidden">
+      ⚠️ Vysoké riziko: pribúdajú outsideri s vysokým kurzom. Veľká EV tu býva často
+      „fatamorgána" (jedna uletená kancelária), nie reálna výhoda.
+    </p>
+  </section>
+
   <main id="picks"></main>
 
   <p id="empty" class="empty hidden">
-    Na dnes/zajtra nevyšiel žiadny value tip. To je normálne — radšej žiadny tip než zlý.
+    Pri tejto miere rizika nevyšiel žiadny tip. Potiahni posuvník doprava pre viac (rizikovejších) tipov.
   </p>
 
   <footer>
     <p class="disclaimer">
-      ⚠️ Toto je nástroj na rozhodovanie, <strong>nie záruka zisku</strong>. Výhoda je malá a
-      prejaví sa až cez stovky stávok; krátkodobo môžeš prehrávať aj pri správnych tipoch.
-      Každý tip je <strong>jeden výber v jednej kancelárii</strong> (value betting), nie arbitráž.
-      Stávkuj len peniaze, ktoré si môžeš dovoliť stratiť. 18+.
+      ⚠️ Nástroj na rozhodovanie, <strong>nie záruka zisku</strong>. Výhoda je malá a prejaví sa až
+      cez stovky stávok. Každý tip je <strong>jeden výber v jednej kancelárii</strong> (value betting),
+      nie arbitráž. Stávkuj len peniaze, ktoré si môžeš dovoliť stratiť. 18+.
     </p>
   </footer>
 

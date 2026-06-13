@@ -110,7 +110,7 @@ def run(cache_path=None):
     if not ratings:
         notes.append("ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).")
 
-    considered, skipped_no_sharp, all_picks = 0, 0, []
+    considered, skipped_no_sharp, all_picks, all_candidates = 0, 0, [], []
     for ev in events:
         if not within_horizon(ev["commence"], cfg.get("horizon_hours", 36)):
             continue
@@ -124,10 +124,11 @@ def run(cache_path=None):
         p_model = model_mod.model_probs_for_event(ev, ratings)
         p_final = blend_mod.blend_probs(p_market, p_model, cfg["blend"]["market_weight"])
 
-        picks = blend_mod.find_value_picks(ev, p_final, p_market, p_model, cfg)
-        all_picks.extend(picks)
+        all_picks.extend(blend_mod.find_value_picks(ev, p_final, p_market, p_model, cfg))
+        all_candidates.extend(blend_mod.build_candidates(ev, p_final, p_market, p_model, cfg))
 
     all_picks.sort(key=lambda p: (p["confidence"], p["ev_pct"]), reverse=True)
+    all_candidates.sort(key=lambda p: p["ev_pct"], reverse=True)
 
     if skipped_no_sharp:
         notes.append(f"{skipped_no_sharp} zapasov preskocenych (ostra kniha nepokryva vsetky vybery).")
@@ -143,6 +144,13 @@ def run(cache_path=None):
         "n_picks": len(all_picks),
         "performance": load_performance(),
         "picks": all_picks,
+        "candidates": all_candidates,
+        "staking": {
+            "bankroll": cfg["bankroll"],
+            "kelly_fraction": cfg["kelly_fraction"],
+            "max_stake_pct": cfg["max_stake_pct"],
+        },
+        "default_thresholds": cfg["thresholds"],
         "notes": notes,
     }
 

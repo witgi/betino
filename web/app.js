@@ -1,15 +1,36 @@
-// Nacita data/predictions.json a vykresli karty s value tipmi.
-// Ziadne zavislosti, ciste vanilla JS.
+// Nacita data/predictions.json a vykresli value tipy.
+// Posuvnik "miera rizika" filtruje kandidatov NAZIVO (bez noveho stahovania).
 
 const DATA_URL = "../data/predictions.json"; // na GitHub Pages uprav podla nasadenia
+
+let DATA = null;
+let OFFICIAL = new Set(); // kluce oficialnych tipov (default prahy)
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+// Posuvnik 0..100 -> prahy. Vlavo = prisne (bezpecne), vpravo = volne (riskantne).
+function thresholdsFor(r) {
+  const t = r / 100;
+  return {
+    minEv: lerp(4.0, 0.5, t),
+    minOdds: lerp(1.60, 1.20, t),
+    maxOdds: lerp(3.0, 8.0, t),
+    maxEv: lerp(12, 60, t),
+    minBooks: Math.round(lerp(5, 3, t)),
+  };
+}
+
+function zoneLabel(r) {
+  if (r <= 33) return "Bezpečné";
+  if (r <= 66) return "Vyvážené";
+  return "Riskantné";
+}
 
 function fmtTime(iso) {
   if (!iso) return "";
   try {
-    const d = new Date(iso);
-    return d.toLocaleString("sk-SK", {
-      weekday: "short", day: "numeric", month: "numeric",
-      hour: "2-digit", minute: "2-digit",
+    return new Date(iso).toLocaleString("sk-SK", {
+      weekday: "short", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit",
     });
   } catch (e) { return iso; }
 }
@@ -20,14 +41,17 @@ function stars(conf) {
 }
 
 function selectionLabel(p) {
-  // h2h: nazov timu alebo "Draw"; totals: "Over 2.5" atd. uz pride hotove v 'selection'
-  if (p.selection === "Draw") return "Remíza";
-  return p.selection;
+  return p.selection === "Draw" ? "Remíza" : p.selection;
+}
+
+function pickKey(p) {
+  return `${p.commence}|${p.home}|${p.away}|${p.market}|${p.selection}`;
 }
 
 function card(p) {
   const el = document.createElement("article");
   el.className = "card";
+  const official = OFFICIAL.has(pickKey(p));
   el.innerHTML = `
     <div class="card-top">
       <span>${p.league || ""}</span>
@@ -36,7 +60,7 @@ function card(p) {
     <div class="match"><b>${p.home}</b><span class="vs">vs</span><b>${p.away}</b></div>
     <div class="pick">
       <div class="sel">${selectionLabel(p)}
-        <small>podaj v: ${p.bookmaker}</small>
+        <small>podaj v: ${p.bookmaker}${official ? ' · <span class="badge">odporúčané</span>' : ""}</small>
       </div>
       <div class="odds"><b>${p.best_odds.toFixed(2)}</b><small>kurz</small></div>
     </div>
@@ -58,11 +82,32 @@ function renderPerf(perf) {
     `<div class="stat"><b>${perf.win_rate_pct} %</b><span>úspešnosť</span></div>`,
     `<div class="stat"><b>${perf.settled_bets}</b><span>tipov</span></div>`,
   ];
-  if (perf.clv_beat_pct != null) {
+  if (perf.clv_beat_pct != null)
     parts.push(`<div class="stat"><b>${perf.clv_beat_pct} %</b><span>CLV beat</span></div>`);
-  }
   box.innerHTML = parts.join("");
   box.classList.remove("hidden");
+}
+
+function applyRisk() {
+  const r = Number(document.getElementById("risk").value);
+  const th = thresholdsFor(r);
+  document.getElementById("risk-zone").textContent = zoneLabel(r);
+  document.getElementById("risk-warn").classList.toggle("hidden", r <= 66);
+
+  const cands = (DATA.candidates || []).filter(p =>
+    p.ev_pct >= th.minEv && p.ev_pct <= th.maxEv &&
+    p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds &&
+    p.n_books >= th.minBooks
+  );
+
+  document.getElementById("risk-info").innerHTML =
+    `<b>${cands.length}</b> tip(ov) · EV ≥ ${th.minEv.toFixed(1)} % · ` +
+    `kurz ${th.minOdds.toFixed(2)}–${th.maxOdds.toFixed(1)} · min. ${th.minBooks} kancelárií`;
+
+  const main = document.getElementById("picks");
+  main.innerHTML = "";
+  document.getElementById("empty").classList.toggle("hidden", cands.length > 0);
+  cands.forEach(p => main.appendChild(card(p)));
 }
 
 async function main() {
@@ -70,23 +115,19 @@ async function main() {
   try {
     const res = await fetch(DATA_URL, { cache: "no-store" });
     if (!res.ok) throw new Error(res.status);
-    const data = await res.json();
+    DATA = await res.json();
+    OFFICIAL = new Set((DATA.picks || []).map(pickKey));
 
     meta.textContent =
-      `Aktualizované: ${fmtTime(data.generated_at)} · bank ${data.bankroll} € · ` +
-      `${data.n_picks} tip(ov) z ${data.n_events_considered} zápasov`;
+      `Aktualizované: ${fmtTime(DATA.generated_at)} · bank ${DATA.bankroll} € · ` +
+      `${(DATA.candidates || []).length} kandidátov z ${DATA.n_events_considered} zápasov`;
 
-    renderPerf(data.performance);
-
-    const main = document.getElementById("picks");
-    const picks = data.picks || [];
-    if (picks.length === 0) {
-      document.getElementById("empty").classList.remove("hidden");
-    } else {
-      picks.forEach((p) => main.appendChild(card(p)));
-    }
+    renderPerf(DATA.performance);
+    document.getElementById("risk").addEventListener("input", applyRisk);
+    applyRisk();
   } catch (e) {
-    meta.textContent = "Nepodarilo sa načítať dáta (" + e.message + "). Spusti cez lokálny server alebo skontroluj predictions.json.";
+    meta.textContent = "Nepodarilo sa načítať dáta (" + e.message +
+      "). Spusti cez lokálny server alebo skontroluj predictions.json.";
   }
 }
 
