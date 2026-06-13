@@ -108,6 +108,70 @@ def best_soft_odds(row):
     return best, book
 
 
+def ou_pair(row, prefix):
+    """[over2.5, under2.5] kurzy pre dany prefix (P=Pinnacle, B365, PC=Pinnacle closing...)."""
+    o = _f(row, prefix + ">2.5")
+    u = _f(row, prefix + "<2.5")
+    return [o, u] if (o and u) else None
+
+
+def run_backtest_totals(divs, seasons, cfg, flat=False, stake_unit=10.0):
+    """Backtest Over/Under 2.5: Pinnacle -> devig -> fer p; stavime do B365 (soft)."""
+    th = cfg["thresholds"]
+    kf = cfg["kelly_fraction"]
+    bankroll = cfg["bankroll"]
+    n_matches, bets, missing = 0, [], 0
+
+    for season in seasons:
+        for div in divs:
+            try:
+                raw = download_csv(season, div)
+            except Exception as e:
+                print(f"[backtest] nepodarilo sa stiahnut {season}/{div}: {e}")
+                continue
+            for row in csv.DictReader(io.StringIO(raw)):
+                fthg, ftag = _f(row, "FTHG"), _f(row, "FTAG")
+                if fthg is None or ftag is None:
+                    continue
+                n_matches += 1
+                pin = ou_pair(row, "P")          # Pinnacle O/U na devig
+                if not pin:
+                    missing += 1
+                    continue
+                fair = devig_mod.fair_probs(pin, method="shin")   # [over, under]
+                pinc = ou_pair(row, "PC")         # Pinnacle closing na CLV
+                soft = ou_pair(row, "B365")       # kam stavime (soft kniha)
+                if not soft:
+                    continue
+                over_win = (fthg + ftag) > 2.5
+
+                for i in range(2):                # 0 = Over, 1 = Under
+                    odds = soft[i]
+                    if odds is None or not (th["min_odds"] <= odds <= th["max_odds"]):
+                        continue
+                    p = fair[i]
+                    ev = blend_mod.ev(p, odds) * 100.0
+                    if ev < th["min_ev_pct"] or ev > th["max_ev_pct"]:
+                        continue
+                    if flat:
+                        stake = stake_unit
+                    else:
+                        fullk = blend_mod.kelly_fraction(p, odds)
+                        stake = bankroll * min(fullk * kf * 100.0, cfg["max_stake_pct"]) / 100.0
+                    if stake <= 0:
+                        continue
+                    won = (i == 0 and over_win) or (i == 1 and not over_win)
+                    pnl = stake * (odds - 1.0) if won else -stake
+                    clv_beat = None
+                    if pinc:
+                        fc = devig_mod.fair_probs(pinc, method="shin")
+                        fco = 1.0 / fc[i] if fc[i] > 0 else None
+                        if fco:
+                            clv_beat = odds > fco
+                    bets.append({"pnl": pnl, "stake": stake, "taken": odds, "won": won, "clv_beat": clv_beat})
+    return summarize(bets, n_matches, missing)
+
+
 def run_backtest(divs, seasons, cfg, flat=False, stake_unit=10.0):
     th = cfg["thresholds"]
     kf = cfg["kelly_fraction"]
@@ -218,15 +282,18 @@ def main():
     ap.add_argument("divs", nargs="*", default=["E0"], help="ligy: E0 SP1 D1 I1 F1 ...")
     ap.add_argument("--seasons", nargs="*", default=["2122", "2223", "2324"])
     ap.add_argument("--flat", action="store_true", help="flat staking namiesto Kelly")
+    ap.add_argument("--market", default="h2h", choices=["h2h", "totals"],
+                    help="ktory trh testovat: h2h (1X2) alebo totals (Over/Under 2.5)")
     args = ap.parse_args()
     divs = args.divs if args.divs else ["E0"]
 
     cfg = load_config()
-    print(f"Backtest | ligy={divs} sezony={args.seasons} | "
+    print(f"Backtest | trh={args.market} ligy={divs} sezony={args.seasons} | "
           f"prahy: EV {cfg['thresholds']['min_ev_pct']}–{cfg['thresholds']['max_ev_pct']} %, "
           f"kurz {cfg['thresholds']['min_odds']}–{cfg['thresholds']['max_odds']}, "
           f"staking={'flat' if args.flat else 'Kelly'}")
-    res = run_backtest(divs, args.seasons, cfg, flat=args.flat)
+    runner = run_backtest_totals if args.market == "totals" else run_backtest
+    res = runner(divs, args.seasons, cfg, flat=args.flat)
     print(json.dumps(res, ensure_ascii=False, indent=2))
     if res.get("n_bets"):
         y = res["roi_yield_pct"]
