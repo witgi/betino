@@ -37,8 +37,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
-          python engine/reconcile.py || echo "reconcile preskocene"
           python engine/predict.py
+          python engine/reconcile.py || echo "reconcile preskocene"
           python engine/stats.py
           python engine/push_supabase.py || echo "supabase push preskoceny"
 

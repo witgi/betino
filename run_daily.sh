@@ -11,11 +11,11 @@ cd "$(dirname "$0")"
 
 echo "=== value-bets daily $(date -u +%FT%TZ) ==="
 
-# 1+2: vyhodnotenie + logovanie predoslych tipov
-python3 engine/reconcile.py || echo "reconcile preskoceny"
-
-# 3: nove predikcie na zajtra
+# 1: nove predikcie na zajtra
 python3 engine/predict.py
+
+# 2: vyhodnotenie predoslych + logovanie cerstvych tipov
+python3 engine/reconcile.py || echo "reconcile preskoceny"
 
 # 4: prepocitaj globalne statistiky + virtualny bankroll
 python3 engine/stats.py || echo "stats preskocene"
