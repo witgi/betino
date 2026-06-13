@@ -69,42 +69,40 @@ def load_cached(path):
         return json.load(f)
 
 
-def _best_price_per_outcome(bookmakers, market_key, sharp_books):
+def _collect_market(bookmakers, market_key, sharp_books):
     """
-    Z bookmakers vytiahne pre dany market:
-      - best_odds + best_book pre kazdy vyber (najvyssi kurz = kam podat tip)
-      - sharp_odds: kurzy z ostrej knihy (na odhad fer p), prva dostupna zo sharp_books
-      - n_books: pocet kancelarii ponukajucich market
+    Z bookmakers vytiahne dany market ZOSKUPENY PODLA CIARY (point).
+      - h2h: jedna skupina (point = None), vybery napr. Germany/Draw/Japan
+      - totals: samostatna skupina pre kazdu ciaru (2.5, 3.5, ...), aby devig sedel
+    Pre kazdy vyber drzi: najlepsi kurz + kniha, kurz z ostrej knihy, mnozinu knih.
     """
-    best = {}            # outcome_name -> (odds, book)
-    sharp_odds = {}      # outcome_name -> odds (z ostrej knihy)
     sharp_priority = {b: i for i, b in enumerate(sharp_books)}
-    sharp_chosen_rank = {}
-    books_seen = 0
+    groups = {}  # point_key -> { outcome_name -> {...} }
 
     for bk in bookmakers:
         key = bk.get("key", "")
         market = next((m for m in bk.get("markets", []) if m.get("key") == market_key), None)
         if not market:
             continue
-        books_seen += 1
         for oc in market.get("outcomes", []):
             name = oc.get("name")
             price = oc.get("price")
-            point = oc.get("point")
-            full_name = name if point is None else f"{name} {point}"
-            if price is None:
+            point = oc.get("point")   # None pre h2h
+            if name is None or price is None:
                 continue
-            # najlepsi kurz napriec knihami
-            if full_name not in best or price > best[full_name][0]:
-                best[full_name] = (price, key)
-            # ostra linka (podla priority v sharp_books)
+            g = groups.setdefault(point, {})
+            o = g.setdefault(name, {
+                "best_odds": None, "best_book": None,
+                "sharp_odds": None, "sharp_rank": None, "books": set(),
+            })
+            o["books"].add(key)
+            if o["best_odds"] is None or price > o["best_odds"]:
+                o["best_odds"], o["best_book"] = price, key
             if key in sharp_priority:
                 rank = sharp_priority[key]
-                if full_name not in sharp_chosen_rank or rank < sharp_chosen_rank[full_name]:
-                    sharp_chosen_rank[full_name] = rank
-                    sharp_odds[full_name] = price
-    return best, sharp_odds, books_seen
+                if o["sharp_rank"] is None or rank < o["sharp_rank"]:
+                    o["sharp_rank"], o["sharp_odds"] = rank, price
+    return groups
 
 
 def normalize(raw_events, cfg):
@@ -119,30 +117,29 @@ def normalize(raw_events, cfg):
         if not bms:
             continue
         for market_key in cfg.get("markets", ["h2h"]):
-            best, sharp_odds, n_books = _best_price_per_outcome(bms, market_key, sharp_books)
-            if not best:
-                continue
-            # poradie vyberov: drz konzistentne s tym, co ma ostra kniha (ak ma)
-            names = list(best.keys())
-            outcomes = []
-            for name in names:
-                bo, bk = best[name]
-                outcomes.append({
-                    "name": name,
-                    "best_odds": bo,
-                    "best_book": bk,
-                    "n_books": n_books,
-                    "sharp_odds": sharp_odds.get(name),
+            groups = _collect_market(bms, market_key, sharp_books)
+            for point, gdict in groups.items():
+                if len(gdict) < 2:   # potrebujeme aspon 2 vybery na trh
+                    continue
+                outcomes = []
+                for name, o in gdict.items():
+                    disp = name if point is None else f"{name} {point}"
+                    outcomes.append({
+                        "name": disp,
+                        "best_odds": o["best_odds"],
+                        "best_book": o["best_book"],
+                        "n_books": len(o["books"]),
+                        "sharp_odds": o["sharp_odds"],
+                    })
+                out.append({
+                    "league": ev.get("sport_title", ev.get("_sport", "")),
+                    "sport_key": ev.get("_sport") or ev.get("sport_key", ""),
+                    "home": ev.get("home_team", ""),
+                    "away": ev.get("away_team", ""),
+                    "commence": ev.get("commence_time", ""),
+                    "market": market_key,
+                    "outcomes": outcomes,
                 })
-            out.append({
-                "league": ev.get("sport_title", ev.get("_sport", "")),
-                "sport_key": ev.get("_sport") or ev.get("sport_key", ""),
-                "home": ev.get("home_team", ""),
-                "away": ev.get("away_team", ""),
-                "commence": ev.get("commence_time", ""),
-                "market": market_key,
-                "outcomes": outcomes,
-            })
     return out
 
 
