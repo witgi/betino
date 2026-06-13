@@ -20,6 +20,9 @@ python3 engine/predict.py
 # 4: prepocitaj globalne statistiky + virtualny bankroll
 python3 engine/stats.py || echo "stats preskocene"
 
+# 4b: posli vysledky do Supabase (ak su nastavene kluce)
+python3 engine/push_supabase.py || echo "supabase push preskoceny"
+
 # 5: ulozit do gitu (predictions.json + history.jsonl + stats.json)
 if [ -d .git ]; then
   git add data/predictions.json data/history.jsonl data/stats.json

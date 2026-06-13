@@ -2,8 +2,9 @@
 // Funkcie: globalne + osobne sledovanie, posuvnik rizika, Google login (Supabase),
 // oznacovanie tipov "podane".
 
-const DATA_URL = "../data/predictions.json";
-const STATS_URL = "../data/stats.json";
+// Absolutne od korena servera -> funguje lokalne (/web/index.html) aj nasadene (root domeny).
+const DATA_URL = "/data/predictions.json";
+const STATS_URL = "/data/stats.json";
 
 // --- Supabase klient ---
 const sb = window.supabase.createClient(

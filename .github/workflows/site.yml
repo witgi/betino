@@ -1,0 +1,66 @@
+name: Build + Deploy (denne)
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "7 6 * * *"   # ~08:07 CEST denne (UTC 06:07)
+  workflow_dispatch:        # manualne spustenie tlacidlom
+
+permissions:
+  contents: write   # commit dat
+  pages: write      # deploy na Pages
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Vypocet bezi len pri cron/manualnom spusteni (nie pri kazdom push kodu)
+      - name: Vyhodnotenie + nove tipy + statistiky + Supabase
+        if: github.event_name != 'push'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python engine/reconcile.py || echo "reconcile preskocene"
+          python engine/predict.py
+          python engine/stats.py
+          python engine/push_supabase.py || echo "supabase push preskoceny"
+
+      - name: Ulozit data do gitu
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "value-bets-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/predictions.json data/history.jsonl data/stats.json
+          git commit -m "denne data $(date -u +%F)" || echo "ziadne zmeny"
+          git push || echo "push preskoceny"
+
+      - name: Poskladat web (_site)
+        run: |
+          mkdir -p _site/data
+          cp web/*.html web/*.css web/*.js _site/
+          cp web/CNAME _site/CNAME
+          cp data/predictions.json data/stats.json _site/data/ 2>/dev/null || true
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
