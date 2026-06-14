@@ -69,12 +69,40 @@ def load_cached(path):
         return json.load(f)
 
 
+# Kurz vyssi nez median * tento nasobok = takmer isto chyba knihy (palp), nie value -> ignoruj.
+OUTLIER_CAP = 1.30
+
+
+def _median(xs):
+    s = sorted(xs)
+    n = len(s)
+    if n == 0:
+        return None
+    return s[n // 2] if n % 2 else 0.5 * (s[n // 2 - 1] + s[n // 2])
+
+
+def _best_non_outlier(prices):
+    """
+    prices = [(kurz, kniha), ...]. Vrati (najlepsi_rozumny_kurz, kniha).
+    Odfiltruje odlahle vysoke kurzy (chyby) podla mediana ostatnych knih.
+    """
+    if not prices:
+        return None, None
+    vals = [p for p, _ in prices]
+    med = _median(vals)
+    limit = med * OUTLIER_CAP if med else float("inf")
+    legit = [(p, b) for p, b in prices if p <= limit]
+    if not legit:                      # poistka: ak by sa odfiltrovalo vsetko
+        legit = prices
+    return max(legit, key=lambda x: x[0])
+
+
 def _collect_market(bookmakers, market_key, sharp_books):
     """
     Z bookmakers vytiahne dany market ZOSKUPENY PODLA CIARY (point).
       - h2h: jedna skupina (point = None), vybery napr. Germany/Draw/Japan
       - totals: samostatna skupina pre kazdu ciaru (2.5, 3.5, ...), aby devig sedel
-    Pre kazdy vyber drzi: najlepsi kurz + kniha, kurz z ostrej knihy, mnozinu knih.
+    Pre kazdy vyber zbiera VSETKY kurzy (na detekciu odlahlych) + ostru linku.
     """
     sharp_priority = {b: i for i, b in enumerate(sharp_books)}
     groups = {}  # point_key -> { outcome_name -> {...} }
@@ -92,16 +120,18 @@ def _collect_market(bookmakers, market_key, sharp_books):
                 continue
             g = groups.setdefault(point, {})
             o = g.setdefault(name, {
-                "best_odds": None, "best_book": None,
-                "sharp_odds": None, "sharp_rank": None, "books": set(),
+                "prices": [], "sharp_odds": None, "sharp_rank": None, "books": set(),
             })
             o["books"].add(key)
-            if o["best_odds"] is None or price > o["best_odds"]:
-                o["best_odds"], o["best_book"] = price, key
+            o["prices"].append((price, key))
             if key in sharp_priority:
                 rank = sharp_priority[key]
                 if o["sharp_rank"] is None or rank < o["sharp_rank"]:
                     o["sharp_rank"], o["sharp_odds"] = rank, price
+    # dopocitaj najlepsi NEodlahly kurz pre kazdy vyber
+    for gdict in groups.values():
+        for o in gdict.values():
+            o["best_odds"], o["best_book"] = _best_non_outlier(o["prices"])
     return groups
 
 

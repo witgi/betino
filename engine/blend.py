@@ -105,15 +105,18 @@ def build_candidates(event, fair_probs, p_market, p_model, cfg):
     Vsetci kandidati pre posuvnik rizika vo webe: kladne EV, rozumny strop kurzu.
     Web ich filtruje nazivo (bez noveho stahovania). Default prahy z configu su 'oficialne'.
     """
-    floor_ev = cfg.get("candidate", {}).get("min_ev_pct", 0.0)
-    max_odds = cfg.get("candidate", {}).get("max_odds", 8.0)
-    min_books = cfg.get("candidate", {}).get("min_books", 3)
+    cc = cfg.get("candidate", {})
+    floor_ev = cc.get("min_ev_pct", 0.0)
+    max_ev = cc.get("max_ev_pct", 20.0)
+    max_odds = cc.get("max_odds", 8.0)
+    min_books = cc.get("min_books", 3)
     out = []
     for i in range(len(event["outcomes"])):
         rec = _evaluate_outcome(event, i, fair_probs, p_market, p_model, cfg)
         if not rec:
             continue
-        if rec["ev_pct"] >= floor_ev and rec["best_odds"] <= max_odds and rec["n_books"] >= min_books:
+        if (floor_ev <= rec["ev_pct"] <= max_ev
+                and rec["best_odds"] <= max_odds and rec["n_books"] >= min_books):
             out.append(rec)
     return out
 
