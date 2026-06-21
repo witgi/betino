@@ -25,6 +25,7 @@ import fetch as fetch_mod          # noqa: E402
 import devig as devig_mod          # noqa: E402
 import model as model_mod          # noqa: E402
 import blend as blend_mod          # noqa: E402
+import signal as signal_mod        # noqa: E402
 
 
 def load_config():
@@ -157,6 +158,31 @@ def run(cache_path=None):
     out_path = os.path.join(ROOT, "data", "predictions.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
+
+    # --- Jednotný výstup signals.json (PLAN_V2: spoločný formát pre 3 nohy) ---
+    # Value noha: kandidáti (širší zoznam pre posuvník) prebalené na signály;
+    # tie, čo prešli oficiálnymi prahmi, dostanú "official": true.
+    official_keys = {
+        f"{p['commence']}|{p['home']}|{p['away']}|{p.get('market','h2h')}|{p['selection']}"
+        for p in all_picks
+    }
+    value_signals = []
+    for c in all_candidates:
+        sig = signal_mod.value_pick_to_signal(c)
+        sig["official"] = signal_mod.signal_key(sig) in official_keys
+        value_signals.append(sig)
+
+    signals_out = {
+        "generated_at": out["generated_at"],
+        "legs_enabled": ["value"],   # postupne pribudnú "prediction", "arb"
+        "sports": cfg["sports"],
+        "staking": out["staking"],
+        "performance": out["performance"],
+        "signals": value_signals,
+    }
+    signals_path = os.path.join(ROOT, "data", "signals.json")
+    with open(signals_path, "w", encoding="utf-8") as f:
+        json.dump(signals_out, f, ensure_ascii=False, indent=2)
 
     print(f"[predict] zapasov zvazenych: {considered} | value tipov: {len(all_picks)}")
     print(f"[predict] requests_remaining: {info.get('requests_remaining')}")
