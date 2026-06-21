@@ -5,6 +5,7 @@
 // Absolutne od korena servera -> funguje lokalne (/web/index.html) aj nasadene (root domeny).
 const DATA_URL = "/data/predictions.json";
 const STATS_URL = "/data/stats.json";
+const SIGNALS_URL = "/data/signals.json";   // jednotný výstup (value + prediction + arb)
 
 // --- Supabase klient ---
 const sb = window.supabase.createClient(
@@ -14,6 +15,7 @@ const sb = window.supabase.createClient(
 // --- stav ---
 let DATA = null;
 let STATS = null;
+let PREDICTIONS = null;   // prediction-signály zo signals.json
 let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
 let PLACED = new Map();       // tip_key -> riadok user_bets (co som oznacil podane)
 let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
@@ -228,6 +230,77 @@ function applyRisk() {
   cands.forEach(p => main.appendChild(card(p)));
 }
 
+// ---------- TABY ----------
+function switchTab(tab) {
+  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  document.getElementById("tab-value").classList.toggle("hidden", tab !== "value");
+  document.getElementById("tab-prediction").classList.toggle("hidden", tab !== "prediction");
+  if (tab === "prediction") renderPredictions();
+}
+
+// ---------- PREDIKCIE ----------
+function pct(x) { return x == null ? "–" : Math.round(x * 100) + " %"; }
+
+function predCard(s) {
+  const ev = s.event || {};
+  const x = s.xg || {};
+  const p = s.probs_1x2 || {};
+  const top = (s.top_scores && s.top_scores[0]) ? s.top_scores[0] : null;
+  const evVal = s.model_ev_pct;
+  const valueBadge = (evVal != null && evVal > 0)
+    ? `<span class="badge badge-val">možná value +${evVal.toFixed(1)} %</span>` : "";
+  const pickName = (s.legs && s.legs[0]) ? (s.legs[0].selection === "Draw" ? "Remíza" : s.legs[0].selection) : "?";
+  const pickOdds = (s.legs && s.legs[0] && s.legs[0].odds) ? s.legs[0].odds.toFixed(2) : "–";
+
+  const el = document.createElement("article");
+  el.className = "card pred-card";
+  el.innerHTML = `
+    <div class="card-top"><span>${s.league || ev_sport(s)}</span><span>${fmtTime(ev.commence)}</span></div>
+    <div class="match"><b>${ev.home}</b><span class="vs">vs</span><b>${ev.away}</b></div>
+    <div class="pick">
+      <div class="sel">Tip modelu: ${pickName} ${valueBadge}
+        <small>istota predikcie ${pct(s.edge && s.edge.value)} · kurz trhu ${pickOdds}</small>
+      </div>
+      <div class="odds"><b>${pct(s.edge && s.edge.value)}</b><small>pravdepod.</small></div>
+    </div>
+    <div class="pred-bars">
+      ${bar("1", p.home)} ${bar("X", p.draw)} ${bar("2", p.away)}
+    </div>
+    <div class="grid">
+      <div class="item"><span>Očak. góly (xG)</span><b>${x.home ?? "–"} : ${x.away ?? "–"}</b></div>
+      <div class="item"><span>Nad 2.5 gólu</span><b>${pct(s.ou25 && s.ou25.over)}</b></div>
+      <div class="item"><span>Oba skórujú</span><b>${pct(s.btts && s.btts.yes)}</b></div>
+      <div class="item"><span>Najpravdep. skóre</span><b>${top ? top[0] : "–"}</b></div>
+    </div>
+    <p class="pred-foot">🔮 predikcia (neoverená value)${s.fs_potential && s.fs_potential.o25 != null ? ` · FootyStats nad2.5: ${s.fs_potential.o25}%` : ""}</p>`;
+  return el;
+}
+function ev_sport(s) { return s.sport || ""; }
+function bar(lbl, v) {
+  const h = Math.round((v || 0) * 100);
+  return `<div class="pbar"><div class="pbar-fill" style="height:${h}%"></div><span class="pbar-lbl">${lbl}</span><span class="pbar-val">${h}%</span></div>`;
+}
+
+function renderPredictions() {
+  const main = document.getElementById("predictions");
+  const empty = document.getElementById("pred-empty");
+  if (!main) return;
+  main.innerHTML = "";
+  const list = PREDICTIONS || [];
+  empty.classList.toggle("hidden", list.length > 0);
+  list.forEach(s => main.appendChild(predCard(s)));
+}
+
+async function loadSignals() {
+  try {
+    const res = await fetch(SIGNALS_URL, { cache: "no-store" });
+    if (!res.ok) return;
+    const sig = await res.json();
+    PREDICTIONS = (sig.signals || []).filter(s => s.type === "prediction")
+      .sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+  } catch (e) { PREDICTIONS = null; }
+}
+
 // ---------- INIT ----------
 async function refreshUserState() {
   const { data } = await sb.auth.getSession();
@@ -249,6 +322,9 @@ async function main() {
 
     try { const sres = await fetch(STATS_URL, { cache: "no-store" }); if (sres.ok) STATS = await sres.json(); } catch (e) {}
     renderGlobal(STATS);
+
+    await loadSignals();
+    document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
 
     document.getElementById("risk").addEventListener("input", applyRisk);
 

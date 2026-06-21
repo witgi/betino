@@ -9,35 +9,56 @@
 <body>
   <header>
     <div class="topbar">
-      <h1>⚽ Value tipy</h1>
+      <h1>⚽ betnito</h1>
       <div id="auth" class="auth"></div>
     </div>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="value">💰 Value tipy</button>
+      <button class="tab" data-tab="prediction">🔮 Predikcie</button>
+    </nav>
     <p id="meta" class="meta">Načítavam…</p>
   </header>
 
-  <section id="personal" class="personal hidden"></section>
+  <!-- ===== TAB: VALUE ===== -->
+  <div id="tab-value" class="tabpane">
+    <section id="personal" class="personal hidden"></section>
 
-  <section id="global" class="global"></section>
+    <section id="global" class="global"></section>
 
-  <section class="risk">
-    <div class="risk-head">
-      <span>Miera rizika</span>
-      <span id="risk-zone" class="risk-zone">Vyvážené</span>
-    </div>
-    <input id="risk" type="range" min="0" max="100" value="57" />
-    <div class="risk-scale"><span>Bezpečné</span><span>Vyvážené</span><span>Riskantné</span></div>
-    <p id="risk-info" class="risk-info"></p>
-    <p id="risk-warn" class="risk-warn hidden">
-      ⚠️ Vysoké riziko: pribúdajú outsideri s vysokým kurzom. Veľká EV tu býva často
-      „fatamorgána" (jedna uletená kancelária), nie reálna výhoda.
+    <section class="risk">
+      <div class="risk-head">
+        <span>Miera rizika</span>
+        <span id="risk-zone" class="risk-zone">Vyvážené</span>
+      </div>
+      <input id="risk" type="range" min="0" max="100" value="57" />
+      <div class="risk-scale"><span>Bezpečné</span><span>Vyvážené</span><span>Riskantné</span></div>
+      <p id="risk-info" class="risk-info"></p>
+      <p id="risk-warn" class="risk-warn hidden">
+        ⚠️ Vysoké riziko: pribúdajú outsideri s vysokým kurzom. Veľká EV tu býva často
+        „fatamorgána" (jedna uletená kancelária), nie reálna výhoda.
+      </p>
+    </section>
+
+    <main id="picks"></main>
+
+    <p id="empty" class="empty hidden">
+      Pri tejto miere rizika nevyšiel žiadny tip. Potiahni posuvník doprava pre viac (rizikovejších) tipov.
     </p>
-  </section>
+  </div>
 
-  <main id="picks"></main>
-
-  <p id="empty" class="empty hidden">
-    Pri tejto miere rizika nevyšiel žiadny tip. Potiahni posuvník doprava pre viac (rizikovejších) tipov.
-  </p>
+  <!-- ===== TAB: PREDIKCIE ===== -->
+  <div id="tab-prediction" class="tabpane hidden">
+    <section class="pred-intro">
+      <b>🔮 Predikcie — druhý názor, nie overená value.</b>
+      <p>Náš model (očakávané góly → Poisson) odhaduje výsledok zápasu. Je to orientačná pomôcka,
+      <strong>nie dokázaná výhoda</strong> ako value tipy — ostrý trh býva v presnosti lepší.
+      Skutočná výhoda appky je v záložke <em>Value tipy</em>.</p>
+    </section>
+    <main id="predictions"></main>
+    <p id="pred-empty" class="empty hidden">
+      Predikcie zatiaľ nie sú dostupné (čaká sa na dátový zdroj FootyStats).
+    </p>
+  </div>
 
   <footer>
     <p class="disclaimer">
