@@ -57,6 +57,23 @@ def totals_probs(lam_home, lam_away, line=2.5):
     return {"over": p_over, "under": 1.0 - p_over}
 
 
+def btts_probs(lam_home, lam_away):
+    """BTTS (obaja skoruju) ano/nie z Poisson matice."""
+    # P(BTTS nie) = P(domaci 0) + P(hostia 0) - P(oba 0)
+    p_home0 = poisson_pmf(0, lam_home)
+    p_away0 = poisson_pmf(0, lam_away)
+    p_no = p_home0 + p_away0 - p_home0 * p_away0
+    return {"yes": 1.0 - p_no, "no": p_no}
+
+
+def top_scorelines(lam_home, lam_away, n=5):
+    """N najpravdepodobnejsich presnych vysledkov [(home, away, prob), ...]."""
+    m = score_matrix(lam_home, lam_away)
+    cells = [(i, j, m[i][j]) for i in range(MAX_GOALS + 1) for j in range(MAX_GOALS + 1)]
+    cells.sort(key=lambda c: c[2], reverse=True)
+    return cells[:n]
+
+
 def expected_goals(home_team, away_team, ratings):
     """
     Z ratingov odhadne ocakavane goly. ratings = {

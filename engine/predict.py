@@ -26,6 +26,7 @@ import devig as devig_mod          # noqa: E402
 import model as model_mod          # noqa: E402
 import blend as blend_mod          # noqa: E402
 import signal as signal_mod        # noqa: E402
+import predict_model as predmodel  # noqa: E402
 
 
 def load_config():
@@ -172,13 +173,29 @@ def run(cache_path=None):
         sig["official"] = signal_mod.signal_key(sig) in official_keys
         value_signals.append(sig)
 
+    all_signals = list(value_signals)
+    legs_enabled = ["value"]
+
+    # --- Predikčná noha (FootyStats → Poisson) — nesmie zhodiť value nohu ---
+    pred_cfg = (cfg.get("legs", {}) or {}).get("prediction", {}) or {}
+    if pred_cfg.get("enabled"):
+        try:
+            pred_signals, pred_notes = predmodel.build_prediction_signals(cfg)
+            all_signals.extend(pred_signals)
+            legs_enabled.append("prediction")
+            notes.extend(f"[predikcie] {n}" for n in pred_notes)
+            print(f"[predict] prediction signálov: {len(pred_signals)}")
+        except Exception as e:   # noqa: BLE001 - izolácia nohy
+            notes.append(f"[predikcie] CHYBA (noha preskočená): {e}")
+            print(f"[predict] predikčná noha zlyhala: {e}")
+
     signals_out = {
         "generated_at": out["generated_at"],
-        "legs_enabled": ["value"],   # postupne pribudnú "prediction", "arb"
+        "legs_enabled": legs_enabled,
         "sports": cfg["sports"],
         "staking": out["staking"],
         "performance": out["performance"],
-        "signals": value_signals,
+        "signals": all_signals,
     }
     signals_path = os.path.join(ROOT, "data", "signals.json")
     with open(signals_path, "w", encoding="utf-8") as f:

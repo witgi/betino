@@ -45,5 +45,19 @@
     "max_odds": 8.0,
     "min_books": 3,
     "_note": "Sirsi zoznam pre posuvnik rizika vo webe. max_ev_pct = poistka proti chybnym kurzom."
+  },
+
+  "legs": {
+    "_comment": "Tri nohy appky (PLAN_V2). Kazda pise do data/signals.json so svojim type.",
+    "value": { "enabled": true },
+    "prediction": {
+      "enabled": true,
+      "source": "footystats",
+      "season_ids": [16494],
+      "_season_note": "16494 = FIFA World Cup 2026. Vyzaduje plateny FOOTYSTATS_API_KEY + vybranu sezonu v dashboarde. Test: 1625 (EPL 2018/19, key=example).",
+      "only_upcoming": true,
+      "max_matches": 80
+    },
+    "arb": { "enabled": false }
   }
 }
