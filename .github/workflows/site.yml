@@ -34,6 +34,7 @@ jobs:
         if: github.event_name != 'push'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          FOOTYSTATS_API_KEY: ${{ secrets.FOOTYSTATS_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
@@ -47,7 +48,7 @@ jobs:
         run: |
           git config user.name "value-bets-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/predictions.json data/history.jsonl data/stats.json
+          git add data/predictions.json data/signals.json data/history.jsonl data/stats.json
           git commit -m "denne data $(date -u +%F)" || echo "ziadne zmeny"
           git push || echo "push preskoceny"
 
@@ -56,7 +57,7 @@ jobs:
           mkdir -p _site/data
           cp web/*.html web/*.css web/*.js _site/
           cp web/CNAME _site/CNAME
-          cp data/predictions.json data/stats.json _site/data/ 2>/dev/null || true
+          cp data/predictions.json data/signals.json data/stats.json _site/data/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
