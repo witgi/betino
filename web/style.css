@@ -214,3 +214,12 @@ footer { margin-top: 24px; }
 .pbar-fill { width: 100%; background: var(--accent-soft); transition: height 0.2s; }
 .pbar-lbl { position: absolute; top: 4px; left: 0; right: 0; text-align: center; font-size: 0.72rem; color: var(--muted); font-weight: 600; }
 .pbar-val { position: absolute; bottom: 4px; left: 0; right: 0; text-align: center; font-size: 0.72rem; color: var(--text); font-weight: 600; }
+
+/* ===== ARBITRÁŽ ===== */
+.arb-card .odds b { color: var(--accent); }
+.arb-table { width: 100%; border-collapse: collapse; margin: 4px 0 0; font-size: 0.85rem; }
+.arb-table th { text-align: left; color: var(--muted); font-weight: 500; font-size: 0.72rem;
+  text-transform: uppercase; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+.arb-table td { padding: 7px 6px; border-bottom: 1px dashed var(--border); }
+.arb-table .r { text-align: right; }
+.arb-table tbody tr:last-child td { border-bottom: none; }

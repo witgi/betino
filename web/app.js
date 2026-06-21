@@ -16,6 +16,7 @@ const sb = window.supabase.createClient(
 let DATA = null;
 let STATS = null;
 let PREDICTIONS = null;   // prediction-signály zo signals.json
+let ARBS = null;          // arb-signály zo signals.json
 let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
 let PLACED = new Map();       // tip_key -> riadok user_bets (co som oznacil podane)
 let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
@@ -235,7 +236,9 @@ function switchTab(tab) {
   document.querySelectorAll(".tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
   document.getElementById("tab-value").classList.toggle("hidden", tab !== "value");
   document.getElementById("tab-prediction").classList.toggle("hidden", tab !== "prediction");
+  document.getElementById("tab-arb").classList.toggle("hidden", tab !== "arb");
   if (tab === "prediction") renderPredictions();
+  if (tab === "arb") renderArbs();
 }
 
 // ---------- PREDIKCIE ----------
@@ -291,6 +294,47 @@ function renderPredictions() {
   list.forEach(s => main.appendChild(predCard(s)));
 }
 
+// ---------- ARBITRÁŽ ----------
+function arbCard(s) {
+  const ev = s.event || {};
+  const split = s.stake_split || [];
+  const profit = s.edge ? s.edge.value : 0;
+  const totalStake = s.total_stake_ref || 100;
+  const rows = split.map(l => {
+    const sel = l.selection === "Draw" ? "Remíza" : l.selection;
+    return `<tr><td>${sel}</td><td>${l.book || "?"}</td><td class="r">${l.odds ? l.odds.toFixed(2) : "–"}</td><td class="r"><b>${l.stake != null ? l.stake.toFixed(2) : "–"} €</b></td></tr>`;
+  }).join("");
+  const guaranteedReturn = totalStake * (1 + profit / 100);
+
+  const el = document.createElement("article");
+  el.className = "card arb-card";
+  el.innerHTML = `
+    <div class="card-top"><span>${s.league || s.sport || ""}</span><span>${fmtTime(ev.commence)}</span></div>
+    <div class="match"><b>${ev.home}</b><span class="vs">vs</span><b>${ev.away}</b></div>
+    <div class="pick">
+      <div class="sel">Garantovaný zisk
+        <small>vklad ${totalStake.toFixed(0)} € → späť ${guaranteedReturn.toFixed(2)} €</small>
+      </div>
+      <div class="odds"><b>+${profit.toFixed(2)} %</b><small>istý výnos</small></div>
+    </div>
+    <table class="arb-table">
+      <thead><tr><th>Staviť na</th><th>Kancelária</th><th class="r">Kurz</th><th class="r">Vklad</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p class="pred-foot">⚖️ surebet · staviť VŠETKY riadky naraz · kurzy sa rýchlo menia</p>`;
+  return el;
+}
+
+function renderArbs() {
+  const main = document.getElementById("arbs");
+  const empty = document.getElementById("arb-empty");
+  if (!main) return;
+  main.innerHTML = "";
+  const list = ARBS || [];
+  empty.classList.toggle("hidden", list.length > 0);
+  list.forEach(s => main.appendChild(arbCard(s)));
+}
+
 async function loadSignals() {
   try {
     const res = await fetch(SIGNALS_URL, { cache: "no-store" });
@@ -298,7 +342,9 @@ async function loadSignals() {
     const sig = await res.json();
     PREDICTIONS = (sig.signals || []).filter(s => s.type === "prediction")
       .sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
-  } catch (e) { PREDICTIONS = null; }
+    ARBS = (sig.signals || []).filter(s => s.type === "arb")
+      .sort((a, b) => (b.edge ? b.edge.value : 0) - (a.edge ? a.edge.value : 0));
+  } catch (e) { PREDICTIONS = null; ARBS = null; }
 }
 
 // ---------- INIT ----------

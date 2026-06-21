@@ -27,6 +27,7 @@ import model as model_mod          # noqa: E402
 import blend as blend_mod          # noqa: E402
 import signal as signal_mod        # noqa: E402
 import predict_model as predmodel  # noqa: E402
+import arb as arb_mod              # noqa: E402
 
 
 def load_config():
@@ -188,6 +189,21 @@ def run(cache_path=None):
         except Exception as e:   # noqa: BLE001 - izolácia nohy
             notes.append(f"[predikcie] CHYBA (noha preskočená): {e}")
             print(f"[predict] predikčná noha zlyhala: {e}")
+
+    # --- Arbitrážna noha (pre-match surebety z existujúcich kurzov) ---
+    arb_cfg = (cfg.get("legs", {}) or {}).get("arb", {}) or {}
+    if arb_cfg.get("enabled"):
+        try:
+            horizon_events = [e for e in events
+                              if within_horizon(e["commence"], cfg.get("horizon_hours", 72))]
+            arb_signals = arb_mod.find_arbs(horizon_events, cfg)
+            all_signals.extend(arb_signals)
+            legs_enabled.append("arb")
+            notes.append(f"[arb] {len(arb_signals)} surebetov z {len(horizon_events)} trhov")
+            print(f"[predict] arb signálov: {len(arb_signals)}")
+        except Exception as e:   # noqa: BLE001 - izolácia nohy
+            notes.append(f"[arb] CHYBA (noha preskočená): {e}")
+            print(f"[predict] arb noha zlyhala: {e}")
 
     signals_out = {
         "generated_at": out["generated_at"],

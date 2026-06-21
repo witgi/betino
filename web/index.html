@@ -15,6 +15,7 @@
     <nav class="tabs" id="tabs">
       <button class="tab active" data-tab="value">💰 Value tipy</button>
       <button class="tab" data-tab="prediction">🔮 Predikcie</button>
+      <button class="tab" data-tab="arb">⚖️ Arbitráž</button>
     </nav>
     <p id="meta" class="meta">Načítavam…</p>
   </header>
@@ -57,6 +58,21 @@
     <main id="predictions"></main>
     <p id="pred-empty" class="empty hidden">
       Predikcie zatiaľ nie sú dostupné (čaká sa na dátový zdroj FootyStats).
+    </p>
+  </div>
+
+  <!-- ===== TAB: ARBITRÁŽ ===== -->
+  <div id="tab-arb" class="tabpane hidden">
+    <section class="pred-intro">
+      <b>⚖️ Arbitráž — garantovaný zisk rozložením stávky.</b>
+      <p>Keď rôzne kancelárie dajú dosť rozdielne kurzy, dá sa staviť na <strong>všetky výsledky</strong>
+      tak, že zarobíš nech sa stane čokoľvek. Appka spočíta presné rozloženie vkladu.
+      <br>⚠️ <strong>Pozor na realitu:</strong> zisky sú malé (zlomky %), kurzy sa rýchlo menia a kancelárie
+      úspešným hráčom <strong>limitujú/zatvárajú účty</strong>. Ber to ako detektor, nie istý zárobok.</p>
+    </section>
+    <main id="arbs"></main>
+    <p id="arb-empty" class="empty hidden">
+      Práve teraz nie je dostupný žiadny pre-match surebet. Príležitosti sú vzácne a krátke — skús neskôr.
     </p>
   </div>
 
