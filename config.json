@@ -62,7 +62,12 @@
       "enabled": true,
       "max_profit_pct": 15.0,
       "_max_note": "Vyssi 'garantovany zisk' nez toto = takmer isto chyba kurzu, nie realny surebet -> zahodit.",
-      "total_stake_ref": 100.0
+      "total_stake_ref": 100.0,
+      "betburger": {
+        "filter_ids": [],
+        "_filter_note": "ID filtra/filtrov z BetBurger dashboardu (sekcia Filters). Prazdne = BetBurger zdroj sa preskoci. Bez plateneho API plana su arby orezane na ~1 %.",
+        "per_page": 50
+      }
     }
   }
 }

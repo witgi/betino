@@ -27,6 +27,7 @@ import model as model_mod          # noqa: E402
 import blend as blend_mod          # noqa: E402
 import signal as signal_mod        # noqa: E402
 import predict_model as predmodel  # noqa: E402
+import betburger as betburger_mod  # noqa: E402
 import arb as arb_mod              # noqa: E402
 
 
@@ -190,20 +191,33 @@ def run(cache_path=None):
             notes.append(f"[predikcie] CHYBA (noha preskočená): {e}")
             print(f"[predict] predikčná noha zlyhala: {e}")
 
-    # --- Arbitrážna noha (pre-match surebety z existujúcich kurzov) ---
+    # --- Arbitrážna noha — dva zdroje: The Odds API (medzinár.) + BetBurger (vrátane SK kníh) ---
     arb_cfg = (cfg.get("legs", {}) or {}).get("arb", {}) or {}
     if arb_cfg.get("enabled"):
+        arb_total = 0
+        # zdroj A: surebety z The Odds API kurzov (medzinárodné knihy)
         try:
             horizon_events = [e for e in events
                               if within_horizon(e["commence"], cfg.get("horizon_hours", 72))]
-            arb_signals = arb_mod.find_arbs(horizon_events, cfg)
-            all_signals.extend(arb_signals)
+            a = arb_mod.find_arbs(horizon_events, cfg)
+            all_signals.extend(a); arb_total += len(a)
+            notes.append(f"[arb] OddsAPI: {len(a)} surebetov z {len(horizon_events)} trhov")
+        except Exception as e:   # noqa: BLE001 - izolácia zdroja
+            notes.append(f"[arb] OddsAPI CHYBA: {e}")
+            print(f"[predict] arb (OddsAPI) zlyhal: {e}")
+        # zdroj B: BetBurger (SK knihy ako Tipsport; capped ~1 % bez plateného plánu)
+        if (arb_cfg.get("betburger", {}) or {}).get("filter_ids"):
+            try:
+                bb_cfg = {"legs": {"arb": {"enabled": True, **arb_cfg["betburger"]}}}
+                b, bb_notes = betburger_mod.build_arb_signals(bb_cfg)
+                all_signals.extend(b); arb_total += len(b)
+                notes.extend(f"[arb] {n}" for n in bb_notes)
+            except Exception as e:   # noqa: BLE001
+                notes.append(f"[arb] BetBurger CHYBA: {e}")
+                print(f"[predict] arb (BetBurger) zlyhal: {e}")
+        if arb_total or True:
             legs_enabled.append("arb")
-            notes.append(f"[arb] {len(arb_signals)} surebetov z {len(horizon_events)} trhov")
-            print(f"[predict] arb signálov: {len(arb_signals)}")
-        except Exception as e:   # noqa: BLE001 - izolácia nohy
-            notes.append(f"[arb] CHYBA (noha preskočená): {e}")
-            print(f"[predict] arb noha zlyhala: {e}")
+        print(f"[predict] arb signálov spolu: {arb_total}")
 
     signals_out = {
         "generated_at": out["generated_at"],
