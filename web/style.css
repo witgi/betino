@@ -223,3 +223,14 @@ footer { margin-top: 24px; }
 .arb-table td { padding: 7px 6px; border-bottom: 1px dashed var(--border); }
 .arb-table .r { text-align: right; }
 .arb-table tbody tr:last-child td { border-bottom: none; }
+
+/* ===== FILTER KANCELÁRIÍ (arb) ===== */
+.arb-filter { max-width: 680px; margin: 0 auto 4px; padding: 12px 16px; }
+.bf-head { font-weight: 600; font-size: 0.9rem; }
+.bf-head small { display: block; color: var(--muted); font-weight: 400; font-size: 0.78rem; margin-top: 2px; }
+.bf-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 8px; }
+.bookchip { background: var(--card); color: var(--muted); border: 1px solid var(--border);
+  border-radius: 999px; padding: 5px 11px; font-size: 0.82rem; cursor: pointer; transition: all 0.15s; }
+.bookchip:hover { border-color: var(--muted); }
+.bookchip.on { background: var(--accent-soft); color: #fff; border-color: var(--accent); }
+.bf-actions { display: flex; gap: 8px; }

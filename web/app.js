@@ -21,6 +21,11 @@ let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
 let PLACED = new Map();       // tip_key -> riadok user_bets (co som oznacil podane)
 let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
 let USER = null;
+let ARB_BOOKS = [];           // všetky kancelárie vyskytujúce sa v arboch
+let ARB_BOOK_SEL = null;      // Set vybraných kancelárií (null = zatiaľ neurčené → všetky)
+
+// historická presnosť predikčného modelu (z backtest/backtest_predict.py, EPL 18/19)
+const PRED_BACKTEST = { matches: 360, h2h: 56, ou25: 54, btts: 50 };
 
 // ---------- pomocne ----------
 function lerp(a, b, t) { return a + (b - a) * t; }
@@ -43,6 +48,24 @@ function fmtTime(iso) {
 function stars(c) { const n = Math.max(1, Math.min(5, Math.round((c || 0) * 5))); return "★".repeat(n) + "☆".repeat(5 - n); }
 function selectionLabel(p) { return p.selection === "Draw" ? "Remíza" : p.selection; }
 function pickKey(p) { return `${p.commence}|${p.home}|${p.away}|${p.market}|${p.selection}`; }
+
+// ---- zoradenie podľa dátumu výkopu (najbližšie hore) ----
+function sigCommence(s) { return (s.event && s.event.commence) || s.commence || ""; }
+function byDate(a, b) {
+  const ta = Date.parse(sigCommence(a)) || Infinity, tb = Date.parse(sigCommence(b)) || Infinity;
+  return ta - tb;
+}
+// ---- arb: jednotný prístup k nohám (OddsAPI dáva stake_split, BetBurger legs) ----
+function arbLegs(s) { return (s.stake_split && s.stake_split.length) ? s.stake_split : (s.legs || []); }
+function arbBooksOf(s) { return arbLegs(s).map(l => l.book).filter(Boolean); }
+// ---- výber kancelárií (localStorage, funguje aj bez prihlásenia) ----
+function loadArbBookSel() {
+  try { const j = JSON.parse(localStorage.getItem("arbBooks")); if (Array.isArray(j)) return new Set(j); } catch (e) {}
+  return null;
+}
+function saveArbBookSel() {
+  if (ARB_BOOK_SEL) localStorage.setItem("arbBooks", JSON.stringify([...ARB_BOOK_SEL]));
+}
 
 function sparkline(equity) {
   if (!equity || equity.length < 2) return "";
@@ -222,7 +245,8 @@ function applyRisk() {
   document.getElementById("risk-warn").classList.toggle("hidden", r <= 66);
   const cands = (DATA.candidates || []).filter(p =>
     p.ev_pct >= th.minEv && p.ev_pct <= th.maxEv &&
-    p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds && p.n_books >= th.minBooks);
+    p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds && p.n_books >= th.minBooks)
+    .sort(byDate);
   document.getElementById("risk-info").innerHTML =
     `<b>${cands.length}</b> tip(ov) · EV ≥ ${th.minEv.toFixed(1)} % · kurz ${th.minOdds.toFixed(2)}–${th.maxOdds.toFixed(1)} · min. ${th.minBooks} kancelárií`;
   const main = document.getElementById("picks");
@@ -284,7 +308,24 @@ function bar(lbl, v) {
   return `<div class="pbar"><div class="pbar-fill" style="height:${h}%"></div><span class="pbar-lbl">${lbl}</span><span class="pbar-val">${h}%</span></div>`;
 }
 
+function renderPredPerf() {
+  const box = document.getElementById("pred-perf");
+  if (!box) return;
+  const b = PRED_BACKTEST;
+  box.innerHTML = `
+    <div class="g-head">📈 Úspešnosť predikcií (historický backtest)</div>
+    <div class="g-stats">
+      <div><b>${b.h2h}%</b><span>1 / X / 2</span></div>
+      <div><b>${b.ou25}%</b><span>nad/pod 2.5</span></div>
+      <div><b>${b.btts}%</b><span>oba skórujú</span></div>
+      <div><b>${b.matches}</b><span>zápasov</span></div>
+    </div>
+    <p class="g-note">Koľko % predikcií trafilo výsledok v backteste (EPL 18/19). Ostrý trh býva presnejší —
+    ber ako orientáciu, nie dokázanú výhodu. Živé výsledky sa budú zbierať postupne.</p>`;
+}
+
 function renderPredictions() {
+  renderPredPerf();
   const main = document.getElementById("predictions");
   const empty = document.getElementById("pred-empty");
   if (!main) return;
@@ -297,12 +338,20 @@ function renderPredictions() {
 // ---------- ARBITRÁŽ ----------
 function arbCard(s) {
   const ev = s.event || {};
-  const split = s.stake_split || [];
+  const legs = arbLegs(s);
   const profit = s.edge ? s.edge.value : 0;
   const totalStake = s.total_stake_ref || 100;
-  const rows = split.map(l => {
+  // ak chýba rozloženie vkladu (BetBurger len kurzy) — dopočítaj z kurzov (stake ∝ 1/kurz)
+  let stakes = legs.map(l => l.stake);
+  if (!legs.some(l => l.stake != null)) {
+    const inv = legs.map(l => (l.odds && l.odds > 1) ? 1 / l.odds : 0);
+    const sum = inv.reduce((a, b) => a + b, 0) || 1;
+    stakes = inv.map(x => totalStake * x / sum);
+  }
+  const rows = legs.map((l, i) => {
     const sel = l.selection === "Draw" ? "Remíza" : l.selection;
-    return `<tr><td>${sel}</td><td>${l.book || "?"}</td><td class="r">${l.odds ? l.odds.toFixed(2) : "–"}</td><td class="r"><b>${l.stake != null ? l.stake.toFixed(2) : "–"} €</b></td></tr>`;
+    const st = stakes[i];
+    return `<tr><td>${sel}</td><td>${l.book || "?"}</td><td class="r">${l.odds ? l.odds.toFixed(2) : "–"}</td><td class="r"><b>${st != null ? st.toFixed(2) : "–"} €</b></td></tr>`;
   }).join("");
   const guaranteedReturn = totalStake * (1 + profit / 100);
 
@@ -325,13 +374,47 @@ function arbCard(s) {
   return el;
 }
 
+function renderArbFilter() {
+  const box = document.getElementById("arb-filter");
+  if (!box) return;
+  if (!ARB_BOOKS.length) { box.classList.add("hidden"); return; }
+  box.classList.remove("hidden");
+  const sel = ARB_BOOK_SEL;   // null = všetky zapnuté
+  const chips = ARB_BOOKS.map(b => {
+    const on = !sel || sel.has(b);
+    return `<button class="bookchip ${on ? "on" : ""}" data-book="${b}">${on ? "✓ " : ""}${b}</button>`;
+  }).join("");
+  box.innerHTML = `<div class="bf-head">Moje kancelárie
+      <small>klikni len tie, kde máš účet — ukážem len arby medzi nimi</small></div>
+    <div class="bf-chips">${chips}</div>
+    <div class="bf-actions"><button id="bf-all" class="btn-sm">Označiť všetky</button></div>`;
+  box.querySelectorAll(".bookchip").forEach(btn => btn.onclick = () => toggleBook(btn.dataset.book));
+  const allBtn = document.getElementById("bf-all");
+  if (allBtn) allBtn.onclick = () => { ARB_BOOK_SEL = null; localStorage.removeItem("arbBooks"); renderArbs(); };
+}
+
+function toggleBook(book) {
+  if (!ARB_BOOK_SEL) ARB_BOOK_SEL = new Set(ARB_BOOKS);   // začni od „všetky zapnuté"
+  if (ARB_BOOK_SEL.has(book)) ARB_BOOK_SEL.delete(book); else ARB_BOOK_SEL.add(book);
+  saveArbBookSel();
+  renderArbs();
+}
+
 function renderArbs() {
+  renderArbFilter();
   const main = document.getElementById("arbs");
   const empty = document.getElementById("arb-empty");
   if (!main) return;
   main.innerHTML = "";
-  const list = ARBS || [];
+  let list = (ARBS || []).slice();
+  // filter: arb sa zobrazí len ak VŠETKY jeho nohy sú v mojich vybraných knihách
+  if (ARB_BOOK_SEL) list = list.filter(s => arbBooksOf(s).every(b => ARB_BOOK_SEL.has(b)));
   empty.classList.toggle("hidden", list.length > 0);
+  if (list.length === 0 && (ARBS || []).length > 0) {
+    empty.textContent = "Pri vybraných kanceláriách teraz niet arbu. Uprav výber kníh alebo klikni „Označiť všetky\".";
+  } else {
+    empty.textContent = "Práve teraz nie je dostupný žiadny pre-match surebet. Príležitosti sú vzácne a krátke — skús neskôr.";
+  }
   list.forEach(s => main.appendChild(arbCard(s)));
 }
 
@@ -340,10 +423,13 @@ async function loadSignals() {
     const res = await fetch(SIGNALS_URL, { cache: "no-store" });
     if (!res.ok) return;
     const sig = await res.json();
-    PREDICTIONS = (sig.signals || []).filter(s => s.type === "prediction")
-      .sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
-    ARBS = (sig.signals || []).filter(s => s.type === "arb")
-      .sort((a, b) => (b.edge ? b.edge.value : 0) - (a.edge ? a.edge.value : 0));
+    PREDICTIONS = (sig.signals || []).filter(s => s.type === "prediction").sort(byDate);
+    ARBS = (sig.signals || []).filter(s => s.type === "arb").sort(byDate);
+    // zoznam všetkých kancelárií v arboch + načítaj uložený výber
+    const books = new Set();
+    ARBS.forEach(s => arbBooksOf(s).forEach(b => books.add(b)));
+    ARB_BOOKS = [...books].sort();
+    ARB_BOOK_SEL = loadArbBookSel();   // null = všetky zobrazené
   } catch (e) { PREDICTIONS = null; ARBS = null; }
 }
 
