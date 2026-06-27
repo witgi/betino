@@ -143,22 +143,26 @@ function renderGlobal(s) {
     return;
   }
   const prof = s.profit_units, cls = prof >= 0 ? "pos" : "neg";
+  const bankGrow = (s.virtual_bankroll / s.start_bankroll - 1) * 100;
   box.innerHTML = `
     <div class="g-head">📊 Globálne výsledky (keby dávaš všetko podľa mňa)</div>
     <div class="g-hero">
       <div class="g-bank"><span>Virtuálny bank</span>
         <b class="${cls}">${s.virtual_bankroll.toFixed(0)} €</b>
-        <small class="${cls}">${prof >= 0 ? "+" : ""}${prof.toFixed(0)} € (${s.roi_pct > 0 ? "+" : ""}${s.roi_pct} % ROI)</small>
+        <small class="${cls}">${prof >= 0 ? "+" : ""}${prof.toFixed(0)} € · bank ${bankGrow >= 0 ? "+" : ""}${bankGrow.toFixed(1)} %</small>
       </div>${sparkline(s.equity)}
     </div>
     <div class="g-stats">
       <div><b>${s.settled}</b><span>tipov</span></div>
       <div><b>${s.win_rate_pct}%</b><span>úspech</span></div>
       <div><b>${s.wins}-${s.losses}${s.pushes ? "-" + s.pushes : ""}</b><span>V-P${s.pushes ? "-R" : ""}</span></div>
+      <div><b class="${s.roi_pct >= 0 ? "pos" : "neg"}">${s.roi_pct > 0 ? "+" : ""}${s.roi_pct}%</b><span>ROI z vkladov</span></div>
       ${s.clv_beat_pct != null ? `<div><b>${s.clv_beat_pct}%</b><span>CLV beat</span></div>` : ""}
       ${s.pending ? `<div><b>${s.pending}</b><span>čaká</span></div>` : ""}
     </div>
-    <p class="g-note">Štart banku ${s.start_bankroll} € · vklady podľa odporúčaného Kelly.</p>`;
+    <p class="g-note">Štart banku ${s.start_bankroll} € · vklady podľa odporúčaného Kelly.
+    <br><b>ROI</b> = zisk delený tým, čo si vsadil (nie bankom). Bank rastie pomalšie, lebo stavíš
+    len malú časť (Kelly). Dlhodobý reálny cieľ je ~4–6 % ROI — vyššie čísla na málo tipoch sú výkyv.</p>`;
 }
 
 // ---------- OSOBNY PANEL ----------
