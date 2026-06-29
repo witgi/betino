@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T09:27:58.669616+00:00",
+  "generated_at": "2026-06-29T11:20:58.754571+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -14,9 +14,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 26,
-    "win_rate_pct": 57.7,
-    "roi_pct": 30.46,
+    "settled_bets": 28,
+    "win_rate_pct": 57.1,
+    "roi_pct": 31.64,
     "clv_beat_pct": null
   },
   "signals": [
@@ -32,84 +32,22 @@
       "market": "h2h",
       "legs": [
         {
-          "selection": "Japan",
-          "book": "unibet_se",
-          "odds": 5.8,
-          "stake_pct": 0.25,
-          "fair_prob": 0.1806
+          "selection": "Draw",
+          "book": "smarkets",
+          "odds": 4.1,
+          "stake_pct": 0.61,
+          "fair_prob": 0.2624
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 4.77
+        "value": 7.57
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 5.536,
-      "stake_amount": 2.48,
-      "n_books": 42,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer_fifa_world_cup",
-      "league": "FIFA World Cup",
-      "event": {
-        "home": "Ivory Coast",
-        "away": "Norway",
-        "commence": "2026-06-30T17:00:00Z"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Ivory Coast",
-          "book": "unibet_se",
-          "odds": 3.95,
-          "stake_pct": 0.24,
-          "fair_prob": 0.2605
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.88
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.839,
-      "stake_amount": 2.44,
-      "n_books": 42,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer_fifa_world_cup",
-      "league": "FIFA World Cup",
-      "event": {
-        "home": "South Africa",
-        "away": "Canada",
-        "commence": "2026-06-28T19:00:00Z"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "South Africa",
-          "book": "matchbook",
-          "odds": 6.6,
-          "stake_pct": 0.11,
-          "fair_prob": 0.1553
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.48
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 6.441,
-      "stake_amount": 1.11,
+      "fair_odds": 3.811,
+      "stake_amount": 6.11,
       "n_books": 42,
       "official": false
     },
@@ -127,22 +65,22 @@
         {
           "selection": "Morocco",
           "book": "smarkets",
-          "odds": 4.1,
-          "stake_pct": 0.15,
-          "fair_prob": 0.2483
+          "odds": 4.0,
+          "stake_pct": 0.62,
+          "fair_prob": 0.2685
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.8
+        "value": 7.41
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 4.027,
-      "stake_amount": 1.45,
+      "fair_odds": 3.724,
+      "stake_amount": 6.17,
       "n_books": 41,
-      "official": false
+      "official": true
     },
     {
       "type": "value",
@@ -153,26 +91,57 @@
         "away": "Norway",
         "commence": "2026-06-30T17:00:00Z"
       },
-      "market": "totals",
+      "market": "h2h",
       "legs": [
         {
-          "selection": "Under 2.5",
-          "book": "matchbook",
-          "odds": 2.04,
-          "stake_pct": 0.35,
-          "fair_prob": 0.4973
+          "selection": "Ivory Coast",
+          "book": "smarkets",
+          "odds": 4.0,
+          "stake_pct": 0.34,
+          "fair_prob": 0.2602
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.46
+        "value": 4.06
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.011,
-      "stake_amount": 3.5,
-      "n_books": 17,
+      "fair_odds": 3.844,
+      "stake_amount": 3.38,
+      "n_books": 42,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Brazil",
+        "away": "Japan",
+        "commence": "2026-06-29T17:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Japan",
+          "book": "unibet_fr",
+          "odds": 5.7,
+          "stake_pct": 0.21,
+          "fair_prob": 0.1824
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 3.95
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 5.483,
+      "stake_amount": 2.1,
+      "n_books": 42,
       "official": false
     },
     {
@@ -180,29 +149,184 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
-        "home": "South Africa",
-        "away": "Canada",
-        "commence": "2026-06-28T19:00:00Z"
+        "home": "Mexico",
+        "away": "Ecuador",
+        "commence": "2026-07-01T01:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.12,
+          "stake_pct": 0.44,
+          "fair_prob": 0.3325
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 3.74
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.007,
+      "stake_amount": 4.42,
+      "n_books": 42,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Germany",
+        "away": "Paraguay",
+        "commence": "2026-06-29T20:30:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Germany",
+          "book": "onexbet",
+          "odds": 1.42,
+          "stake_pct": 0.85,
+          "fair_prob": 0.7143
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.44
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.4,
+      "stake_amount": 8.54,
+      "n_books": 42,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Belgium",
+        "away": "Senegal",
+        "commence": "2026-07-01T20:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Senegal",
+          "book": "smarkets",
+          "odds": 3.7,
+          "stake_pct": 0.13,
+          "fair_prob": 0.274
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.38
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.65,
+      "stake_amount": 1.28,
+      "n_books": 42,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "USA",
+        "away": "Bosnia & Herzegovina",
+        "commence": "2026-07-02T00:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "USA",
+          "book": "gtbets",
+          "odds": 1.42,
+          "stake_pct": 0.74,
+          "fair_prob": 0.713
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.24
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.403,
+      "stake_amount": 7.38,
+      "n_books": 41,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "France",
+        "away": "Sweden",
+        "commence": "2026-06-30T21:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "France",
+          "book": "gtbets",
+          "odds": 1.31,
+          "stake_pct": 0.8,
+          "fair_prob": 0.7709
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.99
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.297,
+      "stake_amount": 8.0,
+      "n_books": 42,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Germany",
+        "away": "Paraguay",
+        "commence": "2026-06-29T20:30:00Z"
       },
       "market": "h2h",
       "legs": [
         {
           "selection": "Draw",
           "book": "unibet_fr",
-          "odds": 3.9,
-          "stake_pct": 0.04,
-          "fair_prob": 0.2575
+          "odds": 5.4,
+          "stake_pct": 0.06,
+          "fair_prob": 0.187
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.42
+        "value": 0.98
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.884,
-      "stake_amount": 0.36,
+      "fair_odds": 5.348,
+      "stake_amount": 0.55,
       "n_books": 42,
       "official": false
     },
@@ -218,23 +342,178 @@
       "market": "h2h",
       "legs": [
         {
-          "selection": "Netherlands",
-          "book": "smarkets",
-          "odds": 2.22,
-          "stake_pct": 0.0,
-          "fair_prob": 0.4504
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.27,
+          "stake_pct": 0.09,
+          "fair_prob": 0.3083
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": -0.0
+        "value": 0.8
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.22,
-      "stake_amount": 0.0,
+      "fair_odds": 3.244,
+      "stake_amount": 0.89,
       "n_books": 41,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "England",
+        "away": "DR Congo",
+        "commence": "2026-07-01T16:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "England",
+          "book": "gtbets",
+          "odds": 1.32,
+          "stake_pct": 0.62,
+          "fair_prob": 0.7636
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.79
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.31,
+      "stake_amount": 6.2,
+      "n_books": 40,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "USA",
+        "away": "Bosnia & Herzegovina",
+        "commence": "2026-07-02T00:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "betfair_ex_eu",
+          "odds": 5.3,
+          "stake_pct": 0.04,
+          "fair_prob": 0.1901
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.75
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 5.26,
+      "stake_amount": 0.44,
+      "n_books": 41,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Belgium",
+        "away": "Senegal",
+        "commence": "2026-07-01T20:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Belgium",
+          "book": "matchbook",
+          "odds": 2.32,
+          "stake_pct": 0.05,
+          "fair_prob": 0.4322
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.27
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.314,
+      "stake_amount": 0.51,
+      "n_books": 42,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "England",
+        "away": "DR Congo",
+        "commence": "2026-07-01T16:00:00Z"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Over 2.5",
+          "book": "matchbook",
+          "odds": 2.02,
+          "stake_pct": 0.05,
+          "fair_prob": 0.496
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.2
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.016,
+      "stake_amount": 0.49,
+      "n_books": 15,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "England",
+        "away": "DR Congo",
+        "commence": "2026-07-01T16:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "betfair_ex_uk",
+          "odds": 6.0,
+          "stake_pct": 0.0,
+          "fair_prob": 0.1667
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.01
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 5.999,
+      "stake_amount": 0.01,
+      "n_books": 40,
       "official": false
     },
     {
@@ -310,7 +589,7 @@
         "x": 3.75,
         "2": 5.6,
         "over25": 2.5,
-        "btts_yes": 0.0
+        "btts_yes": 2.23
       },
       "fs_potential": {
         "o25": 33,
@@ -331,7 +610,7 @@
         {
           "selection": "Germany",
           "book": "(trh)",
-          "odds": 1.35,
+          "odds": 1.28,
           "fair_prob": 0.6918
         }
       ],
@@ -349,7 +628,7 @@
         "away": 0.76
       },
       "pick": "home",
-      "model_ev_pct": -6.61,
+      "model_ev_pct": -11.45,
       "probs_1x2": {
         "home": 0.692,
         "draw": 0.188,
@@ -386,95 +665,15 @@
         ]
       ],
       "market_odds": {
-        "1": 1.35,
-        "x": 5.05,
-        "2": 7.3,
-        "over25": 1.75,
-        "btts_yes": 2.02
+        "1": 1.28,
+        "x": 5.45,
+        "2": 8.0,
+        "over25": 1.72,
+        "btts_yes": 2.05
       },
       "fs_potential": {
         "o25": 67,
         "btts": 67
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "South Africa",
-        "away": "Canada",
-        "commence": "2026-06-28T19:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Canada",
-          "book": "(trh)",
-          "odds": 1.62,
-          "fair_prob": 0.6481
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.648
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-06-28T19:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8562620,
-      "xg": {
-        "home": 1.15,
-        "away": 2.39
-      },
-      "pick": "away",
-      "model_ev_pct": 5.0,
-      "probs_1x2": {
-        "home": 0.168,
-        "draw": 0.183,
-        "away": 0.648
-      },
-      "ou25": {
-        "over": 0.686,
-        "under": 0.314
-      },
-      "btts": {
-        "yes": 0.621,
-        "no": 0.379
-      },
-      "top_scores": [
-        [
-          "1-2",
-          0.095
-        ],
-        [
-          "0-2",
-          0.083
-        ],
-        [
-          "1-1",
-          0.08
-        ],
-        [
-          "1-3",
-          0.076
-        ],
-        [
-          "0-1",
-          0.069
-        ]
-      ],
-      "market_odds": {
-        "1": 5.55,
-        "x": 3.45,
-        "2": 1.62,
-        "over25": 2.09,
-        "btts_yes": 2.0
-      },
-      "fs_potential": {
-        "o25": 34,
-        "btts": 50
       }
     },
     {
@@ -491,7 +690,7 @@
         {
           "selection": "Spain",
           "book": "(trh)",
-          "odds": 1.25,
+          "odds": 1.31,
           "fair_prob": 0.6084
         }
       ],
@@ -509,7 +708,7 @@
         "away": 1.13
       },
       "pick": "home",
-      "model_ev_pct": -23.95,
+      "model_ev_pct": -20.3,
       "probs_1x2": {
         "home": 0.608,
         "draw": 0.201,
@@ -546,11 +745,11 @@
         ]
       ],
       "market_odds": {
-        "1": 1.25,
-        "x": 4.75,
-        "2": 9.9,
-        "over25": 2.0,
-        "btts_yes": 0.0
+        "1": 1.31,
+        "x": 5.1,
+        "2": 11.0,
+        "over25": 1.78,
+        "btts_yes": 2.2
       },
       "fs_potential": {
         "o25": 50,
@@ -628,9 +827,9 @@
       "market_odds": {
         "1": 1.23,
         "x": 4.95,
-        "2": 10.0,
-        "over25": 1.8,
-        "btts_yes": 0.0
+        "2": 12.0,
+        "over25": 1.92,
+        "btts_yes": 2.45
       },
       "fs_potential": {
         "o25": 33,
@@ -651,7 +850,7 @@
         {
           "selection": "USMNT",
           "book": "(trh)",
-          "odds": 1.38,
+          "odds": 1.36,
           "fair_prob": 0.5402
         }
       ],
@@ -669,7 +868,7 @@
         "away": 1.04
       },
       "pick": "home",
-      "model_ev_pct": -25.46,
+      "model_ev_pct": -26.54,
       "probs_1x2": {
         "home": 0.54,
         "draw": 0.236,
@@ -706,11 +905,11 @@
         ]
       ],
       "market_odds": {
-        "1": 1.38,
-        "x": 4.4,
-        "2": 8.75,
+        "1": 1.36,
+        "x": 4.94,
+        "2": 8.5,
         "over25": 1.8,
-        "btts_yes": 2.2
+        "btts_yes": 2.1
       },
       "fs_potential": {
         "o25": 67,
@@ -731,7 +930,7 @@
         {
           "selection": "Ecuador",
           "book": "(trh)",
-          "odds": 3.4,
+          "odds": 3.23,
           "fair_prob": 0.5191
         }
       ],
@@ -749,7 +948,7 @@
         "away": 1.85
       },
       "pick": "away",
-      "model_ev_pct": 76.48,
+      "model_ev_pct": 67.66,
       "probs_1x2": {
         "home": 0.254,
         "draw": 0.227,
@@ -786,11 +985,11 @@
         ]
       ],
       "market_odds": {
-        "1": 2.07,
+        "1": 2.22,
         "x": 3.0,
-        "2": 3.4,
-        "over25": 2.75,
-        "btts_yes": 0.0
+        "2": 3.23,
+        "over25": 2.86,
+        "btts_yes": 2.25
       },
       "fs_potential": {
         "o25": 33,
@@ -811,7 +1010,7 @@
         {
           "selection": "Egypt",
           "book": "(trh)",
-          "odds": 0.0,
+          "odds": 2.37,
           "fair_prob": 0.497
         }
       ],
@@ -829,7 +1028,7 @@
         "away": 1.63
       },
       "pick": "away",
-      "model_ev_pct": null,
+      "model_ev_pct": 17.79,
       "probs_1x2": {
         "home": 0.257,
         "draw": 0.246,
@@ -866,11 +1065,11 @@
         ]
       ],
       "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
+        "1": 3.3,
+        "x": 3.0,
+        "2": 2.37,
+        "over25": 2.88,
+        "btts_yes": 2.21
       },
       "fs_potential": {
         "o25": 17,
@@ -891,7 +1090,7 @@
         {
           "selection": "Belgium",
           "book": "(trh)",
-          "odds": 2.03,
+          "odds": 2.15,
           "fair_prob": 0.5241
         }
       ],
@@ -909,7 +1108,7 @@
         "away": 1.9
       },
       "pick": "home",
-      "model_ev_pct": 6.39,
+      "model_ev_pct": 12.68,
       "probs_1x2": {
         "home": 0.524,
         "draw": 0.187,
@@ -946,11 +1145,11 @@
         ]
       ],
       "market_odds": {
-        "1": 2.03,
-        "x": 3.0,
-        "2": 3.5,
-        "over25": 2.37,
-        "btts_yes": 0.0
+        "1": 2.15,
+        "x": 3.3,
+        "2": 3.62,
+        "over25": 2.2,
+        "btts_yes": 1.89
       },
       "fs_potential": {
         "o25": 67,
@@ -1029,8 +1228,8 @@
         "1": 1.7,
         "x": 3.7,
         "2": 5.0,
-        "over25": 2.0,
-        "btts_yes": 1.91
+        "over25": 2.1,
+        "btts_yes": 2.04
       },
       "fs_potential": {
         "o25": 67,
@@ -1107,10 +1306,10 @@
       ],
       "market_odds": {
         "1": 1.8,
-        "x": 3.0,
-        "2": 4.4,
-        "over25": 2.2,
-        "btts_yes": 0.0
+        "x": 3.52,
+        "2": 4.75,
+        "over25": 2.1,
+        "btts_yes": 1.92
       },
       "fs_potential": {
         "o25": 50,
@@ -1131,7 +1330,7 @@
         {
           "selection": "Argentina",
           "book": "(trh)",
-          "odds": 0.0,
+          "odds": 1.14,
           "fair_prob": 0.4279
         }
       ],
@@ -1149,7 +1348,7 @@
         "away": 1.05
       },
       "pick": "home",
-      "model_ev_pct": null,
+      "model_ev_pct": -51.22,
       "probs_1x2": {
         "home": 0.428,
         "draw": 0.275,
@@ -1186,11 +1385,11 @@
         ]
       ],
       "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
+        "1": 1.14,
+        "x": 6.8,
+        "2": 14.0,
+        "over25": 1.65,
+        "btts_yes": 2.62
       },
       "fs_potential": {
         "o25": 50,
@@ -1211,7 +1410,7 @@
         {
           "selection": "Switzerland",
           "book": "(trh)",
-          "odds": 1.91,
+          "odds": 2.02,
           "fair_prob": 0.4508
         }
       ],
@@ -1229,7 +1428,7 @@
         "away": 1.47
       },
       "pick": "home",
-      "model_ev_pct": -13.89,
+      "model_ev_pct": -8.93,
       "probs_1x2": {
         "home": 0.451,
         "draw": 0.229,
@@ -1266,11 +1465,11 @@
         ]
       ],
       "market_odds": {
-        "1": 1.91,
-        "x": 3.37,
-        "2": 3.45,
-        "over25": 2.0,
-        "btts_yes": 0.0
+        "1": 2.02,
+        "x": 3.25,
+        "2": 3.78,
+        "over25": 2.13,
+        "btts_yes": 1.85
       },
       "fs_potential": {
         "o25": 84,
@@ -1291,7 +1490,7 @@
         {
           "selection": "France",
           "book": "(trh)",
-          "odds": 1.28,
+          "odds": 1.26,
           "fair_prob": 0.4527
         }
       ],
@@ -1309,7 +1508,7 @@
         "away": 1.69
       },
       "pick": "home",
-      "model_ev_pct": -42.05,
+      "model_ev_pct": -42.96,
       "probs_1x2": {
         "home": 0.453,
         "draw": 0.214,
@@ -1346,11 +1545,11 @@
         ]
       ],
       "market_odds": {
-        "1": 1.28,
-        "x": 5.0,
-        "2": 9.5,
-        "over25": 1.52,
-        "btts_yes": 1.85
+        "1": 1.26,
+        "x": 6.4,
+        "2": 11.0,
+        "over25": 1.44,
+        "btts_yes": 1.94
       },
       "fs_potential": {
         "o25": 84,
@@ -1426,11 +1625,11 @@
         ]
       ],
       "market_odds": {
-        "1": 3.66,
-        "x": 3.2,
+        "1": 3.65,
+        "x": 3.56,
         "2": 2.0,
-        "over25": 1.93,
-        "btts_yes": 1.68
+        "over25": 1.75,
+        "btts_yes": 1.66
       },
       "fs_potential": {
         "o25": 67,
@@ -1451,7 +1650,7 @@
         {
           "selection": "Netherlands",
           "book": "(trh)",
-          "odds": 2.15,
+          "odds": 2.25,
           "fair_prob": 0.3953
         }
       ],
@@ -1469,7 +1668,7 @@
         "away": 1.75
       },
       "pick": "home",
-      "model_ev_pct": -15.02,
+      "model_ev_pct": -11.07,
       "probs_1x2": {
         "home": 0.395,
         "draw": 0.222,
@@ -1506,11 +1705,11 @@
         ]
       ],
       "market_odds": {
-        "1": 2.15,
-        "x": 3.1,
-        "2": 3.2,
-        "over25": 2.2,
-        "btts_yes": 1.8
+        "1": 2.25,
+        "x": 2.9,
+        "2": 3.25,
+        "over25": 2.12,
+        "btts_yes": 1.87
       },
       "fs_potential": {
         "o25": 67,
@@ -1522,57 +1721,116 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
-        "home": "France",
-        "away": "Sweden",
-        "commence": "2026-06-30T21:00:00Z"
+        "home": "Brazil",
+        "away": "Japan",
+        "commence": "2026-06-29T17:00:00Z"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "France",
+          "selection": "Brazil",
           "book": "onexbet",
-          "odds": 1.31,
-          "stake_pct": 76.79
+          "odds": 1.79,
+          "stake_pct": 57.12
         },
         {
-          "selection": "Sweden",
-          "book": "smarkets",
-          "odds": 13.0,
-          "stake_pct": 7.74
+          "selection": "Japan",
+          "book": "unibet_fr",
+          "odds": 5.7,
+          "stake_pct": 17.94
         },
         {
           "selection": "Draw",
-          "book": "unibet_se",
-          "odds": 6.5,
-          "stake_pct": 15.48
+          "book": "smarkets",
+          "odds": 4.1,
+          "stake_pct": 24.94
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.591
+        "value": 2.249
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-06-30T21:00:00Z",
+      "expires_hint": "2026-06-29T17:00:00Z",
       "total_stake_ref": 100.0,
       "stake_split": [
         {
-          "selection": "France",
+          "selection": "Brazil",
           "book": "onexbet",
-          "odds": 1.31,
-          "stake": 76.79
+          "odds": 1.79,
+          "stake": 57.12
         },
         {
-          "selection": "Sweden",
-          "book": "smarkets",
-          "odds": 13.0,
-          "stake": 7.74
+          "selection": "Japan",
+          "book": "unibet_fr",
+          "odds": 5.7,
+          "stake": 17.94
         },
         {
           "selection": "Draw",
-          "book": "unibet_se",
-          "odds": 6.5,
-          "stake": 15.48
+          "book": "smarkets",
+          "odds": 4.1,
+          "stake": 24.94
+        }
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Netherlands",
+        "away": "Morocco",
+        "commence": "2026-06-30T01:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Morocco",
+          "book": "smarkets",
+          "odds": 4.0,
+          "stake_pct": 25.52
+        },
+        {
+          "selection": "Netherlands",
+          "book": "smarkets",
+          "odds": 2.36,
+          "stake_pct": 43.26
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.27,
+          "stake_pct": 31.22
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 2.089
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-06-30T01:00:00Z",
+      "total_stake_ref": 100.0,
+      "stake_split": [
+        {
+          "selection": "Morocco",
+          "book": "smarkets",
+          "odds": 4.0,
+          "stake": 25.52
+        },
+        {
+          "selection": "Netherlands",
+          "book": "smarkets",
+          "odds": 2.36,
+          "stake": 43.26
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.27,
+          "stake": 31.22
         }
       ]
     },
@@ -1590,25 +1848,25 @@
         {
           "selection": "Germany",
           "book": "onexbet",
-          "odds": 1.39,
-          "stake_pct": 72.27
+          "odds": 1.42,
+          "stake_pct": 71.84
         },
         {
           "selection": "Paraguay",
           "book": "smarkets",
           "odds": 11.0,
-          "stake_pct": 9.13
+          "stake_pct": 9.27
         },
         {
           "selection": "Draw",
-          "book": "smarkets",
+          "book": "unibet_fr",
           "odds": 5.4,
-          "stake_pct": 18.6
+          "stake_pct": 18.89
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.45
+        "value": 2.008
       },
       "confidence": null,
       "label": "surebet",
@@ -1618,20 +1876,20 @@
         {
           "selection": "Germany",
           "book": "onexbet",
-          "odds": 1.39,
-          "stake": 72.27
+          "odds": 1.42,
+          "stake": 71.84
         },
         {
           "selection": "Paraguay",
           "book": "smarkets",
           "odds": 11.0,
-          "stake": 9.13
+          "stake": 9.27
         },
         {
           "selection": "Draw",
-          "book": "smarkets",
+          "book": "unibet_fr",
           "odds": 5.4,
-          "stake": 18.6
+          "stake": 18.89
         }
       ]
     },
@@ -1640,57 +1898,57 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
-        "home": "Netherlands",
-        "away": "Morocco",
-        "commence": "2026-06-30T01:00:00Z"
+        "home": "England",
+        "away": "DR Congo",
+        "commence": "2026-07-01T16:00:00Z"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Morocco",
-          "book": "smarkets",
-          "odds": 4.1,
-          "stake_pct": 24.45
+          "selection": "DR Congo",
+          "book": "pmu_fr",
+          "odds": 16.0,
+          "stake_pct": 6.33
         },
         {
-          "selection": "Netherlands",
-          "book": "smarkets",
-          "odds": 2.22,
-          "stake_pct": 45.16
+          "selection": "England",
+          "book": "gtbets",
+          "odds": 1.32,
+          "stake_pct": 76.78
         },
         {
           "selection": "Draw",
-          "book": "winamax_de",
-          "odds": 3.3,
-          "stake_pct": 30.38
+          "book": "betfair_ex_uk",
+          "odds": 6.0,
+          "stake_pct": 16.89
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.262
+        "value": 1.344
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-06-30T01:00:00Z",
+      "expires_hint": "2026-07-01T16:00:00Z",
       "total_stake_ref": 100.0,
       "stake_split": [
         {
-          "selection": "Morocco",
-          "book": "smarkets",
-          "odds": 4.1,
-          "stake": 24.45
+          "selection": "DR Congo",
+          "book": "pmu_fr",
+          "odds": 16.0,
+          "stake": 6.33
         },
         {
-          "selection": "Netherlands",
-          "book": "smarkets",
-          "odds": 2.22,
-          "stake": 45.16
+          "selection": "England",
+          "book": "gtbets",
+          "odds": 1.32,
+          "stake": 76.78
         },
         {
           "selection": "Draw",
-          "book": "winamax_de",
-          "odds": 3.3,
-          "stake": 30.38
+          "book": "betfair_ex_uk",
+          "odds": 6.0,
+          "stake": 16.89
         }
       ]
     },
@@ -1699,104 +1957,293 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
-        "home": "Netherlands",
-        "away": "Morocco",
-        "commence": "2026-06-30T01:00:00Z"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Over 2.5",
-          "book": "betonlineag",
-          "odds": 2.32,
-          "stake_pct": 43.14
-        },
-        {
-          "selection": "Under 2.5",
-          "book": "matchbook",
-          "odds": 1.76,
-          "stake_pct": 56.86
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.078
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-06-30T01:00:00Z",
-      "total_stake_ref": 100.0,
-      "stake_split": [
-        {
-          "selection": "Over 2.5",
-          "book": "betonlineag",
-          "odds": 2.32,
-          "stake": 43.14
-        },
-        {
-          "selection": "Under 2.5",
-          "book": "matchbook",
-          "odds": 1.76,
-          "stake": 56.86
-        }
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "soccer_fifa_world_cup",
-      "league": "FIFA World Cup",
-      "event": {
-        "home": "South Africa",
-        "away": "Canada",
-        "commence": "2026-06-28T19:00:00Z"
+        "home": "USA",
+        "away": "Bosnia & Herzegovina",
+        "commence": "2026-07-02T00:00:00Z"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Canada",
-          "book": "smarkets",
-          "odds": 1.69,
-          "stake_pct": 59.19
+          "selection": "Bosnia & Herzegovina",
+          "book": "betfair_ex_eu",
+          "odds": 10.0,
+          "stake_pct": 10.07
         },
         {
-          "selection": "South Africa",
-          "book": "matchbook",
-          "odds": 6.6,
-          "stake_pct": 15.16
+          "selection": "USA",
+          "book": "gtbets",
+          "odds": 1.42,
+          "stake_pct": 70.93
         },
         {
           "selection": "Draw",
-          "book": "unibet_fr",
-          "odds": 3.9,
-          "stake_pct": 25.65
+          "book": "betfair_ex_eu",
+          "odds": 5.3,
+          "stake_pct": 19.0
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.036
+        "value": 0.715
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-06-28T19:00:00Z",
+      "expires_hint": "2026-07-02T00:00:00Z",
       "total_stake_ref": 100.0,
       "stake_split": [
         {
-          "selection": "Canada",
-          "book": "smarkets",
-          "odds": 1.69,
-          "stake": 59.19
+          "selection": "Bosnia & Herzegovina",
+          "book": "betfair_ex_eu",
+          "odds": 10.0,
+          "stake": 10.07
         },
         {
-          "selection": "South Africa",
-          "book": "matchbook",
-          "odds": 6.6,
-          "stake": 15.16
+          "selection": "USA",
+          "book": "gtbets",
+          "odds": 1.42,
+          "stake": 70.93
         },
         {
           "selection": "Draw",
-          "book": "unibet_fr",
-          "odds": 3.9,
-          "stake": 25.65
+          "book": "betfair_ex_eu",
+          "odds": 5.3,
+          "stake": 19.0
+        }
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Mexico",
+        "away": "Ecuador",
+        "commence": "2026-07-01T01:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Ecuador",
+          "book": "unibet_se",
+          "odds": 4.2,
+          "stake_pct": 23.97
+        },
+        {
+          "selection": "Mexico",
+          "book": "betfair_ex_uk",
+          "odds": 2.3,
+          "stake_pct": 43.77
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.12,
+          "stake_pct": 32.26
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.665
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-01T01:00:00Z",
+      "total_stake_ref": 100.0,
+      "stake_split": [
+        {
+          "selection": "Ecuador",
+          "book": "unibet_se",
+          "odds": 4.2,
+          "stake": 23.97
+        },
+        {
+          "selection": "Mexico",
+          "book": "betfair_ex_uk",
+          "odds": 2.3,
+          "stake": 43.77
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.12,
+          "stake": 32.26
+        }
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "France",
+        "away": "Sweden",
+        "commence": "2026-06-30T21:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "France",
+          "book": "gtbets",
+          "odds": 1.31,
+          "stake_pct": 76.82
+        },
+        {
+          "selection": "Sweden",
+          "book": "smarkets",
+          "odds": 13.0,
+          "stake_pct": 7.74
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 6.52,
+          "stake_pct": 15.44
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.638
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-06-30T21:00:00Z",
+      "total_stake_ref": 100.0,
+      "stake_split": [
+        {
+          "selection": "France",
+          "book": "gtbets",
+          "odds": 1.31,
+          "stake": 76.82
+        },
+        {
+          "selection": "Sweden",
+          "book": "smarkets",
+          "odds": 13.0,
+          "stake": 7.74
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 6.52,
+          "stake": 15.44
+        }
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Belgium",
+        "away": "Senegal",
+        "commence": "2026-07-01T20:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Belgium",
+          "book": "matchbook",
+          "odds": 2.32,
+          "stake_pct": 43.3
+        },
+        {
+          "selection": "Senegal",
+          "book": "smarkets",
+          "odds": 3.7,
+          "stake_pct": 27.15
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.4,
+          "stake_pct": 29.55
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.46
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-01T20:00:00Z",
+      "total_stake_ref": 100.0,
+      "stake_split": [
+        {
+          "selection": "Belgium",
+          "book": "matchbook",
+          "odds": 2.32,
+          "stake": 43.3
+        },
+        {
+          "selection": "Senegal",
+          "book": "smarkets",
+          "odds": 3.7,
+          "stake": 27.15
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.4,
+          "stake": 29.55
+        }
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "Ivory Coast",
+        "away": "Norway",
+        "commence": "2026-06-30T17:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Ivory Coast",
+          "book": "smarkets",
+          "odds": 4.0,
+          "stake_pct": 25.06
+        },
+        {
+          "selection": "Norway",
+          "book": "smarkets",
+          "odds": 2.08,
+          "stake_pct": 48.2
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.75,
+          "stake_pct": 26.74
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.257
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-06-30T17:00:00Z",
+      "total_stake_ref": 100.0,
+      "stake_split": [
+        {
+          "selection": "Ivory Coast",
+          "book": "smarkets",
+          "odds": 4.0,
+          "stake": 25.06
+        },
+        {
+          "selection": "Norway",
+          "book": "smarkets",
+          "odds": 2.08,
+          "stake": 48.2
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.75,
+          "stake": 26.74
         }
       ]
     }
