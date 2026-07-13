@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:29:28.360197+00:00",
+  "generated_at": "2026-07-13T09:44:52.984224+00:00",
   "bankroll": 1000,
   "kelly_fraction": 0.25,
   "sports": [
@@ -12,8 +12,8 @@
     "max_odds": 4.0,
     "min_books": 4
   },
-  "requests_remaining": "436",
-  "n_events_considered": 3,
+  "requests_remaining": "432",
+  "n_events_considered": 8,
   "n_picks": 0,
   "performance": {
     "settled_bets": 41,
@@ -26,20 +26,38 @@
     {
       "league": "FIFA World Cup",
       "sport_key": "soccer_fifa_world_cup",
+      "home": "England",
+      "away": "Argentina",
+      "commence": "2026-07-15T19:00:00Z",
+      "market": "h2h",
+      "selection": "Draw",
+      "best_odds": 3.1,
+      "bookmaker": "unibet_fr",
+      "fair_prob": 0.3279,
+      "fair_odds": 3.049,
+      "ev_pct": 1.66,
+      "stake_pct": 0.2,
+      "stake_amount": 1.97,
+      "confidence": 0.8,
+      "n_books": 43
+    },
+    {
+      "league": "FIFA World Cup",
+      "sport_key": "soccer_fifa_world_cup",
       "home": "France",
       "away": "Spain",
       "commence": "2026-07-14T19:00:00Z",
       "market": "h2h",
       "selection": "Spain",
-      "best_odds": 3.5,
-      "bookmaker": "unibet_nl",
-      "fair_prob": 0.2904,
-      "fair_odds": 3.443,
-      "ev_pct": 1.65,
-      "stake_pct": 0.16,
-      "stake_amount": 1.65,
+      "best_odds": 3.45,
+      "bookmaker": "matchbook",
+      "fair_prob": 0.2916,
+      "fair_odds": 3.43,
+      "ev_pct": 0.59,
+      "stake_pct": 0.06,
+      "stake_amount": 0.6,
       "confidence": 0.8,
-      "n_books": 41
+      "n_books": 43
     },
     {
       "league": "FIFA World Cup",
@@ -48,34 +66,16 @@
       "away": "Spain",
       "commence": "2026-07-14T19:00:00Z",
       "market": "totals",
-      "selection": "Under 2.5",
-      "best_odds": 2.04,
-      "bookmaker": "matchbook",
-      "fair_prob": 0.4973,
-      "fair_odds": 2.011,
-      "ev_pct": 1.46,
-      "stake_pct": 0.35,
-      "stake_amount": 3.5,
+      "selection": "Over 2.5",
+      "best_odds": 1.95,
+      "bookmaker": "williamhill",
+      "fair_prob": 0.5133,
+      "fair_odds": 1.948,
+      "ev_pct": 0.09,
+      "stake_pct": 0.02,
+      "stake_amount": 0.24,
       "confidence": 0.8,
       "n_books": 17
-    },
-    {
-      "league": "FIFA World Cup",
-      "sport_key": "soccer_fifa_world_cup",
-      "home": "France",
-      "away": "Spain",
-      "commence": "2026-07-14T19:00:00Z",
-      "market": "h2h",
-      "selection": "France",
-      "best_odds": 2.42,
-      "bookmaker": "betsson",
-      "fair_prob": 0.4155,
-      "fair_odds": 2.407,
-      "ev_pct": 0.56,
-      "stake_pct": 0.1,
-      "stake_amount": 0.98,
-      "confidence": 0.8,
-      "n_books": 41
     }
   ],
   "staking": {
@@ -92,6 +92,6 @@
   },
   "notes": [
     "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
-    "1 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
+    "4 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
   ]
 }

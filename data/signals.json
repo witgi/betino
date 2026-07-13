@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:29:28.360197+00:00",
+  "generated_at": "2026-07-13T09:44:52.984224+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -25,6 +25,37 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
+        "home": "England",
+        "away": "Argentina",
+        "commence": "2026-07-15T19:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "unibet_fr",
+          "odds": 3.1,
+          "stake_pct": 0.2,
+          "fair_prob": 0.3279
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.66
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.049,
+      "stake_amount": 1.97,
+      "n_books": 43,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
         "home": "France",
         "away": "Spain",
         "commence": "2026-07-14T19:00:00Z"
@@ -33,22 +64,22 @@
       "legs": [
         {
           "selection": "Spain",
-          "book": "unibet_nl",
-          "odds": 3.5,
-          "stake_pct": 0.16,
-          "fair_prob": 0.2904
+          "book": "matchbook",
+          "odds": 3.45,
+          "stake_pct": 0.06,
+          "fair_prob": 0.2916
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.65
+        "value": 0.59
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.443,
-      "stake_amount": 1.65,
-      "n_books": 41,
+      "fair_odds": 3.43,
+      "stake_amount": 0.6,
+      "n_books": 43,
       "official": false
     },
     {
@@ -63,54 +94,23 @@
       "market": "totals",
       "legs": [
         {
-          "selection": "Under 2.5",
-          "book": "matchbook",
-          "odds": 2.04,
-          "stake_pct": 0.35,
-          "fair_prob": 0.4973
+          "selection": "Over 2.5",
+          "book": "williamhill",
+          "odds": 1.95,
+          "stake_pct": 0.02,
+          "fair_prob": 0.5133
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.46
+        "value": 0.09
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.011,
-      "stake_amount": 3.5,
+      "fair_odds": 1.948,
+      "stake_amount": 0.24,
       "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer_fifa_world_cup",
-      "league": "FIFA World Cup",
-      "event": {
-        "home": "France",
-        "away": "Spain",
-        "commence": "2026-07-14T19:00:00Z"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "France",
-          "book": "betsson",
-          "odds": 2.42,
-          "stake_pct": 0.1,
-          "fair_prob": 0.4155
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.56
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.407,
-      "stake_amount": 0.98,
-      "n_books": 41,
       "official": false
     },
     {
@@ -127,7 +127,7 @@
         {
           "selection": "Spain",
           "book": "(trh)",
-          "odds": 2.85,
+          "odds": 3.25,
           "fair_prob": 0.4052
         }
       ],
@@ -145,7 +145,7 @@
         "away": 2.2
       },
       "pick": "away",
-      "model_ev_pct": 15.47,
+      "model_ev_pct": 31.68,
       "probs_1x2": {
         "home": 0.398,
         "draw": 0.197,
@@ -182,10 +182,10 @@
         ]
       ],
       "market_odds": {
-        "1": 2.24,
-        "x": 3.2,
-        "2": 2.85,
-        "over25": 1.9,
+        "1": 2.3,
+        "x": 3.3,
+        "2": 3.25,
+        "over25": 1.89,
         "btts_yes": 1.65
       },
       "fs_potential": {
@@ -207,7 +207,7 @@
         {
           "selection": "England",
           "book": "(trh)",
-          "odds": 0.0,
+          "odds": 2.6,
           "fair_prob": 0.3948
         }
       ],
@@ -225,7 +225,7 @@
         "away": 1.87
       },
       "pick": "home",
-      "model_ev_pct": null,
+      "model_ev_pct": 2.64,
       "probs_1x2": {
         "home": 0.395,
         "draw": 0.214,
@@ -262,75 +262,16 @@
         ]
       ],
       "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
+        "1": 2.6,
+        "x": 3.0,
+        "2": 2.95,
+        "over25": 2.35,
+        "btts_yes": 1.94
       },
       "fs_potential": {
         "o25": 75,
         "btts": 67
       }
-    },
-    {
-      "type": "arb",
-      "sport": "soccer_fifa_world_cup",
-      "league": "FIFA World Cup",
-      "event": {
-        "home": "France",
-        "away": "Spain",
-        "commence": "2026-07-14T19:00:00Z"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "France",
-          "book": "betsson",
-          "odds": 2.42,
-          "stake_pct": 41.61
-        },
-        {
-          "selection": "Spain",
-          "book": "unibet_nl",
-          "odds": 3.5,
-          "stake_pct": 28.77
-        },
-        {
-          "selection": "Draw",
-          "book": "onexbet",
-          "odds": 3.4,
-          "stake_pct": 29.62
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.699
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-14T19:00:00Z",
-      "total_stake_ref": 100.0,
-      "stake_split": [
-        {
-          "selection": "France",
-          "book": "betsson",
-          "odds": 2.42,
-          "stake": 41.61
-        },
-        {
-          "selection": "Spain",
-          "book": "unibet_nl",
-          "odds": 3.5,
-          "stake": 28.77
-        },
-        {
-          "selection": "Draw",
-          "book": "onexbet",
-          "odds": 3.4,
-          "stake": 29.62
-        }
-      ]
     }
   ]
 }
