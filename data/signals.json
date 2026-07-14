@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T09:44:52.984224+00:00",
+  "generated_at": "2026-07-14T08:24:37.975356+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -33,52 +33,21 @@
       "legs": [
         {
           "selection": "Draw",
-          "book": "unibet_fr",
-          "odds": 3.1,
-          "stake_pct": 0.2,
-          "fair_prob": 0.3279
+          "book": "onexbet",
+          "odds": 3.08,
+          "stake_pct": 0.22,
+          "fair_prob": 0.3306
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.66
+        "value": 1.82
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.049,
-      "stake_amount": 1.97,
-      "n_books": 43,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer_fifa_world_cup",
-      "league": "FIFA World Cup",
-      "event": {
-        "home": "France",
-        "away": "Spain",
-        "commence": "2026-07-14T19:00:00Z"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Spain",
-          "book": "matchbook",
-          "odds": 3.45,
-          "stake_pct": 0.06,
-          "fair_prob": 0.2916
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.59
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.43,
-      "stake_amount": 0.6,
+      "fair_odds": 3.025,
+      "stake_amount": 2.19,
       "n_books": 43,
       "official": false
     },
@@ -94,22 +63,22 @@
       "market": "totals",
       "legs": [
         {
-          "selection": "Over 2.5",
-          "book": "williamhill",
-          "odds": 1.95,
-          "stake_pct": 0.02,
-          "fair_prob": 0.5133
+          "selection": "Under 2.5",
+          "book": "matchbook",
+          "odds": 1.98,
+          "stake_pct": 0.01,
+          "fair_prob": 0.5053
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.09
+        "value": 0.04
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.948,
-      "stake_amount": 0.24,
+      "fair_odds": 1.979,
+      "stake_amount": 0.11,
       "n_books": 17,
       "official": false
     },
@@ -127,7 +96,7 @@
         {
           "selection": "Spain",
           "book": "(trh)",
-          "odds": 3.25,
+          "odds": 3.3,
           "fair_prob": 0.4052
         }
       ],
@@ -145,7 +114,7 @@
         "away": 2.2
       },
       "pick": "away",
-      "model_ev_pct": 31.68,
+      "model_ev_pct": 33.7,
       "probs_1x2": {
         "home": 0.398,
         "draw": 0.197,
@@ -183,9 +152,9 @@
       ],
       "market_odds": {
         "1": 2.3,
-        "x": 3.3,
-        "2": 3.25,
-        "over25": 1.89,
+        "x": 3.17,
+        "2": 3.3,
+        "over25": 1.9,
         "btts_yes": 1.65
       },
       "fs_potential": {
@@ -263,15 +232,74 @@
       ],
       "market_odds": {
         "1": 2.6,
-        "x": 3.0,
-        "2": 2.95,
-        "over25": 2.35,
-        "btts_yes": 1.94
+        "x": 2.9,
+        "2": 3.0,
+        "over25": 2.31,
+        "btts_yes": 1.89
       },
       "fs_potential": {
         "o25": 75,
         "btts": 67
       }
+    },
+    {
+      "type": "arb",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "England",
+        "away": "Argentina",
+        "commence": "2026-07-15T19:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Argentina",
+          "book": "unibet_se",
+          "odds": 3.2,
+          "stake_pct": 31.35
+        },
+        {
+          "selection": "England",
+          "book": "betfair_ex_eu",
+          "odds": 2.78,
+          "stake_pct": 36.08
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.08,
+          "stake_pct": 32.57
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.312
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-15T19:00:00Z",
+      "total_stake_ref": 100.0,
+      "stake_split": [
+        {
+          "selection": "Argentina",
+          "book": "unibet_se",
+          "odds": 3.2,
+          "stake": 31.35
+        },
+        {
+          "selection": "England",
+          "book": "betfair_ex_eu",
+          "odds": 2.78,
+          "stake": 36.08
+        },
+        {
+          "selection": "Draw",
+          "book": "onexbet",
+          "odds": 3.08,
+          "stake": 32.57
+        }
+      ]
     }
   ]
 }
