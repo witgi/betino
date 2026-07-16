@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T08:31:40.071436+00:00",
+  "generated_at": "2026-07-16T08:28:24.274690+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -25,110 +25,221 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
-        "home": "England",
-        "away": "Argentina",
-        "commence": "2026-07-15T19:00:00Z"
+        "home": "France",
+        "away": "England",
+        "commence": "2026-07-18T21:00:00Z"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Draw",
-          "book": "onexbet",
-          "odds": 3.06,
-          "stake_pct": 0.3,
-          "fair_prob": 0.3348
+          "selection": "England",
+          "book": "betfair_ex_uk",
+          "odds": 4.0,
+          "stake_pct": 0.13,
+          "fair_prob": 0.254
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.45
+        "value": 1.6
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.987,
-      "stake_amount": 2.97,
-      "n_books": 43,
-      "official": true
+      "fair_odds": 3.937,
+      "stake_amount": 1.33,
+      "n_books": 41,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
+      "event": {
+        "home": "France",
+        "away": "England",
+        "commence": "2026-07-18T21:00:00Z"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "France",
+          "book": "onexbet",
+          "odds": 2.02,
+          "stake_pct": 0.09,
+          "fair_prob": 0.4968
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.35
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.013,
+      "stake_amount": 0.86,
+      "n_books": 41,
+      "official": false
     },
     {
       "type": "prediction",
       "sport": "soccer",
       "league": "",
       "event": {
-        "home": "England",
-        "away": "Argentina",
-        "commence": "2026-07-15T19:00:00+00:00"
+        "home": "France",
+        "away": "England",
+        "commence": "2026-07-18T21:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "England",
+          "selection": "France",
           "book": "(trh)",
-          "odds": 2.69,
-          "fair_prob": 0.3948
+          "odds": 1.94,
+          "fair_prob": 0.4575
         }
       ],
       "edge": {
         "metric": "model_prob",
-        "value": 0.395
+        "value": 0.457
       },
-      "confidence": 0.408,
+      "confidence": 0.653,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-07-15T19:00:00+00:00",
+      "expires_hint": "2026-07-18T21:00:00+00:00",
       "source": "footystats",
-      "match_id": 8582001,
+      "match_id": 8591891,
       "xg": {
-        "home": 1.88,
-        "away": 1.87
+        "home": 2.04,
+        "away": 1.72
       },
       "pick": "home",
-      "model_ev_pct": 6.19,
+      "model_ev_pct": -11.25,
       "probs_1x2": {
-        "home": 0.395,
-        "draw": 0.214,
-        "away": 0.391
+        "home": 0.457,
+        "draw": 0.212,
+        "away": 0.331
       },
       "ou25": {
-        "over": 0.723,
-        "under": 0.277
+        "over": 0.725,
+        "under": 0.275
       },
       "btts": {
-        "yes": 0.717,
-        "no": 0.283
+        "yes": 0.714,
+        "no": 0.286
       },
       "top_scores": [
         [
-          "1-1",
+          "2-1",
           0.083
         ],
+        [
+          "1-1",
+          0.082
+        ],
+        [
+          "2-2",
+          0.072
+        ],
+        [
+          "1-2",
+          0.07
+        ],
+        [
+          "3-1",
+          0.057
+        ]
+      ],
+      "market_odds": {
+        "1": 1.94,
+        "x": 3.4,
+        "2": 3.3,
+        "over25": 1.53,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 64,
+        "btts": 50
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
+        "home": "Spain",
+        "away": "Argentina",
+        "commence": "2026-07-19T19:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Spain",
+          "book": "(trh)",
+          "odds": 2.22,
+          "fair_prob": 0.4263
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.426
+      },
+      "confidence": 0.525,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-07-19T19:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8591890,
+      "xg": {
+        "home": 2.02,
+        "away": 1.86
+      },
+      "pick": "home",
+      "model_ev_pct": -5.36,
+      "probs_1x2": {
+        "home": 0.426,
+        "draw": 0.21,
+        "away": 0.364
+      },
+      "ou25": {
+        "over": 0.744,
+        "under": 0.256
+      },
+      "btts": {
+        "yes": 0.732,
+        "no": 0.268
+      },
+      "top_scores": [
         [
           "2-1",
           0.078
         ],
         [
-          "1-2",
-          0.077
+          "1-1",
+          0.078
         ],
         [
           "2-2",
           0.073
         ],
         [
+          "1-2",
+          0.072
+        ],
+        [
           "3-1",
-          0.049
+          0.053
         ]
       ],
       "market_odds": {
-        "1": 2.69,
-        "x": 2.75,
-        "2": 2.95,
-        "over25": 2.4,
-        "btts_yes": 1.98
+        "1": 2.22,
+        "x": 2.82,
+        "2": 3.26,
+        "over25": 2.3,
+        "btts_yes": 0.0
       },
       "fs_potential": {
-        "o25": 75,
-        "btts": 67
+        "o25": 65,
+        "btts": 43
       }
     },
     {
@@ -136,57 +247,57 @@
       "sport": "soccer_fifa_world_cup",
       "league": "FIFA World Cup",
       "event": {
-        "home": "England",
-        "away": "Argentina",
-        "commence": "2026-07-15T19:00:00Z"
+        "home": "France",
+        "away": "England",
+        "commence": "2026-07-18T21:00:00Z"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Argentina",
-          "book": "smarkets",
-          "odds": 3.15,
-          "stake_pct": 31.86
+          "selection": "England",
+          "book": "betfair_ex_uk",
+          "odds": 4.0,
+          "stake_pct": 25.12
         },
         {
-          "selection": "England",
-          "book": "smarkets",
-          "odds": 2.84,
-          "stake_pct": 35.34
+          "selection": "France",
+          "book": "onexbet",
+          "odds": 2.02,
+          "stake_pct": 49.75
         },
         {
           "selection": "Draw",
-          "book": "onexbet",
-          "odds": 3.06,
-          "stake_pct": 32.8
+          "book": "betvictor",
+          "odds": 4.0,
+          "stake_pct": 25.12
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.364
+        "value": 0.498
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-15T19:00:00Z",
+      "expires_hint": "2026-07-18T21:00:00Z",
       "total_stake_ref": 100.0,
       "stake_split": [
         {
-          "selection": "Argentina",
-          "book": "smarkets",
-          "odds": 3.15,
-          "stake": 31.86
+          "selection": "England",
+          "book": "betfair_ex_uk",
+          "odds": 4.0,
+          "stake": 25.12
         },
         {
-          "selection": "England",
-          "book": "smarkets",
-          "odds": 2.84,
-          "stake": 35.34
+          "selection": "France",
+          "book": "onexbet",
+          "odds": 2.02,
+          "stake": 49.75
         },
         {
           "selection": "Draw",
-          "book": "onexbet",
-          "odds": 3.06,
-          "stake": 32.8
+          "book": "betvictor",
+          "odds": 4.0,
+          "stake": 25.12
         }
       ]
     }
