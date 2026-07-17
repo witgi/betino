@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T08:28:24.274690+00:00",
+  "generated_at": "2026-07-17T08:24:17.454478+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -14,9 +14,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 41,
-    "win_rate_pct": 48.8,
-    "roi_pct": 24.07,
+    "settled_bets": 42,
+    "win_rate_pct": 47.6,
+    "roi_pct": 22.49,
     "clv_beat_pct": null
   },
   "signals": [
@@ -32,23 +32,23 @@
       "market": "h2h",
       "legs": [
         {
-          "selection": "England",
-          "book": "betfair_ex_uk",
-          "odds": 4.0,
-          "stake_pct": 0.13,
-          "fair_prob": 0.254
+          "selection": "France",
+          "book": "gtbets",
+          "odds": 1.99,
+          "stake_pct": 0.3,
+          "fair_prob": 0.5084
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.6
+        "value": 1.17
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.937,
-      "stake_amount": 1.33,
-      "n_books": 41,
+      "fair_odds": 1.967,
+      "stake_amount": 2.95,
+      "n_books": 43,
       "official": false
     },
     {
@@ -63,23 +63,23 @@
       "market": "h2h",
       "legs": [
         {
-          "selection": "France",
+          "selection": "England",
           "book": "onexbet",
-          "odds": 2.02,
-          "stake_pct": 0.09,
-          "fair_prob": 0.4968
+          "odds": 4.05,
+          "stake_pct": 0.02,
+          "fair_prob": 0.2474
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.35
+        "value": 0.21
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.013,
-      "stake_amount": 0.86,
-      "n_books": 41,
+      "fair_odds": 4.042,
+      "stake_amount": 0.17,
+      "n_books": 43,
       "official": false
     },
     {
@@ -96,7 +96,7 @@
         {
           "selection": "France",
           "book": "(trh)",
-          "odds": 1.94,
+          "odds": 1.91,
           "fair_prob": 0.4575
         }
       ],
@@ -114,7 +114,7 @@
         "away": 1.72
       },
       "pick": "home",
-      "model_ev_pct": -11.25,
+      "model_ev_pct": -12.63,
       "probs_1x2": {
         "home": 0.457,
         "draw": 0.212,
@@ -151,11 +151,11 @@
         ]
       ],
       "market_odds": {
-        "1": 1.94,
-        "x": 3.4,
-        "2": 3.3,
-        "over25": 1.53,
-        "btts_yes": 0.0
+        "1": 1.91,
+        "x": 3.75,
+        "2": 3.43,
+        "over25": 1.44,
+        "btts_yes": 1.4
       },
       "fs_potential": {
         "o25": 64,
@@ -176,7 +176,7 @@
         {
           "selection": "Spain",
           "book": "(trh)",
-          "odds": 2.22,
+          "odds": 2.3,
           "fair_prob": 0.4263
         }
       ],
@@ -194,7 +194,7 @@
         "away": 1.86
       },
       "pick": "home",
-      "model_ev_pct": -5.36,
+      "model_ev_pct": -1.95,
       "probs_1x2": {
         "home": 0.426,
         "draw": 0.21,
@@ -231,11 +231,11 @@
         ]
       ],
       "market_odds": {
-        "1": 2.22,
-        "x": 2.82,
+        "1": 2.3,
+        "x": 3.0,
         "2": 3.26,
         "over25": 2.3,
-        "btts_yes": 0.0
+        "btts_yes": 1.91
       },
       "fs_potential": {
         "o25": 65,
@@ -255,26 +255,26 @@
       "legs": [
         {
           "selection": "England",
-          "book": "betfair_ex_uk",
-          "odds": 4.0,
-          "stake_pct": 25.12
+          "book": "onexbet",
+          "odds": 4.05,
+          "stake_pct": 24.75
         },
         {
           "selection": "France",
-          "book": "onexbet",
-          "odds": 2.02,
-          "stake_pct": 49.75
+          "book": "gtbets",
+          "odds": 1.99,
+          "stake_pct": 50.37
         },
         {
           "selection": "Draw",
-          "book": "betvictor",
-          "odds": 4.0,
-          "stake_pct": 25.12
+          "book": "onexbet",
+          "odds": 4.03,
+          "stake_pct": 24.87
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.498
+        "value": 0.244
       },
       "confidence": null,
       "label": "surebet",
@@ -283,21 +283,21 @@
       "stake_split": [
         {
           "selection": "England",
-          "book": "betfair_ex_uk",
-          "odds": 4.0,
-          "stake": 25.12
+          "book": "onexbet",
+          "odds": 4.05,
+          "stake": 24.75
         },
         {
           "selection": "France",
-          "book": "onexbet",
-          "odds": 2.02,
-          "stake": 49.75
+          "book": "gtbets",
+          "odds": 1.99,
+          "stake": 50.37
         },
         {
           "selection": "Draw",
-          "book": "betvictor",
-          "odds": 4.0,
-          "stake": 25.12
+          "book": "onexbet",
+          "odds": 4.03,
+          "stake": 24.87
         }
       ]
     }
