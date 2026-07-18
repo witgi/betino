@@ -32,25 +32,56 @@ import signal as signal_mod   # noqa: E402
 
 API_BASE = "https://rest-api-pr.betburger.com"
 
-# bookmaker_id -> názov. Doplníme podľa reálnych dát (po prvom úspešnom fetchi vypíše neznáme ID).
+# bookmaker_id -> názov (BetBurger číselník, betburger.com/api/entity_ids). Doplniť podľa potreby.
 BOOKMAKER_NAMES = {
-    # vyplní sa empiricky, napr.: 2: "bet365", ...: "Tipsport", ...: "Unibet"
+    1: "Pinnacle", 10: "Bet365", 39: "Tipsport", 80: "Fortuna", 489: "Tipos",
 }
 
-# market_and_bet_type -> hrubý label (doplníme podľa dát; teraz orientačné)
+# sport_id -> názov
+SPORT_NAMES = {
+    1: "Baseball", 2: "Basketbal", 4: "Futsal", 5: "Hádzaná", 6: "Hokej", 7: "Futbal",
+    8: "Tenis", 9: "Volejbal", 10: "Am. futbal", 11: "Snooker", 12: "Šípky",
+    13: "Stolný tenis", 14: "Bedminton", 15: "Rugby League", 24: "Kriket",
+    39: "E-Soccer", 41: "E-Basketbal", 43: "Rugby Union", 44: "Box", 45: "MMA",
+}
+
+# market_and_bet_type -> šablóna labelu (%s = čiara/param). Pokrýva bežné trhy; zvyšok fallback.
+MARKET_NAMES = {
+    1: "1", 2: "2", 3: "1 (bez remízy)", 4: "2 (bez remízy)",
+    5: "EH 1 %s", 6: "EH X %s", 7: "EH 2 %s",
+    8: "Oba skórujú – áno", 9: "Oba skórujú – nie",
+    11: "1", 12: "X", 13: "2", 14: "1X", 15: "X2", 16: "12",
+    17: "AH 1 %s", 18: "AH 2 %s",
+    19: "Nad %s", 20: "Pod %s",
+    21: "Nad %s (dom.)", 22: "Pod %s (dom.)", 23: "Nad %s (hos.)", 24: "Pod %s (hos.)",
+    25: "Nepárne", 26: "Párne", 67: "Presný skór %s",
+    1210: "Oba skórujú %s – áno", 1211: "Oba skórujú %s – nie",
+}
+
+
+def _fmt_param(p):
+    try:
+        f = float(p)
+        return str(int(f)) if f == int(f) else f"{f:g}"
+    except (TypeError, ValueError):
+        return str(p)
+
+
 def _market_label(bet):
     t = bet.get("market_and_bet_type")
     p = bet.get("market_and_bet_type_param")
-    base = {1: "1", 2: "X", 3: "2"}.get(t)
-    if base:
-        return base
-    if p not in (None, "", 0):
-        return f"typ{t} {p}"
-    return f"typ{t}"
+    tmpl = MARKET_NAMES.get(t)
+    if tmpl:
+        return tmpl % _fmt_param(p) if "%s" in tmpl else tmpl
+    return f"typ{t}" + (f" {_fmt_param(p)}" if p not in (None, "", 0, 0.0) else "")
 
 
 def _book_name(bid):
     return BOOKMAKER_NAMES.get(bid, f"bk:{bid}")
+
+
+def _sport_name(sid):
+    return SPORT_NAMES.get(sid, f"šport:{sid}")
 
 
 def _post(path, params):
@@ -103,7 +134,7 @@ def _arb_to_signal(arb, bets_by_id):
     commence = _unix_to_iso(started)
     sig = signal_mod.make_signal(
         stype=signal_mod.TYPE_ARB,
-        sport=f"sport:{arb.get('sport_id')}",
+        sport=_sport_name(arb.get("sport_id")),
         home=arb.get("home", ""), away=arb.get("away", ""),
         commence=commence,
         market=arb.get("arb_type", ""),
@@ -149,9 +180,9 @@ def build_arb_signals(cfg):
         sig = _arb_to_signal(a, bets_by_id)
         if sig:
             signals.append(sig)
-            for bid in (a.get("bk_ids") or []):
-                if bid not in BOOKMAKER_NAMES:
-                    unknown_books.add(bid)
+            for l in sig["legs"]:   # nemapované knihy majú book "bk:<id>"
+                if isinstance(l.get("book"), str) and l["book"].startswith("bk:"):
+                    unknown_books.add(l["book"])
     signals.sort(key=lambda s: s["edge"]["value"], reverse=True)
     notes = [f"BetBurger: {len(signals)} arbov (total~{meta.get('total')}, max%~{meta.get('maxPercentByFilter')})"]
     if unknown_books:
