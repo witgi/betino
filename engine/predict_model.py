@@ -122,8 +122,13 @@ def build_prediction_signals(cfg, force_all=False):
         return [], ["predikčná noha vypnutá (config.legs.prediction.enabled=false)"]
 
     season_ids = leg_cfg.get("season_ids", [])
+    if season_ids == "chosen":   # ligy vybrané vo FootyStats dashboarde
+        season_ids, err = fs_mod.chosen_season_ids(max_leagues=leg_cfg.get("max_leagues"))
+        if err:
+            return [], [f"predikčná noha (chosen ligy): {err}"]
+        notes.append(f"chosen ligy z FootyStats: {len(season_ids)} sezón")
     if not season_ids:
-        return [], ["predikčná noha: chýbajú season_ids v configu"]
+        return [], notes + ["predikčná noha: žiadne season_ids (vyber ligy vo FootyStats dashboarde)"]
 
     only_upcoming = leg_cfg.get("only_upcoming", True) and not force_all
     max_matches = leg_cfg.get("max_matches", 100)

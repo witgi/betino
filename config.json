@@ -2,16 +2,23 @@
   "_comment": "Jediné miesto na ladenie. Po MS staci zmenit 'sports' na inu ligu/sport.",
 
   "sports": [
-    "soccer_fifa_world_cup"
+    "soccer_epl",
+    "soccer_spain_la_liga",
+    "soccer_italy_serie_a",
+    "soccer_germany_bundesliga",
+    "soccer_usa_mls",
+    "soccer_brazil_campeonato"
   ],
+  "_sports_note": "Hlavne europske ligy (start ~august) + letne aktivne (MLS, Brazilia). 1 liga = 2 kredity/beh pri region 'eu'. 6 lig ~ 450-540 kreditov/mes = free tier (500). Pre viac lig / obe regiony treba plateny Odds API (~$30).",
 
   "_sports_examples": [
-    "soccer_fifa_world_cup", "soccer_epl", "soccer_spain_la_liga",
-    "soccer_uefa_champs_league", "basketball_nba", "tennis_atp_french_open",
-    "icehockey_nhl", "americanfootball_nfl"
+    "soccer_epl", "soccer_spain_la_liga", "soccer_italy_serie_a", "soccer_germany_bundesliga",
+    "soccer_france_ligue_one", "soccer_netherlands_eredivisie", "soccer_usa_mls",
+    "soccer_brazil_campeonato", "soccer_mexico_ligamx", "soccer_uefa_champs_league_qualification"
   ],
 
-  "regions": "eu,uk",
+  "regions": "eu",
+  "_regions_note": "'eu' (1 region) = polovicna cena vs 'eu,uk'. Obsahuje Pinnacle (sharp referencia). Pre viac knih zmenit na 'eu,uk' ale dvojnasobna kvota.",
   "markets": ["h2h", "totals"],
   "odds_format": "decimal",
 
@@ -53,8 +60,9 @@
     "prediction": {
       "enabled": true,
       "source": "footystats",
-      "season_ids": [16494],
-      "_season_note": "16494 = FIFA World Cup 2026. Vyzaduje plateny FOOTYSTATS_API_KEY + vybranu sezonu v dashboarde. Test: 1625 (EPL 2018/19, key=example).",
+      "season_ids": "chosen",
+      "_season_note": "'chosen' = automaticky pouzije ligy VYBRANE vo FootyStats dashboarde (netreba hardkod). User musi vybrat ligy v FS dashboarde. Alt: zoznam ID sezon, napr. [16494]=WC2026, 1625=EPL 18/19 (test key=example).",
+      "max_leagues": 15,
       "only_upcoming": true,
       "max_matches": 80
     },

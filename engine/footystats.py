@@ -44,6 +44,31 @@ def league_list(api_key=None, chosen_only=False):
     return _get("league-list", params)
 
 
+def chosen_season_ids(api_key=None, max_leagues=None):
+    """
+    Vráti season_id AKTUÁLNEJ sezóny pre každú ligu VYBRANÚ vo FootyStats dashboarde.
+    Vďaka tomu netreba hardkódovať ID — user si ligy zvolí v dashboarde a appka ich pochytí.
+    Vráti (ids, error).
+    """
+    try:
+        resp = league_list(api_key, chosen_only=True)
+    except (urllib.error.HTTPError, urllib.error.URLError) as e:
+        return [], f"league-list zlyhal: {e}"
+    if not resp.get("success"):
+        return [], resp.get("message") or "league-list neúspešný"
+    ids = []
+    for lg in resp.get("data", []) or []:
+        seasons = lg.get("season", []) or []
+        if not seasons:
+            continue
+        best = max(seasons, key=lambda s: s.get("year", 0) or 0)
+        if best.get("id"):
+            ids.append(best["id"])
+    if max_leagues:
+        ids = ids[:max_leagues]
+    return ids, None
+
+
 def league_matches(season_id, api_key=None, max_pages=10):
     """
     Všetky zápasy ligy/sezóny (vrátane nadchádzajúcich, status='incomplete').
