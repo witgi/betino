@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T21:41:30.979139+00:00",
+  "generated_at": "2026-07-19T06:11:20.764474+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -32,104 +32,55 @@
       "market": "h2h",
       "legs": [
         {
-          "selection": "Spain",
-          "book": "smarkets",
-          "odds": 2.38,
-          "stake_pct": 0.35,
-          "fair_prob": 0.4283
+          "selection": "Draw",
+          "book": "unibet_fr",
+          "odds": 3.15,
+          "stake_pct": 0.12,
+          "fair_prob": 0.3208
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.93
+        "value": 1.04
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.335,
-      "stake_amount": 3.49,
+      "fair_odds": 3.117,
+      "stake_amount": 1.21,
       "n_books": 43,
       "official": false
     },
     {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
+      "type": "value",
+      "sport": "soccer_fifa_world_cup",
+      "league": "FIFA World Cup",
       "event": {
-        "home": "France",
-        "away": "England",
-        "commence": "2026-07-18T21:00:00+00:00"
+        "home": "Spain",
+        "away": "Argentina",
+        "commence": "2026-07-19T19:00:00Z"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "France",
-          "book": "(trh)",
-          "odds": 1.83,
-          "fair_prob": 0.4575
+          "selection": "Spain",
+          "book": "unibet_fr",
+          "odds": 2.4,
+          "stake_pct": 0.17,
+          "fair_prob": 0.4206
         }
       ],
       "edge": {
-        "metric": "model_prob",
-        "value": 0.457
+        "metric": "ev_pct",
+        "value": 0.94
       },
-      "confidence": 0.653,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-07-18T21:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8591891,
-      "xg": {
-        "home": 2.04,
-        "away": 1.72
-      },
-      "pick": "home",
-      "model_ev_pct": -16.29,
-      "probs_1x2": {
-        "home": 0.457,
-        "draw": 0.212,
-        "away": 0.331
-      },
-      "ou25": {
-        "over": 0.725,
-        "under": 0.275
-      },
-      "btts": {
-        "yes": 0.714,
-        "no": 0.286
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.083
-        ],
-        [
-          "1-1",
-          0.082
-        ],
-        [
-          "2-2",
-          0.072
-        ],
-        [
-          "1-2",
-          0.07
-        ],
-        [
-          "3-1",
-          0.057
-        ]
-      ],
-      "market_odds": {
-        "1": 1.83,
-        "x": 3.9,
-        "2": 3.86,
-        "over25": 1.39,
-        "btts_yes": 1.46
-      },
-      "fs_potential": {
-        "o25": 64,
-        "btts": 50
-      }
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.378,
+      "stake_amount": 1.68,
+      "n_books": 43,
+      "official": false
     },
     {
       "type": "prediction",
@@ -145,7 +96,7 @@
         {
           "selection": "Spain",
           "book": "(trh)",
-          "odds": 2.24,
+          "odds": 2.25,
           "fair_prob": 0.4263
         }
       ],
@@ -163,7 +114,7 @@
         "away": 1.86
       },
       "pick": "home",
-      "model_ev_pct": -4.5,
+      "model_ev_pct": -4.08,
       "probs_1x2": {
         "home": 0.426,
         "draw": 0.21,
@@ -200,10 +151,10 @@
         ]
       ],
       "market_odds": {
-        "1": 2.24,
-        "x": 3.0,
-        "2": 3.2,
-        "over25": 2.24,
+        "1": 2.25,
+        "x": 2.95,
+        "2": 3.65,
+        "over25": 2.22,
         "btts_yes": 1.85
       },
       "fs_potential": {
@@ -220,24 +171,30 @@
         "away": "Argentina",
         "commence": "2026-07-19T19:00:00Z"
       },
-      "market": "totals",
+      "market": "h2h",
       "legs": [
         {
-          "selection": "Over 2.5",
-          "book": "matchbook",
-          "odds": 2.44,
-          "stake_pct": 41.2
+          "selection": "Argentina",
+          "book": "nordicbet",
+          "odds": 3.8,
+          "stake_pct": 26.39
         },
         {
-          "selection": "Under 2.5",
-          "book": "onexbet",
-          "odds": 1.71,
-          "stake_pct": 58.8
+          "selection": "Spain",
+          "book": "unibet_fr",
+          "odds": 2.4,
+          "stake_pct": 41.78
+        },
+        {
+          "selection": "Draw",
+          "book": "unibet_fr",
+          "odds": 3.15,
+          "stake_pct": 31.83
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.54
+        "value": 0.272
       },
       "confidence": null,
       "label": "surebet",
@@ -245,286 +202,23 @@
       "total_stake_ref": 100.0,
       "stake_split": [
         {
-          "selection": "Over 2.5",
-          "book": "matchbook",
-          "odds": 2.44,
-          "stake": 41.2
+          "selection": "Argentina",
+          "book": "nordicbet",
+          "odds": 3.8,
+          "stake": 26.39
         },
         {
-          "selection": "Under 2.5",
-          "book": "onexbet",
-          "odds": 1.71,
-          "stake": 58.8
-        }
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Prague. Singles",
-      "event": {
-        "home": "Podrez, Veronika",
-        "away": "Saigo, Rina",
-        "commence": "2026-07-19T10:30:00+00:00"
-      },
-      "market": "8:4",
-      "legs": [
-        {
-          "selection": "Nad 8.5 (hos.)",
-          "book": "bk:2",
-          "odds": 2.02
+          "selection": "Spain",
+          "book": "unibet_fr",
+          "odds": 2.4,
+          "stake": 41.78
         },
         {
-          "selection": "Pod 8.5 (hos.)",
-          "book": "bk:329",
-          "odds": 2.02
+          "selection": "Draw",
+          "book": "unibet_fr",
+          "odds": 3.15,
+          "stake": 31.83
         }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T10:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "36e2be0c7bffd6ed512dac4ba136621c",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. UTR Pro Series. Singles",
-      "event": {
-        "home": "Lee, Winston",
-        "away": "Krishnakumar, Yashwin",
-        "commence": "2026-07-18T23:00:00+00:00"
-      },
-      "market": "8:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Fortuna",
-          "odds": 2.02
-        },
-        {
-          "selection": "2",
-          "book": "bk:319",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-18T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "74a70bc9de283c2584f5aec3f48b0a01",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        131072,
-        0,
-        0,
-        0,
-        16
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. UTR Pro Series. Singles",
-      "event": {
-        "home": "Lee, Winston",
-        "away": "Krishnakumar, Yashwin",
-        "commence": "2026-07-18T23:00:00+00:00"
-      },
-      "market": "8:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Fortuna",
-          "odds": 2.02
-        },
-        {
-          "selection": "2",
-          "book": "bk:426",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-18T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "583c4a11c3680f55fd051edaf5491523",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        131072,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. UTR Pro Series. Singles",
-      "event": {
-        "home": "Lee, Winston",
-        "away": "Krishnakumar, Yashwin",
-        "commence": "2026-07-18T23:00:00+00:00"
-      },
-      "market": "8:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Fortuna",
-          "odds": 2.02
-        },
-        {
-          "selection": "2",
-          "book": "bk:348",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-18T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "c7493858518f81b9ec8fae6f7e550006",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        131072,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. UTR Pro Series. Singles",
-      "event": {
-        "home": "Lee, Winston",
-        "away": "Krishnakumar, Yashwin",
-        "commence": "2026-07-18T23:00:00+00:00"
-      },
-      "market": "8:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Fortuna",
-          "odds": 2.02
-        },
-        {
-          "selection": "2",
-          "book": "bk:486",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-18T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "817443e5538d13a947e332d777d0ab30",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        131072,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. UTR Pro Series. Singles",
-      "event": {
-        "home": "Lee, Winston",
-        "away": "Krishnakumar, Yashwin",
-        "commence": "2026-07-18T23:00:00+00:00"
-      },
-      "market": "8:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Fortuna",
-          "odds": 2.02
-        },
-        {
-          "selection": "2",
-          "book": "bk:19",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-18T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "5a988993302a204a58add95de47ab235",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        131072
-      ],
-      "direct_links": [
-        "",
-        ""
       ]
     },
     {
@@ -540,12 +234,12 @@
       "legs": [
         {
           "selection": "2",
-          "book": "bk:127",
+          "book": "FortuneJack",
           "odds": 2.02
         },
         {
           "selection": "AH 1 0.5",
-          "book": "bk:94",
+          "book": "Pamestoixima",
           "odds": 2.02
         }
       ],
@@ -582,12 +276,96 @@
       "legs": [
         {
           "selection": "2",
-          "book": "bk:127",
+          "book": "FortuneJack",
           "odds": 2.02
         },
         {
           "selection": "AH 1 0.5",
-          "book": "bk:105",
+          "book": "BetinAsia",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-25T13:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "f035bb5516faafbc9af94bb183251f36",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        72057594037927936,
+        2
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Poland. I Liga",
+      "event": {
+        "home": "Pogon Siedlce",
+        "away": "LKS Lodz",
+        "commence": "2026-07-25T13:30:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "2",
+          "book": "FortuneJack",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 1 0.5",
+          "book": "Pinnacle",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-25T13:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "b08074dcf26ff3c3fe572fea248c6526",
+      "is_live": false,
+      "bk_ids": [
+        2,
+        0,
+        2
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Poland. I Liga",
+      "event": {
+        "home": "Pogon Siedlce",
+        "away": "LKS Lodz",
+        "commence": "2026-07-25T13:30:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "2",
+          "book": "FortuneJack",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 1 0.5",
+          "book": "Sportmarket",
           "odds": 2.02
         }
       ],
@@ -614,90 +392,6 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Poland. I Liga",
-      "event": {
-        "home": "Pogon Siedlce",
-        "away": "LKS Lodz",
-        "commence": "2026-07-25T13:30:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "bk:127",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "bk:119",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-25T13:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "6cd0162d38ec29370202e39281187ea2",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037927936,
-        2
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Poland. I Liga",
-      "event": {
-        "home": "Pogon Siedlce",
-        "away": "LKS Lodz",
-        "commence": "2026-07-25T13:30:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "bk:127",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Pinnacle",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-25T13:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "991a9a9cc8e463dc103f99efff687b69",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        0,
-        2
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
       "league": "Sweden. Allsvenskan",
       "event": {
         "home": "Orgryte",
@@ -708,12 +402,12 @@
       "legs": [
         {
           "selection": "typ49 1.5",
-          "book": "bk:732",
+          "book": "HKJC",
           "odds": 2.02
         },
         {
           "selection": "typ50 -1.5",
-          "book": "bk:700",
+          "book": "Expekt",
           "odds": 2.02
         }
       ],
@@ -759,12 +453,12 @@
       "legs": [
         {
           "selection": "typ49 1.5",
-          "book": "bk:732",
+          "book": "HKJC",
           "odds": 2.02
         },
         {
           "selection": "typ50 -1.5",
-          "book": "bk:48",
+          "book": "Betsson",
           "odds": 2.02
         }
       ],
@@ -800,104 +494,6 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "World. World Cup",
-      "event": {
-        "home": "Spain",
-        "away": "Argentina",
-        "commence": "2026-07-19T19:00:00+00:00"
-      },
-      "market": "7:6",
-      "legs": [
-        {
-          "selection": "Oba skórujú – áno",
-          "book": "bk:50",
-          "odds": 2.02
-        },
-        {
-          "selection": "Oba skórujú – nie",
-          "book": "bk:483",
-          "odds": 2.041
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T19:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "79c1280d88917244446fd728cdd3e500",
-      "is_live": false,
-      "bk_ids": [
-        1125899906842624,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "World. World Cup",
-      "event": {
-        "home": "Spain",
-        "away": "Argentina",
-        "commence": "2026-07-19T19:00:00+00:00"
-      },
-      "market": "7:6",
-      "legs": [
-        {
-          "selection": "Oba skórujú – áno",
-          "book": "bk:50",
-          "odds": 2.02
-        },
-        {
-          "selection": "Oba skórujú – nie",
-          "book": "bk:728",
-          "odds": 2.041
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T19:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "b5b3f0590fb4260a6a6b872d70c2aee1",
-      "is_live": false,
-      "bk_ids": [
-        1125899906842624,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        34359738368
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
       "league": "Sweden. Superettan",
       "event": {
         "home": "Falkenbergs FF",
@@ -908,53 +504,12 @@
       "legs": [
         {
           "selection": "typ55 4.5",
-          "book": "bk:48",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
           "selection": "typ56 4.5",
-          "book": "bk:19",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-21T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "57cd4286c4187db2ff9f4375b0d93998",
-      "is_live": false,
-      "bk_ids": [
-        281474977234944,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Sweden. Superettan",
-      "event": {
-        "home": "Falkenbergs FF",
-        "away": "Helsingborg",
-        "commence": "2026-07-21T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:48",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "bk:426",
+          "book": "BetRivers",
           "odds": 2.02
         }
       ],
@@ -995,12 +550,12 @@
       "legs": [
         {
           "selection": "typ55 4.5",
-          "book": "bk:48",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
           "selection": "typ56 4.5",
-          "book": "bk:486",
+          "book": "Betplay",
           "odds": 2.02
         }
       ],
@@ -1042,103 +597,12 @@
       "legs": [
         {
           "selection": "typ55 4.5",
-          "book": "bk:30",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
           "selection": "typ56 4.5",
-          "book": "bk:348",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-21T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "4ddcb532d430c13c6d856d197cad85e9",
-      "is_live": false,
-      "bk_ids": [
-        1073741824,
-        0,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Sweden. Superettan",
-      "event": {
-        "home": "Falkenbergs FF",
-        "away": "Helsingborg",
-        "commence": "2026-07-21T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:30",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "bk:426",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-21T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "7a4c4e06d7180d9787a65ba0bbe08293",
-      "is_live": false,
-      "bk_ids": [
-        1073741824,
-        0,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Sweden. Superettan",
-      "event": {
-        "home": "Falkenbergs FF",
-        "away": "Helsingborg",
-        "commence": "2026-07-21T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:48",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "bk:348",
+          "book": "Olimpo",
           "odds": 2.02
         }
       ],
@@ -1178,145 +642,12 @@
       "legs": [
         {
           "selection": "typ55 4.5",
-          "book": "bk:30",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
           "selection": "typ56 4.5",
-          "book": "bk:19",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-21T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "b5464a2c335cf91dea95d3ef18e862f4",
-      "is_live": false,
-      "bk_ids": [
-        1074266112,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Sweden. Superettan",
-      "event": {
-        "home": "Falkenbergs FF",
-        "away": "Helsingborg",
-        "commence": "2026-07-21T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:30",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "bk:486",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-21T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "9e775a5d1d4352dcca1920d148d2a7ce",
-      "is_live": false,
-      "bk_ids": [
-        1073741824,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Sweden. Superettan",
-      "event": {
-        "home": "Falkenbergs FF",
-        "away": "Helsingborg",
-        "commence": "2026-07-21T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:30",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "bk:319",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-21T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "12a2b64d39e0f137b7b7a1d51bb8c37a",
-      "is_live": false,
-      "bk_ids": [
-        1073741824,
-        0,
-        0,
-        0,
-        0,
-        16
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Sweden. Superettan",
-      "event": {
-        "home": "Falkenbergs FF",
-        "away": "Helsingborg",
-        "commence": "2026-07-21T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:48",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "bk:319",
+          "book": "Virginbet",
           "odds": 2.02
         }
       ],
@@ -1345,6 +676,135 @@
     },
     {
       "type": "arb",
+      "sport": "Futbal",
+      "league": "Sweden. Superettan",
+      "event": {
+        "home": "Falkenbergs FF",
+        "away": "Helsingborg",
+        "commence": "2026-07-21T17:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "Unibet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-21T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "57cd4286c4187db2ff9f4375b0d93998",
+      "is_live": false,
+      "bk_ids": [
+        281474977234944,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:20",
+      "league": "Australia. AFL",
+      "event": {
+        "home": "Essendon Bombers",
+        "away": "GWS Giants",
+        "commence": "2026-07-19T06:40:00+00:00"
+      },
+      "market": "20:3",
+      "legs": [
+        {
+          "selection": "Nad 182.5",
+          "book": "Betfair",
+          "odds": 2.32
+        },
+        {
+          "selection": "Pod 182.5",
+          "book": "1xBet",
+          "odds": 1.83
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T06:40:00+00:00",
+      "source": "betburger",
+      "arb_id": "023626c23946a0caefc241e85b130aa9",
+      "is_live": false,
+      "bk_ids": [
+        2099200,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "World. World Cup",
+      "event": {
+        "home": "Spain",
+        "away": "Argentina",
+        "commence": "2026-07-19T19:00:00+00:00"
+      },
+      "market": "7:5",
+      "legs": [
+        {
+          "selection": "typ283 2.5",
+          "book": "Winamax",
+          "odds": 1.7
+        },
+        {
+          "selection": "typ284 2.5",
+          "book": "bk:492",
+          "odds": 2.488
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.999
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T19:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d1fd7db97c73a845053059474b7ce0dc",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        134217728,
+        0,
+        0,
+        2251799813685248
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
       "sport": "Baseball",
       "league": "Korea Republic. КВО",
       "event": {
@@ -1352,16 +812,16 @@
         "away": "Kiwoom Heroes",
         "commence": "2026-07-19T09:00:00+00:00"
       },
-      "market": "1:2",
+      "market": "1:4",
       "legs": [
         {
-          "selection": "AH 1 -4.5",
-          "book": "bk:199",
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:711",
           "odds": 3.05
         },
         {
-          "selection": "AH 2 4.5",
-          "book": "bk:20",
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:458",
           "odds": 1.51
         }
       ],
@@ -1373,13 +833,716 @@
       "label": "surebet",
       "expires_hint": "2026-07-19T09:00:00+00:00",
       "source": "betburger",
-      "arb_id": "9204bc25afed1bf100604b8ea3db46ea",
+      "arb_id": "bfd8a3a4f9b105803c165807242cba89",
       "is_live": false,
       "bk_ids": [
-        1048576,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        131072,
+        0,
+        0,
+        0,
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:496",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:92",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "1efc420864e8a08a0e0ceb4c1fb77e46",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        536870912,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:458",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "0ba073964c6c25369ec8d40a796acf08",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        131072
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:26",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "9fa0083481d5a2dbef5f19f1ffbec217",
+      "is_live": false,
+      "bk_ids": [
+        67109888,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:711",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:34",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "23a4566f6cff2abd60aab52f8420d70a",
+      "is_live": false,
+      "bk_ids": [
+        17179869184,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:496",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:26",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "0314b1410c50f7d9db765df58dd4df1b",
+      "is_live": false,
+      "bk_ids": [
+        67108864,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:26",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "9eb395134d8332174fa9b8630a17ec9f",
+      "is_live": false,
+      "bk_ids": [
+        67108864,
         0,
         0,
         1024
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:496",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:34",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f0667b71ca32100d36e0097401facbd0",
+      "is_live": false,
+      "bk_ids": [
+        17179869184,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:711",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:92",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "0011ff5a165dfdd222da1db6d717b2b5",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        536870912,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:92",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "1a95226262b84debb1daf8cdf98f06a7",
+      "is_live": false,
+      "bk_ids": [
+        1024,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:34",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "1d13f5e39dd573411effce66ae07664d",
+      "is_live": false,
+      "bk_ids": [
+        17179870208,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:711",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:12",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "a0eb1de0652606d70cc5a93c93c6bf4b",
+      "is_live": false,
+      "bk_ids": [
+        4096,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:496",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:12",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "c9edac886b25bfe6e7a3299427da6695",
+      "is_live": false,
+      "bk_ids": [
+        4096,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:34",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "80cd1042c2a0717d4b51a46d397f470c",
+      "is_live": false,
+      "bk_ids": [
+        17179869184,
+        0,
+        0,
+        1024
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "bk:711",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:26",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "3cc4feb36f446077fa2922c1230f3eee",
+      "is_live": false,
+      "bk_ids": [
+        67108864,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "Korea Republic. КВО",
+      "event": {
+        "home": "Hanwha Eagles",
+        "away": "Kiwoom Heroes",
+        "commence": "2026-07-19T09:00:00+00:00"
+      },
+      "market": "1:4",
+      "legs": [
+        {
+          "selection": "Nad 7.5 (dom.)",
+          "book": "Bet365",
+          "odds": 3.05
+        },
+        {
+          "selection": "Pod 7.5 (dom.)",
+          "book": "bk:458",
+          "odds": 1.51
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-19T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "803ea1a0d59681f789eb70f3936953af",
+      "is_live": false,
+      "bk_ids": [
+        1024,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        131072
       ],
       "direct_links": [
         "",
@@ -1404,7 +1567,7 @@
         },
         {
           "selection": "AH 2 4.5",
-          "book": "bk:20",
+          "book": "DafaSports",
           "odds": 1.51
         }
       ],
@@ -1416,199 +1579,11 @@
       "label": "surebet",
       "expires_hint": "2026-07-19T09:00:00+00:00",
       "source": "betburger",
-      "arb_id": "90be2a4f9fcb0d15850233e8a5039478",
+      "arb_id": "e653b9389bb8385d12bbd0a7956c3c01",
       "is_live": false,
       "bk_ids": [
         1049600,
         0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "World. Friendly Clubs",
-      "event": {
-        "home": "Sturm Graz II",
-        "away": "Al Hilal Riyadh",
-        "commence": "2026-07-19T14:30:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 1",
-          "book": "bk:4",
-          "odds": 2.21
-        },
-        {
-          "selection": "AH 2 -1",
-          "book": "bk:706",
-          "odds": 1.86
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.998
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T14:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "9e338f29761ca8a924d1e73d72f4d431",
-      "is_live": false,
-      "bk_ids": [
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        8192
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Baseball",
-      "league": "USA. MLB",
-      "event": {
-        "home": "Arizona Diamondbacks",
-        "away": "St. Louis Cardinals",
-        "commence": "2026-07-19T20:10:00+00:00"
-      },
-      "market": "1:2",
-      "legs": [
-        {
-          "selection": "AH 1 1.5",
-          "book": "bk:21",
-          "odds": 1.587
-        },
-        {
-          "selection": "AH 2 -1.5",
-          "book": "bk:483",
-          "odds": 2.778
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.998
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T20:10:00+00:00",
-      "source": "betburger",
-      "arb_id": "58ef22730a4c4715e8992fd94d750be6",
-      "is_live": false,
-      "bk_ids": [
-        2097152,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Rugby League",
-      "league": "Australia. NRL Women",
-      "event": {
-        "home": "Brisbane Broncos Women ",
-        "away": "Wests Tigers Women",
-        "commence": "2026-07-19T03:45:00+00:00"
-      },
-      "market": "15:3",
-      "legs": [
-        {
-          "selection": "Nad 42.5",
-          "book": "bk:27",
-          "odds": 2.21
-        },
-        {
-          "selection": "Pod 42.5",
-          "book": "bk:319",
-          "odds": 1.86
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.998
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T03:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "e7627965d70f5e8bd349c0388eef60f6",
-      "is_live": false,
-      "bk_ids": [
-        134217728,
-        0,
-        0,
-        0,
-        0,
-        16
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Rugby League",
-      "league": "Australia. NRL Women",
-      "event": {
-        "home": "Brisbane Broncos Women ",
-        "away": "Wests Tigers Women",
-        "commence": "2026-07-19T03:45:00+00:00"
-      },
-      "market": "15:3",
-      "legs": [
-        {
-          "selection": "Nad 42.5",
-          "book": "bk:27",
-          "odds": 2.21
-        },
-        {
-          "selection": "Pod 42.5",
-          "book": "bk:348",
-          "odds": 1.86
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.998
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-19T03:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "a02a59d5ceff9d091afa8d9a197cc7a6",
-      "is_live": false,
-      "bk_ids": [
-        134217728,
-        0,
-        0,
-        0,
-        0,
-        8589934592
       ],
       "direct_links": [
         "",
