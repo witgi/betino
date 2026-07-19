@@ -20,6 +20,9 @@ python3 engine/reconcile.py || echo "reconcile preskoceny"
 # 4: prepocitaj globalne statistiky + virtualny bankroll
 python3 engine/stats.py || echo "stats preskocene"
 
+# 4c: per-noha sledovanie (predikcie + arby) -> stats_legs.json
+python3 engine/reconcile_legs.py || echo "reconcile_legs preskocene"
+
 # 4b: posli vysledky do Supabase (ak su nastavene kluce)
 python3 engine/push_supabase.py || echo "supabase push preskoceny"
 

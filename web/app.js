@@ -6,6 +6,7 @@
 const DATA_URL = "/data/predictions.json";
 const STATS_URL = "/data/stats.json";
 const SIGNALS_URL = "/data/signals.json";   // jednotný výstup (value + prediction + arb)
+const LEGSTATS_URL = "/data/stats_legs.json"; // per-noha výsledky (predikcie + arb)
 
 // --- Supabase klient ---
 const sb = window.supabase.createClient(
@@ -15,6 +16,7 @@ const sb = window.supabase.createClient(
 // --- stav ---
 let DATA = null;
 let STATS = null;
+let LEGSTATS = null;      // per-noha výsledky (data/stats_legs.json)
 let PREDICTIONS = null;   // prediction-signály zo signals.json
 let ARBS = null;          // arb-signály zo signals.json
 let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
@@ -316,6 +318,31 @@ function renderPredPerf() {
   const box = document.getElementById("pred-perf");
   if (!box) return;
   const b = PRED_BACKTEST;
+  const p = LEGSTATS && LEGSTATS.prediction;
+  // ŽIVÉ výsledky (keď už niečo dohralo) — rovnaký prehľad ako pri value
+  if (p && p.settled > 0) {
+    const prof = p.profit_units, cls = prof >= 0 ? "pos" : "neg";
+    const grow = (p.virtual_bankroll / p.start_bankroll - 1) * 100;
+    box.innerHTML = `
+      <div class="g-head">📈 Úspešnosť predikcií (živé — keby stavíš ${p.flat_stake} € na každý tip modelu)</div>
+      <div class="g-hero">
+        <div class="g-bank"><span>Virtuálny bank</span>
+          <b class="${cls}">${p.virtual_bankroll.toFixed(0)} €</b>
+          <small class="${cls}">${prof >= 0 ? "+" : ""}${prof.toFixed(0)} € · bank ${grow >= 0 ? "+" : ""}${grow.toFixed(1)} %</small>
+        </div>${sparkline(p.equity)}
+      </div>
+      <div class="g-stats">
+        <div><b>${p.settled}</b><span>tipov</span></div>
+        <div><b>${p.win_rate_pct}%</b><span>úspech</span></div>
+        <div><b>${p.wins}-${p.losses}</b><span>V-P</span></div>
+        <div><b class="${p.roi_pct >= 0 ? "pos" : "neg"}">${p.roi_pct > 0 ? "+" : ""}${p.roi_pct}%</b><span>ROI z vkladov</span></div>
+        ${p.pending ? `<div><b>${p.pending}</b><span>čaká</span></div>` : ""}
+      </div>
+      <p class="g-note">Flat vklad na tip modelu (1X2) pri trhovom kurze. Historický backtest:
+      1X2 ${b.h2h}% · nad/pod ${b.ou25}% · oba ${b.btts}%. Predikcie = orientácia, nie dokázaná výhoda.</p>`;
+    return;
+  }
+  // ešte nič nedohralo -> backtest baseline
   box.innerHTML = `
     <div class="g-head">📈 Úspešnosť predikcií (historický backtest)</div>
     <div class="g-stats">
@@ -325,7 +352,26 @@ function renderPredPerf() {
       <div><b>${b.matches}</b><span>zápasov</span></div>
     </div>
     <p class="g-note">Koľko % predikcií trafilo výsledok v backteste (EPL 18/19). Ostrý trh býva presnejší —
-    ber ako orientáciu, nie dokázanú výhodu. Živé výsledky sa budú zbierať postupne.</p>`;
+    ber ako orientáciu, nie dokázanú výhodu. <b>Živé výsledky sa zbierajú</b> — objavia sa tu po odohratí prvých zápasov.</p>`;
+}
+
+function renderArbSummary() {
+  const box = document.getElementById("arb-perf");
+  if (!box) return;
+  const a = LEGSTATS && LEGSTATS.arb;
+  if (!a || (a.total_seen === 0 && a.current === 0)) { box.innerHTML = ""; return; }
+  const books = Object.entries(a.by_book || {}).slice(0, 5)
+    .map(([b, n]) => `${b} (${n})`).join(" · ");
+  box.innerHTML = `
+    <div class="g-head">📈 Prehľad arbitráže</div>
+    <div class="g-stats">
+      <div><b>${a.current}</b><span>práve teraz</span></div>
+      <div><b>${a.total_seen}</b><span>spolu nájdených</span></div>
+      <div><b>+${a.avg_profit_pct}%</b><span>priemer</span></div>
+      <div><b>+${a.max_profit_pct}%</b><span>najlepší</span></div>
+    </div>
+    ${books ? `<p class="g-note">Najčastejšie knihy: ${books}. Arbitráž = garantovaný zisk, nie „bank" —
+    reálny výnos závisí od toho, ktoré arby reálne staviš (a limity kancelárií).</p>` : ""}`;
 }
 
 function renderPredictions() {
@@ -405,6 +451,7 @@ function toggleBook(book) {
 }
 
 function renderArbs() {
+  renderArbSummary();
   renderArbFilter();
   const main = document.getElementById("arbs");
   const empty = document.getElementById("arb-empty");
@@ -457,6 +504,7 @@ async function main() {
     meta.textContent = `Aktualizované: ${fmtTime(DATA.generated_at)} · bank ${DATA.bankroll} € · ${(DATA.candidates || []).length} kandidátov z ${DATA.n_events_considered} zápasov`;
 
     try { const sres = await fetch(STATS_URL, { cache: "no-store" }); if (sres.ok) STATS = await sres.json(); } catch (e) {}
+    try { const lres = await fetch(LEGSTATS_URL, { cache: "no-store" }); if (lres.ok) LEGSTATS = await lres.json(); } catch (e) {}
     renderGlobal(STATS);
 
     await loadSignals();

@@ -34,7 +34,15 @@ API_BASE = "https://rest-api-pr.betburger.com"
 
 # bookmaker_id -> názov (BetBurger číselník, betburger.com/api/entity_ids). Doplniť podľa potreby.
 BOOKMAKER_NAMES = {
-    1: "Pinnacle", 10: "Bet365", 39: "Tipsport", 80: "Fortuna", 489: "Tipos",
+    1: "Pinnacle", 2: "Betcity", 3: "Sbobet", 4: "Marathon", 6: "Fonbet", 9: "Bwin",
+    10: "Bet365", 11: "Betfair", 13: "William Hill", 19: "Unibet", 20: "DafaSports",
+    21: "1xBet", 27: "Olimp", 30: "Leon", 39: "Tipsport", 48: "Betsson", 50: "Smarkets",
+    80: "Fortuna", 94: "Pamestoixima", 95: "888Sport", 102: "Snai", 105: "Sportmarket",
+    119: "BetinAsia", 127: "FortuneJack", 167: "Netbet", 199: "Bet365", 279: "Winamax",
+    308: "Sazka", 313: "DaznBet", 318: "Lvbet", 319: "Virginbet", 329: "Superbet",
+    346: "Betway", 348: "Olimpo", 425: "1win", 426: "BetRivers", 464: "NorskTipping",
+    483: "Polymarket", 486: "Betplay", 489: "Tipos", 700: "Expekt", 706: "EsportesDaSorte",
+    728: "Kalshi", 729: "Betano", 732: "HKJC",
 }
 
 # sport_id -> názov

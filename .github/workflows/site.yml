@@ -42,6 +42,7 @@ jobs:
           python engine/predict.py
           python engine/reconcile.py || echo "reconcile preskocene"
           python engine/stats.py
+          python engine/reconcile_legs.py || echo "reconcile_legs preskocene"
           python engine/push_supabase.py || echo "supabase push preskoceny"
 
       - name: Ulozit data do gitu
@@ -49,7 +50,7 @@ jobs:
         run: |
           git config user.name "value-bets-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/predictions.json data/signals.json data/history.jsonl data/stats.json
+          git add data/predictions.json data/signals.json data/history.jsonl data/stats.json data/stats_legs.json data/history_prediction.jsonl data/history_arb.jsonl
           git commit -m "denne data $(date -u +%F)" || echo "ziadne zmeny"
           git push || echo "push preskoceny"
 
@@ -58,7 +59,7 @@ jobs:
           mkdir -p _site/data
           cp web/*.html web/*.css web/*.js _site/
           cp web/CNAME _site/CNAME
-          cp data/predictions.json data/signals.json data/stats.json _site/data/ 2>/dev/null || true
+          cp data/predictions.json data/signals.json data/stats.json data/stats_legs.json _site/data/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
