@@ -1,9 +1,14 @@
 {
-  "generated_at": "2026-07-19T15:29:24.108129+00:00",
+  "generated_at": "2026-07-19T16:30:49.906421+00:00",
   "bankroll": 1000,
   "kelly_fraction": 0.25,
   "sports": [
-    "soccer_fifa_world_cup"
+    "soccer_epl",
+    "soccer_spain_la_liga",
+    "soccer_italy_serie_a",
+    "soccer_germany_bundesliga",
+    "soccer_usa_mls",
+    "soccer_brazil_campeonato"
   ],
   "thresholds": {
     "min_ev_pct": 2.0,
@@ -12,8 +17,8 @@
     "max_odds": 4.0,
     "min_books": 4
   },
-  "requests_remaining": "392",
-  "n_events_considered": 5,
+  "requests_remaining": "366",
+  "n_events_considered": 2,
   "n_picks": 0,
   "performance": {
     "settled_bets": 42,
@@ -22,62 +27,7 @@
     "clv_beat_pct": null
   },
   "picks": [],
-  "candidates": [
-    {
-      "league": "FIFA World Cup",
-      "sport_key": "soccer_fifa_world_cup",
-      "home": "Spain",
-      "away": "Argentina",
-      "commence": "2026-07-19T19:00:00Z",
-      "market": "h2h",
-      "selection": "Argentina",
-      "best_odds": 3.86,
-      "bookmaker": "onexbet",
-      "fair_prob": 0.261,
-      "fair_odds": 3.831,
-      "ev_pct": 0.75,
-      "stake_pct": 0.07,
-      "stake_amount": 0.65,
-      "confidence": 0.8,
-      "n_books": 43
-    },
-    {
-      "league": "FIFA World Cup",
-      "sport_key": "soccer_fifa_world_cup",
-      "home": "Spain",
-      "away": "Argentina",
-      "commence": "2026-07-19T19:00:00Z",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.15,
-      "bookmaker": "unibet_fr",
-      "fair_prob": 0.3186,
-      "fair_odds": 3.139,
-      "ev_pct": 0.37,
-      "stake_pct": 0.04,
-      "stake_amount": 0.42,
-      "confidence": 0.8,
-      "n_books": 43
-    },
-    {
-      "league": "FIFA World Cup",
-      "sport_key": "soccer_fifa_world_cup",
-      "home": "Spain",
-      "away": "Argentina",
-      "commence": "2026-07-19T19:00:00Z",
-      "market": "h2h",
-      "selection": "Spain",
-      "best_odds": 2.38,
-      "bookmaker": "matchbook",
-      "fair_prob": 0.4204,
-      "fair_odds": 2.379,
-      "ev_pct": 0.05,
-      "stake_pct": 0.01,
-      "stake_amount": 0.09,
-      "confidence": 0.8,
-      "n_books": 43
-    }
-  ],
+  "candidates": [],
   "staking": {
     "bankroll": 1000,
     "kelly_fraction": 0.25,
@@ -91,7 +41,6 @@
     "min_books": 4
   },
   "notes": [
-    "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
-    "3 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
+    "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS)."
   ]
 }
