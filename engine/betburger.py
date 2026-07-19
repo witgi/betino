@@ -43,6 +43,10 @@ BOOKMAKER_NAMES = {
     346: "Betway", 348: "Olimpo", 425: "1win", 426: "BetRivers", 464: "NorskTipping",
     483: "Polymarket", 486: "Betplay", 489: "Tipos", 700: "Expekt", 706: "EsportesDaSorte",
     728: "Kalshi", 729: "Betano", 732: "HKJC",
+    17: "PariMatch", 38: "Betdaq", 45: "Betfred", 70: "Superbet", 76: "Stoiximan",
+    83: "Novibet", 311: "Synottip", 446: "FB Sports", 448: "Marathon (IT)",
+    457: "StarCasino", 466: "BetFast", 498: "Betsson (IT)", 712: "William Hill (IT)",
+    738: "HGA (Crown)",
 }
 
 # sport_id -> názov

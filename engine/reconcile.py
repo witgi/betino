@@ -29,9 +29,48 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.abspath(os.path.join(HERE, ".."))
+sys.path.insert(0, HERE)
 HISTORY = os.path.join(ROOT, "data", "history.jsonl")
 PREDICTIONS = os.path.join(ROOT, "data", "predictions.json")
 API_BASE = "https://api.the-odds-api.com/v4"
+
+
+def _config():
+    try:
+        return json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def settle_footystats():
+    """Vyhodnotí pending tipy cez FootyStats výsledok (keď value zdroj = footystats)."""
+    import footystats as fs
+    rows = _load_history()
+    settled = 0
+    for r in rows:
+        if r.get("result") != "pending":
+            continue
+        mid = r.get("match_id")
+        if not mid:
+            continue
+        try:
+            det = (fs.match_detail(mid) or {}).get("data") or {}
+        except Exception:   # noqa: BLE001 - jeden zápas nesmie zhodiť settling
+            continue
+        if det.get("status") != "complete":
+            continue
+        gh, ga = det.get("homeGoalCount"), det.get("awayGoalCount")
+        if gh is None or ga is None:
+            continue
+        score_event = {"scores": [{"name": r["home"], "score": gh}, {"name": r["away"], "score": ga}]}
+        res = _result_for_pick(r, score_event)
+        if res:
+            r["result"] = res
+            r["settled_at"] = datetime.now(timezone.utc).isoformat()
+            settled += 1
+    _write_history(rows)
+    print(f"[reconcile] (FootyStats) vyhodnotenych tipov: {settled}")
+    return settled
 
 
 def _pick_key(p):
@@ -172,7 +211,10 @@ if __name__ == "__main__":
         log_new_picks()
     if not args.log_only:
         try:
-            settle()
+            if _config().get("value_source") == "footystats":
+                settle_footystats()
+            else:
+                settle()
         except RuntimeError as e:
             print(e)
             sys.exit(1)

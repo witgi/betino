@@ -17,12 +17,19 @@ Iba stdlib (urllib, json).
 from __future__ import annotations
 import json
 import os
+import sys
 import time
 import urllib.request
 import urllib.parse
 import urllib.error
 
+sys.path.insert(0, os.path.dirname(__file__))
+import fetch as _fetch   # noqa: E402  (kvôli _best_non_outlier pre value zdroj)
+
 API_BASE = "https://api.football-data-api.com"
+
+# FootyStats názvy ostrých kníh v odds_comparison (v poradí preferencie pre devig)
+FS_SHARP = ["Pncl", "Betfair", "Smarkets", "Matchbook"]
 
 
 def _get(path, params):
@@ -123,6 +130,100 @@ def match_xg(m):
     if h <= 0 or a <= 0:
         return None
     return h, a
+
+
+def _num(x):
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return None
+
+
+def _outcome_from_books(disp, book_odds):
+    """book_odds = {kniha: '1.58', ...} -> normalizovaný outcome (best non-outlier + sharp Pinnacle)."""
+    prices, sharp, sharp_rank = [], None, None
+    for book, od in (book_odds or {}).items():
+        o = _num(od)
+        if o is None or o <= 1.0:
+            continue
+        prices.append((o, book))
+        if book in FS_SHARP:
+            r = FS_SHARP.index(book)
+            if sharp_rank is None or r < sharp_rank:
+                sharp_rank, sharp = r, o
+    if not prices:
+        return None
+    best_odds, best_book = _fetch._best_non_outlier(prices)
+    return {"name": disp, "best_odds": best_odds, "best_book": best_book,
+            "n_books": len({b for _, b in prices}), "sharp_odds": sharp}
+
+
+def _unix_iso(unix):
+    from datetime import datetime, timezone
+    try:
+        return datetime.fromtimestamp(int(unix), tz=timezone.utc).isoformat()
+    except (TypeError, ValueError, OSError):
+        return ""
+
+
+def _event_from_match(det, market, sid):
+    """Z detailu zápasu (odds_comparison) postaví jeden normalizovaný event pre daný trh."""
+    oc = det.get("odds_comparison") or {}
+    home, away = det.get("home_name", ""), det.get("away_name", "")
+    commence = _unix_iso(det.get("date_unix"))
+    league = det.get("competition_name") or det.get("league_name") or ""
+    outs = []
+    if market == "h2h":
+        ftr = oc.get("FT Result") or {}
+        for key, disp in (("1", home), ("X", "Draw"), ("2", away)):
+            o = _outcome_from_books(disp, ftr.get(key))
+            if o:
+                outs.append(o)
+    elif market == "totals":
+        ou = oc.get("Over/Under") or {}
+        for key in ("Over 2.5", "Under 2.5"):
+            o = _outcome_from_books(key, ou.get(key))
+            if o:
+                outs.append(o)
+    if len(outs) < 2:
+        return None
+    return {"league": league, "sport_key": "soccer", "home": home, "away": away,
+            "commence": commence, "market": market, "outcomes": outs,
+            "match_id": det.get("id")}
+
+
+def value_events(cfg, api_key=None):
+    """
+    VALUE zdroj z FootyStats (náhrada za The Odds API) — bez limitu 6 líg.
+    Použije ligy vybrané vo FootyStats dashboarde (chosen), pre nadchádzajúce zápasy stiahne
+    odds_comparison (kurzy po knihách vrátane Pinnacle) a vráti normalizované eventy ako fetch.normalize().
+    Vráti (events, info).
+    """
+    pcfg = (cfg.get("legs", {}) or {}).get("prediction", {}) or {}
+    season_ids, err = chosen_season_ids(api_key, max_leagues=pcfg.get("max_leagues", 15))
+    if err:
+        return [], {"error": err}
+    markets = cfg.get("markets", ["h2h", "totals"])
+    max_per = cfg.get("value_max_matches_per_league", 25)
+    events, info = [], {"matches": 0, "remaining": None, "seasons": len(season_ids)}
+    for sid in season_ids:
+        try:
+            matches, meta = league_matches(sid, api_key)
+        except (urllib.error.HTTPError, urllib.error.URLError):
+            continue
+        info["remaining"] = meta.get("request_remaining")
+        for base in upcoming_matches(matches)[:max_per]:
+            try:
+                det = (match_detail(base["id"], api_key) or {}).get("data") or {}
+            except (urllib.error.HTTPError, urllib.error.URLError):
+                continue
+            for market in markets:
+                ev = _event_from_match(det, market, sid)
+                if ev:
+                    events.append(ev)
+            info["matches"] += 1
+            time.sleep(0.12)
+    return events, info
 
 
 if __name__ == "__main__":

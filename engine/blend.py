@@ -79,6 +79,7 @@ def _evaluate_outcome(event, i, fair_probs, p_market, p_model, cfg):
         "stake_amount": round(cfg["bankroll"] * stake_pct / 100.0, 2),
         "confidence": conf,
         "n_books": n_books,
+        "match_id": event.get("match_id"),
     }
 
 

@@ -29,6 +29,7 @@ import signal as signal_mod        # noqa: E402
 import predict_model as predmodel  # noqa: E402
 import betburger as betburger_mod  # noqa: E402
 import arb as arb_mod              # noqa: E402
+import footystats as fs_mod        # noqa: E402
 
 
 def load_config():
@@ -102,14 +103,23 @@ def run(cache_path=None):
     cfg = load_config()
     notes = []
 
+    value_source = cfg.get("value_source", "odds_api")
     if cache_path:
         raw = fetch_mod.load_cached(cache_path)
         info = {"requests_remaining": "n/a (cache)"}
         notes.append(f"Offline rezim z cache: {cache_path}")
+        events = fetch_mod.normalize(raw, cfg)
+    elif value_source == "footystats":
+        # value zdroj = FootyStats (kurzy po knihách vrátane Pinnacle) — bez limitu líg
+        events, vinfo = fs_mod.value_events(cfg)
+        info = {"requests_remaining": f"FS:{vinfo.get('remaining')}"}
+        if vinfo.get("error"):
+            notes.append(f"value zdroj FootyStats CHYBA: {vinfo['error']}")
+        else:
+            notes.append(f"value zdroj: FootyStats — {vinfo.get('matches')} zápasov, {vinfo.get('seasons')} líg")
     else:
         raw, info = fetch_mod.fetch_odds(cfg)
-
-    events = fetch_mod.normalize(raw, cfg)
+        events = fetch_mod.normalize(raw, cfg)
     ratings = model_mod.load_ratings()
     if not ratings:
         notes.append("ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).")
@@ -195,16 +205,17 @@ def run(cache_path=None):
     arb_cfg = (cfg.get("legs", {}) or {}).get("arb", {}) or {}
     if arb_cfg.get("enabled"):
         arb_total = 0
-        # zdroj A: surebety z The Odds API kurzov (medzinárodné knihy)
-        try:
-            horizon_events = [e for e in events
-                              if within_horizon(e["commence"], cfg.get("horizon_hours", 72))]
-            a = arb_mod.find_arbs(horizon_events, cfg)
-            all_signals.extend(a); arb_total += len(a)
-            notes.append(f"[arb] OddsAPI: {len(a)} surebetov z {len(horizon_events)} trhov")
-        except Exception as e:   # noqa: BLE001 - izolácia zdroja
-            notes.append(f"[arb] OddsAPI CHYBA: {e}")
-            print(f"[predict] arb (OddsAPI) zlyhal: {e}")
+        # zdroj A: surebety z The Odds API kurzov (len keď value zdroj = odds_api; potrebuje per-book dáta)
+        if value_source == "odds_api":
+            try:
+                horizon_events = [e for e in events
+                                  if within_horizon(e["commence"], cfg.get("horizon_hours", 72))]
+                a = arb_mod.find_arbs(horizon_events, cfg)
+                all_signals.extend(a); arb_total += len(a)
+                notes.append(f"[arb] OddsAPI: {len(a)} surebetov z {len(horizon_events)} trhov")
+            except Exception as e:   # noqa: BLE001 - izolácia zdroja
+                notes.append(f"[arb] OddsAPI CHYBA: {e}")
+                print(f"[predict] arb (OddsAPI) zlyhal: {e}")
         # zdroj B: BetBurger (SK knihy ako Tipsport; capped ~1 % bez plateného plánu)
         if (arb_cfg.get("betburger", {}) or {}).get("filter_ids"):
             try:

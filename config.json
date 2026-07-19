@@ -22,6 +22,10 @@
   "markets": ["h2h", "totals"],
   "odds_format": "decimal",
 
+  "value_source": "footystats",
+  "_value_source_note": "'footystats' = kurzy po knihách (vrátane Pinnacle) z FootyStats /match odds_comparison naprieč VYBRANÝMI ligami (dashboard) — BEZ limitu 6 líg, nezávislé od Odds API. 'odds_api' = pôvodný The Odds API (config.sports, limit kvótou). Pri 'footystats' sa config.sports/regions pre value ignorujú.",
+  "value_max_matches_per_league": 25,
+
   "sharp_books": ["pinnacle", "betfair_ex_eu", "smarkets"],
   "_sharp_note": "Z tychto knih sa odhaduje PRAVDIVA pravdepodobnost (devig). Beru sa tie, ktore su dostupne.",
 
