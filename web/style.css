@@ -234,3 +234,14 @@ footer { margin-top: 24px; }
 .bookchip:hover { border-color: var(--muted); }
 .bookchip.on { background: var(--accent-soft); color: #fff; border-color: var(--accent); }
 .bf-actions { display: flex; gap: 8px; }
+.bf-search { width: 100%; margin: 8px 0; padding: 9px 12px; background: var(--card); color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+.bf-search:focus { outline: none; border-color: var(--accent); }
+.bf-none-found { color: var(--muted); font-size: 0.85rem; }
+
+/* predikčné trhy (mini prehľad na karte) */
+.pred-markets { display: flex; gap: 8px; margin: 4px 0 10px; }
+.pred-markets .pm { flex: 1; background: var(--card-2); border-radius: 8px; padding: 8px; text-align: center; }
+.pred-markets .pm span { display: block; font-size: 0.68rem; color: var(--muted); text-transform: uppercase; }
+.pred-markets .pm b { display: block; font-size: 0.9rem; margin: 2px 0; }
+.pred-markets .pm small { color: var(--accent); font-weight: 600; font-size: 0.8rem; }

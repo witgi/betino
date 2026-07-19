@@ -219,12 +219,20 @@ def run(cache_path=None):
             legs_enabled.append("arb")
         print(f"[predict] arb signálov spolu: {arb_total}")
 
+    # zoznam všetkých kníh pre filter v arb tabe (aj tie, čo práve nemajú arb) =
+    # známe BetBurger knihy + knihy z aktuálnych arbov (vrátane OddsAPI)
+    arb_leg_books = {l["book"] for s in all_signals if s.get("type") == "arb"
+                     for l in (s.get("legs") or s.get("stake_split") or []) if l.get("book")}
+    all_books = sorted(set(betburger_mod.BOOKMAKER_NAMES.values()) | arb_leg_books,
+                       key=lambda b: b.lower())
+
     signals_out = {
         "generated_at": out["generated_at"],
         "legs_enabled": legs_enabled,
         "sports": cfg["sports"],
         "staking": out["staking"],
         "performance": out["performance"],
+        "all_books": all_books,
         "signals": all_signals,
     }
     signals_path = os.path.join(ROOT, "data", "signals.json")

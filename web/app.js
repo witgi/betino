@@ -23,8 +23,9 @@ let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
 let PLACED = new Map();       // tip_key -> riadok user_bets (co som oznacil podane)
 let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
 let USER = null;
-let ARB_BOOKS = [];           // všetky kancelárie vyskytujúce sa v arboch
-let ARB_BOOK_SEL = null;      // Set vybraných kancelárií (null = zatiaľ neurčené → všetky)
+let ARB_BOOKS = [];           // MASTER zoznam kancelárií (aj tie bez aktuálneho arbu)
+let ARB_BOOK_SEL = null;      // Set vybraných kancelárií (null = všetky zobrazené)
+let ARB_SEARCH = "";          // hľadanie v zozname kancelárií
 
 // historická presnosť predikčného modelu (z backtest/backtest_predict.py, EPL 18/19)
 const PRED_BACKTEST = { matches: 360, h2h: 56, ou25: 54, btts: 50 };
@@ -274,6 +275,24 @@ function switchTab(tab) {
 // ---------- PREDIKCIE ----------
 function pct(x) { return x == null ? "–" : Math.round(x * 100) + " %"; }
 
+// najsilnejšia predikcia naprieč trhmi (1X2 / góly / BTTS) = to, čo model najviac „verí"
+function bestTip(s) {
+  const cands = [];
+  const pickName = (s.legs && s.legs[0]) ? (s.legs[0].selection === "Draw" ? "Remíza" : s.legs[0].selection) : null;
+  if (pickName && s.edge && s.edge.value != null)
+    cands.push({ sel: "Víťaz: " + pickName, prob: s.edge.value });
+  if (s.ou25) {
+    const over = s.ou25.over >= s.ou25.under;
+    cands.push({ sel: over ? "Nad 2.5 gólu" : "Pod 2.5 gólu", prob: over ? s.ou25.over : s.ou25.under });
+  }
+  if (s.btts) {
+    const yes = s.btts.yes >= s.btts.no;
+    cands.push({ sel: yes ? "Oba tímy skórujú" : "Bez oboch gólov", prob: yes ? s.btts.yes : s.btts.no });
+  }
+  cands.sort((a, b) => (b.prob || 0) - (a.prob || 0));
+  return cands[0] || { sel: "?", prob: null };
+}
+
 function predCard(s) {
   const ev = s.event || {};
   const x = s.xg || {};
@@ -283,7 +302,7 @@ function predCard(s) {
   const valueBadge = (evVal != null && evVal > 0)
     ? `<span class="badge badge-val">možná value +${evVal.toFixed(1)} %</span>` : "";
   const pickName = (s.legs && s.legs[0]) ? (s.legs[0].selection === "Draw" ? "Remíza" : s.legs[0].selection) : "?";
-  const pickOdds = (s.legs && s.legs[0] && s.legs[0].odds) ? s.legs[0].odds.toFixed(2) : "–";
+  const best = bestTip(s);
 
   const el = document.createElement("article");
   el.className = "card pred-card";
@@ -291,23 +310,27 @@ function predCard(s) {
     <div class="card-top"><span>${s.league || ev_sport(s)}</span><span>${fmtTime(ev.commence)}</span></div>
     <div class="match"><b>${ev.home}</b><span class="vs">vs</span><b>${ev.away}</b></div>
     <div class="pick">
-      <div class="sel">Tip modelu: ${pickName} ${valueBadge}
-        <small>istota predikcie ${pct(s.edge && s.edge.value)} · kurz trhu ${pickOdds}</small>
+      <div class="sel">⭐ Najsilnejší tip: ${best.sel} ${valueBadge}
+        <small>najistejšia predikcia modelu pre tento zápas</small>
       </div>
-      <div class="odds"><b>${pct(s.edge && s.edge.value)}</b><small>pravdepod.</small></div>
+      <div class="odds"><b>${pct(best.prob)}</b><small>istota</small></div>
+    </div>
+    <div class="pred-markets">
+      <div class="pm"><span>Víťaz</span><b>${pickName}</b><small>${pct(p[pickCode(s)])}</small></div>
+      <div class="pm"><span>Góly</span><b>${(s.ou25 && s.ou25.over >= s.ou25.under) ? "Nad 2.5" : "Pod 2.5"}</b><small>${pct(s.ou25 && Math.max(s.ou25.over, s.ou25.under))}</small></div>
+      <div class="pm"><span>Oba skórujú</span><b>${(s.btts && s.btts.yes >= s.btts.no) ? "Áno" : "Nie"}</b><small>${pct(s.btts && Math.max(s.btts.yes, s.btts.no))}</small></div>
     </div>
     <div class="pred-bars">
       ${bar("1", p.home)} ${bar("X", p.draw)} ${bar("2", p.away)}
     </div>
     <div class="grid">
       <div class="item"><span>Očak. góly (xG)</span><b>${x.home ?? "–"} : ${x.away ?? "–"}</b></div>
-      <div class="item"><span>Nad 2.5 gólu</span><b>${pct(s.ou25 && s.ou25.over)}</b></div>
-      <div class="item"><span>Oba skórujú</span><b>${pct(s.btts && s.btts.yes)}</b></div>
       <div class="item"><span>Najpravdep. skóre</span><b>${top ? top[0] : "–"}</b></div>
     </div>
-    <p class="pred-foot">🔮 predikcia (neoverená value)${s.fs_potential && s.fs_potential.o25 != null ? ` · FootyStats nad2.5: ${s.fs_potential.o25}%` : ""}</p>`;
+    <p class="pred-foot">🔮 predikcia (neoverená value) · „istota" = pravdepodobnosť podľa modelu${s.fs_potential && s.fs_potential.o25 != null ? ` · FootyStats nad2.5: ${s.fs_potential.o25}%` : ""}</p>`;
   return el;
 }
+function pickCode(s) { return s.pick === "home" ? "home" : s.pick === "away" ? "away" : "draw"; }
 function ev_sport(s) { return s.sport || ""; }
 function bar(lbl, v) {
   const h = Math.round((v || 0) * 100);
@@ -429,18 +452,34 @@ function renderArbFilter() {
   if (!box) return;
   if (!ARB_BOOKS.length) { box.classList.add("hidden"); return; }
   box.classList.remove("hidden");
+  const selCount = ARB_BOOK_SEL ? ARB_BOOK_SEL.size : ARB_BOOKS.length;
+  box.innerHTML = `<div class="bf-head">Moje kancelárie
+      <small>vyber tie, kde máš účet — ukážem len arby medzi nimi (vybraných: ${selCount})</small></div>
+    <input id="bf-search" class="bf-search" type="search" placeholder="🔍 hľadať kanceláriu…" autocomplete="off">
+    <div class="bf-chips" id="bf-chips"></div>
+    <div class="bf-actions">
+      <button id="bf-all" class="btn-sm">Označiť všetky</button>
+      <button id="bf-none" class="btn-sm">Zrušiť všetky</button>
+    </div>`;
+  renderArbChips();
+  const s = document.getElementById("bf-search");
+  s.value = ARB_SEARCH;
+  s.oninput = () => { ARB_SEARCH = s.value; renderArbChips(); };
+  document.getElementById("bf-all").onclick = () => { ARB_BOOK_SEL = null; localStorage.removeItem("arbBooks"); renderArbs(); };
+  document.getElementById("bf-none").onclick = () => { ARB_BOOK_SEL = new Set(); saveArbBookSel(); renderArbs(); };
+}
+
+function renderArbChips() {
+  const wrap = document.getElementById("bf-chips");
+  if (!wrap) return;
+  const q = (ARB_SEARCH || "").toLowerCase().trim();
   const sel = ARB_BOOK_SEL;   // null = všetky zapnuté
-  const chips = ARB_BOOKS.map(b => {
+  const list = ARB_BOOKS.filter(b => b.toLowerCase().includes(q));
+  wrap.innerHTML = list.map(b => {
     const on = !sel || sel.has(b);
     return `<button class="bookchip ${on ? "on" : ""}" data-book="${b}">${on ? "✓ " : ""}${b}</button>`;
-  }).join("");
-  box.innerHTML = `<div class="bf-head">Moje kancelárie
-      <small>klikni len tie, kde máš účet — ukážem len arby medzi nimi</small></div>
-    <div class="bf-chips">${chips}</div>
-    <div class="bf-actions"><button id="bf-all" class="btn-sm">Označiť všetky</button></div>`;
-  box.querySelectorAll(".bookchip").forEach(btn => btn.onclick = () => toggleBook(btn.dataset.book));
-  const allBtn = document.getElementById("bf-all");
-  if (allBtn) allBtn.onclick = () => { ARB_BOOK_SEL = null; localStorage.removeItem("arbBooks"); renderArbs(); };
+  }).join("") || `<span class="bf-none-found">Nič nenájdené</span>`;
+  wrap.querySelectorAll(".bookchip").forEach(btn => btn.onclick = () => toggleBook(btn.dataset.book));
 }
 
 function toggleBook(book) {
@@ -476,10 +515,10 @@ async function loadSignals() {
     const sig = await res.json();
     PREDICTIONS = (sig.signals || []).filter(s => s.type === "prediction").sort(byDate);
     ARBS = (sig.signals || []).filter(s => s.type === "arb").sort(byDate);
-    // zoznam všetkých kancelárií v arboch + načítaj uložený výber
-    const books = new Set();
+    // MASTER zoznam kancelárií: z all_books (aj tie bez aktuálneho arbu) + fallback z arbov
+    const books = new Set(sig.all_books || []);
     ARBS.forEach(s => arbBooksOf(s).forEach(b => books.add(b)));
-    ARB_BOOKS = [...books].sort();
+    ARB_BOOKS = [...books].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
     ARB_BOOK_SEL = loadArbBookSel();   // null = všetky zobrazené
   } catch (e) { PREDICTIONS = null; ARBS = null; }
 }
