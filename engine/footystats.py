@@ -28,8 +28,9 @@ import fetch as _fetch   # noqa: E402  (kvôli _best_non_outlier pre value zdroj
 
 API_BASE = "https://api.football-data-api.com"
 
-# FootyStats názvy ostrých kníh v odds_comparison (v poradí preferencie pre devig)
-FS_SHARP = ["Pncl", "Betfair", "Smarkets", "Matchbook"]
+# FootyStats názvy ostrých kníh v odds_comparison (v poradí preferencie pre devig).
+# Pri nadchádzajúcich zápasoch Pinnacle nemusí byť — burzy (Betfair/Smarkets) sú rovnako dobrá ostrá linka.
+FS_SHARP = ["Pncl", "Pinnacle", "Betfair", "Smarkets", "Matchbook", "Sbo", "SBO", "CloudBet"]
 
 
 def _get(path, params):
@@ -166,6 +167,46 @@ def _unix_iso(unix):
         return ""
 
 
+def _pick_market(oc, names):
+    """Nájde trh v odds_comparison (FootyStats mení názvy podľa toho, či je zápas odohratý)."""
+    if not isinstance(oc, dict):
+        return None
+    for n in names:
+        if n in oc:
+            return oc[n]
+    low = {k.lower(): v for k, v in oc.items()}
+    for n in names:
+        if n.lower() in low:
+            return low[n.lower()]
+    return None
+
+
+def _find_sel(d, candidates):
+    """Nájde výber v trhu — kľúče bývajú '1'/'X'/'2' (odohraté) aj 'Home'/'Draw'/'Away' (budúce)."""
+    if not isinstance(d, dict):
+        return None
+    for c in candidates:
+        if c in d:
+            return d[c]
+    low = {k.lower().strip(): v for k, v in d.items()}
+    for c in candidates:
+        if c.lower() in low:
+            return low[c.lower()]
+    return None
+
+
+def _find_ou(d, side, line="2.5"):
+    """Nájde Over/Under danú čiaru nech sa kľúč volá akokoľvek (Over 2.5 / O2.5 / Over2.5)."""
+    if not isinstance(d, dict):
+        return None
+    tgt = line.replace(".", "")
+    for k, v in d.items():
+        kl = k.lower().replace(" ", "").replace(".", "")
+        if kl.startswith(side) and tgt in kl:
+            return v
+    return None
+
+
 def _event_from_match(det, market, sid):
     """Z detailu zápasu (odds_comparison) postaví jeden normalizovaný event pre daný trh."""
     oc = det.get("odds_comparison") or {}
@@ -174,15 +215,17 @@ def _event_from_match(det, market, sid):
     league = det.get("competition_name") or det.get("league_name") or ""
     outs = []
     if market == "h2h":
-        ftr = oc.get("FT Result") or {}
-        for key, disp in (("1", home), ("X", "Draw"), ("2", away)):
-            o = _outcome_from_books(disp, ftr.get(key))
+        ftr = _pick_market(oc, ["FT Result", "Full Time Result", "Match Result", "1X2"]) or {}
+        for cands, disp in ((["1", "Home", "Home Win"], home),
+                            (["X", "Draw"], "Draw"),
+                            (["2", "Away", "Away Win"], away)):
+            o = _outcome_from_books(disp, _find_sel(ftr, cands))
             if o:
                 outs.append(o)
     elif market == "totals":
-        ou = oc.get("Over/Under") or {}
-        for key in ("Over 2.5", "Under 2.5"):
-            o = _outcome_from_books(key, ou.get(key))
+        ou = _pick_market(oc, ["Goals Over/Under", "Over/Under", "Total Goals", "Goals"]) or {}
+        for side, disp in (("over", "Over 2.5"), ("under", "Under 2.5")):
+            o = _outcome_from_books(disp, _find_ou(ou, side, "2.5"))
             if o:
                 outs.append(o)
     if len(outs) < 2:
