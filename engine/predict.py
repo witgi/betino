@@ -116,7 +116,10 @@ def run(cache_path=None):
         if vinfo.get("error"):
             notes.append(f"value zdroj FootyStats CHYBA: {vinfo['error']}")
         else:
-            notes.append(f"value zdroj: FootyStats — {vinfo.get('matches')} zápasov, {vinfo.get('seasons')} líg")
+            notes.append(
+                f"value zdroj: FootyStats — {vinfo.get('seasons')} líg | nadchádzajúcich {vinfo.get('upcoming')}"
+                f" | v horizonte {vinfo.get('in_horizon')} | detailov {vinfo.get('details')}"
+                f" | s kurzami {vinfo.get('with_odds')} | eventov {len(events)}")
     else:
         raw, info = fetch_mod.fetch_odds(cfg)
         events = fetch_mod.normalize(raw, cfg)

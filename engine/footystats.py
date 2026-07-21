@@ -205,23 +205,49 @@ def value_events(cfg, api_key=None):
         return [], {"error": err}
     markets = cfg.get("markets", ["h2h", "totals"])
     max_per = cfg.get("value_max_matches_per_league", 25)
-    events, info = [], {"matches": 0, "remaining": None, "seasons": len(season_ids)}
+    horizon_h = cfg.get("horizon_hours", 72)
+    now = time.time()
+    until = now + horizon_h * 3600.0
+
+    events = []
+    # diagnostika — nech je z logu jasné, kde sa zápasy stratili
+    info = {"seasons": len(season_ids), "remaining": None,
+            "upcoming": 0, "in_horizon": 0, "details": 0, "with_odds": 0, "matches": 0}
     for sid in season_ids:
         try:
             matches, meta = league_matches(sid, api_key)
         except (urllib.error.HTTPError, urllib.error.URLError):
             continue
         info["remaining"] = meta.get("request_remaining")
-        for base in upcoming_matches(matches)[:max_per]:
+        ups = upcoming_matches(matches)
+        info["upcoming"] += len(ups)
+        # detaily sťahujeme LEN pre zápasy v horizonte (šetrí requesty aj čas)
+        inh = []
+        for m in ups:
+            try:
+                t = float(m.get("date_unix") or 0)
+            except (TypeError, ValueError):
+                continue
+            if now <= t <= until:
+                inh.append(m)
+        inh = inh[:max_per]
+        info["in_horizon"] += len(inh)
+        for base in inh:
             try:
                 det = (match_detail(base["id"], api_key) or {}).get("data") or {}
             except (urllib.error.HTTPError, urllib.error.URLError):
                 continue
+            info["details"] += 1
+            if det.get("odds_comparison"):
+                info["with_odds"] += 1
+            built = 0
             for market in markets:
                 ev = _event_from_match(det, market, sid)
                 if ev:
                     events.append(ev)
-            info["matches"] += 1
+                    built += 1
+            if built:
+                info["matches"] += 1
             time.sleep(0.12)
     return events, info
 
