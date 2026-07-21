@@ -32,6 +32,9 @@ API_BASE = "https://api.football-data-api.com"
 # Pri nadchádzajúcich zápasoch Pinnacle nemusí byť — burzy (Betfair/Smarkets) sú rovnako dobrá ostrá linka.
 FS_SHARP = ["Pncl", "Pinnacle", "Betfair", "Smarkets", "Matchbook", "Sbo", "SBO", "CloudBet"]
 
+# season_id -> názov ligy (plní chosen_season_ids; detail zápasu názov ligy nevracia)
+SEASON_NAMES = {}
+
 
 def _get(path, params):
     url = f"{API_BASE}/{path}?" + urllib.parse.urlencode(params)
@@ -72,6 +75,8 @@ def chosen_season_ids(api_key=None, max_leagues=None):
         best = max(seasons, key=lambda s: s.get("year", 0) or 0)
         if best.get("id"):
             ids.append(best["id"])
+            # zapamätaj názov ligy (FootyStats ho v detaile zápasu nevracia)
+            SEASON_NAMES[best["id"]] = lg.get("name") or lg.get("league_name") or ""
     if max_leagues:
         ids = ids[:max_leagues]
     return ids, None
@@ -304,6 +309,8 @@ def value_events(cfg, api_key=None):
             for market in markets:
                 ev = _event_from_match(det, market, sid)
                 if ev:
+                    if not ev.get("league"):
+                        ev["league"] = SEASON_NAMES.get(sid, "")
                     events.append(ev)
                     built += 1
             if built:
