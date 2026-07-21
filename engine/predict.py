@@ -120,6 +120,8 @@ def run(cache_path=None):
                 f"value zdroj: FootyStats — {vinfo.get('seasons')} líg | nadchádzajúcich {vinfo.get('upcoming')}"
                 f" | v horizonte {vinfo.get('in_horizon')} | detailov {vinfo.get('details')}"
                 f" | s kurzami {vinfo.get('with_odds')} | eventov {len(events)}")
+            if vinfo.get("_dbg"):
+                notes.append(f"[value-debug] odds_comparison tvar: {vinfo['_dbg']}")
     else:
         raw, info = fetch_mod.fetch_odds(cfg)
         events = fetch_mod.normalize(raw, cfg)

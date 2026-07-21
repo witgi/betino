@@ -238,8 +238,25 @@ def value_events(cfg, api_key=None):
             except (urllib.error.HTTPError, urllib.error.URLError):
                 continue
             info["details"] += 1
-            if det.get("odds_comparison"):
+            oc_dbg = det.get("odds_comparison")
+            if oc_dbg:
                 info["with_odds"] += 1
+                # jednorazový debug: aký tvar má odds_comparison pri NADCHÁDZAJÚCOM zápase
+                if "_dbg" not in info:
+                    d = {"type": type(oc_dbg).__name__}
+                    if isinstance(oc_dbg, dict):
+                        d["markets"] = list(oc_dbg.keys())[:10]
+                        ftr = oc_dbg.get("FT Result")
+                        d["ft_type"] = type(ftr).__name__
+                        if isinstance(ftr, dict):
+                            ks = list(ftr.keys())[:6]
+                            d["ft_keys"] = ks
+                            d["ft_sample"] = str(ftr.get(ks[0]))[:200] if ks else None
+                        else:
+                            d["ft_raw"] = str(ftr)[:200]
+                    else:
+                        d["raw"] = str(oc_dbg)[:300]
+                    info["_dbg"] = d
             built = 0
             for market in markets:
                 ev = _event_from_match(det, market, sid)
