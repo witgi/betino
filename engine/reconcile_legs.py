@@ -58,6 +58,17 @@ def _write_jsonl(path, rows):
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
 
+def _days_past(commence_iso):
+    """Koľko dní ubehlo od výkopu (0 ak v budúcnosti/neznáme)."""
+    if not commence_iso:
+        return 0
+    try:
+        t = datetime.fromisoformat(commence_iso.replace("Z", "+00:00"))
+    except ValueError:
+        return 0
+    return max(0.0, (datetime.now(timezone.utc) - t).total_seconds() / 86400.0)
+
+
 def _past(commence_iso):
     if not commence_iso:
         return False
@@ -114,6 +125,11 @@ def settle_predictions():
         mid = r.get("match_id")
         if not mid:
             r["result"] = "void"; r["settled_at"] = _now(); continue
+        # poistka: keď FootyStats výsledok nedoplní ani po 7 dňoch, tip zahodíme (nech neblokuje štatistiku)
+        if _days_past(r.get("commence")) > 7:
+            r["result"] = "void"; r["settled_at"] = _now()
+            diag.append(f"{mid}: void (>7 dní bez výsledku)")
+            continue
         try:
             resp = fs.match_detail(mid)
             m = (resp.get("data") if isinstance(resp, dict) else None) or {}
