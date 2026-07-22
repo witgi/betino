@@ -107,7 +107,7 @@ def log_predictions(signals):
 def settle_predictions():
     """Vyhodnoť odohraté tipy cez FootyStats výsledok."""
     rows = _load_jsonl(HIST_PRED)
-    settled = 0
+    settled, diag = 0, []
     for r in rows:
         if r.get("result") != "pending" or not _past(r.get("commence")):
             continue
@@ -116,19 +116,26 @@ def settle_predictions():
             r["result"] = "void"; r["settled_at"] = _now(); continue
         try:
             resp = fs.match_detail(mid)
-            m = resp.get("data") if isinstance(resp, dict) else None
-            if not m or m.get("status") != "complete":
-                continue
+            m = (resp.get("data") if isinstance(resp, dict) else None) or {}
+            if isinstance(m, list):          # niekedy vracia zoznam s jedným zápasom
+                m = m[0] if m else {}
+            status = m.get("status")
             gh, ga = m.get("homeGoalCount"), m.get("awayGoalCount")
-            if gh is None or ga is None:
+            # settlujeme keď sú góly k dispozícii (status býva 'complete', ale nespoliehame sa naň)
+            if gh is None or ga is None or (status not in ("complete", "finished") and gh == 0 and ga == 0):
+                diag.append(f"{mid}: status={status} skore={gh}:{ga}")
                 continue
             actual = "home" if gh > ga else ("away" if ga > gh else "draw")
             r["result"] = "win" if r.get("pick_code") == actual else "loss"
             r["settled_at"] = _now()
+            r["final_score"] = f"{gh}:{ga}"
             settled += 1
-        except Exception:   # noqa: BLE001 - jeden zápas nesmie zhodiť settling
+        except Exception as e:   # noqa: BLE001 - jeden zápas nesmie zhodiť settling
+            diag.append(f"{mid}: CHYBA {type(e).__name__} {str(e)[:60]}")
             continue
     _write_jsonl(HIST_PRED, rows)
+    for d in diag[:8]:
+        print(f"[reconcile_legs] nevyhodnotene -> {d}")
     return settled
 
 
