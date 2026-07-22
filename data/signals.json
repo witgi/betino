@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T00:03:11.356630+00:00",
+  "generated_at": "2026-07-22T08:42:11.260769+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -41,18 +41,17 @@
     "Betsson",
     "Betsson (IT)",
     "Betway",
-    "bk:12",
+    "bk:128",
     "bk:131",
-    "bk:145",
-    "bk:187",
-    "bk:22",
+    "bk:152",
     "bk:255",
-    "bk:294",
+    "bk:295",
+    "bk:434",
+    "bk:447",
     "bk:485",
     "bk:492",
-    "bk:61",
-    "bk:714",
-    "bk:747",
+    "bk:754",
+    "bk:92",
     "Bwin",
     "DafaSports",
     "DaznBet",
@@ -1188,7 +1187,7 @@
       "event": {
         "home": "Austin",
         "away": "Seattle Sounders",
-        "commence": "2026-07-23T00:30:00+00:00"
+        "commence": "2026-07-23T01:30:00+00:00"
       },
       "market": "h2h",
       "legs": [
@@ -1241,37 +1240,6 @@
       "fair_odds": 4.641,
       "stake_amount": 0.14,
       "n_books": 15,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie B",
-      "event": {
-        "home": "Vila Nova",
-        "away": "Fortaleza",
-        "commence": "2026-07-22T00:35:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "Unibet",
-          "odds": 3.2,
-          "stake_pct": 0.02,
-          "fair_prob": 0.3131
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.2
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.194,
-      "stake_amount": 0.22,
-      "n_books": 16,
       "official": false
     },
     {
@@ -1543,6 +1511,86 @@
       "fs_potential": {
         "o25": 100,
         "btts": 0
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
+        "home": "Levski Sofia",
+        "away": "Lokomotiv Sofia 1929",
+        "commence": "2026-11-21T00:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Levski Sofia",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.8341
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.834
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-11-21T00:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8546448,
+      "xg": {
+        "home": 3.36,
+        "away": 0.9
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.834,
+        "draw": 0.102,
+        "away": 0.063
+      },
+      "ou25": {
+        "over": 0.797,
+        "under": 0.203
+      },
+      "btts": {
+        "yes": 0.573,
+        "no": 0.427
+      },
+      "top_scores": [
+        [
+          "3-0",
+          0.089
+        ],
+        [
+          "3-1",
+          0.08
+        ],
+        [
+          "2-0",
+          0.08
+        ],
+        [
+          "4-0",
+          0.075
+        ],
+        [
+          "2-1",
+          0.072
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 50,
+        "btts": 100
       }
     },
     {
@@ -1870,6 +1918,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Górnik Zabrze",
+        "away": "Fenerbahçe",
+        "commence": "2026-07-29T18:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Fenerbahçe",
+          "book": "(trh)",
+          "odds": 1.76,
+          "fair_prob": 0.7996
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.8
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-07-29T18:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8554875,
+      "xg": {
+        "home": 0.37,
+        "away": 2.21
+      },
+      "pick": "away",
+      "model_ev_pct": 40.73,
+      "probs_1x2": {
+        "home": 0.049,
+        "draw": 0.152,
+        "away": 0.8
+      },
+      "ou25": {
+        "over": 0.477,
+        "under": 0.523
+      },
+      "btts": {
+        "yes": 0.275,
+        "no": 0.725
+      },
+      "top_scores": [
+        [
+          "0-2",
+          0.185
+        ],
+        [
+          "0-1",
+          0.167
+        ],
+        [
+          "0-3",
+          0.136
+        ],
+        [
+          "0-0",
+          0.076
+        ],
+        [
+          "0-4",
+          0.075
+        ]
+      ],
+      "market_odds": {
+        "1": 4.26,
+        "x": 3.86,
+        "2": 1.76,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 0,
+        "btts": 0
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Rapid Bucureşti",
         "away": "UTA Arad",
         "commence": "2026-12-12T00:00:00+00:00"
@@ -1880,12 +2008,12 @@
           "selection": "Rapid Bucureşti",
           "book": "(trh)",
           "odds": 0.0,
-          "fair_prob": 0.7849
+          "fair_prob": 0.7925
         }
       ],
       "edge": {
         "metric": "model_prob",
-        "value": 0.785
+        "value": 0.792
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
@@ -1893,28 +2021,28 @@
       "source": "footystats",
       "match_id": 8579535,
       "xg": {
-        "home": 2.93,
+        "home": 2.99,
         "away": 0.9
       },
       "pick": "home",
       "model_ev_pct": null,
       "probs_1x2": {
-        "home": 0.785,
-        "draw": 0.13,
-        "away": 0.085
+        "home": 0.792,
+        "draw": 0.126,
+        "away": 0.082
       },
       "ou25": {
-        "over": 0.736,
-        "under": 0.264
+        "over": 0.745,
+        "under": 0.255
       },
       "btts": {
-        "yes": 0.562,
-        "no": 0.438
+        "yes": 0.564,
+        "no": 0.436
       },
       "top_scores": [
         [
           "2-0",
-          0.093
+          0.091
         ],
         [
           "3-0",
@@ -1922,7 +2050,7 @@
         ],
         [
           "2-1",
-          0.084
+          0.082
         ],
         [
           "3-1",
@@ -1930,7 +2058,7 @@
         ],
         [
           "4-0",
-          0.067
+          0.068
         ]
       ],
       "market_odds": {
@@ -1950,9 +2078,89 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Red Star Belgrade",
+        "away": "Larne",
+        "commence": "2026-07-29T18:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Red Star Belgrade",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7815
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.781
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-07-29T18:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8591641,
+      "xg": {
+        "home": 3.2,
+        "away": 1.1
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.781,
+        "draw": 0.124,
+        "away": 0.094
+      },
+      "ou25": {
+        "over": 0.802,
+        "under": 0.198
+      },
+      "btts": {
+        "yes": 0.64,
+        "no": 0.36
+      },
+      "top_scores": [
+        [
+          "3-1",
+          0.082
+        ],
+        [
+          "2-1",
+          0.076
+        ],
+        [
+          "3-0",
+          0.074
+        ],
+        [
+          "2-0",
+          0.069
+        ],
+        [
+          "4-1",
+          0.065
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 84,
+        "btts": 17
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Corvinul Hunedoara",
         "away": "Sepsi",
-        "commence": "2026-08-01T00:00:00+00:00"
+        "commence": "2026-08-03T15:30:00+00:00"
       },
       "market": "h2h",
       "legs": [
@@ -1969,7 +2177,7 @@
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-08-01T00:00:00+00:00",
+      "expires_hint": "2026-08-03T15:30:00+00:00",
       "source": "footystats",
       "match_id": 8579611,
       "xg": {
@@ -2023,6 +2231,86 @@
       "fs_potential": {
         "o25": 50,
         "btts": 0
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
+        "home": "Rapid Bucureşti",
+        "away": "Botoşani",
+        "commence": "2026-11-28T00:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Rapid Bucureşti",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7504
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.75
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-11-28T00:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8579497,
+      "xg": {
+        "home": 2.99,
+        "away": 1.12
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.75,
+        "draw": 0.139,
+        "away": 0.111
+      },
+      "ou25": {
+        "over": 0.777,
+        "under": 0.223
+      },
+      "btts": {
+        "yes": 0.64,
+        "no": 0.36
+      },
+      "top_scores": [
+        [
+          "2-1",
+          0.082
+        ],
+        [
+          "3-1",
+          0.082
+        ],
+        [
+          "2-0",
+          0.073
+        ],
+        [
+          "3-0",
+          0.073
+        ],
+        [
+          "4-1",
+          0.061
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 50,
+        "btts": 50
       }
     },
     {
@@ -2091,86 +2379,6 @@
         [
           "1-1",
           0.08
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 50,
-        "btts": 50
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Rapid Bucureşti",
-        "away": "Botoşani",
-        "commence": "2026-11-28T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Rapid Bucureşti",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.742
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.742
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-11-28T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8579497,
-      "xg": {
-        "home": 2.93,
-        "away": 1.12
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.742,
-        "draw": 0.143,
-        "away": 0.115
-      },
-      "ou25": {
-        "over": 0.769,
-        "under": 0.231
-      },
-      "btts": {
-        "yes": 0.638,
-        "no": 0.362
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.084
-        ],
-        [
-          "3-1",
-          0.082
-        ],
-        [
-          "2-0",
-          0.075
-        ],
-        [
-          "3-0",
-          0.073
-        ],
-        [
-          "4-1",
-          0.06
         ]
       ],
       "market_odds": {
@@ -2430,6 +2638,166 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Botev Plovdiv",
+        "away": "Arda",
+        "commence": "2027-03-06T00:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Botev Plovdiv",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7089
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.709
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2027-03-06T00:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8546436,
+      "xg": {
+        "home": 2.22,
+        "away": 0.75
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.709,
+        "draw": 0.18,
+        "away": 0.112
+      },
+      "ou25": {
+        "over": 0.57,
+        "under": 0.43
+      },
+      "btts": {
+        "yes": 0.47,
+        "no": 0.53
+      },
+      "top_scores": [
+        [
+          "2-0",
+          0.126
+        ],
+        [
+          "1-0",
+          0.114
+        ],
+        [
+          "2-1",
+          0.095
+        ],
+        [
+          "3-0",
+          0.094
+        ],
+        [
+          "1-1",
+          0.085
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 0,
+        "btts": 100
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
+        "home": "Rapid Bucureşti",
+        "away": "Csikszereda",
+        "commence": "2026-10-31T00:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Rapid Bucureşti",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7003
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.7
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-10-31T00:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8579592,
+      "xg": {
+        "home": 2.99,
+        "away": 1.38
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.7,
+        "draw": 0.151,
+        "away": 0.148
+      },
+      "ou25": {
+        "over": 0.811,
+        "under": 0.189
+      },
+      "btts": {
+        "yes": 0.711,
+        "no": 0.289
+      },
+      "top_scores": [
+        [
+          "2-1",
+          0.078
+        ],
+        [
+          "3-1",
+          0.078
+        ],
+        [
+          "4-1",
+          0.058
+        ],
+        [
+          "2-0",
+          0.057
+        ],
+        [
+          "3-0",
+          0.056
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 50,
+        "btts": 0
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "FK Bodo - Glimt",
         "away": "Rosenborg",
         "commence": "2026-08-30T12:30:00+00:00"
@@ -2503,86 +2871,6 @@
       "fs_potential": {
         "o25": 50,
         "btts": 9
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Rapid Bucureşti",
-        "away": "Csikszereda",
-        "commence": "2026-10-31T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Rapid Bucureşti",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.6912
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.691
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-10-31T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8579592,
-      "xg": {
-        "home": 2.93,
-        "away": 1.38
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.691,
-        "draw": 0.155,
-        "away": 0.154
-      },
-      "ou25": {
-        "over": 0.804,
-        "under": 0.196
-      },
-      "btts": {
-        "yes": 0.708,
-        "no": 0.292
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.08
-        ],
-        [
-          "3-1",
-          0.078
-        ],
-        [
-          "2-0",
-          0.058
-        ],
-        [
-          "4-1",
-          0.057
-        ],
-        [
-          "3-0",
-          0.056
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 50,
-        "btts": 0
       }
     },
     {
@@ -3230,6 +3518,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Rapid Bucureşti",
+        "away": "CFR Cluj",
+        "commence": "2026-08-02T18:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Rapid Bucureşti",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.6677
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.668
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-08-02T18:30:00+00:00",
+      "source": "footystats",
+      "match_id": 8579511,
+      "xg": {
+        "home": 2.99,
+        "away": 1.55
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.668,
+        "draw": 0.157,
+        "away": 0.175
+      },
+      "ou25": {
+        "over": 0.831,
+        "under": 0.169
+      },
+      "btts": {
+        "yes": 0.748,
+        "no": 0.252
+      },
+      "top_scores": [
+        [
+          "2-1",
+          0.074
+        ],
+        [
+          "3-1",
+          0.074
+        ],
+        [
+          "2-2",
+          0.057
+        ],
+        [
+          "3-2",
+          0.057
+        ],
+        [
+          "4-1",
+          0.055
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 50,
+        "btts": 50
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Inter Miami",
         "away": "Charlotte",
         "commence": "2026-11-07T21:00:00+00:00"
@@ -3630,67 +3998,67 @@
       "sport": "soccer",
       "league": "",
       "event": {
-        "home": "Rapid Bucureşti",
-        "away": "CFR Cluj",
-        "commence": "2026-08-01T00:00:00+00:00"
+        "home": "Botev Plovdiv",
+        "away": "Cherno More",
+        "commence": "2026-08-01T18:15:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Rapid Bucureşti",
+          "selection": "Botev Plovdiv",
           "book": "(trh)",
           "odds": 0.0,
-          "fair_prob": 0.6582
+          "fair_prob": 0.657
         }
       ],
       "edge": {
         "metric": "model_prob",
-        "value": 0.658
+        "value": 0.657
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-08-01T00:00:00+00:00",
+      "expires_hint": "2026-08-01T18:15:00+00:00",
       "source": "footystats",
-      "match_id": 8579511,
+      "match_id": 8546446,
       "xg": {
-        "home": 2.93,
-        "away": 1.55
+        "home": 2.22,
+        "away": 0.97
       },
       "pick": "home",
       "model_ev_pct": null,
       "probs_1x2": {
-        "home": 0.658,
-        "draw": 0.161,
-        "away": 0.181
+        "home": 0.657,
+        "draw": 0.191,
+        "away": 0.152
       },
       "ou25": {
-        "over": 0.824,
-        "under": 0.176
+        "over": 0.618,
+        "under": 0.382
       },
       "btts": {
-        "yes": 0.746,
-        "no": 0.254
+        "yes": 0.553,
+        "no": 0.447
       },
       "top_scores": [
         [
+          "2-0",
+          0.101
+        ],
+        [
           "2-1",
+          0.098
+        ],
+        [
+          "1-0",
+          0.091
+        ],
+        [
+          "1-1",
+          0.089
+        ],
+        [
+          "3-0",
           0.075
-        ],
-        [
-          "3-1",
-          0.074
-        ],
-        [
-          "2-2",
-          0.058
-        ],
-        [
-          "3-2",
-          0.057
-        ],
-        [
-          "4-1",
-          0.054
         ]
       ],
       "market_odds": {
@@ -3701,8 +4069,8 @@
         "btts_yes": 0.0
       },
       "fs_potential": {
-        "o25": 50,
-        "btts": 50
+        "o25": 0,
+        "btts": 100
       }
     },
     {
@@ -4512,7 +4880,7 @@
       "event": {
         "home": "Voluntari",
         "away": "UTA Arad",
-        "commence": "2026-08-01T00:00:00+00:00"
+        "commence": "2026-08-01T15:30:00+00:00"
       },
       "market": "h2h",
       "legs": [
@@ -4529,7 +4897,7 @@
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-08-01T00:00:00+00:00",
+      "expires_hint": "2026-08-01T15:30:00+00:00",
       "source": "footystats",
       "match_id": 8579619,
       "xg": {
@@ -7159,7 +7527,7 @@
         {
           "selection": "Inter Miami",
           "book": "(trh)",
-          "odds": 2.07,
+          "odds": 2.05,
           "fair_prob": 0.6131
         }
       ],
@@ -7177,7 +7545,7 @@
         "away": 1.32
       },
       "pick": "home",
-      "model_ev_pct": 26.91,
+      "model_ev_pct": 25.68,
       "probs_1x2": {
         "home": 0.613,
         "draw": 0.188,
@@ -7214,10 +7582,10 @@
         ]
       ],
       "market_odds": {
-        "1": 2.07,
-        "x": 3.65,
-        "2": 2.9,
-        "over25": 1.33,
+        "1": 2.05,
+        "x": 4.1,
+        "2": 2.88,
+        "over25": 1.36,
         "btts_yes": 0.0
       },
       "fs_potential": {
@@ -7306,424 +7674,24 @@
       }
     },
     {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Red Star Belgrade",
-        "away": "IMT Novi Beograd",
-        "commence": "2027-02-27T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Red Star Belgrade",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.6107
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.611
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2027-02-27T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8551619,
-      "xg": {
-        "home": 2.92,
-        "away": 1.79
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.611,
-        "draw": 0.168,
-        "away": 0.221
-      },
-      "ou25": {
-        "over": 0.848,
-        "under": 0.152
-      },
-      "btts": {
-        "yes": 0.788,
-        "no": 0.212
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.069
-        ],
-        [
-          "3-1",
-          0.067
-        ],
-        [
-          "2-2",
-          0.062
-        ],
-        [
-          "3-2",
-          0.06
-        ],
-        [
-          "4-1",
-          0.049
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 50,
-        "btts": 0
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Petrolul 52",
-        "away": "SSC Farul",
-        "commence": "2027-02-13T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "SSC Farul",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.6106
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.611
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2027-02-13T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8579551,
-      "xg": {
-        "home": 0.9,
-        "away": 1.91
-      },
-      "pick": "away",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.172,
-        "draw": 0.218,
-        "away": 0.611
-      },
-      "ou25": {
-        "over": 0.533,
-        "under": 0.467
-      },
-      "btts": {
-        "yes": 0.506,
-        "no": 0.494
-      },
-      "top_scores": [
-        [
-          "0-1",
-          0.115
-        ],
-        [
-          "0-2",
-          0.11
-        ],
-        [
-          "1-1",
-          0.103
-        ],
-        [
-          "1-2",
-          0.099
-        ],
-        [
-          "0-3",
-          0.07
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 50,
-        "btts": 50
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Vasco da Gama",
-        "away": "Coritiba",
-        "commence": "2026-09-19T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Vasco da Gama",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.61
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.61
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-09-19T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8409654,
-      "xg": {
-        "home": 2.1,
-        "away": 1.07
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.61,
-        "draw": 0.205,
-        "away": 0.185
-      },
-      "ou25": {
-        "over": 0.614,
-        "under": 0.386
-      },
-      "btts": {
-        "yes": 0.577,
-        "no": 0.423
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.099
-        ],
-        [
-          "1-1",
-          0.094
-        ],
-        [
-          "2-0",
-          0.093
-        ],
-        [
-          "1-0",
-          0.088
-        ],
-        [
-          "3-1",
-          0.069
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 60,
-        "btts": 50
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "CRB",
-        "away": "Cuiabá",
-        "commence": "2026-09-25T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "CRB",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.6098
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.61
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-09-25T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8469631,
-      "xg": {
-        "home": 2.11,
-        "away": 1.08
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.61,
-        "draw": 0.204,
-        "away": 0.186
-      },
-      "ou25": {
-        "over": 0.618,
-        "under": 0.382
-      },
-      "btts": {
-        "yes": 0.58,
-        "no": 0.42
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.099
-        ],
-        [
-          "1-1",
-          0.094
-        ],
-        [
-          "2-0",
-          0.092
-        ],
-        [
-          "1-0",
-          0.087
-        ],
-        [
-          "3-1",
-          0.07
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 45,
-        "btts": 45
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Botev Vratsa",
-        "away": "Lokomotiv Plovdiv",
-        "commence": "2026-10-31T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Lokomotiv Plovdiv",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.6105
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.61
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-10-31T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8546370,
-      "xg": {
-        "home": 0.83,
-        "away": 1.83
-      },
-      "pick": "away",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.166,
-        "draw": 0.224,
-        "away": 0.61
-      },
-      "ou25": {
-        "over": 0.497,
-        "under": 0.503
-      },
-      "btts": {
-        "yes": 0.473,
-        "no": 0.527
-      },
-      "top_scores": [
-        [
-          "0-1",
-          0.128
-        ],
-        [
-          "0-2",
-          0.117
-        ],
-        [
-          "1-1",
-          0.106
-        ],
-        [
-          "1-2",
-          0.097
-        ],
-        [
-          "0-3",
-          0.071
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 0,
-        "btts": 50
-      }
-    },
-    {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Champions League Qualification",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
       "event": {
-        "home": "Egnatia Rrogozhine",
-        "away": "Celje",
-        "commence": "2026-07-22T19:00:00+00:00"
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
       },
-      "market": "7:2",
+      "market": "8:2",
       "legs": [
         {
-          "selection": "AH 1 0.5",
-          "book": "FB Sports",
+          "selection": "AH 1 -2.5",
+          "book": "bk:447",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 -0.5",
-          "book": "bk:747",
+          "selection": "AH 2 2.5",
+          "book": "Betcity",
           "odds": 2.02
         }
       ],
@@ -7733,9 +7701,56 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-22T19:00:00+00:00",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
       "source": "betburger",
-      "arb_id": "b3e72e81a8ebace65dd405dd888f90c3",
+      "arb_id": "0d536d86491f4ef4c64c8c31300254ab",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        64
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:754",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "3dc18ed504c78c3545a9037feec5ad0e",
       "is_live": false,
       "bk_ids": [
         0,
@@ -7743,13 +7758,104 @@
         0,
         0,
         0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:131",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "3b4081a039f3dddd26af2b4b20b1e2ee",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        32,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:131",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "bk:434",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d1fb7c9f3b11f7632b5ed3f2eb2223ee",
+      "is_live": false,
+      "bk_ids": [
         0,
         0,
         32,
         0,
         0,
         0,
-        18014398509481984
+        72057594037927936
       ],
       "direct_links": [
         "",
@@ -7758,428 +7864,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Brazil. Serie A",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
       "event": {
-        "home": "Cruzeiro MG",
-        "away": "Botafogo RJ",
-        "commence": "2026-07-26T19:00:00+00:00"
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
       },
-      "market": "7:2",
+      "market": "8:2",
       "legs": [
         {
-          "selection": "1",
-          "book": "bk:145",
-          "odds": 2.65
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "BetinAsia",
-          "odds": 1.632
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-26T19:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "78fa756bc14ccf025e1a86362e8710f7",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037927936,
-        524288
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Norway. Eliteserien",
-      "event": {
-        "home": "Kristiansund",
-        "away": "IK Start",
-        "commence": "2026-07-25T14:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 4.5",
-          "book": "bk:294",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 4.5",
-          "book": "PariMatch",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-25T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "dc4741a2491625e24cd074c3e5dc7a07",
-      "is_live": false,
-      "bk_ids": [
-        131072,
-        0,
-        0,
-        0,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Baseball",
-      "league": "USA. MLB",
-      "event": {
-        "home": "Philadelphia Phillies",
-        "away": "Los Angeles Dodgers",
-        "commence": "2026-07-22T22:40:00+00:00"
-      },
-      "market": "1:3",
-      "legs": [
-        {
-          "selection": "Nad 9.5",
-          "book": "Betsson",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 9.5",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T22:40:00+00:00",
-      "source": "betburger",
-      "arb_id": "e9f83941e8007fea11c29c1e016a8e2c",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        2147483648
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "New Zealand. NBL",
-      "event": {
-        "home": "Whai",
-        "away": "Otago Nuggets",
-        "commence": "2026-07-22T07:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 -3.5",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 5.5",
-          "book": "Expekt",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T07:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "0617130789b02ef9fd7fb6cf0ffa5fb0",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        8,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "New Zealand. NBL",
-      "event": {
-        "home": "Whai",
-        "away": "Otago Nuggets",
-        "commence": "2026-07-22T07:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 -3.5",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 5",
-          "book": "Marathon",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T07:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "51ac5ab7616599da9b5c4b4542d488fb",
-      "is_live": false,
-      "bk_ids": [
-        16,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "New Zealand. NBL",
-      "event": {
-        "home": "Whai",
-        "away": "Otago Nuggets",
-        "commence": "2026-07-22T07:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 -3.5",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 6",
-          "book": "BetinAsia",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T07:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "504fde03e4b0a8340564db9369b92f87",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037927936,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "New Zealand. NBL",
-      "event": {
-        "home": "Whai",
-        "away": "Otago Nuggets",
-        "commence": "2026-07-22T07:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 -3.5",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 6",
-          "book": "Pinnacle",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T07:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "a6a529b7dca989e87ee96cb20e6b0b5d",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "New Zealand. NBL",
-      "event": {
-        "home": "Whai",
-        "away": "Otago Nuggets",
-        "commence": "2026-07-22T07:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 -3.5",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 5.5",
-          "book": "bk:22",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T07:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "8e8157859b781548a30333137a7e7627",
-      "is_live": false,
-      "bk_ids": [
-        4194304,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "New Zealand. NBL",
-      "event": {
-        "home": "Whai",
-        "away": "Otago Nuggets",
-        "commence": "2026-07-22T07:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 -3.5",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 5.5",
-          "book": "bk:714",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T07:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "70096bd0ef5afcc23601851728287342",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        8,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2097152
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "World. Friendly Clubs",
-      "event": {
-        "home": "Torino",
-        "away": "Alcione",
-        "commence": "2026-07-22T15:30:00+00:00"
-      },
-      "market": "7:3",
-      "legs": [
-        {
-          "selection": "Nad 2.5",
+          "selection": "AH 1 -5.5",
           "book": "bk:131",
           "odds": 2.02
         },
         {
-          "selection": "Pod 2.5",
-          "book": "Marathon",
+          "selection": "AH 2 5.5",
+          "book": "Betcity",
           "odds": 2.02
         }
       ],
@@ -8189,12 +7890,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-22T15:30:00+00:00",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
       "source": "betburger",
-      "arb_id": "d4ba1a2b4cdfa1a26f97f67b719796e7",
+      "arb_id": "b03e05650c3012d4aa3513d35e50b058",
       "is_live": false,
       "bk_ids": [
-        16,
+        4,
         0,
         32
       ],
@@ -8205,111 +7906,352 @@
     },
     {
       "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:754",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "Sbobet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "6cff6869850a0e4520efafdae8d2cd10",
+      "is_live": false,
+      "bk_ids": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:754",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "Betcity",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "74bf76910d88e7c5ee5654faacd1f755",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:754",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "bk:434",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "4add3682bf7915e51292784a9c326986",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        72057594037927936,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:754",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "FortuneJack",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "bde8715f4870d4334d3092579e8b9c9a",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:131",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "FortuneJack",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "289af8b3bc12b05de2f4b4e862876028",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        34
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Bloomfield Hills. Singles",
+      "event": {
+        "home": "Zheng, Michael",
+        "away": "Magadan, Alan",
+        "commence": "2026-07-22T15:00:00+00:00"
+      },
+      "market": "8:2",
+      "legs": [
+        {
+          "selection": "AH 1 -5.5",
+          "book": "bk:131",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 5.5",
+          "book": "Sbobet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T15:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "1ebd054ae4f1fa79a777d354e1e70616",
+      "is_live": false,
+      "bk_ids": [
+        8,
+        0,
+        32
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Winnipeg. Singles",
+      "event": {
+        "home": "Noguchi, Rio",
+        "away": "Rice, Keegan",
+        "commence": "2026-07-22T23:00:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 10.5 (hos.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 10.5 (hos.)",
+          "book": "Tipsport",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T23:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "1a05064bba75f69a333715a7f3b328e5",
+      "is_live": false,
+      "bk_ids": [
+        549755813892,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
       "sport": "Futbal",
-      "league": "World. Friendly Clubs",
+      "league": "Bulgaria. 1st League",
       "event": {
-        "home": "Torino",
-        "away": "Alcione",
-        "commence": "2026-07-22T15:30:00+00:00"
+        "home": "Dunav Ruse",
+        "away": "Ludogorets Razgrad",
+        "commence": "2026-07-27T16:00:00+00:00"
       },
-      "market": "7:3",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "Nad 2",
-          "book": "Leon",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 2",
-          "book": "Fonbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T15:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "68ecafcbfeee7224422855d7a8c9bb87",
-      "is_live": false,
-      "bk_ids": [
-        1073741888,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
-      "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
-      },
-      "market": "48:3",
-      "legs": [
-        {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ561 31.5",
-          "book": "Betplay",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "25ae71dbcbe2f51a1f1eebcfca4b9273",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. WNBA Women",
-      "event": {
-        "home": "Los Angeles Sparks Women",
-        "away": "Phoenix Mercury Women",
-        "commence": "2026-07-22T19:00:00+00:00"
-      },
-      "market": "2:4",
-      "legs": [
-        {
-          "selection": "Nad 22.5 (dom.)",
+          "selection": "EH 1 2",
           "book": "bk:255",
           "odds": 2.02
         },
         {
-          "selection": "Pod 22.5 (dom.)",
-          "book": "1win",
+          "selection": "EH 2 -1",
+          "book": "Betano",
           "odds": 2.02
         }
       ],
@@ -8319,9 +8261,9 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-22T19:00:00+00:00",
+      "expires_hint": "2026-07-27T16:00:00+00:00",
       "source": "betburger",
-      "arb_id": "9c024da555d3f7acd7149e141e3c744e",
+      "arb_id": "47231cd9ecfffd56b7bed593391c1144",
       "is_live": false,
       "bk_ids": [
         0,
@@ -8330,7 +8272,12 @@
         0,
         8,
         0,
-        140737488355328
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
       ],
       "direct_links": [
         "",
@@ -8339,22 +8286,194 @@
     },
     {
       "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
+      "sport": "Futbal",
+      "league": "Bulgaria. 1st League",
       "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
+        "home": "Dunav Ruse",
+        "away": "Ludogorets Razgrad",
+        "commence": "2026-07-27T16:00:00+00:00"
       },
-      "market": "48:3",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
+          "selection": "EH 1 2",
+          "book": "bk:255",
           "odds": 2.02
         },
         {
-          "selection": "typ561 31.5",
+          "selection": "EH 2 -1",
+          "book": "Stoiximan",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-27T16:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "10f2d43fcfc7e5db657371f83621b19b",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Bulgaria. 1st League",
+      "event": {
+        "home": "Dunav Ruse",
+        "away": "Ludogorets Razgrad",
+        "commence": "2026-07-27T16:00:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "EH 1 2",
+          "book": "bk:255",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 -1.5",
+          "book": "Bet365",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-27T16:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "28aa2c3b14123f4ddd666d174f068183",
+      "is_live": false,
+      "bk_ids": [
+        1024,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:51",
+      "league": "VCT China",
+      "event": {
+        "home": "XLG Esports",
+        "away": "Wolves Esports",
+        "commence": "2026-07-22T09:00:00+00:00"
+      },
+      "market": "51:2",
+      "legs": [
+        {
+          "selection": "AH 1 -3.5",
+          "book": "FortuneJack",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 3.5",
+          "book": "bk:152",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "720e6ea9d5b130fa1cdad81aa99162ee",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        67108866
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:51",
+      "league": "VCT China",
+      "event": {
+        "home": "XLG Esports",
+        "away": "Wolves Esports",
+        "commence": "2026-07-22T09:00:00+00:00"
+      },
+      "market": "51:2",
+      "legs": [
+        {
+          "selection": "AH 1 -3.5",
+          "book": "bk:92",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 3.5",
+          "book": "bk:152",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "a2de395276a4ac35879d0ef64f7a87b1",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        536870912,
+        67108864
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Conference League Qualification",
+      "event": {
+        "home": "Bohemians Dublin",
+        "away": "KF Ballkani",
+        "commence": "2026-07-22T17:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
           "book": "bk:485",
           "odds": 2.02
         }
@@ -8365,281 +8484,16 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "4e5f6a528737d4560b248f67c076c5cf",
+      "arb_id": "5c7641e6993f0b5251ce0294ff8433b1",
       "is_live": false,
       "bk_ids": [
-        2305843009213693952,
+        131072,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        17592186044416
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
-      "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
-      },
-      "market": "48:3",
-      "legs": [
-        {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ561 31.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "fdaef5d53d4eb50120ba997909ba3979",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
-      "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
-      },
-      "market": "48:3",
-      "legs": [
-        {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ561 31.5",
-          "book": "Unibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "961e19bc240a506a5d4b8d0fac155199",
-      "is_live": false,
-      "bk_ids": [
-        2305843009214218240,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
-      "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
-      },
-      "market": "48:3",
-      "legs": [
-        {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ561 31.5",
-          "book": "BetRivers",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "b61bbfda378fd5db7f2866c029ff952d",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
-      "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
-      },
-      "market": "48:3",
-      "legs": [
-        {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ561 31.5",
-          "book": "Virginbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "c1ca2b59d9d2c1538ef2a55eba40e10e",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        16
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:48",
-      "league": "LPL",
-      "event": {
-        "home": "Top Esports",
-        "away": "Team WE",
-        "commence": "2026-07-22T11:00:00+00:00"
-      },
-      "market": "48:3",
-      "legs": [
-        {
-          "selection": "typ558 31.5",
-          "book": "bk:61",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ561 31.5",
-          "book": "bk:12",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T11:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "0503b321e8fb446ea14a2ed6b60f363c",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213698048,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. WNBA Women",
-      "event": {
-        "home": "Los Angeles Sparks Women",
-        "away": "Phoenix Mercury Women",
-        "commence": "2026-07-22T19:00:00+00:00"
-      },
-      "market": "2:4",
-      "legs": [
-        {
-          "selection": "Nad 22.5 (dom.)",
-          "book": "bk:255",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 22.5 (dom.)",
-          "book": "bk:485",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-22T19:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "c6a7380ec0ae0751a41b78c8e0c600bd",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        8,
         0,
         0,
         17592186044416
@@ -8698,6 +8552,92 @@
     },
     {
       "type": "arb",
+      "sport": "Basketbal",
+      "league": "USA. WNBA Women",
+      "event": {
+        "home": "Washington Mystics Women",
+        "away": "Las Vegas Aces Women",
+        "commence": "2026-07-22T23:30:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 161.5",
+          "book": "bk:255",
+          "odds": 1.92
+        },
+        {
+          "selection": "Pod 161.5",
+          "book": "Betfair",
+          "odds": 2.19
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.999
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T23:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "e64db0147ee0d8651abd65e16942ef84",
+      "is_live": false,
+      "bk_ids": [
+        2048,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "World. Friendly Clubs",
+      "event": {
+        "home": "Ipswich FC",
+        "away": "Brisbane Roar",
+        "commence": "2026-07-22T09:00:00+00:00"
+      },
+      "market": "7:6",
+      "legs": [
+        {
+          "selection": "typ151",
+          "book": "bk:131",
+          "odds": 1.67
+        },
+        {
+          "selection": "typ152",
+          "book": "Smarkets",
+          "odds": 2.587
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.999
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T09:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "ee6728eb342367856c53ef57a3656beb",
+      "is_live": false,
+      "bk_ids": [
+        1125899906842624,
+        0,
+        32
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
       "sport": "Futbal",
       "league": "South America. Copa Sudamericana",
       "event": {
@@ -8740,37 +8680,37 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Romania. Liga I",
+      "league": "World. Friendly Clubs",
       "event": {
-        "home": "CFR Cluj",
-        "away": "Voluntari",
-        "commence": "2026-07-27T15:30:00+00:00"
+        "home": "Gil Vicente",
+        "away": "FC Porto",
+        "commence": "2026-07-22T19:00:00+00:00"
       },
-      "market": "7:6",
+      "market": "7:1",
       "legs": [
         {
-          "selection": "Nad 0.5 (hos.)",
-          "book": "Leon",
-          "odds": 1.76
+          "selection": "2",
+          "book": "Unibet",
+          "odds": 1.67
         },
         {
-          "selection": "typ157",
-          "book": "Betcity",
-          "odds": 2.37
+          "selection": "1X",
+          "book": "Smarkets",
+          "odds": 2.587
         }
       ],
       "edge": {
         "metric": "arb_profit_pct",
-        "value": 0.998
+        "value": 0.999
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-27T15:30:00+00:00",
+      "expires_hint": "2026-07-22T19:00:00+00:00",
       "source": "betburger",
-      "arb_id": "616a49c60c80427887a5a37717bc6bb5",
+      "arb_id": "f41c2a02a840751f7f4e6a2584094218",
       "is_live": false,
       "bk_ids": [
-        1073741828,
+        1125899907366912,
         0
       ],
       "direct_links": [
@@ -8781,22 +8721,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Romania. Liga I",
+      "league": "Norway. Eliteserien",
       "event": {
-        "home": "CFR Cluj",
-        "away": "Voluntari",
-        "commence": "2026-07-27T15:30:00+00:00"
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
       },
-      "market": "7:4",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "Nad 0.5 (hos.)",
-          "book": "Leon",
+          "selection": "typ53 8.5",
+          "book": "Olimp",
           "odds": 1.76
         },
         {
-          "selection": "Pod 0.5 (hos.)",
-          "book": "Betcity",
+          "selection": "typ54 8.5",
+          "book": "bk:295",
           "odds": 2.37
         }
       ],
@@ -8806,13 +8746,16 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-27T15:30:00+00:00",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "7ca1abda8264de5fe94c2fcd14d1b2fe",
+      "arb_id": "46fa4dbfce5c7105488925074b0d0422",
       "is_live": false,
       "bk_ids": [
-        1073741828,
-        0
+        134217728,
+        0,
+        0,
+        0,
+        8796093022208
       ],
       "direct_links": [
         "",
@@ -8821,24 +8764,24 @@
     },
     {
       "type": "arb",
-      "sport": "Bedminton",
-      "league": "World. China Masters. Singles",
+      "sport": "Futbal",
+      "league": "Norway. Eliteserien",
       "event": {
-        "home": "Gemke, Rasmus",
-        "away": "Vitidsarn, Kunlavut ",
-        "commence": "2026-07-22T03:30:00+00:00"
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
       },
-      "market": "14:1",
+      "market": "7:3",
       "legs": [
         {
-          "selection": "1",
-          "book": "PariMatch",
-          "odds": 5.26
+          "selection": "Nad 4.5",
+          "book": "Sportmarket",
+          "odds": 2.37
         },
         {
-          "selection": "2",
-          "book": "bk:187",
-          "odds": 1.25
+          "selection": "Pod 4.5",
+          "book": "bk:754",
+          "odds": 1.76
         }
       ],
       "edge": {
@@ -8847,12 +8790,21 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-22T03:30:00+00:00",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "6542be5f092f37c9e4a988dfa76238da",
+      "arb_id": "2a817abfbaa825fa9f4e847924840380",
       "is_live": false,
       "bk_ids": [
-        131072,
+        0,
+        4398046511104,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         2305843009213693952
       ],
@@ -8863,24 +8815,24 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Tampere. Singles",
+      "sport": "Futbal",
+      "league": "Norway. Eliteserien",
       "event": {
-        "home": "Squire, Henri",
-        "away": "Roncadelli, Franco",
-        "commence": "2026-07-23T09:00:00+00:00"
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
       },
-      "market": "8:6",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "typ1224 20.5",
-          "book": "Betano",
-          "odds": 3.05
+          "selection": "AH 1 -1",
+          "book": "bk:255",
+          "odds": 1.76
         },
         {
-          "selection": "typ1225 20.5",
-          "book": "Betcity",
-          "odds": 1.51
+          "selection": "AH 2 1",
+          "book": "Pamestoixima",
+          "odds": 2.37
         }
       ],
       "edge": {
@@ -8889,23 +8841,16 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-23T09:00:00+00:00",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "ccfaed74f1d5f4c1275ea83e4bf18a3f",
+      "arb_id": "1e833f1b545f9edc36985d44cdfe607a",
       "is_live": false,
       "bk_ids": [
-        4,
+        0,
+        2147483648,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
+        8
       ],
       "direct_links": [
         "",
@@ -8915,23 +8860,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Brazil. Serie A",
+      "league": "Norway. Eliteserien",
       "event": {
-        "home": "Internacional RS",
-        "away": "Cruzeiro MG",
-        "commence": "2026-07-23T00:30:00+00:00"
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
       },
-      "market": "7:10",
+      "market": "7:3",
       "legs": [
         {
-          "selection": "typ1388 2.5",
-          "book": "Superbet",
-          "odds": 3.05
+          "selection": "Nad 4.5",
+          "book": "BetinAsia",
+          "odds": 2.37
         },
         {
-          "selection": "typ1389 2.5",
-          "book": "Novibet",
-          "odds": 1.51
+          "selection": "Pod 4.5",
+          "book": "bk:754",
+          "odds": 1.76
         }
       ],
       "edge": {
@@ -8940,13 +8885,23 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-23T00:30:00+00:00",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "9d6a93343e4ce5c05c830a62689f79a7",
+      "arb_id": "620cc605e252976d1a12525537750a5f",
       "is_live": false,
       "bk_ids": [
         0,
-        1048704
+        72057594037927936,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
       ],
       "direct_links": [
         "",
@@ -8956,64 +8911,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Brazil. Serie B",
+      "league": "Norway. Eliteserien",
       "event": {
-        "home": "Athletic Club MG",
-        "away": "Sao Bernardo SP",
-        "commence": "2026-07-23T22:30:00+00:00"
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
       },
-      "market": "7:5",
+      "market": "7:3",
       "legs": [
         {
-          "selection": "typ263 25.5",
-          "book": "PariMatch",
-          "odds": 1.51
-        },
-        {
-          "selection": "typ264 25.5",
-          "book": "Novibet",
-          "odds": 3.05
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 0.998
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-07-23T22:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "4f9b6ed9d3eee6101416c318613c81b6",
-      "is_live": false,
-      "bk_ids": [
-        131072,
-        1048576
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Tampere. Singles",
-      "event": {
-        "home": "Squire, Henri",
-        "away": "Roncadelli, Franco",
-        "commence": "2026-07-23T09:00:00+00:00"
-      },
-      "market": "8:6",
-      "legs": [
-        {
-          "selection": "typ1224 20.5",
+          "selection": "Nad 4.5",
           "book": "Stoiximan",
-          "odds": 3.05
+          "odds": 2.37
         },
         {
-          "selection": "typ1225 20.5",
-          "book": "Betcity",
-          "odds": 1.51
+          "selection": "Pod 4.5",
+          "book": "bk:754",
+          "odds": 1.76
         }
       ],
       "edge": {
@@ -9022,13 +8936,125 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-07-23T09:00:00+00:00",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "4239f25f50ba47d8966bc626647a716c",
+      "arb_id": "631db875a8d44eec5e1beab8ed009ef5",
       "is_live": false,
       "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Norway. Eliteserien",
+      "event": {
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 4.5",
+          "book": "bk:128",
+          "odds": 2.37
+        },
+        {
+          "selection": "Pod 4.5",
+          "book": "bk:754",
+          "odds": 1.76
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "bd9cf916d6c49661e0b6ab527b33907b",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
         4,
-        8192
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Norway. Eliteserien",
+      "event": {
+        "home": "Bodo/Glimt",
+        "away": "Ham-Kam",
+        "commence": "2026-07-22T17:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 4.5",
+          "book": "Betano",
+          "odds": 2.37
+        },
+        {
+          "selection": "Pod 4.5",
+          "book": "bk:754",
+          "odds": 1.76
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 0.998
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-07-22T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "ac09fe365c5b4754aca26a3efaa425bd",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843077933170688
       ],
       "direct_links": [
         "",
