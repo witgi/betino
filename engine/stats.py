@@ -44,8 +44,18 @@ def _settle_order(r):
 def compute_stats(start_bankroll):
     rows = _load_history()
     logged = len(rows)
-    settled_rows = [r for r in rows if r.get("result") in ("win", "loss", "push")]
+    all_settled = [r for r in rows if r.get("result") in ("win", "loss", "push")]
+    # globalny bank rata LEN oficialne tipy (stare riadky bez priznaku = official)
+    settled_rows = [r for r in all_settled if r.get("official", True)]
     pending = sum(1 for r in rows if r.get("result") == "pending")
+
+    # kompaktny zoznam VSETKYCH vyhodnotenych tipov -> web ho pouzije na "bank podla rizika"
+    tips = [{
+        "ev": r.get("ev_pct"), "odds": r.get("best_odds"), "books": r.get("n_books"),
+        "stake": r.get("stake_pct"), "res": r.get("result"),
+        "t": (r.get("commence") or "")[:10], "off": bool(r.get("official", True)),
+    } for r in sorted(all_settled, key=_settle_order)
+        if r.get("ev_pct") is not None and r.get("best_odds")]
 
     wins = sum(1 for r in settled_rows if r["result"] == "win")
     losses = sum(1 for r in settled_rows if r["result"] == "loss")
@@ -93,6 +103,7 @@ def compute_stats(start_bankroll):
         "virtual_bankroll": round(bankroll, 2),
         "clv_beat_pct": clv_beat_pct,
         "equity": equity,
+        "tips": tips,   # pre "bank podľa miery rizika" vo webe
     }
 
 

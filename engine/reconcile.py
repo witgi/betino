@@ -47,20 +47,21 @@ def settle_footystats():
     import footystats as fs
     rows = _load_history()
     settled = 0
+    cache = {}   # match_id -> detail (viac tipov zdieľa jeden zápas -> sťahuj raz)
     for r in rows:
         if r.get("result") != "pending":
             continue
         mid = r.get("match_id")
         if not mid:
             continue
-        try:
-            det = (fs.match_detail(mid) or {}).get("data") or {}
-        except Exception:   # noqa: BLE001 - jeden zápas nesmie zhodiť settling
-            continue
-        if det.get("status") != "complete":
-            continue
+        if mid not in cache:
+            try:
+                cache[mid] = (fs.match_detail(mid) or {}).get("data") or {}
+            except Exception:   # noqa: BLE001 - jeden zápas nesmie zhodiť settling
+                cache[mid] = {}
+        det = cache[mid]
         gh, ga = det.get("homeGoalCount"), det.get("awayGoalCount")
-        if gh is None or ga is None:
+        if det.get("status") != "complete" or gh is None or ga is None:
             continue
         score_event = {"scores": [{"name": r["home"], "score": gh}, {"name": r["away"], "score": ga}]}
         res = _result_for_pick(r, score_event)
@@ -95,16 +96,24 @@ def _write_history(rows):
 
 
 def log_new_picks():
-    """Prida nove tipy z predictions.json do history.jsonl (dedup podla kluca)."""
+    """
+    Prida nove tipy z predictions.json do history.jsonl (dedup podla kluca).
+    Loguje SIROKY zoznam 'candidates' (nie len oficialne 'picks') s priznakom 'official',
+    aby sme mali historicke vysledky naprieC CELYM spektrom rizika (pre posuvnik vo webe).
+    Globalny bank v stats.py rata len official=true (sprava sa nezmenila).
+    """
     if not os.path.exists(PREDICTIONS):
         print("[reconcile] predictions.json neexistuje, nic na logovanie.")
         return 0
     with open(PREDICTIONS, "r", encoding="utf-8") as f:
         pred = json.load(f)
+    official_keys = {_pick_key(p) for p in pred.get("picks", [])}
+    # sirsi zoznam; ak by candidates chybali, fallback na picks
+    pool = pred.get("candidates") or pred.get("picks", [])
     rows = _load_history()
     seen = {_pick_key(r) for r in rows}
     added = 0
-    for p in pred.get("picks", []):
+    for p in pool:
         k = _pick_key(p)
         if k in seen:
             continue
@@ -113,11 +122,12 @@ def log_new_picks():
             "logged_at": datetime.now(timezone.utc).isoformat(),
             "result": "pending",
             "clv_beat": None,
+            "official": k in official_keys,
         })
         seen.add(k)
         added += 1
     _write_history(rows)
-    print(f"[reconcile] zalogovanych novych tipov: {added}")
+    print(f"[reconcile] zalogovanych novych tipov: {added} (z toho oficialnych {sum(1 for p in pool if _pick_key(p) in official_keys)})")
     return added
 
 

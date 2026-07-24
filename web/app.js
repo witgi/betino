@@ -40,6 +40,29 @@ function thresholdsFor(r) {
   };
 }
 function zoneLabel(r) { return r <= 33 ? "Bezpečné" : r <= 66 ? "Vyvážené" : "Riskantné"; }
+
+// Historický virtuálny bank pri danom nastavení rizika (compounding Kelly nad vyhodnotenými tipmi).
+// Odpovedá na "koľko by som zarobil, keby dávaš len tipy pri tomto riziku".
+function bankForThresholds(th) {
+  const tips = (STATS && STATS.tips) || [];
+  const start = (STATS && STATS.start_bankroll) || 1000;
+  const sel = tips.filter(t =>
+    t.ev >= th.minEv && t.ev <= th.maxEv &&
+    t.odds >= th.minOdds && t.odds <= th.maxOdds && t.books >= th.minBooks)
+    .sort((a, b) => (a.t || "").localeCompare(b.t || ""));
+  let bank = start, staked = 0, profit = 0, wins = 0, losses = 0;
+  for (const t of sel) {
+    const stake = bank * (t.stake || 0) / 100;
+    if (t.res === "win") { const pnl = stake * (t.odds - 1); bank += pnl; profit += pnl; wins++; }
+    else if (t.res === "loss") { bank -= stake; profit -= stake; losses++; }
+    staked += stake;
+  }
+  return {
+    n: sel.length, wins, losses, bank, profit,
+    roi: staked > 0 ? profit / staked * 100 : null,
+    growth: (bank / start - 1) * 100,
+  };
+}
 function fmtTime(iso) {
   if (!iso) return "";
   try {
@@ -256,10 +279,40 @@ function applyRisk() {
     .sort(byDate);
   document.getElementById("risk-info").innerHTML =
     `<b>${cands.length}</b> tip(ov) · EV ≥ ${th.minEv.toFixed(1)} % · kurz ${th.minOdds.toFixed(2)}–${th.maxOdds.toFixed(1)} · min. ${th.minBooks} kancelárií`;
+  renderRiskHist(th);
   const main = document.getElementById("picks");
   main.innerHTML = "";
   document.getElementById("empty").classList.toggle("hidden", cands.length > 0);
   cands.forEach(p => main.appendChild(card(p)));
+}
+
+function renderRiskHist(th) {
+  const box = document.getElementById("risk-hist");
+  if (!box) return;
+  const tips = (STATS && STATS.tips) || [];
+  if (!tips.length) {
+    box.innerHTML = `<span class="rh-note">Historická ziskovosť podľa rizika sa doplní, keď sa vyhodnotí viac tipov.</span>`;
+    return;
+  }
+  // živý výpočet pre PRÁVE nastavené riziko
+  const cur = bankForThresholds(th);
+  const roiTxt = cur.roi == null ? "—" : `${cur.roi > 0 ? "+" : ""}${cur.roi.toFixed(1)} %`;
+  const cls = cur.profit >= 0 ? "pos" : "neg";
+  // 3 pásma pre porovnanie (Bezpečné/Vyvážené/Riskantné = posuvník 15/50/85)
+  const zones = [["🛡️ Bezpečné", 15], ["⚖️ Vyvážené", 50], ["🔥 Riskantné", 85]];
+  const strip = zones.map(([lbl, rv]) => {
+    const z = bankForThresholds(thresholdsFor(rv));
+    const zc = z.profit >= 0 ? "pos" : "neg";
+    const roi = z.roi == null ? "—" : `${z.roi > 0 ? "+" : ""}${z.roi.toFixed(1)}%`;
+    return `<div class="rh-zone"><span class="rh-lbl">${lbl}</span>
+      <b class="${zc}">${roi}</b><small>${z.profit >= 0 ? "+" : ""}${z.profit.toFixed(0)} € · ${z.n} tipov</small></div>`;
+  }).join("");
+  box.innerHTML = `
+    <div class="rh-head">📈 Historická ziskovosť pri tomto nastavení
+      <b class="${cls}">${roiTxt} ROI · ${cur.profit >= 0 ? "+" : ""}${cur.profit.toFixed(0)} €</b>
+      <span class="rh-sub">${cur.n} vyhodnotených · ${cur.wins}-${cur.losses} V-P · bank ${cur.growth >= 0 ? "+" : ""}${cur.growth.toFixed(1)} %</span>
+    </div>
+    <div class="rh-strip">${strip}</div>`;
 }
 
 // ---------- TABY ----------

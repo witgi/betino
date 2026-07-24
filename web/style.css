@@ -234,6 +234,21 @@ footer { margin-top: 24px; }
 .bookchip:hover { border-color: var(--muted); }
 .bookchip.on { background: var(--accent-soft); color: #fff; border-color: var(--accent); }
 .bf-actions { display: flex; gap: 8px; }
+
+/* ===== HISTORICKÁ ZISKOVOSŤ PODĽA RIZIKA ===== */
+.risk-hist { margin-top: 10px; }
+.rh-note { color: var(--muted); font-size: 0.82rem; }
+.rh-head { font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.rh-head b { font-size: 0.95rem; }
+.rh-sub { color: var(--muted); font-size: 0.78rem; }
+.rh-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+.rh-zone { background: var(--card-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 6px; text-align: center; }
+.rh-zone .rh-lbl { display: block; font-size: 0.74rem; color: var(--muted); }
+.rh-zone b { display: block; font-size: 1.05rem; margin: 2px 0; }
+.rh-zone small { display: block; font-size: 0.72rem; color: var(--muted); }
+.pos { color: var(--accent); }
+.neg { color: #f85149; }
 .bf-search { width: 100%; margin: 8px 0; padding: 9px 12px; background: var(--card); color: var(--text);
   border: 1px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
 .bf-search:focus { outline: none; border-color: var(--accent); }
