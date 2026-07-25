@@ -23,6 +23,7 @@ let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
 let PLACED = new Map();       // tip_key -> riadok user_bets (co som oznacil podane)
 let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
 let USER = null;
+let USER_BANK = 1000;   // môj bank v € (localStorage), default = referenčný
 let ARB_BOOKS = [];           // MASTER zoznam kancelárií (aj tie bez aktuálneho arbu)
 let ARB_BOOK_SEL = null;      // Set vybraných kancelárií (null = všetky zobrazené)
 let ARB_SEARCH = "";          // hľadanie v zozname kancelárií
@@ -43,9 +44,17 @@ function zoneLabel(r) { return r <= 33 ? "Bezpečné" : r <= 66 ? "Vyvážené" 
 
 // Historický virtuálny bank pri danom nastavení rizika (compounding Kelly nad vyhodnotenými tipmi).
 // Odpovedá na "koľko by som zarobil, keby dávaš len tipy pri tomto riziku".
+// môj bank (localStorage) — všetky € vklady/čísla sa naň prepočítajú
+function refBank() { return (STATS && STATS.start_bankroll) || (DATA && DATA.bankroll) || 1000; }
+function loadBank() {
+  const v = parseFloat(localStorage.getItem("bank"));
+  return (v && v > 0) ? v : refBank();
+}
+function stakeEur(stakePct) { return USER_BANK * (stakePct || 0) / 100; }
+
 function bankForThresholds(th) {
   const tips = (STATS && STATS.tips) || [];
-  const start = (STATS && STATS.start_bankroll) || 1000;
+  const start = USER_BANK;
   const sel = tips.filter(t =>
     t.ev >= th.minEv && t.ev <= th.maxEv &&
     t.odds >= th.minOdds && t.odds <= th.maxOdds && t.books >= th.minBooks)
@@ -168,13 +177,16 @@ function renderGlobal(s) {
       ${s.pending ? `<br>Práve čaká na vyhodnotenie: <b>${s.pending}</b> tip(ov).` : ""}</p>`;
     return;
   }
-  const prof = s.profit_units, cls = prof >= 0 ? "pos" : "neg";
+  // prepočet € na MÔJ bank (compounding je %-ný, tak stačí prenásobiť pomerom)
+  const factor = USER_BANK / (s.start_bankroll || 1000);
   const bankGrow = (s.virtual_bankroll / s.start_bankroll - 1) * 100;
+  const vbank = s.virtual_bankroll * factor;
+  const prof = s.profit_units * factor, cls = prof >= 0 ? "pos" : "neg";
   box.innerHTML = `
     <div class="g-head">📊 Globálne výsledky (keby dávaš všetko podľa mňa)</div>
     <div class="g-hero">
       <div class="g-bank"><span>Virtuálny bank</span>
-        <b class="${cls}">${s.virtual_bankroll.toFixed(0)} €</b>
+        <b class="${cls}">${vbank.toFixed(0)} €</b>
         <small class="${cls}">${prof >= 0 ? "+" : ""}${prof.toFixed(0)} € · bank ${bankGrow >= 0 ? "+" : ""}${bankGrow.toFixed(1)} %</small>
       </div>${sparkline(s.equity)}
     </div>
@@ -186,7 +198,7 @@ function renderGlobal(s) {
       ${s.clv_beat_pct != null ? `<div><b>${s.clv_beat_pct}%</b><span>CLV beat</span></div>` : ""}
       ${s.pending ? `<div><b>${s.pending}</b><span>čaká</span></div>` : ""}
     </div>
-    <p class="g-note">Štart banku ${s.start_bankroll} € · vklady podľa odporúčaného Kelly.
+    <p class="g-note">Štart banku ${USER_BANK.toFixed(0)} € · vklady podľa odporúčaného Kelly.
     <br><b>ROI</b> = zisk delený tým, čo si vsadil (nie bankom). Bank rastie pomalšie, lebo stavíš
     len malú časť (Kelly). Dlhodobý reálny cieľ je ~4–6 % ROI — vyššie čísla na málo tipoch sú výkyv.</p>`;
 }
@@ -260,7 +272,7 @@ function card(p) {
     <div class="grid">
       <div class="item"><span>Hodnota (EV)</span><b class="ev-pos">+${p.ev_pct.toFixed(1)} %</b></div>
       <div class="item"><span>Férový kurz</span><b>${p.fair_odds ? p.fair_odds.toFixed(2) : "–"}</b></div>
-      <div class="item"><span>Vklad</span><b>${p.stake_pct.toFixed(1)} % · ${p.stake_amount.toFixed(0)} €</b></div>
+      <div class="item"><span>Vklad</span><b>${p.stake_pct.toFixed(1)} % · ${stakeEur(p.stake_pct).toFixed(0)} €</b></div>
       <div class="item"><span>Istota</span><b class="stars">${stars(p.confidence)}</b></div>
     </div>
     <button class="place ${placed ? "placed" : ""}">${placed ? "✓ Podané" : "Podať"}</button>`;
@@ -321,8 +333,49 @@ function switchTab(tab) {
   document.getElementById("tab-value").classList.toggle("hidden", tab !== "value");
   document.getElementById("tab-prediction").classList.toggle("hidden", tab !== "prediction");
   document.getElementById("tab-arb").classList.toggle("hidden", tab !== "arb");
+  document.getElementById("tab-tiket").classList.toggle("hidden", tab !== "tiket");
   if (tab === "prediction") renderPredictions();
   if (tab === "arb") renderArbs();
+  if (tab === "tiket") renderTiket();
+}
+
+// ---------- TIKET (denný zoznam na podanie, vyvážené value, na môj bank) ----------
+function renderTiket() {
+  const bankLbl = document.getElementById("tiket-bank");
+  if (bankLbl) bankLbl.textContent = `bank ${USER_BANK.toFixed(0)} €`;
+  const main = document.getElementById("tiket");
+  const empty = document.getElementById("tiket-empty");
+  const sum = document.getElementById("tiket-sum");
+  if (!main) return;
+  const th = thresholdsFor(57);   // vyvážené (default)
+  const list = (DATA && DATA.candidates || []).filter(p =>
+    p.ev_pct >= th.minEv && p.ev_pct <= th.maxEv &&
+    p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds && p.n_books >= th.minBooks)
+    .sort(byDate);
+  empty.classList.toggle("hidden", list.length > 0);
+  let total = 0;
+  const rows = list.map(p => {
+    const stake = stakeEur(p.stake_pct); total += stake;
+    const sel = p.selection === "Draw" ? "Remíza" : p.selection;
+    return `<tr>
+      <td class="tk-when">${fmtTime(p.commence)}</td>
+      <td><b>${p.home}</b> – ${p.away}<br><small>${p.league || ""}</small></td>
+      <td>${sel}</td>
+      <td class="r">${p.best_odds.toFixed(2)}<br><small>${p.bookmaker || ""}</small></td>
+      <td class="r"><b>${stake.toFixed(1)} €</b><br><small>${p.stake_pct.toFixed(2)} %</small></td>
+    </tr>`;
+  }).join("");
+  main.innerHTML = list.length ? `<table class="tiket-table">
+    <thead><tr><th>Výkop</th><th>Zápas</th><th>Tip</th><th class="r">Kurz</th><th class="r">Vklad</th></tr></thead>
+    <tbody>${rows}</tbody></table>` : "";
+  if (sum) {
+    sum.innerHTML = list.length ? `
+      <div class="g-stats">
+        <div><b>${list.length}</b><span>tipov</span></div>
+        <div><b>${total.toFixed(0)} €</b><span>spolu vklad</span></div>
+        <div><b>${(total / USER_BANK * 100).toFixed(1)} %</b><span>banku v hre</span></div>
+      </div>` : "";
+  }
 }
 
 // ---------- PREDIKCIE ----------
@@ -597,6 +650,23 @@ async function main() {
 
     try { const sres = await fetch(STATS_URL, { cache: "no-store" }); if (sres.ok) STATS = await sres.json(); } catch (e) {}
     try { const lres = await fetch(LEGSTATS_URL, { cache: "no-store" }); if (lres.ok) LEGSTATS = await lres.json(); } catch (e) {}
+    // môj bank z localStorage (default = referenčný bank appky)
+    USER_BANK = loadBank();
+    const bankInput = document.getElementById("bank");
+    if (bankInput) {
+      bankInput.value = USER_BANK;
+      bankInput.addEventListener("input", () => {
+        const v = parseFloat(bankInput.value);
+        if (v && v > 0) {
+          USER_BANK = v;
+          localStorage.setItem("bank", String(v));
+          renderGlobal(STATS);
+          if (DATA) applyRisk();
+          renderTiket();
+        }
+      });
+    }
+
     renderGlobal(STATS);
 
     await loadSignals();

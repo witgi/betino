@@ -16,7 +16,13 @@
       <button class="tab active" data-tab="value">💰 Value tipy</button>
       <button class="tab" data-tab="prediction">🔮 Predikcie</button>
       <button class="tab" data-tab="arb">⚖️ Arbitráž</button>
+      <button class="tab" data-tab="tiket">📋 Tiket</button>
     </nav>
+    <div class="bankbar">
+      <label for="bank">💰 Môj bank</label>
+      <input id="bank" type="number" min="1" step="10" value="1000" />
+      <span>€ — vklady sa prepočítajú naň</span>
+    </div>
     <p id="meta" class="meta">Načítavam…</p>
   </header>
 
@@ -78,6 +84,19 @@
     <p id="arb-empty" class="empty hidden">
       Práve teraz nie je dostupný žiadny pre-match surebet. Príležitosti sú vzácne a krátke — skús neskôr.
     </p>
+  </div>
+
+  <!-- ===== TAB: TIKET ===== -->
+  <div id="tab-tiket" class="tabpane hidden">
+    <section class="pred-intro">
+      <b>📋 Môj tiket na dnes</b>
+      <p>Vyvážené value tipy prepočítané na <b id="tiket-bank">tvoj bank</b>. Zoznam na podanie —
+      podávaj len u kancelárií, kde máš účet a kurz je blízko uvedenému.
+      <br>⚠️ Nie je to záruka zisku; stávkuj len čo si môžeš dovoliť stratiť. 18+.</p>
+    </section>
+    <section id="tiket-sum" class="global"></section>
+    <main id="tiket"></main>
+    <p id="tiket-empty" class="empty hidden">Na dnes/najbližšie zápasy nevyšli žiadne vyvážené value tipy.</p>
   </div>
 
   <footer>
