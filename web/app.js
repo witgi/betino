@@ -386,7 +386,12 @@ function renderTiket() {
       <td class="r"><b>${stake.toFixed(1)} €</b><br><small>${p.stake_pct.toFixed(2)} %</small></td>
     </tr>`;
   }).join("");
-  main.innerHTML = list.length ? `<table class="tiket-table">
+  const allKeys = enriched.map(e => e.key);
+  main.innerHTML = list.length ? `<div class="tk-actions">
+      <button id="tk-all" class="btn-sm">✓ Označiť všetky podané</button>
+      <button id="tk-none" class="btn-sm">Zrušiť všetky</button>
+    </div>
+    <table class="tiket-table">
     <thead><tr><th></th><th>Výkop</th><th>Zápas</th><th>Tip</th><th class="r">Kurz</th><th class="r">Vklad</th></tr></thead>
     <tbody>${rows}</tbody></table>
     <p class="tk-foot">Tipy pribúdajú <b>1× denne ráno (~10:45)</b>. 🆕 = pribudlo od poslednej návštevy ·
@@ -398,6 +403,16 @@ function renderTiket() {
     saveSet("placedTips", PLACED_LOCAL, 2000);
     renderTiket();
   });
+  const allBtn = document.getElementById("tk-all");
+  if (allBtn) allBtn.onclick = () => {
+    allKeys.forEach(k => PLACED_LOCAL.add(k));
+    saveSet("placedTips", PLACED_LOCAL, 2000); renderTiket();
+  };
+  const noneBtn = document.getElementById("tk-none");
+  if (noneBtn) noneBtn.onclick = () => {
+    allKeys.forEach(k => PLACED_LOCAL.delete(k));
+    saveSet("placedTips", PLACED_LOCAL, 2000); renderTiket();
+  };
   if (sum) {
     sum.innerHTML = list.length ? `
       <div class="g-stats">
