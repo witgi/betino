@@ -370,7 +370,8 @@ function renderTiket() {
     const key = pickKey(p);
     return { p, key, isNew: !SEEN_TIPS.has(key), placed: PLACED_LOCAL.has(key) };
   });
-  enriched.sort((a, b) => (a.placed - b.placed) || byDate(a.p, b.p));
+  // poradie: nepodané hore (a v nich NOVÉ úplne navrch), podané dole; v rámci skupiny podľa dátumu
+  enriched.sort((a, b) => (a.placed - b.placed) || (b.isNew - a.isNew) || byDate(a.p, b.p));
   let total = 0, totalOpen = 0, placedCount = 0, newCount = 0;
   const rows = enriched.map(({ p, key, isNew, placed }) => {
     const stake = stakeEur(p.stake_pct); total += stake;
@@ -703,6 +704,12 @@ async function main() {
     USER_BANK = loadBank();
     PLACED_LOCAL = loadSet("placedTips");
     SEEN_TIPS = loadSet("seenTips");
+    // prvé načítanie (prázdna história) — potichu si zapamätaj aktuálne tipy, nech nevyskočia VŠETKY ako 🆕;
+    // od ďalšieho behu sa označia len naozaj pribudnuté
+    if (SEEN_TIPS.size === 0 && DATA && DATA.candidates) {
+      DATA.candidates.forEach(p => SEEN_TIPS.add(pickKey(p)));
+      saveSet("seenTips", SEEN_TIPS, 2000);
+    }
     const bankInput = document.getElementById("bank");
     if (bankInput) {
       bankInput.value = USER_BANK;
