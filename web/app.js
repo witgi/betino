@@ -24,6 +24,18 @@ let PLACED = new Map();       // tip_key -> riadok user_bets (co som oznacil pod
 let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
 let USER = null;
 let USER_BANK = 1000;   // môj bank v € (localStorage), default = referenčný
+let PLACED_LOCAL = new Set();  // tipy, čo som označil "podané" (localStorage, bez prihlásenia)
+let SEEN_TIPS = new Set();     // tipy, čo som už videl (na detekciu 🆕 nových)
+
+function loadSet(key) {
+  try { const a = JSON.parse(localStorage.getItem(key)); if (Array.isArray(a)) return new Set(a); } catch (e) {}
+  return new Set();
+}
+function saveSet(key, set, cap) {
+  let arr = [...set];
+  if (cap && arr.length > cap) arr = arr.slice(arr.length - cap);
+  localStorage.setItem(key, JSON.stringify(arr));
+}
 let ARB_BOOKS = [];           // MASTER zoznam kancelárií (aj tie bez aktuálneho arbu)
 let ARB_BOOK_SEL = null;      // Set vybraných kancelárií (null = všetky zobrazené)
 let ARB_SEARCH = "";          // hľadanie v zozname kancelárií
@@ -353,12 +365,21 @@ function renderTiket() {
     p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds && p.n_books >= th.minBooks)
     .sort(byDate);
   empty.classList.toggle("hidden", list.length > 0);
-  let total = 0;
-  const rows = list.map(p => {
+  // nové = ešte nevidené; nepodané hore, podané dole (stlmené)
+  const enriched = list.map(p => {
+    const key = pickKey(p);
+    return { p, key, isNew: !SEEN_TIPS.has(key), placed: PLACED_LOCAL.has(key) };
+  });
+  enriched.sort((a, b) => (a.placed - b.placed) || byDate(a.p, b.p));
+  let total = 0, totalOpen = 0, placedCount = 0, newCount = 0;
+  const rows = enriched.map(({ p, key, isNew, placed }) => {
     const stake = stakeEur(p.stake_pct); total += stake;
+    if (placed) placedCount++; else totalOpen += stake;
+    if (isNew && !placed) newCount++;
     const sel = p.selection === "Draw" ? "Remíza" : p.selection;
-    return `<tr>
-      <td class="tk-when">${fmtTime(p.commence)}</td>
+    return `<tr class="${placed ? "tk-done" : ""}">
+      <td><input type="checkbox" class="tk-chk" data-key="${key}" ${placed ? "checked" : ""} title="označ ako podané"></td>
+      <td class="tk-when">${fmtTime(p.commence)}${isNew && !placed ? ` <span class="tk-new">🆕</span>` : ""}</td>
       <td><b>${p.home}</b> – ${p.away}<br><small>${p.league || ""}</small></td>
       <td>${sel}</td>
       <td class="r">${p.best_odds.toFixed(2)}<br><small>${p.bookmaker || ""}</small></td>
@@ -366,16 +387,29 @@ function renderTiket() {
     </tr>`;
   }).join("");
   main.innerHTML = list.length ? `<table class="tiket-table">
-    <thead><tr><th>Výkop</th><th>Zápas</th><th>Tip</th><th class="r">Kurz</th><th class="r">Vklad</th></tr></thead>
-    <tbody>${rows}</tbody></table>` : "";
+    <thead><tr><th></th><th>Výkop</th><th>Zápas</th><th>Tip</th><th class="r">Kurz</th><th class="r">Vklad</th></tr></thead>
+    <tbody>${rows}</tbody></table>
+    <p class="tk-foot">Tipy pribúdajú <b>1× denne ráno (~10:45)</b>. 🆕 = pribudlo od poslednej návštevy ·
+    zaškrtni „podané", nech vieš čo už máš (pamätá sa v prehliadači).</p>` : "";
+  // klik na checkbox -> ulož + prekresli
+  main.querySelectorAll(".tk-chk").forEach(chk => chk.onclick = () => {
+    const k = chk.dataset.key;
+    if (chk.checked) PLACED_LOCAL.add(k); else PLACED_LOCAL.delete(k);
+    saveSet("placedTips", PLACED_LOCAL, 2000);
+    renderTiket();
+  });
   if (sum) {
     sum.innerHTML = list.length ? `
       <div class="g-stats">
-        <div><b>${list.length}</b><span>tipov</span></div>
-        <div><b>${total.toFixed(0)} €</b><span>spolu vklad</span></div>
-        <div><b>${(total / USER_BANK * 100).toFixed(1)} %</b><span>banku v hre</span></div>
+        <div><b>${list.length - placedCount}</b><span>na podanie</span></div>
+        ${newCount ? `<div><b class="pos">${newCount}</b><span>🆕 nové</span></div>` : ""}
+        <div><b>${totalOpen.toFixed(0)} €</b><span>zostáva vsadiť</span></div>
+        <div><b>${placedCount}</b><span>podané</span></div>
       </div>` : "";
   }
+  // označ aktuálne tipy ako videné (na budúce rozlíšenie nových)
+  enriched.forEach(e => SEEN_TIPS.add(e.key));
+  saveSet("seenTips", SEEN_TIPS, 2000);
 }
 
 // ---------- PREDIKCIE ----------
@@ -650,8 +684,10 @@ async function main() {
 
     try { const sres = await fetch(STATS_URL, { cache: "no-store" }); if (sres.ok) STATS = await sres.json(); } catch (e) {}
     try { const lres = await fetch(LEGSTATS_URL, { cache: "no-store" }); if (lres.ok) LEGSTATS = await lres.json(); } catch (e) {}
-    // môj bank z localStorage (default = referenčný bank appky)
+    // môj bank + lokálne stavy (podané / videné tipy) z localStorage
     USER_BANK = loadBank();
+    PLACED_LOCAL = loadSet("placedTips");
+    SEEN_TIPS = loadSet("seenTips");
     const bankInput = document.getElementById("bank");
     if (bankInput) {
       bankInput.value = USER_BANK;
