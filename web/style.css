@@ -283,3 +283,17 @@ footer { margin-top: 24px; }
 
 /* ===== TIKET: hromadné akcie ===== */
 .tk-actions { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+
+/* ===== TÝŽDENNÁ ZISKOVOSŤ ===== */
+.wk-list { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 6px 12px; }
+.wk-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+.wk-row:last-child { border-bottom: none; }
+.wk-lbl { flex: 0 0 88px; font-size: 0.76rem; color: var(--muted); }
+.wk-track { position: relative; flex: 1 1 auto; height: 14px; background: var(--card-2);
+  border-radius: 4px; overflow: hidden; }
+.wk-track::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--border); }
+.wk-fill { position: absolute; top: 2px; bottom: 2px; border-radius: 3px; }
+.pos-bg { background: var(--accent); }
+.neg-bg { background: #f85149; }
+.wk-val { flex: 0 0 auto; text-align: right; font-size: 0.85rem; font-weight: 600; min-width: 78px; }
+.wk-val small { display: block; font-weight: 400; font-size: 0.68rem; color: var(--muted); }

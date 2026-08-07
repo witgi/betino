@@ -114,6 +114,14 @@ function fmtTime(iso) {
   } catch (e) { return iso; }
 }
 function stars(c) { const n = Math.max(1, Math.min(5, Math.round((c || 0) * 5))); return "★".repeat(n) + "☆".repeat(5 - n); }
+function fmtWeek(iso) {
+  try {
+    const d = new Date(iso + "T00:00:00");
+    const e = new Date(d); e.setDate(e.getDate() + 6);
+    const f = x => `${x.getDate()}.${x.getMonth() + 1}.`;
+    return `${f(d)}–${f(e)}`;
+  } catch (x) { return iso; }
+}
 function selectionLabel(p) { return p.selection === "Draw" ? "Remíza" : p.selection; }
 function pickKey(p) { return `${p.commence}|${p.home}|${p.away}|${p.market}|${p.selection}`; }
 
@@ -234,6 +242,32 @@ function renderGlobal(s) {
     <p class="g-note">Štart banku ${USER_BANK.toFixed(0)} € · vklady podľa odporúčaného Kelly.
     <br><b>ROI</b> = zisk delený tým, čo si vsadil (nie bankom). Bank rastie pomalšie, lebo stavíš
     len malú časť (Kelly). Dlhodobý reálny cieľ je ~4–6 % ROI — vyššie čísla na málo tipoch sú výkyv.</p>`;
+}
+
+// ---------- TÝŽDENNÁ ZISKOVOSŤ ----------
+function renderWeekly() {
+  const box = document.getElementById("weekly");
+  if (!box) return;
+  const wk = (STATS && STATS.weekly) || [];
+  if (!wk.length) { box.innerHTML = ""; return; }
+  const factor = USER_BANK / ((STATS && STATS.start_bankroll) || 1000);
+  const maxAbs = Math.max(...wk.map(w => Math.abs(w.profit))) || 1;
+  const rows = [...wk].reverse().map(w => {
+    const eur = w.profit * factor, pos = w.profit >= 0;
+    const width = Math.max(3, Math.abs(w.profit) / maxAbs * 48);
+    return `<div class="wk-row">
+      <span class="wk-lbl">${fmtWeek(w.week)}</span>
+      <div class="wk-track">
+        <div class="wk-fill ${pos ? "pos-bg" : "neg-bg"}" style="width:${width}%;${pos ? "left" : "right"}:50%;"></div>
+      </div>
+      <span class="wk-val ${pos ? "pos" : "neg"}">${pos ? "+" : ""}${eur.toFixed(0)} €
+        <small>${w.roi > 0 ? "+" : ""}${w.roi}% · ${w.wins}-${w.losses}</small></span>
+    </div>`;
+  }).join("");
+  box.innerHTML = `<div class="g-head">📅 Týždenná ziskovosť</div>
+    <div class="wk-list">${rows}</div>
+    <p class="g-note">Zisk/strata po týždňoch (prepočítané na tvoj bank). Pekne vidno, že sa strieda plus a mínus —
+    jeden týždeň nič nehovorí, ráta sa celok.</p>`;
 }
 
 // ---------- OSOBNY PANEL ----------
@@ -733,14 +767,14 @@ async function main() {
         if (v && v > 0) {
           USER_BANK = v;
           localStorage.setItem("bank", String(v));
-          renderGlobal(STATS);
+          renderGlobal(STATS); renderWeekly();
           if (DATA) applyRisk();
           renderTiket();
         }
       });
     }
 
-    renderGlobal(STATS);
+    renderGlobal(STATS); renderWeekly();
 
     await loadSignals();
     document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));

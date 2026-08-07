@@ -17,7 +17,52 @@ Iba stdlib.
 from __future__ import annotations
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+
+
+def _week_of(commence):
+    """Pondelok týždňa výkopu (ISO) — kľúč pre týždennú agregáciu. None ak sa nedá."""
+    try:
+        d = datetime.fromisoformat((commence or "").replace("Z", "+00:00")).date()
+    except ValueError:
+        return None
+    return (d - timedelta(days=d.weekday())).isoformat()
+
+
+def weekly_breakdown(settled_rows, start_bankroll):
+    """Týždenná ziskovosť (compounding Kelly). Vráti chronologicky [{week, profit, roi, wins, losses, n, bank}]."""
+    weeks = {}
+    order = []
+    bank = float(start_bankroll)
+    for r in sorted(settled_rows, key=lambda x: x.get("commence", "") or x.get("logged_at", "")):
+        wk = _week_of(r.get("commence"))
+        if wk is None:
+            continue
+        if wk not in weeks:
+            weeks[wk] = {"week": wk, "staked": 0.0, "profit": 0.0, "wins": 0, "losses": 0, "n": 0}
+            order.append(wk)
+        stake = bank * (r.get("stake_pct", 0) / 100.0)
+        odds = r.get("best_odds", 1.0)
+        if r["result"] == "win":
+            pnl = stake * (odds - 1.0); weeks[wk]["wins"] += 1
+        elif r["result"] == "loss":
+            pnl = -stake; weeks[wk]["losses"] += 1
+        else:
+            pnl = 0.0
+        bank += pnl
+        w = weeks[wk]
+        w["staked"] += stake; w["profit"] += pnl; w["n"] += 1
+        w["bank"] = round(bank, 2)
+    out = []
+    for wk in order:
+        w = weeks[wk]
+        out.append({
+            "week": wk, "n": w["n"], "wins": w["wins"], "losses": w["losses"],
+            "profit": round(w["profit"], 2),
+            "roi": round(w["profit"] / w["staked"] * 100.0, 1) if w["staked"] else 0.0,
+            "bank": w.get("bank"),
+        })
+    return out
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.abspath(os.path.join(HERE, ".."))
@@ -104,6 +149,7 @@ def compute_stats(start_bankroll):
         "clv_beat_pct": clv_beat_pct,
         "equity": equity,
         "tips": tips,   # pre "bank podľa miery rizika" vo webe
+        "weekly": weekly_breakdown(settled_rows, start_bankroll),
     }
 
 
