@@ -25,7 +25,28 @@ let TIPRES = new Map();       // tip_key -> vysledok (tip_results) na osobny P/L
 let USER = null;
 let USER_BANK = 1000;   // môj bank v € (localStorage), default = referenčný
 let PLACED_LOCAL = new Set();  // tipy, čo som označil "podané" (localStorage, bez prihlásenia)
-let SEEN_TIPS = new Set();     // tipy, čo som už videl (na detekciu 🆕 nových)
+let NEW_KEYS = new Set();      // tipy pribudnuté v aktuálnom cronе (držia 🆕 celý deň)
+
+// Vypočíta, ktoré tipy sú NOVÉ v aktuálnom cronе (oproti predošlému behu).
+// Odznak 🆕 vydrží až do ďalšieho cronu — refresh prehliadača ho nezmaže.
+function computeNewKeys() {
+  const curGen = (DATA && DATA.generated_at) || "";
+  const curKeys = (DATA && DATA.candidates || []).map(pickKey);
+  const prevGen = localStorage.getItem("prevBatchGen");
+  if (!prevGen) {
+    NEW_KEYS = new Set();                     // prvé načítanie — nič neoznačíme
+  } else if (curGen !== prevGen) {
+    const prevKeys = loadSet("prevBatchKeys");
+    NEW_KEYS = new Set(curKeys.filter(k => !prevKeys.has(k)));   // nový cron → pribudnuté
+    saveSet("newKeys", NEW_KEYS, 4000);
+  } else {
+    NEW_KEYS = loadSet("newKeys");            // ten istý cron (refresh) → zachovaj 🆕
+  }
+  if (curGen !== prevGen) {                   // zapamätaj aktuálny batch pre budúce porovnanie
+    localStorage.setItem("prevBatchGen", curGen);
+    saveSet("prevBatchKeys", new Set(curKeys), 4000);
+  }
+}
 
 function loadSet(key) {
   try { const a = JSON.parse(localStorage.getItem(key)); if (Array.isArray(a)) return new Set(a); } catch (e) {}
@@ -368,7 +389,7 @@ function renderTiket() {
   // nové = ešte nevidené; nepodané hore, podané dole (stlmené)
   const enriched = list.map(p => {
     const key = pickKey(p);
-    return { p, key, isNew: !SEEN_TIPS.has(key), placed: PLACED_LOCAL.has(key) };
+    return { p, key, isNew: NEW_KEYS.has(key), placed: PLACED_LOCAL.has(key) };
   });
   // poradie: nepodané hore (a v nich NOVÉ úplne navrch), podané dole; v rámci skupiny podľa dátumu
   enriched.sort((a, b) => (a.placed - b.placed) || (b.isNew - a.isNew) || byDate(a.p, b.p));
@@ -424,8 +445,6 @@ function renderTiket() {
       </div>` : "";
   }
   // označ aktuálne tipy ako videné (na budúce rozlíšenie nových)
-  enriched.forEach(e => SEEN_TIPS.add(e.key));
-  saveSet("seenTips", SEEN_TIPS, 2000);
 }
 
 // ---------- PREDIKCIE ----------
@@ -703,13 +722,9 @@ async function main() {
     // môj bank + lokálne stavy (podané / videné tipy) z localStorage
     USER_BANK = loadBank();
     PLACED_LOCAL = loadSet("placedTips");
-    SEEN_TIPS = loadSet("seenTips");
-    // prvé načítanie (prázdna história) — potichu si zapamätaj aktuálne tipy, nech nevyskočia VŠETKY ako 🆕;
-    // od ďalšieho behu sa označia len naozaj pribudnuté
-    if (SEEN_TIPS.size === 0 && DATA && DATA.candidates) {
-      DATA.candidates.forEach(p => SEEN_TIPS.add(pickKey(p)));
-      saveSet("seenTips", SEEN_TIPS, 2000);
-    }
+    // 🆕 = tipy, čo PRIBUDLI v aktuálnom cronе oproti predošlému. Držia si odznak celý deň
+    // (kým nepríde ďalší cron s novým generated_at), nezmiznú po refreshi prehliadača.
+    computeNewKeys();
     const bankInput = document.getElementById("bank");
     if (bankInput) {
       bankInput.value = USER_BANK;
