@@ -50,7 +50,7 @@ jobs:
         run: |
           git config user.name "value-bets-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/predictions.json data/signals.json data/history.jsonl data/stats.json data/stats_legs.json data/history_prediction.jsonl data/history_arb.jsonl
+          git add data/predictions.json data/signals.json data/history.jsonl data/stats.json data/stats_legs.json data/history_prediction.jsonl data/history_arb.jsonl data/active_tips.json
           git commit -m "denne data $(date -u +%F)" || echo "ziadne zmeny"
           git push || echo "push preskoceny"
 
@@ -59,7 +59,7 @@ jobs:
           mkdir -p _site/data
           cp web/*.html web/*.css web/*.js _site/
           cp web/CNAME _site/CNAME
-          cp data/predictions.json data/signals.json data/stats.json data/stats_legs.json _site/data/ 2>/dev/null || true
+          cp data/predictions.json data/signals.json data/stats.json data/stats_legs.json data/active_tips.json _site/data/ 2>/dev/null || true
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

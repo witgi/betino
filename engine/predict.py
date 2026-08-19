@@ -99,6 +99,55 @@ def load_performance():
     }
 
 
+def _active_key(p):
+    return f"{p['commence']}|{p['home']}|{p['away']}|{p.get('market', 'h2h')}|{p['selection']}"
+
+
+def _is_balanced(p):
+    """Prešiel tip cez 'Vyvážené' nastavenie posuvníka? (EV 2–39.4, kurz 1.37–5.85, min 4 knihy)."""
+    ev, od, nb = p.get("ev_pct", 0), p.get("best_odds", 0), p.get("n_books", 0)
+    return 2.0 <= ev <= 39.4 and 1.37 <= od <= 5.85 and nb >= 4
+
+
+def _still_upcoming(commence):
+    try:
+        return datetime.fromisoformat((commence or "").replace("Z", "+00:00")) > datetime.now(timezone.utc)
+    except ValueError:
+        return False
+
+
+def _write_active_tips(candidates, generated_at):
+    """
+    Aktívne tipy: tip ostane až do VÝKOPU (nezmizne ďalším cronom).
+    faded=True = value už dobehla (nie je v aktuálnom behu, ale zápas sa ešte nehral).
+    Web (Tiket) ich potom drží s ikonkou ⏳ namiesto toho, aby zmizli.
+    """
+    path = os.path.join(ROOT, "data", "active_tips.json")
+    try:
+        prev = json.load(open(path, encoding="utf-8")).get("tips", []) if os.path.exists(path) else []
+    except (OSError, json.JSONDecodeError):
+        prev = []
+    merged = {}
+    for e in prev:                              # zachovaj predošlé ešte neodohrané
+        if _still_upcoming(e.get("commence")):
+            merged[_active_key(e)] = e
+    cur_keys = set()
+    for p in candidates:                        # aktuálne = živé
+        k = _active_key(p); cur_keys.add(k)
+        e = dict(p)
+        e["faded"] = False
+        e["was_balanced"] = bool(merged.get(k, {}).get("was_balanced")) or _is_balanced(p)
+        merged[k] = e
+    for k, e in merged.items():                 # čo tu bolo, ale už nie je → value dobehla
+        if k not in cur_keys:
+            e["faded"] = True
+    tips = [e for e in merged.values() if _still_upcoming(e.get("commence"))]
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"generated_at": generated_at, "tips": tips}, f, ensure_ascii=False, indent=2)
+    faded = sum(1 for e in tips if e.get("faded"))
+    print(f"[predict] active_tips: {len(tips)} (z toho faded/dobehnutých: {faded}) -> {path}")
+
+
 def run(cache_path=None):
     cfg = load_config()
     notes = []
@@ -176,6 +225,8 @@ def run(cache_path=None):
     out_path = os.path.join(ROOT, "data", "predictions.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
+
+    _write_active_tips(all_candidates, out["generated_at"])
 
     # --- Jednotný výstup signals.json (PLAN_V2: spoločný formát pre 3 nohy) ---
     # Value noha: kandidáti (širší zoznam pre posuvník) prebalené na signály;

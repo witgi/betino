@@ -7,6 +7,7 @@ const DATA_URL = "/data/predictions.json";
 const STATS_URL = "/data/stats.json";
 const SIGNALS_URL = "/data/signals.json";   // jednotný výstup (value + prediction + arb)
 const LEGSTATS_URL = "/data/stats_legs.json"; // per-noha výsledky (predikcie + arb)
+const ACTIVE_URL = "/data/active_tips.json";  // tipy držané do výkopu (faded = value dobehla)
 
 // --- Supabase klient ---
 const sb = window.supabase.createClient(
@@ -17,6 +18,7 @@ const sb = window.supabase.createClient(
 let DATA = null;
 let STATS = null;
 let LEGSTATS = null;      // per-noha výsledky (data/stats_legs.json)
+let ACTIVE = null;        // aktívne tipy držané do výkopu (data/active_tips.json)
 let PREDICTIONS = null;   // prediction-signály zo signals.json
 let ARBS = null;          // arb-signály zo signals.json
 let OFFICIAL = new Set();     // kluce oficialnych tipov (default prahy)
@@ -415,27 +417,30 @@ function renderTiket() {
   const sum = document.getElementById("tiket-sum");
   if (!main) return;
   const th = thresholdsFor(57);   // vyvážené (default)
-  const list = (DATA && DATA.candidates || []).filter(p =>
-    p.ev_pct >= th.minEv && p.ev_pct <= th.maxEv &&
-    p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds && p.n_books >= th.minBooks)
-    .sort(byDate);
+  // active_tips = tipy držané až do výkopu (nezmiznú ďalším cronom); faded = value dobehla ⏳
+  const list = (ACTIVE && ACTIVE.tips)
+    ? ACTIVE.tips.filter(t => t.was_balanced)
+    : (DATA && DATA.candidates || []).filter(p =>
+        p.ev_pct >= th.minEv && p.ev_pct <= th.maxEv &&
+        p.best_odds >= th.minOdds && p.best_odds <= th.maxOdds && p.n_books >= th.minBooks);
   empty.classList.toggle("hidden", list.length > 0);
-  // nové = ešte nevidené; nepodané hore, podané dole (stlmené)
   const enriched = list.map(p => {
     const key = pickKey(p);
-    return { p, key, isNew: NEW_KEYS.has(key), placed: PLACED_LOCAL.has(key) };
+    return { p, key, faded: !!p.faded, isNew: NEW_KEYS.has(key) && !p.faded, placed: PLACED_LOCAL.has(key) };
   });
-  // poradie: nepodané hore (a v nich NOVÉ úplne navrch), podané dole; v rámci skupiny podľa dátumu
-  enriched.sort((a, b) => (a.placed - b.placed) || (b.isNew - a.isNew) || byDate(a.p, b.p));
-  let total = 0, totalOpen = 0, placedCount = 0, newCount = 0;
-  const rows = enriched.map(({ p, key, isNew, placed }) => {
+  // poradie: podané dole; živé hore (nové navrch); dobehnuté ⏳ medzi živé a podané
+  enriched.sort((a, b) => (a.placed - b.placed) || (a.faded - b.faded) || (b.isNew - a.isNew) || byDate(a.p, b.p));
+  let total = 0, totalOpen = 0, placedCount = 0, newCount = 0, fadedCount = 0;
+  const rows = enriched.map(({ p, key, faded, isNew, placed }) => {
     const stake = stakeEur(p.stake_pct); total += stake;
-    if (placed) placedCount++; else totalOpen += stake;
+    if (placed) placedCount++; else if (faded) fadedCount++; else totalOpen += stake;
     if (isNew && !placed) newCount++;
     const sel = p.selection === "Draw" ? "Remíza" : p.selection;
-    return `<tr class="${placed ? "tk-done" : ""}">
+    const badge = faded ? ` <span class="tk-faded" title="kurz sa pohol – value už dobehla (len na dohľadanie)">⏳</span>`
+      : (isNew && !placed ? ` <span class="tk-new">🆕</span>` : "");
+    return `<tr class="${placed ? "tk-done" : (faded ? "tk-fade" : "")}">
       <td><input type="checkbox" class="tk-chk" data-key="${key}" ${placed ? "checked" : ""} title="označ ako podané"></td>
-      <td class="tk-when">${fmtTime(p.commence)}${isNew && !placed ? ` <span class="tk-new">🆕</span>` : ""}</td>
+      <td class="tk-when">${fmtTime(p.commence)}${badge}</td>
       <td><b>${p.home}</b> – ${p.away}<br><small>${p.league || ""}</small></td>
       <td>${sel}</td>
       <td class="r">${p.best_odds.toFixed(2)}<br><small>${p.bookmaker || ""}</small></td>
@@ -450,8 +455,9 @@ function renderTiket() {
     <table class="tiket-table">
     <thead><tr><th></th><th>Výkop</th><th>Zápas</th><th>Tip</th><th class="r">Kurz</th><th class="r">Vklad</th></tr></thead>
     <tbody>${rows}</tbody></table>
-    <p class="tk-foot">Tipy pribúdajú <b>1× denne ráno (~10:45)</b>. 🆕 = pribudlo od poslednej návštevy ·
-    zaškrtni „podané", nech vieš čo už máš (pamätá sa v prehliadači).</p>` : "";
+    <p class="tk-foot">Tipy pribúdajú <b>1× denne ráno (~10:45)</b> a <b>ostávajú až do výkopu</b> (neujdú ti).
+    🆕 = nové · ⏳ = kurz sa medzitým pohol, value už dobehla (necháme na dohľadanie) ·
+    zaškrtni „podané", nech vieš čo už máš.</p>` : "";
   // klik na checkbox -> ulož + prekresli
   main.querySelectorAll(".tk-chk").forEach(chk => chk.onclick = () => {
     const k = chk.dataset.key;
@@ -472,8 +478,9 @@ function renderTiket() {
   if (sum) {
     sum.innerHTML = list.length ? `
       <div class="g-stats">
-        <div><b>${list.length - placedCount}</b><span>na podanie</span></div>
+        <div><b>${list.length - placedCount - fadedCount}</b><span>na podanie</span></div>
         ${newCount ? `<div><b class="pos">${newCount}</b><span>🆕 nové</span></div>` : ""}
+        ${fadedCount ? `<div><b>${fadedCount}</b><span>⏳ dobehnuté</span></div>` : ""}
         <div><b>${totalOpen.toFixed(0)} €</b><span>zostáva vsadiť</span></div>
         <div><b>${placedCount}</b><span>podané</span></div>
       </div>` : "";
@@ -753,6 +760,7 @@ async function main() {
 
     try { const sres = await fetch(STATS_URL, { cache: "no-store" }); if (sres.ok) STATS = await sres.json(); } catch (e) {}
     try { const lres = await fetch(LEGSTATS_URL, { cache: "no-store" }); if (lres.ok) LEGSTATS = await lres.json(); } catch (e) {}
+    try { const ares = await fetch(ACTIVE_URL, { cache: "no-store" }); if (ares.ok) ACTIVE = await ares.json(); } catch (e) {}
     // môj bank + lokálne stavy (podané / videné tipy) z localStorage
     USER_BANK = loadBank();
     PLACED_LOCAL = loadSet("placedTips");
