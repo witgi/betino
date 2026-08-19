@@ -1,490 +1,6 @@
 {
   "generated_at": "2026-08-19T17:37:04.351021+00:00",
-  "bankroll": 1000,
-  "kelly_fraction": 0.25,
-  "sports": [
-    "soccer_epl",
-    "soccer_spain_la_liga",
-    "soccer_italy_serie_a",
-    "soccer_germany_bundesliga",
-    "soccer_usa_mls",
-    "soccer_brazil_campeonato"
-  ],
-  "thresholds": {
-    "min_ev_pct": 2.0,
-    "max_ev_pct": 15.0,
-    "min_odds": 1.4,
-    "max_odds": 4.0,
-    "min_books": 4
-  },
-  "requests_remaining": "FS:3182",
-  "n_events_considered": 548,
-  "n_picks": 24,
-  "performance": {
-    "settled_bets": 1168,
-    "win_rate_pct": 45.1,
-    "roi_pct": 16.64,
-    "clv_beat_pct": null
-  },
-  "picks": [
-    {
-      "league": "Czech Republic FNL",
-      "sport_key": "soccer",
-      "home": "Ústí nad Labem",
-      "away": "Dukla Praha",
-      "commence": "2026-08-21T16:00:00+00:00",
-      "market": "h2h",
-      "selection": "Dukla Praha",
-      "best_odds": 2.65,
-      "bookmaker": "Dafabet",
-      "fair_prob": 0.4068,
-      "fair_odds": 2.458,
-      "ev_pct": 7.8,
-      "stake_pct": 1.18,
-      "stake_amount": 11.82,
-      "confidence": 0.8,
-      "n_books": 11,
-      "match_id": 8569945
-    },
-    {
-      "league": "Austria 2. Liga",
-      "sport_key": "soccer",
-      "home": "Wacker Innsbruck",
-      "away": "St. Pölten",
-      "commence": "2026-08-21T16:30:00+00:00",
-      "market": "h2h",
-      "selection": "St. Pölten",
-      "best_odds": 2.25,
-      "bookmaker": "Interwetten",
-      "fair_prob": 0.4771,
-      "fair_odds": 2.096,
-      "ev_pct": 7.35,
-      "stake_pct": 1.47,
-      "stake_amount": 14.69,
-      "confidence": 0.8,
-      "n_books": 15,
-      "match_id": 8571688
-    },
-    {
-      "league": "Czech Republic First League",
-      "sport_key": "soccer",
-      "home": "Mladá Boleslav",
-      "away": "Slovácko",
-      "commence": "2026-08-22T15:00:00+00:00",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.8,
-      "bookmaker": "Betfair",
-      "fair_prob": 0.2793,
-      "fair_odds": 3.581,
-      "ev_pct": 6.12,
-      "stake_pct": 0.55,
-      "stake_amount": 5.47,
-      "confidence": 0.8,
-      "n_books": 17,
-      "match_id": 8560513
-    },
-    {
-      "league": "USA MLS",
-      "sport_key": "soccer",
-      "home": "DC United",
-      "away": "New England Revolution",
-      "commence": "2026-08-19T23:30:00+00:00",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.95,
-      "bookmaker": "1xbet",
-      "fair_prob": 0.2652,
-      "fair_odds": 3.77,
-      "ev_pct": 4.76,
-      "stake_pct": 0.4,
-      "stake_amount": 4.04,
-      "confidence": 0.8,
-      "n_books": 19,
-      "match_id": 8390810
-    },
-    {
-      "league": "USA MLS",
-      "sport_key": "soccer",
-      "home": "Colorado Rapids",
-      "away": "Los Angeles FC",
-      "commence": "2026-08-20T01:30:00+00:00",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.93,
-      "bookmaker": "1xbet",
-      "fair_prob": 0.2663,
-      "fair_odds": 3.755,
-      "ev_pct": 4.65,
-      "stake_pct": 0.4,
-      "stake_amount": 3.97,
-      "confidence": 0.8,
-      "n_books": 20,
-      "match_id": 8390823
-    },
-    {
-      "league": "USA MLS",
-      "sport_key": "soccer",
-      "home": "Toronto",
-      "away": "Charlotte",
-      "commence": "2026-08-19T23:30:00+00:00",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.98,
-      "bookmaker": "1xbet",
-      "fair_prob": 0.2627,
-      "fair_odds": 3.806,
-      "ev_pct": 4.57,
-      "stake_pct": 0.38,
-      "stake_amount": 3.83,
-      "confidence": 0.8,
-      "n_books": 19,
-      "match_id": 8390652
-    },
-    {
-      "league": "Switzerland Challenge League",
-      "sport_key": "soccer",
-      "home": "Neuchâtel Xamax",
-      "away": "Stade Lausanne-Ouchy",
-      "commence": "2026-08-21T17:30:00+00:00",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.7,
-      "bookmaker": "888Sport",
-      "fair_prob": 0.2814,
-      "fair_odds": 3.554,
-      "ev_pct": 4.1,
-      "stake_pct": 0.38,
-      "stake_amount": 3.8,
-      "confidence": 0.8,
-      "n_books": 9,
-      "match_id": 8608944
-    },
-    {
-      "league": "Turkey Süper Lig",
-      "sport_key": "soccer",
-      "home": "Rizespor",
-      "away": "Samsunspor",
-      "commence": "2026-08-22T16:00:00+00:00",
-      "market": "h2h",
-      "selection": "Draw",
-      "best_odds": 3.45,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.3011,
-      "fair_odds": 3.322,
-      "ev_pct": 3.86,
-      "stake_pct": 0.39,
-      "stake_amount": 3.94,
-      "confidence": 0.8,
-      "n_books": 17,
-      "match_id": 8583567
-    },
-    {
-      "league": "England EFL League Two",
-      "sport_key": "soccer",
-      "home": "Fleetwood Town",
-      "away": "Gillingham",
-      "commence": "2026-08-22T14:00:00+00:00",
-      "market": "h2h",
-      "selection": "Fleetwood Town",
-      "best_odds": 2.02,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.5132,
-      "fair_odds": 1.949,
-      "ev_pct": 3.67,
-      "stake_pct": 0.9,
-      "stake_amount": 8.99,
-      "confidence": 0.8,
-      "n_books": 16,
-      "match_id": 8566761
-    },
-    {
-      "league": "Europe UEFA Europa Conference League",
-      "sport_key": "soccer",
-      "home": "KÍ",
-      "away": "Riga",
-      "commence": "2026-08-20T17:30:00+00:00",
-      "market": "h2h",
-      "selection": "KÍ",
-      "best_odds": 3.84,
-      "bookmaker": "1xbet",
-      "fair_prob": 0.2698,
-      "fair_odds": 3.706,
-      "ev_pct": 3.62,
-      "stake_pct": 0.32,
-      "stake_amount": 3.19,
-      "confidence": 0.8,
-      "n_books": 18,
-      "match_id": 8643428
-    },
-    {
-      "league": "Portugal LigaPro",
-      "sport_key": "soccer",
-      "home": "FC Vizela",
-      "away": "Amarante",
-      "commence": "2026-08-22T13:00:00+00:00",
-      "market": "h2h",
-      "selection": "FC Vizela",
-      "best_odds": 1.98,
-      "bookmaker": "Dafabet",
-      "fair_prob": 0.5222,
-      "fair_odds": 1.915,
-      "ev_pct": 3.4,
-      "stake_pct": 0.87,
-      "stake_amount": 8.68,
-      "confidence": 0.8,
-      "n_books": 15,
-      "match_id": 8573904
-    },
-    {
-      "league": "Europe UEFA Champions League",
-      "sport_key": "soccer",
-      "home": "NEC",
-      "away": "FK Bodo - Glimt",
-      "commence": "2026-08-19T19:00:00+00:00",
-      "market": "h2h",
-      "selection": "FK Bodo - Glimt",
-      "best_odds": 2.55,
-      "bookmaker": "Dafabet",
-      "fair_prob": 0.4039,
-      "fair_odds": 2.476,
-      "ev_pct": 3.0,
-      "stake_pct": 0.48,
-      "stake_amount": 4.83,
-      "confidence": 0.8,
-      "n_books": 18,
-      "match_id": 8641430
-    },
-    {
-      "league": "Greece Super League",
-      "sport_key": "soccer",
-      "home": "Kalamata",
-      "away": "Aris",
-      "commence": "2026-08-22T17:00:00+00:00",
-      "market": "h2h",
-      "selection": "Kalamata",
-      "best_odds": 4.0,
-      "bookmaker": "bet365",
-      "fair_prob": 0.2571,
-      "fair_odds": 3.889,
-      "ev_pct": 2.84,
-      "stake_pct": 0.24,
-      "stake_amount": 2.37,
-      "confidence": 0.8,
-      "n_books": 13,
-      "match_id": 8603804
-    },
-    {
-      "league": "Europe UEFA Europa Conference League",
-      "sport_key": "soccer",
-      "home": "Shamrock Rovers",
-      "away": "KuPS",
-      "commence": "2026-08-20T19:00:00+00:00",
-      "market": "h2h",
-      "selection": "KuPS",
-      "best_odds": 3.68,
-      "bookmaker": "1xbet",
-      "fair_prob": 0.2789,
-      "fair_odds": 3.586,
-      "ev_pct": 2.62,
-      "stake_pct": 0.24,
-      "stake_amount": 2.44,
-      "confidence": 0.8,
-      "n_books": 17,
-      "match_id": 8643056
-    },
-    {
-      "league": "Poland 1. Liga",
-      "sport_key": "soccer",
-      "home": "Lechia Gdańsk",
-      "away": "Pogoń Siedlce",
-      "commence": "2026-08-21T18:30:00+00:00",
-      "market": "h2h",
-      "selection": "Lechia Gdańsk",
-      "best_odds": 2.5,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.4092,
-      "fair_odds": 2.444,
-      "ev_pct": 2.31,
-      "stake_pct": 0.39,
-      "stake_amount": 3.85,
-      "confidence": 0.8,
-      "n_books": 10,
-      "match_id": 8592686
-    },
-    {
-      "league": "Norway First Division",
-      "sport_key": "soccer",
-      "home": "Sandnes Ulf",
-      "away": "Bryne",
-      "commence": "2026-08-22T14:00:00+00:00",
-      "market": "h2h",
-      "selection": "Bryne",
-      "best_odds": 2.5,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.4091,
-      "fair_odds": 2.445,
-      "ev_pct": 2.26,
-      "stake_pct": 0.38,
-      "stake_amount": 3.77,
-      "confidence": 0.8,
-      "n_books": 12,
-      "match_id": 8412536
-    },
-    {
-      "league": "USA MLS",
-      "sport_key": "soccer",
-      "home": "DC United",
-      "away": "New England Revolution",
-      "commence": "2026-08-19T23:30:00+00:00",
-      "market": "h2h",
-      "selection": "New England Revolution",
-      "best_odds": 3.4,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.3006,
-      "fair_odds": 3.327,
-      "ev_pct": 2.19,
-      "stake_pct": 0.23,
-      "stake_amount": 2.29,
-      "confidence": 0.8,
-      "n_books": 19,
-      "match_id": 8390810
-    },
-    {
-      "league": "Finland Ykkösliiga",
-      "sport_key": "soccer",
-      "home": "Klubi-04",
-      "away": "MP",
-      "commence": "2026-08-22T16:00:00+00:00",
-      "market": "h2h",
-      "selection": "Klubi-04",
-      "best_odds": 2.26,
-      "bookmaker": "Dafabet",
-      "fair_prob": 0.4517,
-      "fair_odds": 2.214,
-      "ev_pct": 2.09,
-      "stake_pct": 0.42,
-      "stake_amount": 4.15,
-      "confidence": 0.8,
-      "n_books": 11,
-      "match_id": 8431883
-    },
-    {
-      "league": "China Chinese Super League",
-      "sport_key": "soccer",
-      "home": "Beijing Guoan",
-      "away": "Yunnan Yukun",
-      "commence": "2026-08-22T12:00:00+00:00",
-      "market": "totals",
-      "selection": "Under 2.5",
-      "best_odds": 4.0,
-      "bookmaker": "bet365",
-      "fair_prob": 0.2569,
-      "fair_odds": 3.892,
-      "ev_pct": 2.76,
-      "stake_pct": 0.23,
-      "stake_amount": 2.3,
-      "confidence": 0.738,
-      "n_books": 7,
-      "match_id": 8471277
-    },
-    {
-      "league": "USA USL League One",
-      "sport_key": "soccer",
-      "home": "One Knoxville",
-      "away": "Portland Hearts of Pine",
-      "commence": "2026-08-19T23:00:00+00:00",
-      "market": "totals",
-      "selection": "Over 2.5",
-      "best_odds": 1.66,
-      "bookmaker": "bet365",
-      "fair_prob": 0.6215,
-      "fair_odds": 1.609,
-      "ev_pct": 3.17,
-      "stake_pct": 1.2,
-      "stake_amount": 11.99,
-      "confidence": 0.675,
-      "n_books": 6,
-      "match_id": 8409321
-    },
-    {
-      "league": "Austria Regionalliga Ost",
-      "sport_key": "soccer",
-      "home": "Traiskirchen",
-      "away": "Leobendorf",
-      "commence": "2026-08-21T17:30:00+00:00",
-      "market": "h2h",
-      "selection": "Leobendorf",
-      "best_odds": 3.5,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.3083,
-      "fair_odds": 3.244,
-      "ev_pct": 7.9,
-      "stake_pct": 0.79,
-      "stake_amount": 7.9,
-      "confidence": 0.613,
-      "n_books": 5,
-      "match_id": 8617006
-    },
-    {
-      "league": "Poland 2. Liga",
-      "sport_key": "soccer",
-      "home": "NKP Podhale",
-      "away": "Resovia Rzeszów",
-      "commence": "2026-08-22T10:00:00+00:00",
-      "market": "h2h",
-      "selection": "NKP Podhale",
-      "best_odds": 2.16,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.4832,
-      "fair_odds": 2.07,
-      "ev_pct": 4.37,
-      "stake_pct": 0.94,
-      "stake_amount": 9.42,
-      "confidence": 0.613,
-      "n_books": 5,
-      "match_id": 8598784
-    },
-    {
-      "league": "Poland 2. Liga",
-      "sport_key": "soccer",
-      "home": "Znicz Pruszków",
-      "away": "Świt Skolwin",
-      "commence": "2026-08-22T14:30:00+00:00",
-      "market": "h2h",
-      "selection": "Znicz Pruszków",
-      "best_odds": 1.5,
-      "bookmaker": "Unibet",
-      "fair_prob": 0.6853,
-      "fair_odds": 1.459,
-      "ev_pct": 2.8,
-      "stake_pct": 1.4,
-      "stake_amount": 13.99,
-      "confidence": 0.613,
-      "n_books": 5,
-      "match_id": 8598870
-    },
-    {
-      "league": "Austria Regionalliga Ost",
-      "sport_key": "soccer",
-      "home": "Horn",
-      "away": "Donau",
-      "commence": "2026-08-21T17:30:00+00:00",
-      "market": "h2h",
-      "selection": "Horn",
-      "best_odds": 1.46,
-      "bookmaker": "1xbet",
-      "fair_prob": 0.7027,
-      "fair_odds": 1.423,
-      "ev_pct": 2.6,
-      "stake_pct": 1.41,
-      "stake_amount": 14.1,
-      "confidence": 0.55,
-      "n_books": 4,
-      "match_id": 8617133
-    }
-  ],
-  "candidates": [
+  "tips": [
     {
       "league": "USA MLS",
       "sport_key": "soccer",
@@ -502,7 +18,9 @@
       "stake_amount": 9.16,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8390653
+      "match_id": 8390653,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -521,7 +39,9 @@
       "stake_amount": 5.83,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642920
+      "match_id": 8642920,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Champions League",
@@ -540,7 +60,9 @@
       "stake_amount": 6.9,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8641435
+      "match_id": 8641435,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Netherlands Eerste Divisie",
@@ -559,7 +81,9 @@
       "stake_amount": 4.27,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8550162
+      "match_id": 8550162,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -578,7 +102,9 @@
       "stake_amount": 6.91,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8642925
+      "match_id": 8642925,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -597,7 +123,9 @@
       "stake_amount": 4.26,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642890
+      "match_id": 8642890,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Austria Regionalliga Ost",
@@ -616,7 +144,9 @@
       "stake_amount": 7.9,
       "confidence": 0.613,
       "n_books": 5,
-      "match_id": 8617006
+      "match_id": 8617006,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Czech Republic FNL",
@@ -635,7 +165,9 @@
       "stake_amount": 11.82,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8569945
+      "match_id": 8569945,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Austria 2. Liga",
@@ -654,7 +186,9 @@
       "stake_amount": 14.69,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8571688
+      "match_id": 8571688,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Czech Republic First League",
@@ -673,7 +207,9 @@
       "stake_amount": 5.47,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8560513
+      "match_id": 8560513,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Champions League",
@@ -692,7 +228,9 @@
       "stake_amount": 3.64,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8631073
+      "match_id": 8631073,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "China Chinese Super League",
@@ -711,7 +249,9 @@
       "stake_amount": 2.99,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8471277
+      "match_id": 8471277,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -730,7 +270,9 @@
       "stake_amount": 2.54,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642929
+      "match_id": 8642929,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -749,7 +291,9 @@
       "stake_amount": 2.12,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642943
+      "match_id": 8642943,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -768,7 +312,9 @@
       "stake_amount": 3.69,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8642910
+      "match_id": 8642910,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -787,7 +333,9 @@
       "stake_amount": 4.04,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390810
+      "match_id": 8390810,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -806,7 +354,9 @@
       "stake_amount": 3.97,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8390823
+      "match_id": 8390823,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -825,7 +375,9 @@
       "stake_amount": 3.83,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390652
+      "match_id": 8390652,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -844,7 +396,9 @@
       "stake_amount": 3.2,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390651
+      "match_id": 8390651,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Poland 2. Liga",
@@ -863,7 +417,9 @@
       "stake_amount": 9.42,
       "confidence": 0.613,
       "n_books": 5,
-      "match_id": 8598784
+      "match_id": 8598784,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Switzerland Challenge League",
@@ -882,7 +438,9 @@
       "stake_amount": 3.8,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8608944
+      "match_id": 8608944,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -901,7 +459,9 @@
       "stake_amount": 2.84,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8391048
+      "match_id": 8391048,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Turkey Süper Lig",
@@ -920,7 +480,9 @@
       "stake_amount": 3.94,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8583567
+      "match_id": 8583567,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "England EFL League Two",
@@ -939,7 +501,9 @@
       "stake_amount": 2.3,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8566935
+      "match_id": 8566935,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -958,7 +522,9 @@
       "stake_amount": 2.23,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642928
+      "match_id": 8642928,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "England EFL League Two",
@@ -977,7 +543,9 @@
       "stake_amount": 8.99,
       "confidence": 0.8,
       "n_books": 16,
-      "match_id": 8566761
+      "match_id": 8566761,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -996,7 +564,9 @@
       "stake_amount": 3.19,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8643428
+      "match_id": 8643428,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1015,7 +585,9 @@
       "stake_amount": 2.69,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8390824
+      "match_id": 8390824,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Portugal LigaPro",
@@ -1034,7 +606,9 @@
       "stake_amount": 8.68,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8573904
+      "match_id": 8573904,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1053,7 +627,9 @@
       "stake_amount": 2.41,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390808
+      "match_id": 8390808,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Finland Ykkösliiga",
@@ -1072,7 +648,9 @@
       "stake_amount": 20.91,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8431855
+      "match_id": 8431855,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA USL League One",
@@ -1091,7 +669,9 @@
       "stake_amount": 11.99,
       "confidence": 0.675,
       "n_books": 6,
-      "match_id": 8409321
+      "match_id": 8409321,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Champions League",
@@ -1110,7 +690,9 @@
       "stake_amount": 4.83,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8641430
+      "match_id": 8641430,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1129,7 +711,9 @@
       "stake_amount": 2.31,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390809
+      "match_id": 8390809,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Greece Super League",
@@ -1148,7 +732,9 @@
       "stake_amount": 2.37,
       "confidence": 0.8,
       "n_books": 13,
-      "match_id": 8603804
+      "match_id": 8603804,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1167,7 +753,9 @@
       "stake_amount": 2.01,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8391050
+      "match_id": 8391050,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Poland 2. Liga",
@@ -1186,7 +774,9 @@
       "stake_amount": 13.99,
       "confidence": 0.613,
       "n_books": 5,
-      "match_id": 8598870
+      "match_id": 8598870,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "China Chinese Super League",
@@ -1205,7 +795,9 @@
       "stake_amount": 2.3,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8471277
+      "match_id": 8471277,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Turkey Süper Lig",
@@ -1224,7 +816,9 @@
       "stake_amount": 1.79,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8583574
+      "match_id": 8583574,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1243,7 +837,9 @@
       "stake_amount": 1.99,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390645
+      "match_id": 8390645,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -1262,7 +858,9 @@
       "stake_amount": 2.44,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8643056
+      "match_id": 8643056,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Austria Regionalliga Ost",
@@ -1281,7 +879,9 @@
       "stake_amount": 14.1,
       "confidence": 0.55,
       "n_books": 4,
-      "match_id": 8617133
+      "match_id": 8617133,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Poland 1. Liga",
@@ -1300,7 +900,9 @@
       "stake_amount": 3.85,
       "confidence": 0.8,
       "n_books": 10,
-      "match_id": 8592686
+      "match_id": 8592686,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Norway First Division",
@@ -1319,7 +921,9 @@
       "stake_amount": 3.77,
       "confidence": 0.8,
       "n_books": 12,
-      "match_id": 8412536
+      "match_id": 8412536,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -1338,7 +942,9 @@
       "stake_amount": 1.23,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642904
+      "match_id": 8642904,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1357,7 +963,9 @@
       "stake_amount": 2.29,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390810
+      "match_id": 8390810,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "Finland Ykkösliiga",
@@ -1376,7 +984,9 @@
       "stake_amount": 4.15,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8431883
+      "match_id": 8431883,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "England Premier League",
@@ -1395,7 +1005,9 @@
       "stake_amount": 1.23,
       "confidence": 0.8,
       "n_books": 12,
-      "match_id": 8557847
+      "match_id": 8557847,
+      "faded": false,
+      "was_balanced": true
     },
     {
       "league": "USA MLS",
@@ -1414,7 +1026,9 @@
       "stake_amount": 1.48,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8390834
+      "match_id": 8390834,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "France Ligue 2",
@@ -1433,7 +1047,9 @@
       "stake_amount": 2.9,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8551512
+      "match_id": 8551512,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Netherlands Eredivisie",
@@ -1452,7 +1068,9 @@
       "stake_amount": 7.04,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8547630
+      "match_id": 8547630,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -1471,7 +1089,9 @@
       "stake_amount": 1.27,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8642416
+      "match_id": 8642416,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -1490,7 +1110,9 @@
       "stake_amount": 3.45,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390651
+      "match_id": 8390651,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -1509,7 +1131,9 @@
       "stake_amount": 1.56,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8469666
+      "match_id": 8469666,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -1528,7 +1152,9 @@
       "stake_amount": 1.28,
       "confidence": 0.8,
       "n_books": 14,
-      "match_id": 8642945
+      "match_id": 8642945,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Championship",
@@ -1547,7 +1173,9 @@
       "stake_amount": 1.39,
       "confidence": 0.8,
       "n_books": 16,
-      "match_id": 8566431
+      "match_id": 8566431,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain La Liga",
@@ -1566,7 +1194,9 @@
       "stake_amount": 5.49,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8570509
+      "match_id": 8570509,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "China Chinese Super League",
@@ -1585,7 +1215,9 @@
       "stake_amount": 2.38,
       "confidence": 0.8,
       "n_books": 13,
-      "match_id": 8471276
+      "match_id": 8471276,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Italy Serie B",
@@ -1604,7 +1236,9 @@
       "stake_amount": 1.59,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8614583
+      "match_id": 8614583,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -1623,7 +1257,9 @@
       "stake_amount": 9.86,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642917
+      "match_id": 8642917,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Czech Republic First League",
@@ -1642,7 +1278,9 @@
       "stake_amount": 3.42,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8560505
+      "match_id": 8560505,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Championship",
@@ -1661,7 +1299,9 @@
       "stake_amount": 1.06,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8566434
+      "match_id": 8566434,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -1680,7 +1320,9 @@
       "stake_amount": 1.2,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642907
+      "match_id": 8642907,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -1699,7 +1341,9 @@
       "stake_amount": 3.77,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8642928
+      "match_id": 8642928,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Sweden Allsvenskan",
@@ -1718,7 +1362,9 @@
       "stake_amount": 4.09,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8420445
+      "match_id": 8420445,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Finland Ykkösliiga",
@@ -1737,7 +1383,9 @@
       "stake_amount": 4.05,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8431884
+      "match_id": 8431884,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain La Liga",
@@ -1756,7 +1404,9 @@
       "stake_amount": 2.12,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8570540
+      "match_id": 8570540,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -1775,7 +1425,9 @@
       "stake_amount": 1.39,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8469659
+      "match_id": 8469659,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -1794,7 +1446,9 @@
       "stake_amount": 3.17,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8469709
+      "match_id": 8469709,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -1813,7 +1467,9 @@
       "stake_amount": 0.65,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390833
+      "match_id": 8390833,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -1832,7 +1488,9 @@
       "stake_amount": 2.77,
       "confidence": 0.8,
       "n_books": 10,
-      "match_id": 8642921
+      "match_id": 8642921,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Japan J1 League",
@@ -1851,7 +1509,9 @@
       "stake_amount": 0.92,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8553091
+      "match_id": 8553091,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Championship",
@@ -1870,7 +1530,9 @@
       "stake_amount": 1.9,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8566426
+      "match_id": 8566426,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain Segunda División",
@@ -1889,7 +1551,9 @@
       "stake_amount": 1.06,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8584503
+      "match_id": 8584503,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -1908,7 +1572,9 @@
       "stake_amount": 1.98,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8469657
+      "match_id": 8469657,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England EFL League Two",
@@ -1927,7 +1593,9 @@
       "stake_amount": 1.51,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8566933
+      "match_id": 8566933,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Japan J1 League",
@@ -1946,7 +1614,9 @@
       "stake_amount": 1.91,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8553066
+      "match_id": 8553066,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -1965,7 +1635,9 @@
       "stake_amount": 2.66,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8642944
+      "match_id": 8642944,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Portugal Liga NOS",
@@ -1984,7 +1656,9 @@
       "stake_amount": 3.02,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8574400
+      "match_id": 8574400,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "France Ligue 2",
@@ -2003,7 +1677,9 @@
       "stake_amount": 1.46,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8551516
+      "match_id": 8551516,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain La Liga",
@@ -2022,7 +1698,9 @@
       "stake_amount": 3.29,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8570478
+      "match_id": 8570478,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain La Liga",
@@ -2041,7 +1719,9 @@
       "stake_amount": 0.53,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8570554
+      "match_id": 8570554,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -2060,7 +1740,9 @@
       "stake_amount": 1.55,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8391049
+      "match_id": 8391049,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -2079,7 +1761,9 @@
       "stake_amount": 0.62,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390833
+      "match_id": 8390833,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -2098,7 +1782,9 @@
       "stake_amount": 1.08,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8642414
+      "match_id": 8642414,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -2117,7 +1803,9 @@
       "stake_amount": 2.75,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642918
+      "match_id": 8642918,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain La Liga",
@@ -2136,7 +1824,9 @@
       "stake_amount": 5.05,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8570509
+      "match_id": 8570509,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -2155,7 +1845,9 @@
       "stake_amount": 0.79,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8642942
+      "match_id": 8642942,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "France Ligue 1",
@@ -2174,7 +1866,9 @@
       "stake_amount": 0.53,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8548655
+      "match_id": 8548655,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain Segunda División",
@@ -2193,7 +1887,9 @@
       "stake_amount": 0.51,
       "confidence": 0.8,
       "n_books": 13,
-      "match_id": 8584448
+      "match_id": 8584448,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "France Ligue 1",
@@ -2212,7 +1908,9 @@
       "stake_amount": 2.9,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8548657
+      "match_id": 8548657,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England EFL League One",
@@ -2231,7 +1929,9 @@
       "stake_amount": 1.87,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8565716
+      "match_id": 8565716,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Turkey Süper Lig",
@@ -2250,7 +1950,9 @@
       "stake_amount": 1.26,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8583567
+      "match_id": 8583567,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Estonia Meistriliiga",
@@ -2269,7 +1971,9 @@
       "stake_amount": 9.82,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8465799
+      "match_id": 8465799,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Finland Ykkösliiga",
@@ -2288,7 +1992,9 @@
       "stake_amount": 1.48,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8431887
+      "match_id": 8431887,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -2307,7 +2013,9 @@
       "stake_amount": 0.42,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8391048
+      "match_id": 8391048,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Italy Serie B",
@@ -2326,7 +2034,9 @@
       "stake_amount": 2.81,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8614499
+      "match_id": 8614499,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -2345,7 +2055,9 @@
       "stake_amount": 0.61,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8642946
+      "match_id": 8642946,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -2364,7 +2076,9 @@
       "stake_amount": 0.56,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8642948
+      "match_id": 8642948,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Championship",
@@ -2383,7 +2097,9 @@
       "stake_amount": 1.53,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8566458
+      "match_id": 8566458,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -2402,7 +2118,9 @@
       "stake_amount": 1.12,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8642890
+      "match_id": 8642890,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Poland Ekstraklasa",
@@ -2421,7 +2139,9 @@
       "stake_amount": 1.16,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8550505
+      "match_id": 8550505,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -2440,7 +2160,9 @@
       "stake_amount": 3.06,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8469648
+      "match_id": 8469648,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Championship",
@@ -2459,7 +2181,9 @@
       "stake_amount": 1.21,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8566154
+      "match_id": 8566154,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain Segunda División",
@@ -2478,7 +2202,9 @@
       "stake_amount": 1.7,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8584503
+      "match_id": 8584503,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -2497,7 +2223,9 @@
       "stake_amount": 3.23,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8642940
+      "match_id": 8642940,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Austria 2. Liga",
@@ -2516,7 +2244,9 @@
       "stake_amount": 1.18,
       "confidence": 0.8,
       "n_books": 12,
-      "match_id": 8571849
+      "match_id": 8571849,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -2535,7 +2265,9 @@
       "stake_amount": 1.31,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8469666
+      "match_id": 8469666,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -2554,7 +2286,9 @@
       "stake_amount": 1.18,
       "confidence": 0.8,
       "n_books": 20,
-      "match_id": 8390834
+      "match_id": 8390834,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -2573,7 +2307,9 @@
       "stake_amount": 0.86,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390808
+      "match_id": 8390808,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Premier League",
@@ -2592,7 +2328,9 @@
       "stake_amount": 4.22,
       "confidence": 0.8,
       "n_books": 12,
-      "match_id": 8557839
+      "match_id": 8557839,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Czech Republic FNL",
@@ -2611,7 +2349,9 @@
       "stake_amount": 0.19,
       "confidence": 0.8,
       "n_books": 10,
-      "match_id": 8570007
+      "match_id": 8570007,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England Premier League",
@@ -2630,7 +2370,9 @@
       "stake_amount": 0.51,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8558033
+      "match_id": 8558033,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Scotland Premiership",
@@ -2649,7 +2391,9 @@
       "stake_amount": 1.7,
       "confidence": 0.8,
       "n_books": 14,
-      "match_id": 8558501
+      "match_id": 8558501,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa League",
@@ -2668,7 +2412,9 @@
       "stake_amount": 3.16,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8642940
+      "match_id": 8642940,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Portugal Liga NOS",
@@ -2687,7 +2433,9 @@
       "stake_amount": 0.57,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8574371
+      "match_id": 8574371,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -2706,7 +2454,9 @@
       "stake_amount": 0.57,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8469648
+      "match_id": 8469648,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England EFL League One",
@@ -2725,7 +2475,9 @@
       "stake_amount": 0.3,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8565716
+      "match_id": 8565716,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain La Liga",
@@ -2744,7 +2496,9 @@
       "stake_amount": 0.46,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8570535
+      "match_id": 8570535,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England EFL League Two",
@@ -2763,7 +2517,9 @@
       "stake_amount": 0.48,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8566920
+      "match_id": 8566920,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Japan J1 League",
@@ -2782,7 +2538,9 @@
       "stake_amount": 0.76,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8553105
+      "match_id": 8553105,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England EFL League One",
@@ -2801,7 +2559,9 @@
       "stake_amount": 0.18,
       "confidence": 0.8,
       "n_books": 17,
-      "match_id": 8565358
+      "match_id": 8565358,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Spain Segunda División",
@@ -2820,7 +2580,9 @@
       "stake_amount": 0.52,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8584473
+      "match_id": 8584473,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Bulgaria First League",
@@ -2839,7 +2601,9 @@
       "stake_amount": 0.48,
       "confidence": 0.738,
       "n_books": 7,
-      "match_id": 8546357
+      "match_id": 8546357,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Switzerland Super League",
@@ -2858,7 +2622,9 @@
       "stake_amount": 0.15,
       "confidence": 0.8,
       "n_books": 16,
-      "match_id": 8554527
+      "match_id": 8554527,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Japan J1 League",
@@ -2877,7 +2643,9 @@
       "stake_amount": 0.25,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8553076
+      "match_id": 8553076,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "USA MLS",
@@ -2896,7 +2664,9 @@
       "stake_amount": 0.14,
       "confidence": 0.8,
       "n_books": 19,
-      "match_id": 8390809
+      "match_id": 8390809,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Europe UEFA Europa Conference League",
@@ -2915,7 +2685,9 @@
       "stake_amount": 0.11,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8642908
+      "match_id": 8642908,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "France National",
@@ -2934,7 +2706,9 @@
       "stake_amount": 0.11,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8572210
+      "match_id": 8572210,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Czech Republic FNL",
@@ -2953,7 +2727,9 @@
       "stake_amount": 0.48,
       "confidence": 0.613,
       "n_books": 5,
-      "match_id": 8570076
+      "match_id": 8570076,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Czech Republic First League",
@@ -2972,7 +2748,9 @@
       "stake_amount": 0.35,
       "confidence": 0.8,
       "n_books": 8,
-      "match_id": 8578090
+      "match_id": 8578090,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "England EFL League Two",
@@ -2991,7 +2769,9 @@
       "stake_amount": 0.11,
       "confidence": 0.8,
       "n_books": 16,
-      "match_id": 8566921
+      "match_id": 8566921,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Poland 1. Liga",
@@ -3010,7 +2790,9 @@
       "stake_amount": 0.12,
       "confidence": 0.613,
       "n_books": 5,
-      "match_id": 8592686
+      "match_id": 8592686,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Scotland Championship",
@@ -3029,7 +2811,9 @@
       "stake_amount": 0.08,
       "confidence": 0.8,
       "n_books": 9,
-      "match_id": 8557432
+      "match_id": 8557432,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Brazil Serie B",
@@ -3048,7 +2832,9 @@
       "stake_amount": 0.01,
       "confidence": 0.8,
       "n_books": 11,
-      "match_id": 8469562
+      "match_id": 8469562,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Italy Serie A",
@@ -3067,7 +2853,9 @@
       "stake_amount": 0.03,
       "confidence": 0.8,
       "n_books": 18,
-      "match_id": 8545091
+      "match_id": 8545091,
+      "faded": false,
+      "was_balanced": false
     },
     {
       "league": "Hungary NB I",
@@ -3086,25 +2874,9 @@
       "stake_amount": 0.0,
       "confidence": 0.8,
       "n_books": 15,
-      "match_id": 8561403
+      "match_id": 8561403,
+      "faded": false,
+      "was_balanced": false
     }
-  ],
-  "staking": {
-    "bankroll": 1000,
-    "kelly_fraction": 0.25,
-    "max_stake_pct": 2.5
-  },
-  "default_thresholds": {
-    "min_ev_pct": 2.0,
-    "max_ev_pct": 15.0,
-    "min_odds": 1.4,
-    "max_odds": 4.0,
-    "min_books": 4
-  },
-  "notes": [
-    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 15418 | v horizonte 312 | detailov 312 | s kurzami 278 | eventov 548",
-    "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['Goals Over/Under', 'Both Teams To Score', 'FT Result', '1st Half Goals', 'Both Teams to Score in 2nd Half', 'Corners', 'Half Time Result', '2nd Half Goals', 'Double Chance', 'Second Half Result'], 'ft_type': 'dict', 'ft_keys': ['Draw', 'Away', 'Home'], 'ft_sample': \"{'Betfair': '4.00', 'bwin': '3.80', 'MansionBet': '3.80', 'Cashpoint': '3.80', 'MelBet': '3.83', 'Coral': '3.60', 'Dafabet': '3.95', '1xbet': '4.37', 'Sbo': '3.57', 'Ladbrokes': '3.60', 'CloudBet': '3\"}",
-    "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
-    "33 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
   ]
 }
