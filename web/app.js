@@ -560,25 +560,25 @@ function renderPredPerf() {
   const p = LEGSTATS && LEGSTATS.prediction;
   // ŽIVÉ výsledky (keď už niečo dohralo) — rovnaký prehľad ako pri value
   if (p && p.settled > 0) {
-    const prof = p.profit_units, cls = prof >= 0 ? "pos" : "neg";
-    const grow = (p.virtual_bankroll / p.start_bankroll - 1) * 100;
+    const bankTxt = p.bank_n > 0
+      ? ` · z tých s kurzom (${p.bank_n}) by flat ${p.flat_stake} € dal ${p.profit_units >= 0 ? "+" : ""}${p.profit_units.toFixed(0)} € (${p.roi_pct > 0 ? "+" : ""}${p.roi_pct}% ROI)`
+      : "";
     box.innerHTML = `
-      <div class="g-head">📈 Úspešnosť predikcií (živé — keby stavíš ${p.flat_stake} € na každý tip modelu)</div>
+      <div class="g-head">📈 Úspešnosť predikcií (živé — trafil tip modelu?)</div>
       <div class="g-hero">
-        <div class="g-bank"><span>Virtuálny bank</span>
-          <b class="${cls}">${p.virtual_bankroll.toFixed(0)} €</b>
-          <small class="${cls}">${prof >= 0 ? "+" : ""}${prof.toFixed(0)} € · bank ${grow >= 0 ? "+" : ""}${grow.toFixed(1)} %</small>
+        <div class="g-bank"><span>Trafené tipy modelu</span>
+          <b class="${p.win_rate_pct >= 50 ? "pos" : ""}">${p.win_rate_pct}%</b>
+          <small>${p.wins}-${p.losses} · ${p.settled} vyhodnotených</small>
         </div>${sparkline(p.equity)}
       </div>
       <div class="g-stats">
-        <div><b>${p.settled}</b><span>tipov</span></div>
-        <div><b>${p.win_rate_pct}%</b><span>úspech</span></div>
+        <div><b>${p.settled}</b><span>vyhodnotených</span></div>
+        <div><b class="${p.win_rate_pct >= 50 ? "pos" : ""}">${p.win_rate_pct}%</b><span>úspech (1X2)</span></div>
         <div><b>${p.wins}-${p.losses}</b><span>V-P</span></div>
-        <div><b class="${p.roi_pct >= 0 ? "pos" : "neg"}">${p.roi_pct > 0 ? "+" : ""}${p.roi_pct}%</b><span>ROI z vkladov</span></div>
         ${p.pending ? `<div><b>${p.pending}</b><span>čaká</span></div>` : ""}
       </div>
-      <p class="g-note">Flat vklad na tip modelu (1X2) pri trhovom kurze. Historický backtest:
-      1X2 ${b.h2h}% · nad/pod ${b.ou25}% · oba ${b.btts}%. Predikcie = orientácia, nie dokázaná výhoda.</p>`;
+      <p class="g-note">Koľko % tipov modelu (1X2) reálne vyšlo${bankTxt}. Historický backtest: 1X2 ${b.h2h}%.
+      Predikcie = orientácia, nie dokázaná výhoda (ostrý trh býva presnejší).</p>`;
     return;
   }
   // ešte nič nedohralo -> backtest baseline

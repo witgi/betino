@@ -156,29 +156,45 @@ def settle_predictions():
 
 
 def prediction_stats():
-    """Virtuálny bank keby stavíš flat na každý tip modelu (pri trhovom kurze)."""
+    """
+    Hlavná metrika predikcií = ÚSPEŠNOSŤ (trafil tip modelu?) nad VŠETKÝMI vyhodnotenými
+    (aj bez trhového kurzu — tých je väčšina z menších líg). Virtuálny bank je doplnok
+    len na podmnožine s kurzom (na to treba kurz).
+    """
     rows = _load_jsonl(HIST_PRED)
+    ordered = sorted(rows, key=lambda x: x.get("commence") or "")
+    # 1) úspešnosť nad všetkými (win/loss)
+    settled = wins = losses = pending = 0
+    for r in ordered:
+        res = r.get("result")
+        if res == "win":
+            settled += 1; wins += 1
+        elif res == "loss":
+            settled += 1; losses += 1
+        elif res == "pending":
+            pending += 1
+    # 2) virtuálny bank len na tipoch s trhovým kurzom (doplnok)
     bank = START_BANK
     equity = [{"bankroll": round(bank, 2)}]
-    settled = wins = losses = pending = 0
+    bank_n = 0
     staked = profit = 0.0
-    for r in sorted(rows, key=lambda x: x.get("commence") or ""):
-        if r.get("result") in ("win", "loss"):
-            odds = r.get("market_odds")
-            if not odds or odds <= 1.0:
-                continue
-            settled += 1
-            staked += FLAT_STAKE
-            if r["result"] == "win":
-                wins += 1; gain = FLAT_STAKE * (odds - 1.0); profit += gain; bank += gain
-            else:
-                losses += 1; profit -= FLAT_STAKE; bank -= FLAT_STAKE
-            equity.append({"bankroll": round(bank, 2)})
-        elif r.get("result") == "pending":
-            pending += 1
+    for r in ordered:
+        if r.get("result") not in ("win", "loss"):
+            continue
+        odds = r.get("market_odds")
+        if not odds or odds <= 1.0:
+            continue
+        bank_n += 1; staked += FLAT_STAKE
+        if r["result"] == "win":
+            gain = FLAT_STAKE * (odds - 1.0); profit += gain; bank += gain
+        else:
+            profit -= FLAT_STAKE; bank -= FLAT_STAKE
+        equity.append({"bankroll": round(bank, 2)})
     return {
         "settled": settled, "wins": wins, "losses": losses, "pending": pending,
         "win_rate_pct": round(wins / settled * 100, 1) if settled else 0.0,
+        # virtuálny bank (podmnožina s kurzom)
+        "bank_n": bank_n,
         "profit_units": round(profit, 2),
         "roi_pct": round(profit / staked * 100, 2) if staked else 0.0,
         "virtual_bankroll": round(bank, 2), "start_bankroll": START_BANK,
