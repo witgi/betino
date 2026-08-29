@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T22:37:50.187731+00:00",
+  "generated_at": "2026-08-29T00:43:22.063056+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -19,9 +19,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 1814,
-    "win_rate_pct": 44.2,
-    "roi_pct": 8.74,
+    "settled_bets": 1882,
+    "win_rate_pct": 44.3,
+    "roi_pct": 7.79,
     "clv_beat_pct": null
   },
   "all_books": [
@@ -41,10 +41,15 @@
     "Betsson",
     "Betsson (IT)",
     "Betway",
-    "bk:144",
-    "bk:294",
+    "bk:12",
+    "bk:128",
+    "bk:336",
+    "bk:433",
+    "bk:434",
+    "bk:458",
+    "bk:56",
     "bk:57",
-    "bk:74",
+    "bk:714",
     "bk:759",
     "Bwin",
     "DafaSports",
@@ -986,37 +991,6 @@
       "fair_odds": 1.97,
       "stake_amount": 14.99,
       "n_books": 18,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie B",
-      "event": {
-        "home": "Náutico",
-        "away": "Athletic Club",
-        "commence": "2026-08-28T23:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Náutico",
-          "book": "MansionBet",
-          "odds": 2.03,
-          "stake_pct": 1.57,
-          "fair_prob": 0.5244
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 6.46
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.907,
-      "stake_amount": 15.69,
-      "n_books": 17,
       "official": true
     },
     {
@@ -13746,22 +13720,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie A",
+      "league": "USA. MLS",
       "event": {
-        "home": "Juventus",
-        "away": "Parma",
-        "commence": "2026-08-29T18:45:00+00:00"
+        "home": "Seattle Sounders",
+        "away": "Chicago Fire",
+        "commence": "2026-08-29T20:30:00+00:00"
       },
       "market": "7:9",
       "legs": [
         {
-          "selection": "typ761 1",
-          "book": "HGA (Crown)",
+          "selection": "typ769 2.5",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
-          "selection": "typ762 1",
-          "book": "bk:294",
+          "selection": "typ770 2.5",
+          "book": "bk:433",
           "odds": 2.02
         }
       ],
@@ -13771,16 +13745,140 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-29T18:45:00+00:00",
+      "expires_hint": "2026-08-29T20:30:00+00:00",
       "source": "betburger",
-      "arb_id": "124c6215093e816915fa7644bc777e6e",
+      "arb_id": "e45b1b0cfe3f14658ba93a5ea6f72cfc",
       "is_live": false,
       "bk_ids": [
+        281474976710656,
         0,
         0,
         0,
         0,
-        4398046511104,
+        0,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. LFA",
+      "event": {
+        "home": "Hernandez, Francisco",
+        "away": "Schenk, Alexander",
+        "commence": "2026-08-29T01:00:00+00:00"
+      },
+      "market": "45:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "2",
+          "book": "bk:56",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-29T01:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "59eee46c274ceee5a5da03b7dd91ee94",
+      "is_live": false,
+      "bk_ids": [
+        72057594038059008,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. LFA",
+      "event": {
+        "home": "Hernandez, Francisco",
+        "away": "Schenk, Alexander",
+        "commence": "2026-08-29T01:00:00+00:00"
+      },
+      "market": "45:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Unibet",
+          "odds": 2.02
+        },
+        {
+          "selection": "2",
+          "book": "bk:56",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-29T01:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d1bba06033308c99f8751b14d352c303",
+      "is_live": false,
+      "bk_ids": [
+        72057594038452224,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. LFA",
+      "event": {
+        "home": "Hernandez, Francisco",
+        "away": "Schenk, Alexander",
+        "commence": "2026-08-29T01:00:00+00:00"
+      },
+      "market": "45:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Betplay",
+          "odds": 2.02
+        },
+        {
+          "selection": "2",
+          "book": "bk:56",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-29T01:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "e8d53ae841cdc41771d4f805c9c47477",
+      "is_live": false,
+      "bk_ids": [
+        72057594037927936,
         0,
         0,
         0,
@@ -13797,228 +13895,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie B",
+      "league": "USA. MLS",
       "event": {
-        "home": "Mantova",
-        "away": "Empoli",
-        "commence": "2026-08-30T17:00:00+00:00"
+        "home": "D.C. United",
+        "away": "Los Angeles FC",
+        "commence": "2026-08-29T23:30:00+00:00"
       },
       "market": "7:8",
       "legs": [
         {
-          "selection": "typ43",
-          "book": "bk:74",
+          "selection": "typ53 4.5",
+          "book": "1xBet",
           "odds": 2.02
         },
         {
-          "selection": "typ50 0.5",
-          "book": "Leon",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-30T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "ed3fa53a391c7bf65089ada1ce196b4c",
-      "is_live": false,
-      "bk_ids": [
-        1073741824,
-        2048
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie B",
-      "event": {
-        "home": "Mantova",
-        "away": "Empoli",
-        "commence": "2026-08-30T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ43",
-          "book": "bk:74",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ50 0.5",
-          "book": "BetinAsia",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-30T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "3d1047f231fd8d2be35b46c141abad3a",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037929984
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie B",
-      "event": {
-        "home": "Mantova",
-        "away": "Empoli",
-        "commence": "2026-08-30T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ43",
-          "book": "bk:74",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ50 0.5",
-          "book": "Sportmarket",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-30T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "cda57489a9c00fb96285b8277b3dd59c",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        4398046513152
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie B",
-      "event": {
-        "home": "Mantova",
-        "away": "Empoli",
-        "commence": "2026-08-30T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ43",
-          "book": "bk:74",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ50 0.5",
-          "book": "Betsson",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-30T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "938c27f82306067d73868b2f473a1b40",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        2048
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie B",
-      "event": {
-        "home": "Mantova",
-        "away": "Empoli",
-        "commence": "2026-08-30T17:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ43",
-          "book": "bk:74",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ50 0.5",
-          "book": "Pinnacle",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-30T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "f8b6c460a6ec6249fdf13044c07597f1",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        2048
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "CF Monterrey Rayados",
-        "away": "Atletico San Luis",
-        "commence": "2026-08-31T02:10:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 3.5",
+          "selection": "typ54 4.5",
           "book": "bk:759",
           "odds": 2.02
-        },
-        {
-          "selection": "typ56 3.5",
-          "book": "PariMatch",
-          "odds": 2.02
         }
       ],
       "edge": {
@@ -14027,12 +13920,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-31T02:10:00+00:00",
+      "expires_hint": "2026-08-29T23:30:00+00:00",
       "source": "betburger",
-      "arb_id": "e1fc53d2529b4374c4217799edb0be03",
+      "arb_id": "b2263e109ae7b24a2ccb3c23e2dab9e7",
       "is_live": false,
       "bk_ids": [
-        131072,
+        2097152,
         0,
         0,
         0,
@@ -14064,12 +13957,12 @@
       "legs": [
         {
           "selection": "typ53 4.5",
-          "book": "1xBet",
+          "book": "Betcity",
           "odds": 2.02
         },
         {
           "selection": "typ54 4.5",
-          "book": "bk:144",
+          "book": "Superbet",
           "odds": 2.02
         }
       ],
@@ -14081,12 +13974,11 @@
       "label": "surebet",
       "expires_hint": "2026-08-29T23:30:00+00:00",
       "source": "betburger",
-      "arb_id": "bbd738f69934240b49690e7f9bbc7a65",
+      "arb_id": "d7ffd9f3371b07534aade3315b8015e0",
       "is_live": false,
       "bk_ids": [
-        2097152,
-        0,
-        262144
+        4,
+        128
       ],
       "direct_links": [
         "",
@@ -14163,7 +14055,7 @@
         },
         {
           "selection": "typ54 4.5",
-          "book": "bk:144",
+          "book": "bk:759",
           "odds": 2.02
         }
       ],
@@ -14175,17 +14067,22 @@
       "label": "surebet",
       "expires_hint": "2026-08-29T23:30:00+00:00",
       "source": "betburger",
-      "arb_id": "cc64b8f9cbfe71afa0b84ebc0facbdc6",
+      "arb_id": "d452af61f08e2b6afa7a63381f12b28e",
       "is_live": false,
       "bk_ids": [
         0,
         0,
-        262144,
         0,
         0,
         0,
         0,
-        33554432
+        0,
+        33554432,
+        0,
+        0,
+        0,
+        0,
+        8
       ],
       "direct_links": [
         "",
@@ -14252,141 +14149,6 @@
       "legs": [
         {
           "selection": "typ53 4.5",
-          "book": "BetFast",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 4.5",
-          "book": "bk:759",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T23:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "d452af61f08e2b6afa7a63381f12b28e",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        33554432,
-        0,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "USA. MLS",
-      "event": {
-        "home": "D.C. United",
-        "away": "Los Angeles FC",
-        "commence": "2026-08-29T23:30:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 4.5",
-          "book": "Betcity",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 4.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T23:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "d7ffd9f3371b07534aade3315b8015e0",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "USA. MLS",
-      "event": {
-        "home": "D.C. United",
-        "away": "Los Angeles FC",
-        "commence": "2026-08-29T23:30:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 4.5",
-          "book": "Betcity",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 4.5",
-          "book": "bk:144",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T23:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "bccfbc9932e74de19bab89c3384a3482",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        0,
-        262144
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "USA. MLS",
-      "event": {
-        "home": "D.C. United",
-        "away": "Los Angeles FC",
-        "commence": "2026-08-29T23:30:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 4.5",
           "book": "1xBet",
           "odds": 2.02
         },
@@ -14418,21 +14180,442 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "USA. MLS",
+      "league": "Czech Republic. 1. Liga",
       "event": {
-        "home": "D.C. United",
-        "away": "Los Angeles FC",
-        "commence": "2026-08-29T23:30:00+00:00"
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "Betcity",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "fa6a18407e3d63eb5ee4bb596dd1c216",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        8192
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Betano",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "Betcity",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "b16eee95cdcbd4e061e9c50f488857ec",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "bk:434",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "37358e046a0c983a97b41c14208b20af",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        0,
+        0,
+        72057594037927936
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "Synottip",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "bcdea10d38799fb40b165448eab0933b",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        576460752303423488
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Betano",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "bk:336",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f97ded72586745707069eb01c5e2220d",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2097152,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Betano",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "bk:434",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "2aa1780e4fa72cd67c392a4e16134e6f",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        72057594037927936,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "bk:336",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "8ab77403678dce670a5ea5968222ac79",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        0,
+        2097152
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Czech Republic. 1. Liga",
+      "event": {
+        "home": "Sparta Prague",
+        "away": "Slavia Praha",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "Betano",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 2.5",
+          "book": "Synottip",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "ecbe926af723ad85236bba1d8b2055ec",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        576460752303423488,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. Premier League",
+      "event": {
+        "home": "Liverpool",
+        "away": "Nottingham Forest",
+        "commence": "2026-08-29T11:30:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ35 3.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ36 3.5",
+          "book": "bk:57",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-29T11:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "733fb01d1e3132d493d1330abdf6b536",
+      "is_live": false,
+      "bk_ids": [
+        144115188075986944,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Argentina. Primera Division",
+      "event": {
+        "home": "Banfield",
+        "away": "River Plate",
+        "commence": "2026-08-30T18:00:00+00:00"
       },
       "market": "7:8",
       "legs": [
         {
-          "selection": "typ53 4.5",
-          "book": "1xBet",
+          "selection": "typ55 4.5",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
-          "selection": "typ54 4.5",
+          "selection": "typ56 4.5",
           "book": "bk:759",
           "odds": 2.02
         }
@@ -14443,12 +14626,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-29T23:30:00+00:00",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
       "source": "betburger",
-      "arb_id": "b2263e109ae7b24a2ccb3c23e2dab9e7",
+      "arb_id": "9520925a583551f24092f2e94dbd8c40",
       "is_live": false,
       "bk_ids": [
-        2097152,
+        281474976710656,
         0,
         0,
         0,
@@ -14461,6 +14644,48 @@
         0,
         0,
         8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Argentina. Primera Division",
+      "event": {
+        "home": "Banfield",
+        "away": "River Plate",
+        "commence": "2026-08-30T18:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "bk:128",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-30T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "a9e7bf2d5e07751ca312b34cc933cf16",
+      "is_live": false,
+      "bk_ids": [
+        281474976710656,
+        0,
+        4
       ],
       "direct_links": [
         "",
@@ -14521,47 +14746,6 @@
       "legs": [
         {
           "selection": "typ35 3.5",
-          "book": "PariMatch",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ36 3.5",
-          "book": "bk:57",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T11:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "733fb01d1e3132d493d1330abdf6b536",
-      "is_live": false,
-      "bk_ids": [
-        144115188075986944,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
-      "event": {
-        "home": "Liverpool",
-        "away": "Nottingham Forest",
-        "commence": "2026-08-29T11:30:00+00:00"
-      },
-      "market": "7:9",
-      "legs": [
-        {
-          "selection": "typ35 3.5",
           "book": "1win",
           "odds": 2.02
         },
@@ -14597,104 +14781,22 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
+      "sport": "Tenis",
+      "league": "USA. Women. US Open. Singles",
       "event": {
-        "home": "Liverpool",
-        "away": "Nottingham Forest",
-        "commence": "2026-08-29T11:30:00+00:00"
+        "home": "Svitolina, Elina",
+        "away": "Sierra, Solana",
+        "commence": "2026-08-30T23:00:00+00:00"
       },
-      "market": "7:9",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "typ35 3.5",
-          "book": "1xBet",
+          "selection": "Nad 8.5",
+          "book": "bk:12",
           "odds": 2.02
         },
         {
-          "selection": "typ36 3.5",
-          "book": "bk:57",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T11:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "dadff5f18e13cbb5a0cac15133c8f2c2",
-      "is_live": false,
-      "bk_ids": [
-        144115188077953024,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Germany. Bundesliga",
-      "event": {
-        "home": "Union Berlin",
-        "away": "Eintracht Frankfurt",
-        "commence": "2026-08-29T13:30:00+00:00"
-      },
-      "market": "7:5",
-      "legs": [
-        {
-          "selection": "typ249 4.5",
-          "book": "Tipsport",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ250 4.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T13:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "eb7ca801f76f23a999130b2371adbd40",
-      "is_live": false,
-      "bk_ids": [
-        549755813888,
-        8192
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Germany. Bundesliga",
-      "event": {
-        "home": "Union Berlin",
-        "away": "Eintracht Frankfurt",
-        "commence": "2026-08-29T13:30:00+00:00"
-      },
-      "market": "7:5",
-      "legs": [
-        {
-          "selection": "typ249 4.5",
-          "book": "Tipsport",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ250 4.5",
+          "selection": "Pod 8.5",
           "book": "Betano",
           "odds": 2.02
         }
@@ -14705,12 +14807,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-29T13:30:00+00:00",
+      "expires_hint": "2026-08-30T23:00:00+00:00",
       "source": "betburger",
-      "arb_id": "17c4bb1801aa456170d6d4588b649a6c",
+      "arb_id": "541f46dc6ec86876f35a6f9e34fa2191",
       "is_live": false,
       "bk_ids": [
-        549755813888,
+        4096,
         0,
         0,
         0,
@@ -14730,23 +14832,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Portugal. Primeira Liga",
+      "sport": "Tenis",
+      "league": "USA. Women. US Open. Singles",
       "event": {
-        "home": "Benfica",
-        "away": "Estoril Praia",
-        "commence": "2026-08-31T19:15:00+00:00"
+        "home": "Svitolina, Elina",
+        "away": "Sierra, Solana",
+        "commence": "2026-08-30T23:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "typ55 2.5",
-          "book": "Superbet",
+          "selection": "Nad 8.5",
+          "book": "bk:458",
           "odds": 2.02
         },
         {
-          "selection": "typ56 2.5",
-          "book": "Betsson",
+          "selection": "Pod 8.5",
+          "book": "bk:714",
           "odds": 2.02
         }
       ],
@@ -14756,13 +14858,23 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-31T19:15:00+00:00",
+      "expires_hint": "2026-08-30T23:00:00+00:00",
       "source": "betburger",
-      "arb_id": "1d5b32925512d55ffe87d450616e97b1",
+      "arb_id": "abf184abba0a4e2c3761dca31036761f",
       "is_live": false,
       "bk_ids": [
-        281474976710656,
-        128
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        131072,
+        0,
+        0,
+        0,
+        2097152
       ],
       "direct_links": [
         "",
@@ -14771,23 +14883,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
+      "sport": "Tenis",
+      "league": "USA. Women. US Open. Singles",
       "event": {
-        "home": "Oud-Heverlee Leuven",
-        "away": "Standard Liege",
-        "commence": "2026-08-29T18:45:00+00:00"
+        "home": "Svitolina, Elina",
+        "away": "Sierra, Solana",
+        "commence": "2026-08-30T23:00:00+00:00"
       },
-      "market": "7:9",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "typ761 4.5",
-          "book": "Superbet",
+          "selection": "Nad 8.5",
+          "book": "bk:458",
           "odds": 2.02
         },
         {
-          "selection": "typ762 4.5",
-          "book": "Stoiximan",
+          "selection": "Pod 8.5",
+          "book": "Betano",
           "odds": 2.02
         }
       ],
@@ -14797,17 +14909,23 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-29T18:45:00+00:00",
+      "expires_hint": "2026-08-30T23:00:00+00:00",
       "source": "betburger",
-      "arb_id": "6804022f1fe2c7a196445651dab0422a",
+      "arb_id": "6f40ab98466a4b3970308567c230679d",
       "is_live": false,
       "bk_ids": [
         0,
-        8192,
         0,
         0,
         0,
-        16384
+        0,
+        0,
+        0,
+        131072,
+        0,
+        0,
+        0,
+        68719476736
       ],
       "direct_links": [
         "",
@@ -14816,23 +14934,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Argentina. Primera Nacional",
+      "sport": "Tenis",
+      "league": "USA. Women. US Open. Singles",
       "event": {
-        "home": "Gimnasia y Tiro de Salta",
-        "away": "Chacarita Juniors",
-        "commence": "2026-08-29T01:00:00+00:00"
+        "home": "Svitolina, Elina",
+        "away": "Sierra, Solana",
+        "commence": "2026-08-30T23:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "typ55 3.5",
-          "book": "BetFast",
+          "selection": "Nad 8.5",
+          "book": "bk:12",
           "odds": 2.02
         },
         {
-          "selection": "typ56 3.5",
-          "book": "Betplay",
+          "selection": "Pod 8.5",
+          "book": "bk:714",
           "odds": 2.02
         }
       ],
@@ -14842,11 +14960,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-29T01:00:00+00:00",
+      "expires_hint": "2026-08-30T23:00:00+00:00",
       "source": "betburger",
-      "arb_id": "bbc8383246c61609744e5ff5d1274859",
+      "arb_id": "1e516b3a14dc164d39e05d37811e153c",
       "is_live": false,
       "bk_ids": [
+        4096,
         0,
         0,
         0,
@@ -14854,54 +14973,10 @@
         0,
         0,
         0,
-        35184405643264
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Argentina. Primera Nacional",
-      "event": {
-        "home": "Gimnasia y Tiro de Salta",
-        "away": "Chacarita Juniors",
-        "commence": "2026-08-29T01:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 3.5",
-          "book": "BetFast",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 3.5",
-          "book": "Virginbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "3df005e8392d6e74a0b3d0735ead681d",
-      "is_live": false,
-      "bk_ids": [
         0,
         0,
         0,
-        0,
-        0,
-        16,
-        0,
-        33554432
+        2097152
       ],
       "direct_links": [
         "",
@@ -14979,15 +15054,15 @@
       "label": "surebet",
       "expires_hint": "2026-08-29T18:45:00+00:00",
       "source": "betburger",
-      "arb_id": "f48118caceb6aa698588bbdcd9fe321a",
+      "arb_id": "4edac5aa889d06149b907a7b293b859b",
       "is_live": false,
       "bk_ids": [
         0,
+        128,
         0,
         0,
         0,
         0,
-        16384,
         0,
         0,
         0,
@@ -15018,7 +15093,7 @@
         },
         {
           "selection": "typ762 4.5",
-          "book": "Betano",
+          "book": "Stoiximan",
           "odds": 2.02
         }
       ],
@@ -15030,68 +15105,15 @@
       "label": "surebet",
       "expires_hint": "2026-08-29T18:45:00+00:00",
       "source": "betburger",
-      "arb_id": "4edac5aa889d06149b907a7b293b859b",
+      "arb_id": "6804022f1fe2c7a196445651dab0422a",
       "is_live": false,
       "bk_ids": [
         0,
-        128,
+        8192,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Argentina. Primera Nacional",
-      "event": {
-        "home": "Gimnasia y Tiro de Salta",
-        "away": "Chacarita Juniors",
-        "commence": "2026-08-29T01:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ55 3.5",
-          "book": "BetFast",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ56 3.5",
-          "book": "Unibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-29T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "ce3a1332b905c9a75eef2a6cb8ee04fc",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        33554432
+        16384
       ],
       "direct_links": [
         "",
