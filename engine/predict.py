@@ -245,10 +245,27 @@ def run(cache_path=None):
     legs_enabled = ["value"]
 
     # --- Predikčná noha (FootyStats → Poisson) — nesmie zhodiť value nohu ---
+    # odds_lookup z value eventov (odds_comparison má lepšie pokrytie kurzov než odds_ft)
+    odds_lookup = {}
+    for e in events:
+        mid = e.get("match_id")
+        if not mid or e.get("market") != "h2h":
+            continue
+        d = {}
+        for oc in e.get("outcomes", []):
+            nm = oc.get("name")
+            if nm == e.get("home"):
+                d["home"] = oc.get("best_odds")
+            elif nm == e.get("away"):
+                d["away"] = oc.get("best_odds")
+            elif nm == "Draw":
+                d["draw"] = oc.get("best_odds")
+        if d:
+            odds_lookup[mid] = d
     pred_cfg = (cfg.get("legs", {}) or {}).get("prediction", {}) or {}
     if pred_cfg.get("enabled"):
         try:
-            pred_signals, pred_notes = predmodel.build_prediction_signals(cfg)
+            pred_signals, pred_notes = predmodel.build_prediction_signals(cfg, odds_lookup=odds_lookup)
             all_signals.extend(pred_signals)
             legs_enabled.append("prediction")
             notes.extend(f"[predikcie] {n}" for n in pred_notes)

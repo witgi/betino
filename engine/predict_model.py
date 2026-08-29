@@ -38,8 +38,9 @@ def _f(x):
         return None
 
 
-def build_signal_for_match(m):
-    """Z jedného FootyStats zápasu (s prematch xG) vyrobí jeden prediction-signál, alebo None."""
+def build_signal_for_match(m, odds_lookup=None):
+    """Z jedného FootyStats zápasu (s prematch xG) vyrobí jeden prediction-signál, alebo None.
+    odds_lookup = {match_id: {'home':o,'draw':o,'away':o}} z value-dát (lepšie pokrytie kurzov)."""
     xg = fs_mod.match_xg(m)
     if not xg:
         return None
@@ -59,6 +60,12 @@ def build_signal_for_match(m):
     sides.sort(key=lambda s: s[2], reverse=True)
     pick_code, pick_name, pick_prob, pick_odds = sides[0]
     second_prob = sides[1][2]
+
+    # lepší kurz z value-dát (odds_comparison má pokrytie aj tam, kde odds_ft chýba)
+    if odds_lookup:
+        o = (odds_lookup.get(m.get("id")) or {}).get(pick_code)
+        if o and o > 1.0:
+            pick_odds = o
 
     # confidence: ako rozhodný je výber (rozdiel top dvoch) + strop
     margin = pick_prob - second_prob
@@ -110,10 +117,11 @@ def _unix_to_iso(unix):
         return ""
 
 
-def build_prediction_signals(cfg, force_all=False):
+def build_prediction_signals(cfg, force_all=False, odds_lookup=None):
     """
     Postaví prediction-signály podľa config['legs']['prediction'].
     force_all=True ignoruje filter 'only_upcoming' (na testovanie s historickými dátami).
+    odds_lookup = {match_id: {home/draw/away: kurz}} z value-dát pre lepšie pokrytie kurzov.
     Vráti (signals, notes).
     """
     leg_cfg = (cfg.get("legs", {}) or {}).get("prediction", {}) or {}
@@ -142,7 +150,7 @@ def build_prediction_signals(cfg, force_all=False):
         if only_upcoming:
             matches = fs_mod.upcoming_matches(matches)
         for m in matches:
-            sig = build_signal_for_match(m)
+            sig = build_signal_for_match(m, odds_lookup=odds_lookup)
             if sig:
                 signals.append(sig)
         notes.append(f"season {sid}: {len(matches)} zápasov | request_remaining={meta.get('request_remaining')}")
