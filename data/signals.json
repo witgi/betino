@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T11:50:47.217723+00:00",
+  "generated_at": "2026-08-31T16:23:04.625724+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -19,9 +19,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 2282,
-    "win_rate_pct": 44.9,
-    "roi_pct": 11.78,
+    "settled_bets": 2333,
+    "win_rate_pct": 45.0,
+    "roi_pct": 11.12,
     "clv_beat_pct": null
   },
   "all_books": [
@@ -41,10 +41,11 @@
     "Betsson",
     "Betsson (IT)",
     "Betway",
+    "bk:144",
+    "bk:24",
     "bk:455",
     "bk:485",
     "bk:487",
-    "bk:71",
     "bk:714",
     "bk:761",
     "Bwin",
@@ -398,6 +399,37 @@
       "fair_odds": 3.083,
       "stake_amount": 4.31,
       "n_books": 15,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Poland Ekstraklasa",
+      "event": {
+        "home": "Raków Częstochowa",
+        "away": "Górnik Zabrze",
+        "commence": "2026-09-03T16:00:00+00:00"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Over 2.5",
+          "book": "Unibet",
+          "odds": 1.95,
+          "stake_pct": 0.97,
+          "fair_prob": 0.5318
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 3.7
+      },
+      "confidence": 0.613,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.88,
+      "stake_amount": 9.74,
+      "n_books": 5,
       "official": true
     },
     {
@@ -992,6 +1024,37 @@
     {
       "type": "value",
       "sport": "soccer",
+      "league": "Poland Ekstraklasa",
+      "event": {
+        "home": "Raków Częstochowa",
+        "away": "Górnik Zabrze",
+        "commence": "2026-09-03T16:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Górnik Zabrze",
+          "book": "Unibet",
+          "odds": 3.4,
+          "stake_pct": 0.12,
+          "fair_prob": 0.2976
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.2
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.36,
+      "stake_amount": 1.25,
+      "n_books": 13,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
       "league": "Switzerland Challenge League",
       "event": {
         "home": "Wil",
@@ -1426,37 +1489,6 @@
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Bulgaria First League",
-      "event": {
-        "home": "Dunav 2010",
-        "away": "Lokomotiv Sofia 1929",
-        "commence": "2026-08-31T16:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "bet365",
-          "odds": 3.5,
-          "stake_pct": 0.03,
-          "fair_prob": 0.2867
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.34
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.488,
-      "stake_amount": 0.34,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
       "league": "Brazil Serie B",
       "event": {
         "home": "Londrina",
@@ -1581,37 +1613,6 @@
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Bulgaria First League",
-      "event": {
-        "home": "Dunav 2010",
-        "away": "Lokomotiv Sofia 1929",
-        "commence": "2026-08-31T16:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Lokomotiv Sofia 1929",
-          "book": "Unibet",
-          "odds": 2.2,
-          "stake_pct": 0.05,
-          "fair_prob": 0.4556
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.24
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.195,
-      "stake_amount": 0.49,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
       "league": "England Premier League",
       "event": {
         "home": "Aston Villa",
@@ -1700,37 +1701,6 @@
       "fair_odds": 1.907,
       "stake_amount": 0.48,
       "n_books": 8,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Finland Veikkausliiga",
-      "event": {
-        "home": "Gnistan",
-        "away": "TPS",
-        "commence": "2026-08-31T16:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Gnistan",
-          "book": "Interwetten",
-          "odds": 1.95,
-          "stake_pct": 0.04,
-          "fair_prob": 0.5135
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.14
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.947,
-      "stake_amount": 0.37,
-      "n_books": 18,
       "official": false
     },
     {
@@ -3489,7 +3459,7 @@
         {
           "selection": "RSC Anderlecht",
           "book": "(trh)",
-          "odds": 1.58,
+          "odds": 1.51,
           "fair_prob": 0.842
         }
       ],
@@ -3507,7 +3477,7 @@
         "away": 0.84
       },
       "pick": "home",
-      "model_ev_pct": 33.04,
+      "model_ev_pct": 27.14,
       "probs_1x2": {
         "home": 0.842,
         "draw": 0.1,
@@ -3544,9 +3514,9 @@
         ]
       ],
       "market_odds": {
-        "1": 1.58,
-        "x": 4.32,
-        "2": 5.1,
+        "1": 1.51,
+        "x": 4.48,
+        "2": 5.85,
         "over25": 0.0,
         "btts_yes": 0.0
       },
@@ -7226,9 +7196,9 @@
       "market_odds": {
         "1": 1.15,
         "x": 7.5,
-        "2": 19.0,
-        "over25": 1.32,
-        "btts_yes": 1.93
+        "2": 16.0,
+        "over25": 1.24,
+        "btts_yes": 2.0
       },
       "fs_potential": {
         "o25": 50,
@@ -8198,22 +8168,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "England. Isthmian League. South Central Division",
+      "league": "Paraguay. Primera Division",
       "event": {
-        "home": "Binfield",
-        "away": "Hartley Wintney",
-        "commence": "2026-08-31T14:00:00+00:00"
+        "home": "Nacional Asuncion",
+        "away": "Club Libertad Asuncion",
+        "commence": "2026-09-02T19:00:00+00:00"
       },
-      "market": "7:1",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "2",
-          "book": "Olimp",
+          "selection": "typ55 4.5",
+          "book": "Superbet",
           "odds": 2.02
         },
         {
-          "selection": "AH 1 0.5",
-          "book": "FB Sports",
+          "selection": "typ56 4.5",
+          "book": "Virginbet",
           "odds": 2.02
         }
       ],
@@ -8223,19 +8193,17 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-31T14:00:00+00:00",
+      "expires_hint": "2026-09-02T19:00:00+00:00",
       "source": "betburger",
-      "arb_id": "ae2bd942d4541702333dc69e309cbe32",
+      "arb_id": "d359e4625abc68d88b2db1911e0ceec7",
       "is_live": false,
       "bk_ids": [
-        134217728,
+        0,
+        128,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        32
+        16
       ],
       "direct_links": [
         "",
@@ -8245,116 +8213,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "England. Isthmian League. South Central Division",
+      "league": "Belgium. Jupiler Pro League",
       "event": {
-        "home": "Binfield",
-        "away": "Hartley Wintney",
-        "commence": "2026-08-31T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Leon",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "FB Sports",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-31T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "fa4d2bf5740a1a058c7daf7cd68d2a58",
-      "is_live": false,
-      "bk_ids": [
-        1073741824,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Isthmian League. South Central Division",
-      "event": {
-        "home": "Binfield",
-        "away": "Hartley Wintney",
-        "commence": "2026-08-31T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "1xBet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "FB Sports",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-31T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "cdde4e62b57bddddf90632fea271612c",
-      "is_live": false,
-      "bk_ids": [
-        2097152,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Greece. Cup",
-      "event": {
-        "home": "Larissa",
-        "away": "Olympiacos Piraeus",
-        "commence": "2026-09-02T17:00:00+00:00"
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
       },
       "market": "7:2",
       "legs": [
         {
-          "selection": "AH 1 2",
-          "book": "bk:455",
+          "selection": "1",
+          "book": "BetRivers",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 -2",
-          "book": "Pamestoixima",
+          "selection": "AH 2 0.5",
+          "book": "Superbet",
           "odds": 2.02
         }
       ],
@@ -8364,19 +8238,65 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-02T17:00:00+00:00",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "5b2ee4c65b03976212e53750dcad5171",
+      "arb_id": "3af3647fb70f1a6062e53c85b0a1c6cd",
       "is_live": false,
       "bk_ids": [
         0,
-        2147483648,
+        128,
+        0,
+        0,
+        0,
+        0,
+        281474976710656
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "EH 2 1",
+          "book": "Superbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "1",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "9e727c9163f1db6645664d7cdd675bb8",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
         0,
         0,
         0,
         0,
         0,
-        16384
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -8494,530 +8414,6 @@
       "market": "7:2",
       "legs": [
         {
-          "selection": "1",
-          "book": "BetRivers",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "3af3647fb70f1a6062e53c85b0a1c6cd",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "bk:485",
-          "odds": 2.02
-        },
-        {
-          "selection": "X2",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "2c0ea018dfd0798835080f6840d5cd5d",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "EH 2 1",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "1",
-          "book": "BetRivers",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "87c878926eef72c5ff73d4c8d394c4d7",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "bk:485",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "21a2898c3bb4b22cb816858ad8aff676",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Betplay",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "68c05add5f631a9081a01c839c8014bf",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "EH 2 1",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "1",
-          "book": "bk:485",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "9e727c9163f1db6645664d7cdd675bb8",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "bk:487",
-          "odds": 2.02
-        },
-        {
-          "selection": "X2",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "c5f19574dee80663050a545268b141de",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        70368744177664
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "bk:761",
-          "odds": 2.02
-        },
-        {
-          "selection": "X2",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "50ceb502952cb01ea585be34b8ca5798",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "bk:487",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "7e4d0789e9bef752ed095ff3ca8ee5e1",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        70368744177664
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "EH 2 1",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "1",
-          "book": "bk:714",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "3f63b329507611766356ea403cdc4e22",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2097152
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "China. Super League",
-      "event": {
-        "home": "Dalian Zhixing",
-        "away": "Qingdao Hainiu",
-        "commence": "2026-09-05T11:35:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 -1",
-          "book": "bk:485",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 1",
-          "book": "Betsson",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-05T11:35:00+00:00",
-      "source": "betburger",
-      "arb_id": "906a3fcc4869461513aa1d44be244d0d",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
           "selection": "EH 2 1",
           "book": "Superbet",
           "odds": 2.02
@@ -9037,99 +8433,6 @@
       "expires_hint": "2026-09-06T17:15:00+00:00",
       "source": "betburger",
       "arb_id": "10a7bbf10471e1cf5e9a099d36de3810",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "EH 2 1",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "1",
-          "book": "bk:761",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "533c834e9251a70229e9faa57129d0a7",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Jupiler Pro League",
-      "event": {
-        "home": "Sk Beveren",
-        "away": "Oud-Heverlee Leuven",
-        "commence": "2026-09-06T17:15:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Unibet",
-          "odds": 2.02
-        },
-        {
-          "selection": "X2",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-06T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "5bcd91a65570d7ce42e53bcb118fe34f",
       "is_live": false,
       "bk_ids": [
         524288,
@@ -9203,8 +8506,101 @@
       "market": "7:2",
       "legs": [
         {
+          "selection": "EH 2 1",
+          "book": "Superbet",
+          "odds": 2.02
+        },
+        {
           "selection": "1",
-          "book": "Unibet",
+          "book": "Betplay",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "24fb6211b1e78bc04ac839175733c80b",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Paraguay. Primera Division",
+      "event": {
+        "home": "Nacional Asuncion",
+        "away": "Club Libertad Asuncion",
+        "commence": "2026-09-02T19:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Superbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "BetRivers",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-02T19:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "4e92f2773a6cb7c490d1bd5362865bac",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        281474976710656
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Betplay",
           "odds": 2.02
         },
         {
@@ -9221,7 +8617,153 @@
       "label": "surebet",
       "expires_hint": "2026-09-06T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "27e446f63f2a1cbe3c2fc8a288b950ba",
+      "arb_id": "68c05add5f631a9081a01c839c8014bf",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:761",
+          "odds": 2.02
+        },
+        {
+          "selection": "X2",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "50ceb502952cb01ea585be34b8ca5798",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        32
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:485",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "21a2898c3bb4b22cb816858ad8aff676",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Unibet",
+          "odds": 2.02
+        },
+        {
+          "selection": "X2",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "5bcd91a65570d7ce42e53bcb118fe34f",
       "is_live": false,
       "bk_ids": [
         524288,
@@ -9296,7 +8838,7 @@
         },
         {
           "selection": "1",
-          "book": "Betplay",
+          "book": "BetRivers",
           "odds": 2.02
         }
       ],
@@ -9308,7 +8850,290 @@
       "label": "surebet",
       "expires_hint": "2026-09-06T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "24fb6211b1e78bc04ac839175733c80b",
+      "arb_id": "87c878926eef72c5ff73d4c8d394c4d7",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        281474976710656
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:714",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "b80bf0cc24bb32475b8aa45ff0c420a7",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2097152
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "EH 2 1",
+          "book": "Superbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "1",
+          "book": "bk:714",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "3f63b329507611766356ea403cdc4e22",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2097152
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:487",
+          "odds": 2.02
+        },
+        {
+          "selection": "X2",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "c5f19574dee80663050a545268b141de",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        70368744177664
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:487",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "7e4d0789e9bef752ed095ff3ca8ee5e1",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        70368744177664
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Unibet",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "27e446f63f2a1cbe3c2fc8a288b950ba",
+      "is_live": false,
+      "bk_ids": [
+        524288,
+        128
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Paraguay. Primera Division",
+      "event": {
+        "home": "Nacional Asuncion",
+        "away": "Club Libertad Asuncion",
+        "commence": "2026-09-02T19:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Superbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "Betplay",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-02T19:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "dc199e73790d4d0d51085cc871d50c9d",
       "is_live": false,
       "bk_ids": [
         0,
@@ -9319,6 +9144,53 @@
         0,
         0,
         35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Belgium. Jupiler Pro League",
+      "event": {
+        "home": "Sk Beveren",
+        "away": "Oud-Heverlee Leuven",
+        "commence": "2026-09-06T17:15:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:485",
+          "odds": 2.02
+        },
+        {
+          "selection": "X2",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-06T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "2c0ea018dfd0798835080f6840d5cd5d",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -9384,13 +9256,13 @@
       "market": "7:2",
       "legs": [
         {
-          "selection": "1",
-          "book": "bk:714",
+          "selection": "EH 2 1",
+          "book": "Superbet",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 0.5",
-          "book": "Superbet",
+          "selection": "1",
+          "book": "bk:761",
           "odds": 2.02
         }
       ],
@@ -9402,7 +9274,7 @@
       "label": "surebet",
       "expires_hint": "2026-09-06T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "b80bf0cc24bb32475b8aa45ff0c420a7",
+      "arb_id": "533c834e9251a70229e9faa57129d0a7",
       "is_live": false,
       "bk_ids": [
         0,
@@ -9416,7 +9288,8 @@
         0,
         0,
         0,
-        2097152
+        0,
+        32
       ],
       "direct_links": [
         "",
@@ -9426,21 +9299,150 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Turkey. Super League",
+      "league": "Paraguay. Primera Division",
       "event": {
-        "home": "Besiktas",
-        "away": "Corum Belediyespor",
-        "commence": "2026-08-31T18:30:00+00:00"
+        "home": "Nacional Asuncion",
+        "away": "Club Libertad Asuncion",
+        "commence": "2026-09-02T19:00:00+00:00"
       },
-      "market": "7:5",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "typ247 9.5",
-          "book": "BetFast",
+          "selection": "typ55 4.5",
+          "book": "Superbet",
           "odds": 2.02
         },
         {
-          "selection": "typ248 9.5",
+          "selection": "typ56 4.5",
+          "book": "Unibet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-02T19:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "4e720cf6e26777482ec8d212854e8891",
+      "is_live": false,
+      "bk_ids": [
+        524288,
+        128
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "World. FIBA World Cup Qualification",
+      "event": {
+        "home": "Iceland",
+        "away": "Turkey",
+        "commence": "2026-08-31T19:30:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 87.5",
+          "book": "bk:144",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 87.5",
+          "book": "bk:455",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-08-31T19:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "e33a236f16276dd2a42d4aefd075193d",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        262144,
+        0,
+        0,
+        0,
+        0,
+        16384
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NCAA",
+      "event": {
+        "home": "Florida Gators",
+        "away": "Florida Atlantic Owls",
+        "commence": "2026-09-05T23:45:00+00:00"
+      },
+      "market": "10:2",
+      "legs": [
+        {
+          "selection": "AH 1 25",
+          "book": "bk:24",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 25.5",
+          "book": "Leon",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-05T23:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "69aa2a4b17a809818697b9cccd8a4c32",
+      "is_live": false,
+      "bk_ids": [
+        1090519040,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Piracicaba. Singles",
+      "event": {
+        "home": "Brunclik, Petr",
+        "away": "Sorger, Sebastian",
+        "commence": "2026-09-01T11:40:00+00:00"
+      },
+      "market": "8:3",
+      "legs": [
+        {
+          "selection": "Nad 21.5",
+          "book": "BetinAsia",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 21.5",
           "book": "Stoiximan",
           "odds": 2.02
         }
@@ -9451,19 +9453,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-31T18:30:00+00:00",
+      "expires_hint": "2026-09-01T11:40:00+00:00",
       "source": "betburger",
-      "arb_id": "760a4dd050fca18b0a94b3c4109a670c",
+      "arb_id": "42c3a5a4083715d247da8741457e240b",
       "is_live": false,
       "bk_ids": [
         0,
-        8192,
-        0,
-        0,
-        0,
-        0,
-        0,
-        33554432
+        72057594037936128
       ],
       "direct_links": [
         "",
@@ -9472,22 +9468,63 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Turkey. Super League",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Piracicaba. Singles",
       "event": {
-        "home": "Besiktas",
-        "away": "Corum Belediyespor",
-        "commence": "2026-08-31T18:30:00+00:00"
+        "home": "Brunclik, Petr",
+        "away": "Sorger, Sebastian",
+        "commence": "2026-09-01T11:40:00+00:00"
       },
-      "market": "7:5",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "typ247 9.5",
-          "book": "BetFast",
+          "selection": "Nad 21.5",
+          "book": "Pinnacle",
           "odds": 2.02
         },
         {
-          "selection": "typ248 9.5",
+          "selection": "Pod 21.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-01T11:40:00+00:00",
+      "source": "betburger",
+      "arb_id": "69693a9dfab1dfd376056d8ba5bd9479",
+      "is_live": false,
+      "bk_ids": [
+        2,
+        8192
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. ATP Challenger. Piracicaba. Singles",
+      "event": {
+        "home": "Brunclik, Petr",
+        "away": "Sorger, Sebastian",
+        "commence": "2026-09-01T11:40:00+00:00"
+      },
+      "market": "8:3",
+      "legs": [
+        {
+          "selection": "Nad 21.5",
+          "book": "BetinAsia",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 21.5",
           "book": "Betano",
           "odds": 2.02
         }
@@ -9498,111 +9535,23 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-08-31T18:30:00+00:00",
+      "expires_hint": "2026-09-01T11:40:00+00:00",
       "source": "betburger",
-      "arb_id": "fd5f010bc74e0100fccc16617d5fb27b",
+      "arb_id": "d2790d5af8089036d57996719b5d5750",
       "is_live": false,
       "bk_ids": [
         0,
+        72057594037927936,
         0,
         0,
         0,
         0,
         0,
         0,
-        33554432,
         0,
         0,
         0,
         68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "World. FIBA World Cup Qualification",
-      "event": {
-        "home": "USA",
-        "away": "Colombia",
-        "commence": "2026-08-31T23:00:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 91.5",
-          "book": "bk:71",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 91.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-31T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "d6ecb048dea6d8d3ff6510e2e91b84cf",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "World. FIBA World Cup Qualification",
-      "event": {
-        "home": "USA",
-        "away": "Colombia",
-        "commence": "2026-08-31T23:00:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 91.5",
-          "book": "bk:71",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 91.5",
-          "book": "bk:485",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-08-31T23:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "762db827eceb9946ad0c0190f754a7c3",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        256,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
       ],
       "direct_links": [
         "",
