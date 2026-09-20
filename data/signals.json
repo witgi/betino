@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T18:52:27.791083+00:00",
+  "generated_at": "2026-09-20T10:05:46.835116+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -19,9 +19,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 4521,
-    "win_rate_pct": 44.4,
-    "roi_pct": 6.55,
+    "settled_bets": 4586,
+    "win_rate_pct": 44.3,
+    "roi_pct": 6.66,
     "clv_beat_pct": null
   },
   "all_books": [
@@ -41,13 +41,15 @@
     "Betsson",
     "Betsson (IT)",
     "Betway",
-    "bk:128",
-    "bk:148",
+    "bk:144",
+    "bk:150",
     "bk:22",
-    "bk:314",
-    "bk:455",
-    "bk:485",
-    "bk:487",
+    "bk:23",
+    "bk:24",
+    "bk:492",
+    "bk:71",
+    "bk:722",
+    "bk:746",
     "Bwin",
     "DafaSports",
     "DaznBet",
@@ -94,6 +96,37 @@
     {
       "type": "value",
       "sport": "soccer",
+      "league": "Spain La Liga",
+      "event": {
+        "home": "Deportivo La Coruña",
+        "away": "Real Betis",
+        "commence": "2026-09-20T16:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Real Betis",
+          "book": "CloudBet",
+          "odds": 2.45,
+          "stake_pct": 2.5,
+          "fair_prob": 0.4829
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 18.3
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.071,
+      "stake_amount": 25.0,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
       "league": "Hungary NB II",
       "event": {
         "home": "Karcag SE",
@@ -106,21 +139,83 @@
           "selection": "Kozármisleny",
           "book": "Unibet",
           "odds": 4.0,
-          "stake_pct": 1.38,
-          "fair_prob": 0.2913
+          "stake_pct": 1.36,
+          "fair_prob": 0.2909
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 16.52
+        "value": 16.36
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.433,
-      "stake_amount": 13.76,
-      "n_books": 9,
+      "fair_odds": 3.438,
+      "stake_amount": 13.63,
+      "n_books": 13,
       "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Netherlands Eredivisie",
+      "event": {
+        "home": "NEC",
+        "away": "Go Ahead Eagles",
+        "commence": "2026-09-20T14:45:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Go Ahead Eagles",
+          "book": "CloudBet",
+          "odds": 4.0,
+          "stake_pct": 0.9,
+          "fair_prob": 0.277
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 10.8
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.61,
+      "stake_amount": 9.0,
+      "n_books": 17,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Norway Eliteserien",
+      "event": {
+        "home": "Vålerenga",
+        "away": "Fredrikstad",
+        "commence": "2026-09-20T12:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Fredrikstad",
+          "book": "CloudBet",
+          "odds": 3.95,
+          "stake_pct": 0.89,
+          "fair_prob": 0.2797
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 10.46
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.576,
+      "stake_amount": 8.87,
+      "n_books": 17,
+      "official": true
     },
     {
       "type": "value",
@@ -137,19 +232,19 @@
           "selection": "Atlético Madrid",
           "book": "CloudBet",
           "odds": 4.05,
-          "stake_pct": 0.79,
-          "fair_prob": 0.2708
+          "stake_pct": 0.8,
+          "fair_prob": 0.2709
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 9.67
+        "value": 9.73
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.693,
-      "stake_amount": 7.92,
+      "fair_odds": 3.691,
+      "stake_amount": 7.98,
       "n_books": 17,
       "official": false
     },
@@ -168,175 +263,144 @@
           "selection": "Rangers",
           "book": "CloudBet",
           "odds": 3.5,
-          "stake_pct": 0.95,
-          "fair_prob": 0.3128
+          "stake_pct": 0.77,
+          "fair_prob": 0.3078
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 9.48
+        "value": 7.71
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.197,
-      "stake_amount": 9.48,
+      "fair_odds": 3.249,
+      "stake_amount": 7.71,
+      "n_books": 17,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Sweden Superettan",
+      "event": {
+        "home": "GIF Sundsvall",
+        "away": "Ljungskile",
+        "commence": "2026-09-20T11:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Ljungskile",
+          "book": "MansionBet",
+          "odds": 1.95,
+          "stake_pct": 1.86,
+          "fair_prob": 0.549
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 7.06
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.821,
+      "stake_amount": 18.57,
       "n_books": 16,
       "official": true
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Greece Super League 2",
+      "league": "Belgium Pro League",
       "event": {
-        "home": "Kallithea",
-        "away": "Panserraikos",
-        "commence": "2026-09-20T11:45:00+00:00"
+        "home": "Club Brugge",
+        "away": "KRC Genk",
+        "commence": "2026-09-20T16:30:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Kallithea",
-          "book": "Betfair",
-          "odds": 2.7,
-          "stake_pct": 1.38,
-          "fair_prob": 0.4051
+          "selection": "KRC Genk",
+          "book": "bet365",
+          "odds": 6.0,
+          "stake_pct": 0.35,
+          "fair_prob": 0.1782
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 9.38
-      },
-      "confidence": 0.55,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.468,
-      "stake_amount": 13.8,
-      "n_books": 4,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Belgium First Division B",
-      "event": {
-        "home": "Lokeren-Temse",
-        "away": "Excelsior Virton",
-        "commence": "2026-09-20T14:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Excelsior Virton",
-          "book": "Dafabet",
-          "odds": 3.85,
-          "stake_pct": 0.81,
-          "fair_prob": 0.2836
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 9.18
+        "value": 6.94
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.526,
-      "stake_amount": 8.06,
-      "n_books": 11,
-      "official": true
+      "fair_odds": 5.611,
+      "stake_amount": 3.47,
+      "n_books": 17,
+      "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Czech Republic First League",
+      "league": "Norway First Division",
       "event": {
-        "home": "Slavia Praha",
-        "away": "Viktoria Plzeň",
-        "commence": "2026-09-20T16:00:00+00:00"
+        "home": "Lyn",
+        "away": "Ranheim",
+        "commence": "2026-09-20T15:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Slavia Praha",
-          "book": "CloudBet",
-          "odds": 1.62,
-          "stake_pct": 2.5,
-          "fair_prob": 0.6706
+          "selection": "Ranheim",
+          "book": "MansionBet",
+          "odds": 4.4,
+          "stake_pct": 0.44,
+          "fair_prob": 0.2408
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 8.64
+        "value": 5.96
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.491,
-      "stake_amount": 25.0,
+      "fair_odds": 4.153,
+      "stake_amount": 4.38,
       "n_books": 16,
-      "official": true
+      "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Netherlands Eredivisie",
+      "league": "Italy Serie A",
       "event": {
-        "home": "NEC",
-        "away": "Go Ahead Eagles",
-        "commence": "2026-09-20T14:45:00+00:00"
+        "home": "Parma",
+        "away": "Genoa",
+        "commence": "2026-09-20T13:00:00+00:00"
       },
-      "market": "h2h",
+      "market": "totals",
       "legs": [
         {
-          "selection": "Go Ahead Eagles",
-          "book": "CloudBet",
-          "odds": 4.0,
-          "stake_pct": 0.66,
-          "fair_prob": 0.2699
+          "selection": "Under 2.5",
+          "book": "1xbet",
+          "odds": 1.63,
+          "stake_pct": 2.36,
+          "fair_prob": 0.65
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 7.94
+        "value": 5.95
       },
-      "confidence": 0.8,
+      "confidence": 0.613,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.706,
-      "stake_amount": 6.62,
-      "n_books": 16,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Norway Eliteserien",
-      "event": {
-        "home": "Vålerenga",
-        "away": "Fredrikstad",
-        "commence": "2026-09-20T12:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Fredrikstad",
-          "book": "CloudBet",
-          "odds": 3.95,
-          "stake_pct": 0.62,
-          "fair_prob": 0.2716
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 7.29
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.682,
-      "stake_amount": 6.18,
-      "n_books": 15,
+      "fair_odds": 1.538,
+      "stake_amount": 23.63,
+      "n_books": 5,
       "official": true
     },
     {
@@ -354,207 +418,21 @@
           "selection": "Draw",
           "book": "bet365",
           "odds": 3.4,
-          "stake_pct": 0.73,
-          "fair_prob": 0.3146
+          "stake_pct": 0.5,
+          "fair_prob": 0.3083
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 6.97
+        "value": 4.82
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.179,
-      "stake_amount": 7.26,
-      "n_books": 15,
+      "fair_odds": 3.244,
+      "stake_amount": 5.02,
+      "n_books": 17,
       "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Greece Super League 2",
-      "event": {
-        "home": "Olympiakos Piraeus II",
-        "away": "Marko",
-        "commence": "2026-09-20T14:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "Betfair",
-          "odds": 3.75,
-          "stake_pct": 0.59,
-          "fair_prob": 0.2841
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 6.54
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.52,
-      "stake_amount": 5.95,
-      "n_books": 9,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Slovenia 2. SNL",
-      "event": {
-        "home": "Triglav",
-        "away": "ND Slovan Ljubljana",
-        "commence": "2026-09-20T15:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Triglav",
-          "book": "Unibet",
-          "odds": 1.33,
-          "stake_pct": 2.5,
-          "fair_prob": 0.7921
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 5.35
-      },
-      "confidence": 0.675,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.263,
-      "stake_amount": 25.0,
-      "n_books": 6,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "USA USL League One",
-      "event": {
-        "home": "Chattanooga Red Wolves",
-        "away": "Portland Hearts of Pine",
-        "commence": "2026-09-19T23:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Chattanooga Red Wolves",
-          "book": "Unibet",
-          "odds": 1.88,
-          "stake_pct": 1.44,
-          "fair_prob": 0.5589
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 5.08
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.789,
-      "stake_amount": 14.42,
-      "n_books": 8,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Slovenia 2. SNL",
-      "event": {
-        "home": "Bilje",
-        "away": "Jesenice",
-        "commence": "2026-09-20T14:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Jesenice",
-          "book": "Dafabet",
-          "odds": 2.75,
-          "stake_pct": 0.69,
-          "fair_prob": 0.3813
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 4.86
-      },
-      "confidence": 0.675,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.623,
-      "stake_amount": 6.94,
-      "n_books": 6,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Switzerland Challenge League",
-      "event": {
-        "home": "Yverdon Sport",
-        "away": "Stade Lausanne-Ouchy",
-        "commence": "2026-09-20T12:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "BetVictor",
-          "odds": 3.75,
-          "stake_pct": 0.43,
-          "fair_prob": 0.2792
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 4.68
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.582,
-      "stake_amount": 4.26,
-      "n_books": 14,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Greece Super League 2",
-      "event": {
-        "home": "Panthrakikos",
-        "away": "Niki Volos",
-        "commence": "2026-09-21T14:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Panthrakikos",
-          "book": "bet365",
-          "odds": 5.25,
-          "stake_pct": 0.28,
-          "fair_prob": 0.1994
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 4.68
-      },
-      "confidence": 0.55,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 5.015,
-      "stake_amount": 2.75,
-      "n_books": 4,
-      "official": false
     },
     {
       "type": "value",
@@ -571,51 +449,20 @@
           "selection": "Draw",
           "book": "Macauslot",
           "odds": 4.35,
-          "stake_pct": 0.34,
-          "fair_prob": 0.2404
+          "stake_pct": 0.35,
+          "fair_prob": 0.2408
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 4.58
+        "value": 4.73
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 4.159,
-      "stake_amount": 3.42,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Portugal Liga NOS",
-      "event": {
-        "home": "Vitória Guimarães",
-        "away": "Moreirense FC",
-        "commence": "2026-09-20T14:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Moreirense FC",
-          "book": "bet365",
-          "odds": 7.0,
-          "stake_pct": 0.19,
-          "fair_prob": 0.1494
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 4.57
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 6.694,
-      "stake_amount": 1.91,
-      "n_books": 16,
+      "fair_odds": 4.153,
+      "stake_amount": 3.53,
+      "n_books": 17,
       "official": false
     },
     {
@@ -631,53 +478,53 @@
       "legs": [
         {
           "selection": "Draw",
-          "book": "Dafabet",
-          "odds": 3.5,
-          "stake_pct": 0.43,
-          "fair_prob": 0.2979
+          "book": "BetVictor",
+          "odds": 3.7,
+          "stake_pct": 0.42,
+          "fair_prob": 0.2825
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 4.25
+        "value": 4.54
       },
-      "confidence": 0.738,
+      "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.357,
-      "stake_amount": 4.25,
-      "n_books": 7,
+      "fair_odds": 3.539,
+      "stake_amount": 4.21,
+      "n_books": 13,
       "official": true
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Spain Segunda División",
+      "league": "England Championship",
       "event": {
-        "home": "Ceuta",
-        "away": "Real Valladolid",
-        "commence": "2026-09-20T14:15:00+00:00"
+        "home": "Norwich City",
+        "away": "Bolton Wanderers",
+        "commence": "2026-09-20T12:30:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Ceuta",
+          "selection": "Norwich City",
           "book": "CloudBet",
-          "odds": 2.8,
-          "stake_pct": 0.54,
-          "fair_prob": 0.3711
+          "odds": 1.56,
+          "stake_pct": 1.93,
+          "fair_prob": 0.6688
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 3.91
+        "value": 4.33
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.695,
-      "stake_amount": 5.43,
-      "n_books": 16,
+      "fair_odds": 1.495,
+      "stake_amount": 19.33,
+      "n_books": 17,
       "official": true
     },
     {
@@ -695,330 +542,144 @@
           "selection": "Dinamo Bucureşti",
           "book": "MelBet",
           "odds": 1.74,
-          "stake_pct": 1.31,
+          "stake_pct": 1.32,
           "fair_prob": 0.5971
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 3.89
+        "value": 3.9
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
       "fair_odds": 1.675,
-      "stake_amount": 13.14,
-      "n_books": 14,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Denmark 1st Division",
-      "event": {
-        "home": "AaB",
-        "away": "Vendsyssel",
-        "commence": "2026-09-20T12:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Vendsyssel",
-          "book": "Unibet",
-          "odds": 4.1,
-          "stake_pct": 0.29,
-          "fair_prob": 0.2527
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 3.62
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.957,
-      "stake_amount": 2.92,
-      "n_books": 15,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Belgium Pro League",
-      "event": {
-        "home": "Club Brugge",
-        "away": "KRC Genk",
-        "commence": "2026-09-20T16:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "KRC Genk",
-          "book": "bet365",
-          "odds": 6.0,
-          "stake_pct": 0.17,
-          "fair_prob": 0.1724
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 3.47
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 5.799,
-      "stake_amount": 1.73,
+      "stake_amount": 13.19,
       "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie A",
-      "event": {
-        "home": "Vasco da Gama",
-        "away": "Coritiba",
-        "commence": "2026-09-19T23:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Vasco da Gama",
-          "book": "CloudBet",
-          "odds": 1.56,
-          "stake_pct": 1.48,
-          "fair_prob": 0.6623
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 3.32
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.51,
-      "stake_amount": 14.84,
-      "n_books": 17,
       "official": true
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Belgium First Division B",
+      "league": "Slovenia 2. SNL",
       "event": {
-        "home": "FCV Dender EH",
-        "away": "Patro Eisden",
-        "commence": "2026-09-20T17:15:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "FCV Dender EH",
-          "book": "Dafabet",
-          "odds": 1.9,
-          "stake_pct": 0.85,
-          "fair_prob": 0.5425
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 3.08
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.843,
-      "stake_amount": 8.54,
-      "n_books": 14,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Italy Serie B",
-      "event": {
-        "home": "Hellas Verona",
-        "away": "Vicenza",
-        "commence": "2026-09-20T13:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Vicenza",
-          "book": "Unibet",
-          "odds": 4.4,
-          "stake_pct": 0.22,
-          "fair_prob": 0.234
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.94
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 4.274,
-      "stake_amount": 2.16,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Denmark 1st Division",
-      "event": {
-        "home": "Fredericia",
-        "away": "Vejle",
-        "commence": "2026-09-20T13:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Fredericia",
-          "book": "Unibet",
-          "odds": 2.28,
-          "stake_pct": 0.57,
-          "fair_prob": 0.4515
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.94
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.215,
-      "stake_amount": 5.74,
-      "n_books": 15,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Italy Serie A",
-      "event": {
-        "home": "Frosinone",
-        "away": "Como",
-        "commence": "2026-09-20T13:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "Dafabet",
-          "odds": 4.9,
-          "stake_pct": 0.18,
-          "fair_prob": 0.2097
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.74
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 4.769,
-      "stake_amount": 1.76,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Croatia Druga HNL",
-      "event": {
-        "home": "Karlovac 1919",
-        "away": "Dubrava Zagreb",
-        "commence": "2026-09-20T16:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Karlovac 1919",
-          "book": "Dafabet",
-          "odds": 1.89,
-          "stake_pct": 0.75,
-          "fair_prob": 0.5433
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.68
-      },
-      "confidence": 0.738,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.841,
-      "stake_amount": 7.52,
-      "n_books": 7,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Italy Serie A",
-      "event": {
-        "home": "Parma",
-        "away": "Genoa",
-        "commence": "2026-09-20T13:00:00+00:00"
+        "home": "Dravinja",
+        "away": "Bistrica",
+        "commence": "2026-09-20T14:30:00+00:00"
       },
       "market": "totals",
       "legs": [
         {
-          "selection": "Under 2.5",
-          "book": "1xbet",
-          "odds": 1.61,
-          "stake_pct": 1.06,
-          "fair_prob": 0.6373
+          "selection": "Over 2.5",
+          "book": "bet365",
+          "odds": 1.8,
+          "stake_pct": 1.09,
+          "fair_prob": 0.575
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.6
+        "value": 3.5
       },
       "confidence": 0.55,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.569,
-      "stake_amount": 10.65,
+      "fair_odds": 1.739,
+      "stake_amount": 10.94,
       "n_books": 4,
       "official": true
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Spain La Liga",
+      "league": "Estonia Meistriliiga",
       "event": {
-        "home": "Deportivo La Coruña",
-        "away": "Real Betis",
-        "commence": "2026-09-20T16:30:00+00:00"
+        "home": "Tallinna FC Flora",
+        "away": "Vaprus",
+        "commence": "2026-09-20T16:00:00+00:00"
       },
-      "market": "h2h",
+      "market": "totals",
       "legs": [
         {
-          "selection": "Real Betis",
-          "book": "1xbet",
-          "odds": 2.16,
-          "stake_pct": 0.55,
-          "fair_prob": 0.4747
+          "selection": "Under 2.5",
+          "book": "Betfair",
+          "odds": 3.0,
+          "stake_pct": 0.42,
+          "fair_prob": 0.3446
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.54
+        "value": 3.37
       },
-      "confidence": 0.675,
+      "confidence": 0.613,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.107,
-      "stake_amount": 5.47,
-      "n_books": 6,
+      "fair_odds": 2.902,
+      "stake_amount": 4.21,
+      "n_books": 5,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Czech Republic First League",
+      "event": {
+        "home": "Slavia Praha",
+        "away": "Viktoria Plzeň",
+        "commence": "2026-09-20T16:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Slavia Praha",
+          "book": "CloudBet",
+          "odds": 1.62,
+          "stake_pct": 1.29,
+          "fair_prob": 0.6371
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 3.21
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.57,
+      "stake_amount": 12.94,
+      "n_books": 17,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "USA USL Championship",
+      "event": {
+        "home": "Indy Eleven",
+        "away": "Oakland Roots",
+        "commence": "2026-09-20T21:00:00+00:00"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Over 2.5",
+          "book": "bet365",
+          "odds": 1.85,
+          "stake_pct": 0.93,
+          "fair_prob": 0.5577
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 3.17
+      },
+      "confidence": 0.55,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.793,
+      "stake_amount": 9.31,
+      "n_books": 4,
       "official": true
     },
     {
@@ -1026,61 +687,92 @@
       "sport": "soccer",
       "league": "Netherlands Eredivisie",
       "event": {
-        "home": "Willem II",
-        "away": "Fortuna Sittard",
-        "commence": "2026-09-19T19:00:00+00:00"
+        "home": "Twente",
+        "away": "PSV",
+        "commence": "2026-09-20T12:30:00+00:00"
       },
       "market": "totals",
       "legs": [
         {
           "selection": "Under 2.5",
           "book": "Betfair",
-          "odds": 2.63,
-          "stake_pct": 0.38,
-          "fair_prob": 0.3896
+          "odds": 4.1,
+          "stake_pct": 0.24,
+          "fair_prob": 0.2513
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.47
+        "value": 3.01
       },
       "confidence": 0.613,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.567,
-      "stake_amount": 3.79,
+      "fair_odds": 3.98,
+      "stake_amount": 2.43,
       "n_books": 5,
-      "official": true
+      "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Spain La Liga",
+      "league": "Norway First Division",
       "event": {
-        "home": "Sevilla FC",
-        "away": "FC Barcelona",
-        "commence": "2026-09-19T19:00:00+00:00"
+        "home": "Haugesund",
+        "away": "Strømmen",
+        "commence": "2026-09-20T15:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "FC Barcelona",
-          "book": "Coral",
-          "odds": 1.33,
-          "stake_pct": 1.78,
-          "fair_prob": 0.7696
+          "selection": "Strømmen",
+          "book": "CloudBet",
+          "odds": 7.85,
+          "stake_pct": 0.1,
+          "fair_prob": 0.1311
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.36
+        "value": 2.88
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.299,
-      "stake_amount": 17.84,
-      "n_books": 17,
+      "fair_odds": 7.631,
+      "stake_amount": 1.05,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Norway First Division",
+      "event": {
+        "home": "Kongsvinger",
+        "away": "Hødd",
+        "commence": "2026-09-20T15:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "BetVictor",
+          "odds": 6.5,
+          "stake_pct": 0.11,
+          "fair_prob": 0.1575
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 2.4
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 6.348,
+      "stake_amount": 1.09,
+      "n_books": 16,
       "official": false
     },
     {
@@ -1104,77 +796,46 @@
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.2
+        "value": 2.23
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 4.012,
-      "stake_amount": 1.77,
-      "n_books": 14,
+      "fair_odds": 4.011,
+      "stake_amount": 1.8,
+      "n_books": 15,
       "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Greece Super League",
+      "league": "Norway First Division",
       "event": {
-        "home": "Levadiakos",
-        "away": "Olympiakos Piraeus",
-        "commence": "2026-09-20T14:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Olympiakos Piraeus",
-          "book": "CloudBet",
-          "odds": 1.37,
-          "stake_pct": 1.48,
-          "fair_prob": 0.7459
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 2.19
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.341,
-      "stake_amount": 14.83,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "England Premier League",
-      "event": {
-        "home": "AFC Bournemouth",
-        "away": "Liverpool",
-        "commence": "2026-09-20T13:00:00+00:00"
+        "home": "Raufoss",
+        "away": "Strømsgodset",
+        "commence": "2026-09-20T15:00:00+00:00"
       },
       "market": "totals",
       "legs": [
         {
-          "selection": "Under 2.5",
-          "book": "Betfair",
-          "odds": 2.8,
-          "stake_pct": 0.3,
-          "fair_prob": 0.3649
+          "selection": "Over 2.5",
+          "book": "bet365",
+          "odds": 1.28,
+          "stake_pct": 1.95,
+          "fair_prob": 0.7983
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.16
+        "value": 2.18
       },
       "confidence": 0.613,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.741,
-      "stake_amount": 3.0,
+      "fair_odds": 1.253,
+      "stake_amount": 19.46,
       "n_books": 5,
-      "official": true
+      "official": false
     },
     {
       "type": "value",
@@ -1204,38 +865,193 @@
       "expires_hint": null,
       "fair_odds": 2.301,
       "stake_amount": 3.97,
-      "n_books": 13,
+      "n_books": 14,
       "official": true
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Norway First Division",
+      "league": "Czech Republic First League",
       "event": {
-        "home": "Kongsvinger",
-        "away": "Hødd",
+        "home": "Sigma Olomouc",
+        "away": "Sparta Praha",
+        "commence": "2026-09-20T13:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Sparta Praha",
+          "book": "CloudBet",
+          "odds": 2.25,
+          "stake_pct": 0.42,
+          "fair_prob": 0.4538
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 2.1
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.204,
+      "stake_amount": 4.19,
+      "n_books": 17,
+      "official": true
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Slovenia PrvaLiga",
+      "event": {
+        "home": "Mura",
+        "away": "Celje",
+        "commence": "2026-09-20T15:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Celje",
+          "book": "Unibet",
+          "odds": 1.8,
+          "stake_pct": 0.61,
+          "fair_prob": 0.5665
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.97
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.765,
+      "stake_amount": 6.14,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Greece Super League",
+      "event": {
+        "home": "Levadiakos",
+        "away": "Olympiakos Piraeus",
+        "commence": "2026-09-20T14:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Olympiakos Piraeus",
+          "book": "CloudBet",
+          "odds": 1.37,
+          "stake_pct": 1.21,
+          "fair_prob": 0.743
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.79
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.346,
+      "stake_amount": 12.1,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Hungary NB I",
+      "event": {
+        "home": "Újpest",
+        "away": "Zalaegerszegi TE",
         "commence": "2026-09-20T15:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Draw",
-          "book": "Betfair",
-          "odds": 6.5,
-          "stake_pct": 0.1,
-          "fair_prob": 0.1571
+          "selection": "Újpest",
+          "book": "Interwetten",
+          "odds": 1.9,
+          "stake_pct": 0.48,
+          "fair_prob": 0.5355
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.12
+        "value": 1.74
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 6.365,
-      "stake_amount": 0.97,
-      "n_books": 14,
+      "fair_odds": 1.868,
+      "stake_amount": 4.82,
+      "n_books": 15,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Italy Serie A",
+      "event": {
+        "home": "Parma",
+        "away": "Genoa",
+        "commence": "2026-09-20T13:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "MansionBet",
+          "odds": 3.15,
+          "stake_pct": 0.19,
+          "fair_prob": 0.3228
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.67
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.098,
+      "stake_amount": 1.95,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Cyprus First Division",
+      "event": {
+        "home": "Aris",
+        "away": "Karmiotissa",
+        "commence": "2026-09-20T16:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Karmiotissa",
+          "book": "BetVictor",
+          "odds": 7.5,
+          "stake_pct": 0.06,
+          "fair_prob": 0.1356
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.67
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 7.377,
+      "stake_amount": 0.64,
+      "n_books": 15,
       "official": false
     },
     {
@@ -1253,392 +1069,20 @@
           "selection": "Draw",
           "book": "Betfair",
           "odds": 3.8,
-          "stake_pct": 0.19,
-          "fair_prob": 0.2686
+          "stake_pct": 0.14,
+          "fair_prob": 0.2673
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 2.07
+        "value": 1.57
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.723,
-      "stake_amount": 1.85,
-      "n_books": 16,
-      "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "England Championship",
-      "event": {
-        "home": "Norwich City",
-        "away": "Bolton Wanderers",
-        "commence": "2026-09-20T12:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Norwich City",
-          "book": "CloudBet",
-          "odds": 1.56,
-          "stake_pct": 0.89,
-          "fair_prob": 0.6538
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.99
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.53,
-      "stake_amount": 8.88,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "USA USL League One",
-      "event": {
-        "home": "Union Omaha",
-        "away": "One Knoxville",
-        "commence": "2026-09-20T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Union Omaha",
-          "book": "Unibet",
-          "odds": 1.97,
-          "stake_pct": 0.51,
-          "fair_prob": 0.5177
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.98
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.932,
-      "stake_amount": 5.1,
-      "n_books": 9,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Turkey Süper Lig",
-      "event": {
-        "home": "Göztepe",
-        "away": "Rizespor",
-        "commence": "2026-09-20T17:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "MelBet",
-          "odds": 3.57,
-          "stake_pct": 0.18,
-          "fair_prob": 0.2852
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.82
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.506,
-      "stake_amount": 1.77,
-      "n_books": 15,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Switzerland Super League",
-      "event": {
-        "home": "Lausanne Sport",
-        "away": "Lugano",
-        "commence": "2026-09-20T14:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Lausanne Sport",
-          "book": "bet365",
-          "odds": 4.0,
-          "stake_pct": 0.15,
-          "fair_prob": 0.2544
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.78
-      },
-      "confidence": 0.738,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.93,
-      "stake_amount": 1.48,
-      "n_books": 7,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Germany Bundesliga",
-      "event": {
-        "home": "Bayer Leverkusen",
-        "away": "RB Leipzig",
-        "commence": "2026-09-20T13:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "RB Leipzig",
-          "book": "Betfair",
-          "odds": 3.5,
-          "stake_pct": 0.18,
-          "fair_prob": 0.2907
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.75
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.44,
-      "stake_amount": 1.75,
+      "fair_odds": 3.741,
+      "stake_amount": 1.4,
       "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "USA USL Championship",
-      "event": {
-        "home": "Charleston Battery",
-        "away": "Monterey Bay",
-        "commence": "2026-09-19T23:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Charleston Battery",
-          "book": "Unibet",
-          "odds": 1.48,
-          "stake_pct": 0.91,
-          "fair_prob": 0.6874
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.74
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.455,
-      "stake_amount": 9.05,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "France Ligue 1",
-      "event": {
-        "home": "Auxerre",
-        "away": "Brest",
-        "commence": "2026-09-20T13:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "1xbet",
-          "odds": 3.72,
-          "stake_pct": 0.15,
-          "fair_prob": 0.2733
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.68
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.658,
-      "stake_amount": 1.55,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Spain La Liga",
-      "event": {
-        "home": "Getafe CF",
-        "away": "Málaga CF",
-        "commence": "2026-09-20T12:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "1xbet",
-          "odds": 3.22,
-          "stake_pct": 0.19,
-          "fair_prob": 0.3157
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.67
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.167,
-      "stake_amount": 1.88,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Czech Republic First League",
-      "event": {
-        "home": "Sigma Olomouc",
-        "away": "Sparta Praha",
-        "commence": "2026-09-20T13:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Sparta Praha",
-          "book": "CloudBet",
-          "odds": 2.25,
-          "stake_pct": 0.33,
-          "fair_prob": 0.4519
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.67
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.213,
-      "stake_amount": 3.34,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Portugal Liga NOS",
-      "event": {
-        "home": "Estrela Amadora",
-        "away": "Academico Viseu",
-        "commence": "2026-09-20T14:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "Betfair",
-          "odds": 3.5,
-          "stake_pct": 0.16,
-          "fair_prob": 0.2904
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.63
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.444,
-      "stake_amount": 1.63,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Croatia Prva HNL",
-      "event": {
-        "home": "Dinamo Zagreb",
-        "away": "Lokomotiva Zagreb",
-        "commence": "2026-09-20T18:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Dinamo Zagreb",
-          "book": "Dafabet",
-          "odds": 1.23,
-          "stake_pct": 1.73,
-          "fair_prob": 0.8259
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.59
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.211,
-      "stake_amount": 17.27,
-      "n_books": 14,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Turkey Süper Lig",
-      "event": {
-        "home": "Amed",
-        "away": "Beşiktaş",
-        "commence": "2026-09-20T17:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Beşiktaş",
-          "book": "Dafabet",
-          "odds": 1.84,
-          "stake_pct": 0.47,
-          "fair_prob": 0.5521
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.58
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.811,
-      "stake_amount": 4.71,
-      "n_books": 14,
       "official": false
     },
     {
@@ -1657,81 +1101,19 @@
           "book": "Unibet",
           "odds": 3.5,
           "stake_pct": 0.15,
-          "fair_prob": 0.2901
+          "fair_prob": 0.29
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.54
+        "value": 1.5
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.447,
-      "stake_amount": 1.54,
-      "n_books": 15,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Netherlands Eredivisie",
-      "event": {
-        "home": "Twente",
-        "away": "PSV",
-        "commence": "2026-09-20T12:30:00+00:00"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Under 2.5",
-          "book": "Betfair",
-          "odds": 4.1,
-          "stake_pct": 0.12,
-          "fair_prob": 0.2475
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.49
-      },
-      "confidence": 0.613,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 4.04,
-      "stake_amount": 1.2,
-      "n_books": 5,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Slovakia 3 Liga West",
-      "event": {
-        "home": "Trenčín II",
-        "away": "Veľké Ludince",
-        "commence": "2026-09-20T08:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Trenčín II",
-          "book": "Dafabet",
-          "odds": 1.69,
-          "stake_pct": 0.53,
-          "fair_prob": 0.6003
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.45
-      },
-      "confidence": 0.55,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.666,
-      "stake_amount": 5.27,
-      "n_books": 4,
+      "fair_odds": 3.448,
+      "stake_amount": 1.5,
+      "n_books": 16,
       "official": false
     },
     {
@@ -1768,51 +1150,20 @@
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Japan J1 League",
+      "league": "France Ligue 1",
       "event": {
-        "home": "Gamba Osaka",
-        "away": "Vissel Kobe",
-        "commence": "2026-09-20T08:00:00+00:00"
+        "home": "Olympique Marseille",
+        "away": "PSG",
+        "commence": "2026-09-20T18:45:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Vissel Kobe",
-          "book": "Dafabet",
-          "odds": 2.29,
-          "stake_pct": 0.25,
-          "fair_prob": 0.4423
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.28
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.261,
-      "stake_amount": 2.48,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Portugal Liga NOS",
-      "event": {
-        "home": "Sporting CP",
-        "away": "FC Arouca",
-        "commence": "2026-09-19T19:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Sporting CP",
-          "book": "Coral",
-          "odds": 1.2,
-          "stake_pct": 1.52,
-          "fair_prob": 0.8434
+          "selection": "PSG",
+          "book": "bwin",
+          "odds": 1.42,
+          "stake_pct": 0.72,
+          "fair_prob": 0.7127
         }
       ],
       "edge": {
@@ -1822,71 +1173,226 @@
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.186,
-      "stake_amount": 15.16,
+      "fair_odds": 1.403,
+      "stake_amount": 7.18,
       "n_books": 17,
       "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Brazil Serie B",
+      "league": "Norway First Division",
       "event": {
-        "home": "Athletic Club",
-        "away": "Botafogo SP",
-        "commence": "2026-09-19T21:30:00+00:00"
+        "home": "Haugesund",
+        "away": "Strømmen",
+        "commence": "2026-09-20T15:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Haugesund",
+          "book": "Unibet",
+          "odds": 1.42,
+          "stake_pct": 0.72,
+          "fair_prob": 0.7128
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.21
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.403,
+      "stake_amount": 7.21,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Brazil Serie A",
+      "event": {
+        "home": "Corinthians",
+        "away": "Fluminense",
+        "commence": "2026-09-20T19:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Corinthians",
+          "book": "Coral",
+          "odds": 2.2,
+          "stake_pct": 0.25,
+          "fair_prob": 0.46
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.19
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.174,
+      "stake_amount": 2.48,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Sweden Allsvenskan",
+      "event": {
+        "home": "Halmstad",
+        "away": "AIK",
+        "commence": "2026-09-20T12:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "AIK",
+          "book": "MansionBet",
+          "odds": 2.07,
+          "stake_pct": 0.28,
+          "fair_prob": 0.4888
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.18
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.046,
+      "stake_amount": 2.77,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Portugal Liga NOS",
+      "event": {
+        "home": "Porto",
+        "away": "Benfica",
+        "commence": "2026-09-20T19:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Benfica",
+          "book": "Interwetten",
+          "odds": 2.65,
+          "stake_pct": 0.18,
+          "fair_prob": 0.3818
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.17
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.619,
+      "stake_amount": 1.77,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Denmark Superliga",
+      "event": {
+        "home": "Horsens",
+        "away": "AGF",
+        "commence": "2026-09-20T14:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "AGF",
+          "book": "Interwetten",
+          "odds": 1.9,
+          "stake_pct": 0.3,
+          "fair_prob": 0.5321
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.09
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.879,
+      "stake_amount": 3.03,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Portugal Liga NOS",
+      "event": {
+        "home": "Estrela Amadora",
+        "away": "Academico Viseu",
+        "commence": "2026-09-20T14:30:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
           "selection": "Draw",
-          "book": "Dafabet",
-          "odds": 3.15,
-          "stake_pct": 0.14,
-          "fair_prob": 0.3213
+          "book": "Betfair",
+          "odds": 3.5,
+          "stake_pct": 0.1,
+          "fair_prob": 0.2886
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.2
+        "value": 1.02
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.113,
-      "stake_amount": 1.4,
+      "fair_odds": 3.465,
+      "stake_amount": 1.02,
       "n_books": 17,
       "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Hungary NB I",
+      "league": "Denmark 1st Division",
       "event": {
-        "home": "MTK",
-        "away": "ETO",
-        "commence": "2026-09-20T12:45:00+00:00"
+        "home": "AaB",
+        "away": "Vendsyssel",
+        "commence": "2026-09-20T12:00:00+00:00"
       },
-      "market": "h2h",
+      "market": "totals",
       "legs": [
         {
-          "selection": "ETO",
-          "book": "bet365",
-          "odds": 3.1,
-          "stake_pct": 0.14,
-          "fair_prob": 0.3263
+          "selection": "Under 2.5",
+          "book": "Betfair",
+          "odds": 2.1,
+          "stake_pct": 0.23,
+          "fair_prob": 0.481
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.16
+        "value": 1.01
       },
-      "confidence": 0.8,
+      "confidence": 0.675,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 3.064,
-      "stake_amount": 1.39,
-      "n_books": 14,
+      "fair_odds": 2.079,
+      "stake_amount": 2.29,
+      "n_books": 6,
       "official": false
     },
     {
@@ -1898,119 +1404,26 @@
         "away": "NAC Breda",
         "commence": "2026-09-20T14:45:00+00:00"
       },
-      "market": "h2h",
+      "market": "totals",
       "legs": [
         {
-          "selection": "NAC Breda",
-          "book": "Dafabet",
-          "odds": 1.98,
-          "stake_pct": 0.28,
-          "fair_prob": 0.5105
+          "selection": "Under 2.5",
+          "book": "Betfair",
+          "odds": 3.4,
+          "stake_pct": 0.1,
+          "fair_prob": 0.2968
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 1.08
+        "value": 0.93
       },
-      "confidence": 0.8,
+      "confidence": 0.613,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.959,
-      "stake_amount": 2.75,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Italy Serie A",
-      "event": {
-        "home": "Frosinone",
-        "away": "Como",
-        "commence": "2026-09-20T13:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Como",
-          "book": "1xbet",
-          "odds": 1.55,
-          "stake_pct": 0.41,
-          "fair_prob": 0.651
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.9
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.536,
-      "stake_amount": 4.1,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "England Premier League",
-      "event": {
-        "home": "Fulham",
-        "away": "Manchester United",
-        "commence": "2026-09-20T15:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Manchester United",
-          "book": "Interwetten",
-          "odds": 2.1,
-          "stake_pct": 0.18,
-          "fair_prob": 0.48
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.8
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.083,
-      "stake_amount": 1.81,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Romania Liga I",
-      "event": {
-        "home": "Voluntari",
-        "away": "Universitatea Cluj",
-        "commence": "2026-09-20T11:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Universitatea Cluj",
-          "book": "MelBet",
-          "odds": 2.21,
-          "stake_pct": 0.17,
-          "fair_prob": 0.4561
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.8
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.192,
-      "stake_amount": 1.66,
-      "n_books": 16,
+      "fair_odds": 3.369,
+      "stake_amount": 0.97,
+      "n_books": 5,
       "official": false
     },
     {
@@ -2018,30 +1431,92 @@
       "sport": "soccer",
       "league": "Spain Segunda División",
       "event": {
-        "home": "UD Las Palmas",
-        "away": "Burgos CF",
-        "commence": "2026-09-20T16:30:00+00:00"
+        "home": "Leganés",
+        "away": "Granada CF",
+        "commence": "2026-09-20T19:00:00+00:00"
       },
       "market": "totals",
       "legs": [
         {
           "selection": "Under 2.5",
           "book": "1xbet",
-          "odds": 1.76,
-          "stake_pct": 0.26,
-          "fair_prob": 0.5726
+          "odds": 1.66,
+          "stake_pct": 0.34,
+          "fair_prob": 0.6079
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.79
+        "value": 0.9
       },
-      "confidence": 0.675,
+      "confidence": 0.55,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.746,
-      "stake_amount": 2.58,
-      "n_books": 6,
+      "fair_odds": 1.645,
+      "stake_amount": 3.42,
+      "n_books": 4,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "England Championship",
+      "event": {
+        "home": "Wolverhampton Wanderers",
+        "away": "West Bromwich Albion",
+        "commence": "2026-09-20T11:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "West Bromwich Albion",
+          "book": "CloudBet",
+          "odds": 4.5,
+          "stake_pct": 0.06,
+          "fair_prob": 0.2241
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.85
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 4.462,
+      "stake_amount": 0.61,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Belgium First Division B",
+      "event": {
+        "home": "Lokeren-Temse",
+        "away": "Excelsior Virton",
+        "commence": "2026-09-20T14:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Excelsior Virton",
+          "book": "1xbet",
+          "odds": 3.52,
+          "stake_pct": 0.08,
+          "fair_prob": 0.2864
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.82
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.491,
+      "stake_amount": 0.81,
+      "n_books": 15,
       "official": false
     },
     {
@@ -2057,21 +1532,176 @@
       "legs": [
         {
           "selection": "Salzburg",
-          "book": "bwin",
-          "odds": 1.68,
-          "stake_pct": 0.29,
-          "fair_prob": 0.5999
+          "book": "MansionBet",
+          "odds": 1.64,
+          "stake_pct": 0.27,
+          "fair_prob": 0.614
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.78
+        "value": 0.69
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.667,
-      "stake_amount": 2.87,
+      "fair_odds": 1.629,
+      "stake_amount": 2.7,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Croatia Prva HNL",
+      "event": {
+        "home": "Dinamo Zagreb",
+        "away": "Lokomotiva Zagreb",
+        "commence": "2026-09-20T18:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Dinamo Zagreb",
+          "book": "Dafabet",
+          "odds": 1.22,
+          "stake_pct": 0.78,
+          "fair_prob": 0.8253
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.68
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.212,
+      "stake_amount": 7.76,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Slovakia Super Liga",
+      "event": {
+        "home": "DAC",
+        "away": "Spartak Trnava",
+        "commence": "2026-09-20T17:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "DAC",
+          "book": "Interwetten",
+          "odds": 1.83,
+          "stake_pct": 0.2,
+          "fair_prob": 0.5502
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.68
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.818,
+      "stake_amount": 2.05,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Slovenia PrvaLiga",
+      "event": {
+        "home": "Bravo",
+        "away": "Olimpija",
+        "commence": "2026-09-20T13:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Olimpija",
+          "book": "Unibet",
+          "odds": 2.08,
+          "stake_pct": 0.13,
+          "fair_prob": 0.4835
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.57
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.068,
+      "stake_amount": 1.33,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Italy Serie A",
+      "event": {
+        "home": "Frosinone",
+        "away": "Como",
+        "commence": "2026-09-20T13:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "Dafabet",
+          "odds": 4.9,
+          "stake_pct": 0.04,
+          "fair_prob": 0.2052
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.55
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 4.873,
+      "stake_amount": 0.35,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Brazil Serie A",
+      "event": {
+        "home": "Flamengo",
+        "away": "Bragantino",
+        "commence": "2026-09-20T21:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Flamengo",
+          "book": "bwin",
+          "odds": 1.38,
+          "stake_pct": 0.34,
+          "fair_prob": 0.7284
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.52
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.373,
+      "stake_amount": 3.43,
       "n_books": 17,
       "official": false
     },
@@ -2090,51 +1720,82 @@
           "selection": "Under 2.5",
           "book": "1xbet",
           "odds": 1.89,
-          "stake_pct": 0.22,
-          "fair_prob": 0.5332
+          "stake_pct": 0.14,
+          "fair_prob": 0.5317
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.77
+        "value": 0.49
       },
-      "confidence": 0.675,
+      "confidence": 0.613,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.876,
-      "stake_amount": 2.17,
-      "n_books": 6,
+      "fair_odds": 1.881,
+      "stake_amount": 1.37,
+      "n_books": 5,
       "official": false
     },
     {
       "type": "value",
       "sport": "soccer",
-      "league": "Spain Segunda División",
+      "league": "France Ligue 1",
       "event": {
-        "home": "Leganés",
-        "away": "Granada CF",
-        "commence": "2026-09-20T19:00:00+00:00"
+        "home": "Auxerre",
+        "away": "Brest",
+        "commence": "2026-09-20T13:00:00+00:00"
       },
-      "market": "totals",
+      "market": "h2h",
       "legs": [
         {
-          "selection": "Under 2.5",
-          "book": "1xbet",
-          "odds": 1.66,
-          "stake_pct": 0.29,
-          "fair_prob": 0.607
+          "selection": "Brest",
+          "book": "CloudBet",
+          "odds": 2.45,
+          "stake_pct": 0.08,
+          "fair_prob": 0.4101
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.76
+        "value": 0.47
       },
-      "confidence": 0.55,
+      "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.647,
-      "stake_amount": 2.88,
-      "n_books": 4,
+      "fair_odds": 2.439,
+      "stake_amount": 0.81,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Switzerland Super League",
+      "event": {
+        "home": "Lausanne Sport",
+        "away": "Lugano",
+        "commence": "2026-09-20T14:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Lausanne Sport",
+          "book": "bet365",
+          "odds": 4.0,
+          "stake_pct": 0.04,
+          "fair_prob": 0.2511
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.45
+      },
+      "confidence": 0.738,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.982,
+      "stake_amount": 0.37,
+      "n_books": 7,
       "official": false
     },
     {
@@ -2142,681 +1803,30 @@
       "sport": "soccer",
       "league": "England Premier League",
       "event": {
-        "home": "Fulham",
-        "away": "Manchester United",
-        "commence": "2026-09-20T15:30:00+00:00"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Over 2.5",
-          "book": "1xbet",
-          "odds": 1.64,
-          "stake_pct": 0.27,
-          "fair_prob": 0.614
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.7
-      },
-      "confidence": 0.613,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.629,
-      "stake_amount": 2.74,
-      "n_books": 5,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Germany Bundesliga",
-      "event": {
-        "home": "Schalke 04",
-        "away": "Elversberg",
-        "commence": "2026-09-20T15:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "bwin",
-          "odds": 3.8,
-          "stake_pct": 0.06,
-          "fair_prob": 0.2649
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.68
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.774,
-      "stake_amount": 0.61,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie A",
-      "event": {
-        "home": "Flamengo",
-        "away": "Bragantino",
-        "commence": "2026-09-20T21:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Flamengo",
-          "book": "Coral",
-          "odds": 1.4,
-          "stake_pct": 0.41,
-          "fair_prob": 0.719
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.66
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.391,
-      "stake_amount": 4.1,
-      "n_books": 15,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "USA USL Championship",
-      "event": {
-        "home": "Detroit City FC",
-        "away": "Pittsburgh Riverhounds",
-        "commence": "2026-09-19T23:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Detroit City FC",
-          "book": "CloudBet",
-          "odds": 2.25,
-          "stake_pct": 0.13,
-          "fair_prob": 0.4473
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.64
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.236,
-      "stake_amount": 1.28,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Greece Super League",
-      "event": {
-        "home": "Kalamata",
-        "away": "Panathinaikos",
-        "commence": "2026-09-20T16:30:00+00:00"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Over 2.5",
-          "book": "Sbo",
-          "odds": 1.86,
-          "stake_pct": 0.18,
-          "fair_prob": 0.5409
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.61
-      },
-      "confidence": 0.675,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.849,
-      "stake_amount": 1.79,
-      "n_books": 6,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Spain La Liga",
-      "event": {
-        "home": "Sevilla FC",
-        "away": "FC Barcelona",
-        "commence": "2026-09-19T19:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "MansionBet",
-          "odds": 7.4,
-          "stake_pct": 0.02,
-          "fair_prob": 0.1359
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.59
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 7.356,
-      "stake_amount": 0.23,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie A",
-      "event": {
-        "home": "Atlético Mineiro",
-        "away": "Chapecoense",
-        "commence": "2026-09-19T19:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Atlético Mineiro",
-          "book": "CloudBet",
-          "odds": 1.4,
-          "stake_pct": 0.35,
-          "fair_prob": 0.7183
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.57
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.392,
-      "stake_amount": 3.53,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Czech Republic First League",
-      "event": {
-        "home": "Sigma Olomouc",
-        "away": "Sparta Praha",
+        "home": "Leeds United",
+        "away": "Crystal Palace",
         "commence": "2026-09-20T13:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Sigma Olomouc",
-          "book": "Betfair",
-          "odds": 3.3,
-          "stake_pct": 0.06,
-          "fair_prob": 0.3047
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.56
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.282,
-      "stake_amount": 0.61,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Spain Segunda División",
-      "event": {
-        "home": "Cádiz",
-        "away": "Girona FC",
-        "commence": "2026-09-19T19:00:00+00:00"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Under 2.5",
-          "book": "1xbet",
-          "odds": 1.9,
-          "stake_pct": 0.14,
-          "fair_prob": 0.529
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.51
-      },
-      "confidence": 0.675,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.89,
-      "stake_amount": 1.43,
-      "n_books": 6,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Sweden Superettan",
-      "event": {
-        "home": "GIF Sundsvall",
-        "away": "Ljungskile",
-        "commence": "2026-09-20T11:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Ljungskile",
-          "book": "MansionBet",
-          "odds": 1.98,
-          "stake_pct": 0.13,
-          "fair_prob": 0.5076
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.5
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.97,
-      "stake_amount": 1.29,
-      "n_books": 14,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Italy Serie A",
-      "event": {
-        "home": "Juventus",
-        "away": "Atalanta",
-        "commence": "2026-09-20T16:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "MelBet",
-          "odds": 4.0,
-          "stake_pct": 0.04,
-          "fair_prob": 0.2512
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.49
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.981,
-      "stake_amount": 0.41,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie A",
-      "event": {
-        "home": "Vasco da Gama",
-        "away": "Coritiba",
-        "commence": "2026-09-19T23:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Coritiba",
-          "book": "bet365",
-          "odds": 8.0,
-          "stake_pct": 0.02,
-          "fair_prob": 0.1256
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.49
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 7.961,
-      "stake_amount": 0.18,
-      "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Spain La Liga",
-      "event": {
-        "home": "Valencia CF",
-        "away": "Real Sociedad",
-        "commence": "2026-09-20T19:00:00+00:00"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Under 2.5",
-          "book": "1xbet",
-          "odds": 1.96,
-          "stake_pct": 0.09,
-          "fair_prob": 0.5119
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.33
-      },
-      "confidence": 0.675,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.954,
-      "stake_amount": 0.87,
-      "n_books": 6,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Germany 2. Bundesliga",
-      "event": {
-        "home": "Arminia Bielefeld",
-        "away": "Heidenheim",
-        "commence": "2026-09-20T11:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Heidenheim",
-          "book": "Cashpoint",
-          "odds": 3.26,
-          "stake_pct": 0.04,
-          "fair_prob": 0.3077
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.32
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.25,
-      "stake_amount": 0.36,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "USA USL League One",
-      "event": {
-        "home": "Sarasota Paradise",
-        "away": "Greenville Triumph",
-        "commence": "2026-09-19T23:30:00+00:00"
-      },
-      "market": "totals",
-      "legs": [
-        {
-          "selection": "Over 2.5",
-          "book": "bet365",
-          "odds": 1.85,
-          "stake_pct": 0.09,
-          "fair_prob": 0.5423
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.32
-      },
-      "confidence": 0.55,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.844,
-      "stake_amount": 0.93,
-      "n_books": 4,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Italy Serie A",
-      "event": {
-        "home": "Juventus",
-        "away": "Atalanta",
-        "commence": "2026-09-20T16:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Juventus",
+          "selection": "Leeds United",
           "book": "1xbet",
           "odds": 1.76,
-          "stake_pct": 0.1,
-          "fair_prob": 0.5699
+          "stake_pct": 0.13,
+          "fair_prob": 0.5705
         }
       ],
       "edge": {
         "metric": "ev_pct",
-        "value": 0.3
+        "value": 0.41
       },
       "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 1.755,
-      "stake_amount": 0.98,
+      "fair_odds": 1.753,
+      "stake_amount": 1.34,
       "n_books": 17,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Hungary NB II",
-      "event": {
-        "home": "Szentlőrinc SE",
-        "away": "BVSC",
-        "commence": "2026-09-20T14:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "BVSC",
-          "book": "bet365",
-          "odds": 3.0,
-          "stake_pct": 0.04,
-          "fair_prob": 0.3343
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.28
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.992,
-      "stake_amount": 0.35,
-      "n_books": 8,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Portugal Liga NOS",
-      "event": {
-        "home": "GD Estoril Praia",
-        "away": "Casa Pia",
-        "commence": "2026-09-20T17:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "GD Estoril Praia",
-          "book": "1xbet",
-          "odds": 1.79,
-          "stake_pct": 0.07,
-          "fair_prob": 0.5599
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.23
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.786,
-      "stake_amount": 0.73,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Denmark Superliga",
-      "event": {
-        "home": "Horsens",
-        "away": "AGF",
-        "commence": "2026-09-20T14:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "AGF",
-          "book": "Dafabet",
-          "odds": 1.93,
-          "stake_pct": 0.04,
-          "fair_prob": 0.519
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.16
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.927,
-      "stake_amount": 0.43,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Spain La Liga",
-      "event": {
-        "home": "Valencia CF",
-        "away": "Real Sociedad",
-        "commence": "2026-09-20T19:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Valencia CF",
-          "book": "1xbet",
-          "odds": 2.82,
-          "stake_pct": 0.02,
-          "fair_prob": 0.355
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.12
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.817,
-      "stake_amount": 0.17,
-      "n_books": 16,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Greece Super League",
-      "event": {
-        "home": "Kalamata",
-        "away": "Panathinaikos",
-        "commence": "2026-09-20T16:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Panathinaikos",
-          "book": "Dafabet",
-          "odds": 1.37,
-          "stake_pct": 0.08,
-          "fair_prob": 0.7308
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.12
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.368,
-      "stake_amount": 0.79,
-      "n_books": 15,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "USA USL League One",
-      "event": {
-        "home": "Fort Wayne",
-        "away": "Naples",
-        "commence": "2026-09-19T23:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Fort Wayne",
-          "book": "bet365",
-          "odds": 1.9,
-          "stake_pct": 0.03,
-          "fair_prob": 0.5268
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 0.1
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 1.898,
-      "stake_amount": 0.27,
-      "n_books": 9,
       "official": false
     },
     {
@@ -2834,20 +1844,516 @@
           "selection": "Under 2.5",
           "book": "Betfair",
           "odds": 2.63,
-          "stake_pct": 0.0,
-          "fair_prob": 0.3803
+          "stake_pct": 0.05,
+          "fair_prob": 0.3815
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.34
+      },
+      "confidence": 0.613,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.621,
+      "stake_amount": 0.52,
+      "n_books": 5,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Germany Bundesliga",
+      "event": {
+        "home": "Schalke 04",
+        "away": "Elversberg",
+        "commence": "2026-09-20T15:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Schalke 04",
+          "book": "1xbet",
+          "odds": 2.09,
+          "stake_pct": 0.08,
+          "fair_prob": 0.4801
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.33
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.083,
+      "stake_amount": 0.76,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Denmark Superliga",
+      "event": {
+        "home": "SønderjyskE",
+        "away": "Randers",
+        "commence": "2026-09-20T12:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Randers",
+          "book": "Interwetten",
+          "odds": 2.5,
+          "stake_pct": 0.05,
+          "fair_prob": 0.4013
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.33
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.492,
+      "stake_amount": 0.54,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Turkey Süper Lig",
+      "event": {
+        "home": "Fenerbahçe",
+        "away": "Eyüpspor",
+        "commence": "2026-09-20T14:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Fenerbahçe",
+          "book": "Coral",
+          "odds": 1.2,
+          "stake_pct": 0.38,
+          "fair_prob": 0.8359
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.31
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.196,
+      "stake_amount": 3.84,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Spain Segunda División",
+      "event": {
+        "home": "UD Las Palmas",
+        "away": "Burgos CF",
+        "commence": "2026-09-20T16:30:00+00:00"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Under 2.5",
+          "book": "1xbet",
+          "odds": 1.76,
+          "stake_pct": 0.1,
+          "fair_prob": 0.5699
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.3
+      },
+      "confidence": 0.675,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.755,
+      "stake_amount": 1.0,
+      "n_books": 6,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Romania Liga I",
+      "event": {
+        "home": "Voluntari",
+        "away": "Universitatea Cluj",
+        "commence": "2026-09-20T11:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Universitatea Cluj",
+          "book": "Interwetten",
+          "odds": 2.2,
+          "stake_pct": 0.06,
+          "fair_prob": 0.4559
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.3
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.193,
+      "stake_amount": 0.62,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Spain La Liga",
+      "event": {
+        "home": "Deportivo La Coruña",
+        "away": "Real Betis",
+        "commence": "2026-09-20T16:30:00+00:00"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Over 2.5",
+          "book": "1xbet",
+          "odds": 1.89,
+          "stake_pct": 0.07,
+          "fair_prob": 0.5305
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.27
+      },
+      "confidence": 0.613,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.885,
+      "stake_amount": 0.75,
+      "n_books": 5,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Italy Serie A",
+      "event": {
+        "home": "Fiorentina",
+        "away": "Napoli",
+        "commence": "2026-09-20T10:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "MelBet",
+          "odds": 3.55,
+          "stake_pct": 0.02,
+          "fair_prob": 0.2823
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.23
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.542,
+      "stake_amount": 0.22,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Norway First Division",
+      "event": {
+        "home": "Lyn",
+        "away": "Ranheim",
+        "commence": "2026-09-20T15:00:00+00:00"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Under 2.5",
+          "book": "bet365",
+          "odds": 3.6,
+          "stake_pct": 0.02,
+          "fair_prob": 0.2784
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.22
+      },
+      "confidence": 0.613,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.592,
+      "stake_amount": 0.21,
+      "n_books": 5,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Spain La Liga",
+      "event": {
+        "home": "Villarreal",
+        "away": "Levante UD",
+        "commence": "2026-09-20T16:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Villarreal",
+          "book": "1xbet",
+          "odds": 1.55,
+          "stake_pct": 0.09,
+          "fair_prob": 0.6465
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.21
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.547,
+      "stake_amount": 0.93,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Belgium First Division B",
+      "event": {
+        "home": "FCV Dender EH",
+        "away": "Patro Eisden",
+        "commence": "2026-09-20T17:15:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "FCV Dender EH",
+          "book": "Dafabet",
+          "odds": 1.86,
+          "stake_pct": 0.06,
+          "fair_prob": 0.5388
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.21
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.856,
+      "stake_amount": 0.61,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Norway Eliteserien",
+      "event": {
+        "home": "Brann",
+        "away": "FK Bodo - Glimt",
+        "commence": "2026-09-20T17:15:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "FK Bodo - Glimt",
+          "book": "Unibet",
+          "odds": 1.66,
+          "stake_pct": 0.08,
+          "fair_prob": 0.6036
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.2
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.657,
+      "stake_amount": 0.77,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Belgium Pro League",
+      "event": {
+        "home": "Royal Antwerp FC",
+        "away": "Union Saint-Gilloise",
+        "commence": "2026-09-20T11:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Royal Antwerp FC",
+          "book": "Unibet",
+          "odds": 5.6,
+          "stake_pct": 0.01,
+          "fair_prob": 0.1789
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.2
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 5.589,
+      "stake_amount": 0.11,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Italy Serie A",
+      "event": {
+        "home": "Frosinone",
+        "away": "Como",
+        "commence": "2026-09-20T13:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Como",
+          "book": "1xbet",
+          "odds": 1.56,
+          "stake_pct": 0.07,
+          "fair_prob": 0.642
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.15
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.558,
+      "stake_amount": 0.69,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Germany Bundesliga",
+      "event": {
+        "home": "Schalke 04",
+        "away": "Elversberg",
+        "commence": "2026-09-20T15:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Draw",
+          "book": "BetVictor",
+          "odds": 3.9,
+          "stake_pct": 0.01,
+          "fair_prob": 0.2567
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.12
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 3.896,
+      "stake_amount": 0.1,
+      "n_books": 17,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Norway First Division",
+      "event": {
+        "home": "Stabæk",
+        "away": "Sogndal",
+        "commence": "2026-09-20T15:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Stabæk",
+          "book": "Unibet",
+          "odds": 1.38,
+          "stake_pct": 0.03,
+          "fair_prob": 0.7249
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.04
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.379,
+      "stake_amount": 0.25,
+      "n_books": 16,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "England Premier League",
+      "event": {
+        "home": "Manchester City",
+        "away": "Sunderland",
+        "commence": "2026-09-20T13:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Manchester City",
+          "book": "1xbet",
+          "odds": 1.37,
+          "stake_pct": 0.01,
+          "fair_prob": 0.7301
         }
       ],
       "edge": {
         "metric": "ev_pct",
         "value": 0.02
       },
-      "confidence": 0.613,
+      "confidence": 0.8,
       "label": "overená value",
       "expires_hint": null,
-      "fair_odds": 2.63,
-      "stake_amount": 0.03,
-      "n_books": 5,
+      "fair_odds": 1.37,
+      "stake_amount": 0.12,
+      "n_books": 17,
       "official": false
     },
     {
@@ -3559,7 +3065,7 @@
         ]
       ],
       "market_odds": {
-        "1": 1.69,
+        "1": 1.61,
         "x": 3.6,
         "2": 5.25,
         "over25": 1.81,
@@ -4065,12 +3571,12 @@
           "selection": "Modena",
           "book": "(trh)",
           "odds": 0.0,
-          "fair_prob": 0.8206
+          "fair_prob": 0.822
         }
       ],
       "edge": {
         "metric": "model_prob",
-        "value": 0.821
+        "value": 0.822
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
@@ -4079,12 +3585,12 @@
       "match_id": 8614425,
       "xg": {
         "home": 4.01,
-        "away": 1.39
+        "away": 1.38
       },
       "pick": "home",
       "model_ev_pct": null,
       "probs_1x2": {
-        "home": 0.821,
+        "home": 0.822,
         "draw": 0.096,
         "away": 0.08
       },
@@ -4093,8 +3599,8 @@
         "under": 0.098
       },
       "btts": {
-        "yes": 0.737,
-        "no": 0.263
+        "yes": 0.735,
+        "no": 0.265
       },
       "top_scores": [
         [
@@ -4103,7 +3609,7 @@
         ],
         [
           "3-1",
-          0.067
+          0.068
         ],
         [
           "5-1",
@@ -4111,7 +3617,7 @@
         ],
         [
           "2-1",
-          0.05
+          0.051
         ],
         [
           "4-0",
@@ -5575,6 +5081,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Galatasaray",
+        "away": "Gençlerbirliği",
+        "commence": "2027-03-14T00:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Galatasaray",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7946
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.795
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2027-03-14T00:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8583464,
+      "xg": {
+        "home": 3.28,
+        "away": 1.08
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.795,
+        "draw": 0.118,
+        "away": 0.087
+      },
+      "ou25": {
+        "over": 0.809,
+        "under": 0.191
+      },
+      "btts": {
+        "yes": 0.636,
+        "no": 0.364
+      },
+      "top_scores": [
+        [
+          "3-1",
+          0.081
+        ],
+        [
+          "3-0",
+          0.075
+        ],
+        [
+          "2-1",
+          0.074
+        ],
+        [
+          "2-0",
+          0.069
+        ],
+        [
+          "4-1",
+          0.067
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 67,
+        "btts": 34
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "LASK Linz",
         "away": "Porto",
         "commence": "2027-01-27T20:00:00+00:00"
@@ -5888,86 +5474,6 @@
       "fs_potential": {
         "o25": 70,
         "btts": 62
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Benfica",
-        "away": "Rio Ave FC",
-        "commence": "2027-05-02T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Benfica",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.7887
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.789
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2027-05-02T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8574253,
-      "xg": {
-        "home": 2.64,
-        "away": 0.69
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.789,
-        "draw": 0.137,
-        "away": 0.074
-      },
-      "ou25": {
-        "over": 0.646,
-        "under": 0.354
-      },
-      "btts": {
-        "yes": 0.463,
-        "no": 0.537
-      },
-      "top_scores": [
-        [
-          "2-0",
-          0.125
-        ],
-        [
-          "3-0",
-          0.11
-        ],
-        [
-          "1-0",
-          0.094
-        ],
-        [
-          "2-1",
-          0.086
-        ],
-        [
-          "3-1",
-          0.076
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 67,
-        "btts": 50
       }
     },
     {
@@ -6296,8 +5802,8 @@
       "league": "",
       "event": {
         "home": "Benfica",
-        "away": "FC Arouca",
-        "commence": "2027-05-16T00:00:00+00:00"
+        "away": "Rio Ave FC",
+        "commence": "2027-05-02T00:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
@@ -6314,9 +5820,9 @@
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2027-05-16T00:00:00+00:00",
+      "expires_hint": "2027-05-02T00:00:00+00:00",
       "source": "footystats",
-      "match_id": 8574246,
+      "match_id": 8574253,
       "xg": {
         "home": 2.64,
         "away": 0.71
@@ -6366,7 +5872,7 @@
         "btts_yes": 0.0
       },
       "fs_potential": {
-        "o25": 50,
+        "o25": 63,
         "btts": 50
       }
     },
@@ -7015,6 +6521,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Ajax",
+        "away": "Telstar",
+        "commence": "2027-01-23T15:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Ajax",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7749
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.775
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2027-01-23T15:30:00+00:00",
+      "source": "footystats",
+      "match_id": 8547824,
+      "xg": {
+        "home": 2.81,
+        "away": 0.87
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.775,
+        "draw": 0.137,
+        "away": 0.088
+      },
+      "ou25": {
+        "over": 0.711,
+        "under": 0.289
+      },
+      "btts": {
+        "yes": 0.546,
+        "no": 0.454
+      },
+      "top_scores": [
+        [
+          "2-0",
+          0.1
+        ],
+        [
+          "3-0",
+          0.093
+        ],
+        [
+          "2-1",
+          0.087
+        ],
+        [
+          "3-1",
+          0.081
+        ],
+        [
+          "1-0",
+          0.071
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 67,
+        "btts": 67
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Inter Milan",
         "away": "Atalanta",
         "commence": "2027-02-28T00:00:00+00:00"
@@ -7495,86 +7081,6 @@
       "sport": "soccer",
       "league": "",
       "event": {
-        "home": "Feyenoord",
-        "away": "Fortuna Sittard",
-        "commence": "2026-10-31T15:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Feyenoord",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.7705
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.77
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-10-31T15:30:00+00:00",
-      "source": "footystats",
-      "match_id": 8547598,
-      "xg": {
-        "home": 3.04,
-        "away": 1.05
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.77,
-        "draw": 0.131,
-        "away": 0.098
-      },
-      "ou25": {
-        "over": 0.774,
-        "under": 0.226
-      },
-      "btts": {
-        "yes": 0.619,
-        "no": 0.381
-      },
-      "top_scores": [
-        [
-          "3-1",
-          0.082
-        ],
-        [
-          "2-1",
-          0.081
-        ],
-        [
-          "3-0",
-          0.078
-        ],
-        [
-          "2-0",
-          0.077
-        ],
-        [
-          "4-1",
-          0.063
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 100,
-        "btts": 100
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
         "home": "RB Leipzig",
         "away": "Union Berlin",
         "commence": "2027-03-20T00:00:00+00:00"
@@ -7888,86 +7394,6 @@
       "fs_potential": {
         "o25": 50,
         "btts": 50
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Vitória Guimarães",
-        "away": "Rio Ave FC",
-        "commence": "2026-12-27T00:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Vitória Guimarães",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.7672
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.767
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-12-27T00:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8574367,
-      "xg": {
-        "home": 2.49,
-        "away": 0.69
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.767,
-        "draw": 0.15,
-        "away": 0.083
-      },
-      "ou25": {
-        "over": 0.616,
-        "under": 0.384
-      },
-      "btts": {
-        "yes": 0.457,
-        "no": 0.543
-      },
-      "top_scores": [
-        [
-          "2-0",
-          0.129
-        ],
-        [
-          "3-0",
-          0.107
-        ],
-        [
-          "1-0",
-          0.104
-        ],
-        [
-          "2-1",
-          0.089
-        ],
-        [
-          "3-1",
-          0.074
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 17,
-        "btts": 0
       }
     },
     {
@@ -8375,6 +7801,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Vitória Guimarães",
+        "away": "Rio Ave FC",
+        "commence": "2026-12-27T00:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Vitória Guimarães",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7627
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.763
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-12-27T00:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8574367,
+      "xg": {
+        "home": 2.49,
+        "away": 0.71
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.763,
+        "draw": 0.152,
+        "away": 0.086
+      },
+      "ou25": {
+        "over": 0.62,
+        "under": 0.38
+      },
+      "btts": {
+        "yes": 0.466,
+        "no": 0.534
+      },
+      "top_scores": [
+        [
+          "2-0",
+          0.126
+        ],
+        [
+          "3-0",
+          0.105
+        ],
+        [
+          "1-0",
+          0.101
+        ],
+        [
+          "2-1",
+          0.09
+        ],
+        [
+          "3-1",
+          0.074
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 13,
+        "btts": 0
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Galatasaray",
         "away": "Samsunspor",
         "commence": "2026-11-21T13:00:00+00:00"
@@ -8624,7 +8130,7 @@
         {
           "selection": "Vitória Guimarães",
           "book": "(trh)",
-          "odds": 1.56,
+          "odds": 1.54,
           "fair_prob": 0.7605
         }
       ],
@@ -8642,7 +8148,7 @@
         "away": 0.72
       },
       "pick": "home",
-      "model_ev_pct": 18.64,
+      "model_ev_pct": 17.12,
       "probs_1x2": {
         "home": 0.761,
         "draw": 0.152,
@@ -8680,8 +8186,8 @@
       ],
       "market_odds": {
         "1": 1.53,
-        "x": 4.24,
-        "2": 6.05,
+        "x": 4.22,
+        "2": 6.4,
         "over25": 1.88,
         "btts_yes": 2.05
       },
@@ -9253,22 +8759,22 @@
     {
       "type": "arb",
       "sport": "Tenis",
-      "league": "World. Davis Cup. Singles",
+      "league": "World. WTA. Seoul. Singles",
       "event": {
-        "home": "Auger Aliassime, Felix",
-        "away": "Rinderknech, Arthur",
-        "commence": "2026-09-19T19:41:00+00:00"
+        "home": "Volynets, Katie",
+        "away": "Kalieva, Elvina",
+        "commence": "2026-09-21T03:00:00+00:00"
       },
-      "market": "8:5",
+      "market": "8:4",
       "legs": [
         {
-          "selection": "typ178 8.5",
-          "book": "bk:128",
+          "selection": "Nad 8.5 (hos.)",
+          "book": "Betcity",
           "odds": 2.02
         },
         {
-          "selection": "typ179 8.5",
-          "book": "Superbet",
+          "selection": "Pod 8.5 (hos.)",
+          "book": "bk:71",
           "odds": 2.02
         }
       ],
@@ -9278,106 +8784,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-19T19:41:00+00:00",
+      "expires_hint": "2026-09-21T03:00:00+00:00",
       "source": "betburger",
-      "arb_id": "b51fe428c089db9999d88494fa24d886",
+      "arb_id": "cb386277ebcf85bbc18e897bcfda1873",
       "is_live": false,
       "bk_ids": [
-        0,
-        128,
-        4
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. Davis Cup. Singles",
-      "event": {
-        "home": "Auger Aliassime, Felix",
-        "away": "Rinderknech, Arthur",
-        "commence": "2026-09-19T19:41:00+00:00"
-      },
-      "market": "8:5",
-      "legs": [
-        {
-          "selection": "typ178 8.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ179 8.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-19T19:41:00+00:00",
-      "source": "betburger",
-      "arb_id": "c7d582c70f10789c2635dfd6a985b370",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        8320
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. Davis Cup. Singles",
-      "event": {
-        "home": "Auger Aliassime, Felix",
-        "away": "Rinderknech, Arthur",
-        "commence": "2026-09-19T19:41:00+00:00"
-      },
-      "market": "8:5",
-      "legs": [
-        {
-          "selection": "typ178 8.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ179 8.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-19T19:41:00+00:00",
-      "source": "betburger",
-      "arb_id": "a2891e54ffd79e0edec9f164a1a9ae6a",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
+        4,
+        256
       ],
       "direct_links": [
         "",
@@ -9387,22 +8800,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie A",
+      "league": "Portugal. Cup",
       "event": {
-        "home": "Fiorentina",
-        "away": "Napoli",
-        "commence": "2026-09-20T10:30:00+00:00"
+        "home": "AD Ponte da Barca",
+        "away": "Amarante",
+        "commence": "2026-09-20T14:00:00+00:00"
       },
-      "market": "7:10",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "typ1388 1.5",
-          "book": "Betplay",
+          "selection": "AH 1 1.75",
+          "book": "Betcity",
           "odds": 2.02
         },
         {
-          "selection": "typ1389 1.5",
-          "book": "Novibet",
+          "selection": "AH 2 -1.75",
+          "book": "Pamestoixima",
           "odds": 2.02
         }
       ],
@@ -9412,13 +8825,99 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T10:30:00+00:00",
+      "expires_hint": "2026-09-20T14:00:00+00:00",
       "source": "betburger",
-      "arb_id": "f68757f93f520a330dfa65458590ef45",
+      "arb_id": "1b49d96fcbd8e38350a8ccf67aae3966",
       "is_live": false,
       "bk_ids": [
+        4,
+        2147483648
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Denmark. Superliga",
+      "event": {
+        "home": "AC Horsens",
+        "away": "AGF Aarhus",
+        "commence": "2026-09-20T14:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ53 3.5",
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ54 3.5",
+          "book": "Olimpo",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T14:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "6290c44413c853efbd58a18fd09f4555",
+      "is_live": false,
+      "bk_ids": [
+        281474976710656,
         0,
-        1048576,
+        0,
+        0,
+        0,
+        8589934592
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Denmark. Superliga",
+      "event": {
+        "home": "AC Horsens",
+        "away": "AGF Aarhus",
+        "commence": "2026-09-20T14:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ53 3.5",
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ54 3.5",
+          "book": "Betplay",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T14:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "74770c46e814a7882d21c5c18b327653",
+      "is_live": false,
+      "bk_ids": [
+        281474976710656,
+        0,
         0,
         0,
         0,
@@ -9434,68 +8933,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie A",
+      "league": "Denmark. Superliga",
       "event": {
-        "home": "Fiorentina",
-        "away": "Napoli",
-        "commence": "2026-09-20T10:30:00+00:00"
+        "home": "AC Horsens",
+        "away": "AGF Aarhus",
+        "commence": "2026-09-20T14:00:00+00:00"
       },
-      "market": "7:10",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "typ1388 1.5",
-          "book": "Olimpo",
+          "selection": "typ53 3.5",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
-          "selection": "typ1389 1.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T10:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "4f816a349dfc98525f9dad2d935e8100",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie A",
-      "event": {
-        "home": "Fiorentina",
-        "away": "Napoli",
-        "commence": "2026-09-20T10:30:00+00:00"
-      },
-      "market": "7:10",
-      "legs": [
-        {
-          "selection": "typ1388 1.5",
+          "selection": "typ54 3.5",
           "book": "Unibet",
           "odds": 2.02
-        },
-        {
-          "selection": "typ1389 1.5",
-          "book": "Novibet",
-          "odds": 2.02
         }
       ],
       "edge": {
@@ -9504,13 +8958,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T10:30:00+00:00",
+      "expires_hint": "2026-09-20T14:00:00+00:00",
       "source": "betburger",
-      "arb_id": "dc1fa05398ef581c5a32d2eeb51641ee",
+      "arb_id": "b1ec37ee610225940bc88983633a4b8f",
       "is_live": false,
       "bk_ids": [
-        524288,
-        1048576
+        281474977234944,
+        0
       ],
       "direct_links": [
         "",
@@ -9520,22 +8974,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie A",
+      "league": "Denmark. Superliga",
       "event": {
-        "home": "Fiorentina",
-        "away": "Napoli",
-        "commence": "2026-09-20T10:30:00+00:00"
+        "home": "AC Horsens",
+        "away": "AGF Aarhus",
+        "commence": "2026-09-20T14:00:00+00:00"
       },
-      "market": "7:10",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "typ1388 1.5",
-          "book": "BetRivers",
+          "selection": "typ53 3.5",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
-          "selection": "typ1389 1.5",
-          "book": "Novibet",
+          "selection": "typ54 3.5",
+          "book": "BetRivers",
           "odds": 2.02
         }
       ],
@@ -9545,13 +8999,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T10:30:00+00:00",
+      "expires_hint": "2026-09-20T14:00:00+00:00",
       "source": "betburger",
-      "arb_id": "84fdfc5d6d00977707a98e95a41b22d1",
+      "arb_id": "42797d616e0f51912c58b4a6e85c4138",
       "is_live": false,
       "bk_ids": [
+        281474976710656,
         0,
-        1048576,
         0,
         0,
         0,
@@ -9566,22 +9020,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie A",
+      "league": "Guatemala. Liga Nacional",
       "event": {
-        "home": "Fiorentina",
-        "away": "Napoli",
-        "commence": "2026-09-20T10:30:00+00:00"
+        "home": "Suchitepequez",
+        "away": "Xelaju",
+        "commence": "2026-09-20T23:00:00+00:00"
       },
-      "market": "7:10",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "typ1388 1.5",
-          "book": "bk:485",
+          "selection": "2 (bez remízy)",
+          "book": "bk:722",
           "odds": 2.02
         },
         {
-          "selection": "typ1389 1.5",
-          "book": "Novibet",
+          "selection": "AH 1 0",
+          "book": "Bet365",
           "odds": 2.02
         }
       ],
@@ -9591,19 +9045,23 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T10:30:00+00:00",
+      "expires_hint": "2026-09-20T23:00:00+00:00",
       "source": "betburger",
-      "arb_id": "c027b4165847b101d65bfbab11663cc2",
+      "arb_id": "f525558bfd7fbb16b569ab7fdf915018",
       "is_live": false,
       "bk_ids": [
-        0,
-        1048576,
-        0,
+        1024,
         0,
         0,
         0,
         0,
-        17592186044416
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
       ],
       "direct_links": [
         "",
@@ -9613,22 +9071,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Poland. Ekstraklasa",
+      "league": "Guatemala. Liga Nacional",
       "event": {
-        "home": "Zaglebie Lubin",
-        "away": "Wisla Plock",
-        "commence": "2026-09-20T12:45:00+00:00"
+        "home": "Suchitepequez",
+        "away": "Xelaju",
+        "commence": "2026-09-20T23:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "typ53 4.5",
-          "book": "Lvbet",
+          "selection": "AH 1 0",
+          "book": "Bet365",
           "odds": 2.02
         },
         {
-          "selection": "typ54 4.5",
-          "book": "Stoiximan",
+          "selection": "AH 2 0",
+          "book": "bk:722",
           "odds": 2.02
         }
       ],
@@ -9638,14 +9096,147 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T12:45:00+00:00",
+      "expires_hint": "2026-09-20T23:00:00+00:00",
       "source": "betburger",
-      "arb_id": "62eb8cc5cf77f09048d74ccdccb1f044",
+      "arb_id": "6920a01dc59a217a27d526e1f6aa6dcd",
+      "is_live": false,
+      "bk_ids": [
+        1024,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Sweden. Division 2",
+      "event": {
+        "home": "Eker Orebro",
+        "away": "IFK Haninge",
+        "commence": "2026-09-20T11:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 4",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 4",
+          "book": "DafaSports",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T11:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "6ca658a8a4bcf6f54165d090e344f7e6",
+      "is_live": false,
+      "bk_ids": [
+        1048580,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Spain. Primera",
+      "event": {
+        "home": "Valencia",
+        "away": "Real Sociedad",
+        "commence": "2026-09-20T19:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ51 9",
+          "book": "Stoiximan",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ52 9",
+          "book": "bk:22",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T19:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d95a8b4c0a62ed70ab983963a94d290a",
+      "is_live": false,
+      "bk_ids": [
+        4194304,
+        8192
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "Europe. FIBA Champions League",
+      "event": {
+        "home": "Dziki Warszawa",
+        "away": "Rasta Vechta",
+        "commence": "2026-09-20T17:30:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 179.5",
+          "book": "bk:144",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 180.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "f32e8de6eeaa2d68b1c4112a1367c4d9",
       "is_live": false,
       "bk_ids": [
         0,
-        8192,
         0,
+        262144,
         0,
         0,
         8
@@ -9657,166 +9248,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Poland. Ekstraklasa",
+      "sport": "Basketbal",
+      "league": "Europe. FIBA Champions League",
       "event": {
-        "home": "Zaglebie Lubin",
-        "away": "Wisla Plock",
-        "commence": "2026-09-20T12:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 4.5",
-          "book": "Betsson",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 4.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T12:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "fca5dbc8615647d22c2454d45d641607",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        8192
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Poland. Ekstraklasa",
-      "event": {
-        "home": "Zaglebie Lubin",
-        "away": "Wisla Plock",
-        "commence": "2026-09-20T12:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 4.5",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 4.5",
-          "book": "Betano",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T12:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "20056b1c2e0fb8776c130933fc1bf61e",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Poland. Ekstraklasa",
-      "event": {
-        "home": "Zaglebie Lubin",
-        "away": "Wisla Plock",
-        "commence": "2026-09-20T12:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 4.5",
-          "book": "Betsson",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 4.5",
-          "book": "Betano",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T12:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "f15f3f522dbbb425b7c6eae26a89c144",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Germany. Bundesliga",
-      "event": {
-        "home": "SC Paderborn 07",
-        "away": "TSG 1899 Hoffenheim",
+        "home": "Dziki Warszawa",
+        "away": "Rasta Vechta",
         "commence": "2026-09-20T17:30:00+00:00"
       },
-      "market": "7:8",
+      "market": "2:3",
       "legs": [
         {
-          "selection": "typ51 9.5",
-          "book": "bk:148",
+          "selection": "Nad 179.5",
+          "book": "bk:144",
           "odds": 2.02
         },
         {
-          "selection": "typ52 9.5",
-          "book": "Stoiximan",
+          "selection": "Pod 179.5",
+          "book": "bk:71",
           "odds": 2.02
         }
       ],
@@ -9828,12 +9276,54 @@
       "label": "surebet",
       "expires_hint": "2026-09-20T17:30:00+00:00",
       "source": "betburger",
-      "arb_id": "9bc032aed2221896b44c9808e6697c60",
+      "arb_id": "0cc242f6718f33f037b37d6ea3cc527b",
       "is_live": false,
       "bk_ids": [
         0,
-        8192,
-        4194304
+        256,
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "Europe. FIBA Champions League",
+      "event": {
+        "home": "Dziki Warszawa",
+        "away": "Rasta Vechta",
+        "commence": "2026-09-20T17:30:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 179.5",
+          "book": "bk:144",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 179.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "cfc91e73367f65125118d0fee6b4cb47",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        262144
       ],
       "direct_links": [
         "",
@@ -9843,21 +9333,21 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Germany. Bundesliga",
+      "league": "Spain. Primera",
       "event": {
-        "home": "SC Paderborn 07",
-        "away": "TSG 1899 Hoffenheim",
-        "commence": "2026-09-20T17:30:00+00:00"
+        "home": "Valencia",
+        "away": "Real Sociedad",
+        "commence": "2026-09-20T19:00:00+00:00"
       },
       "market": "7:8",
       "legs": [
         {
-          "selection": "typ51 9.5",
-          "book": "bk:148",
+          "selection": "typ51 9",
+          "book": "Betano",
           "odds": 2.02
         },
         {
-          "selection": "typ52 9.5",
+          "selection": "typ52 9",
           "book": "bk:22",
           "odds": 2.02
         }
@@ -9868,98 +9358,14 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T17:30:00+00:00",
+      "expires_hint": "2026-09-20T19:00:00+00:00",
       "source": "betburger",
-      "arb_id": "e7de318feaee1c1d7d674964a5ee8c5f",
+      "arb_id": "049c5661cac2e9d44d6da30e2772dd9e",
       "is_live": false,
       "bk_ids": [
         4194304,
         0,
-        4194304
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Germany. Bundesliga",
-      "event": {
-        "home": "SC Paderborn 07",
-        "away": "TSG 1899 Hoffenheim",
-        "commence": "2026-09-20T17:30:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 9.5",
-          "book": "bk:148",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 9.5",
-          "book": "DafaSports",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T17:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "29273410d2b89a3b166cdc10331ae643",
-      "is_live": false,
-      "bk_ids": [
-        1048576,
         0,
-        4194304
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Germany. Bundesliga",
-      "event": {
-        "home": "SC Paderborn 07",
-        "away": "TSG 1899 Hoffenheim",
-        "commence": "2026-09-20T17:30:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 9.5",
-          "book": "bk:148",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 9.5",
-          "book": "Betano",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T17:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "f829046cb17a6fe9a511abbfc3ea80cc",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        4194304,
         0,
         0,
         0,
@@ -9977,23 +9383,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Germany. Bundesliga",
+      "sport": "Basketbal",
+      "league": "Europe. FIBA Champions League",
       "event": {
-        "home": "SC Paderborn 07",
-        "away": "TSG 1899 Hoffenheim",
+        "home": "Dziki Warszawa",
+        "away": "Rasta Vechta",
         "commence": "2026-09-20T17:30:00+00:00"
       },
-      "market": "7:8",
+      "market": "2:3",
       "legs": [
         {
-          "selection": "typ51 9.5",
-          "book": "bk:148",
+          "selection": "Nad 179.5",
+          "book": "bk:144",
           "odds": 2.02
         },
         {
-          "selection": "typ52 9.5",
-          "book": "bk:455",
+          "selection": "Pod 179.5",
+          "book": "1win",
           "odds": 2.02
         }
       ],
@@ -10005,12 +9411,56 @@
       "label": "surebet",
       "expires_hint": "2026-09-20T17:30:00+00:00",
       "source": "betburger",
-      "arb_id": "6c130b19f87c80d2409c91b7efd05911",
+      "arb_id": "e0266ee968858a34df525ffb4017aab2",
       "is_live": false,
       "bk_ids": [
         0,
         0,
-        4194304,
+        262144,
+        0,
+        0,
+        0,
+        140737488355328
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Seoul. Singles",
+      "event": {
+        "home": "Korneeva, Alina",
+        "away": "Sawangkaew, Mananchaya",
+        "commence": "2026-09-21T04:30:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 9.5 (hos.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 9.5 (hos.)",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-21T04:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "284104924351688893d703c0cf94ae15",
+      "is_live": false,
+      "bk_ids": [
+        4,
         0,
         0,
         0,
@@ -10025,22 +9475,280 @@
     {
       "type": "arb",
       "sport": "Futbal",
+      "league": "Spain. Primera",
+      "event": {
+        "home": "Atletico Madrid",
+        "away": "Real Madrid",
+        "commence": "2026-09-20T14:15:00+00:00"
+      },
+      "market": "7:5",
+      "legs": [
+        {
+          "selection": "typ267 10.5",
+          "book": "Marathon",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ268 10.5",
+          "book": "Novibet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T14:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "140d74c55703840225df96553a8f4888",
+      "is_live": false,
+      "bk_ids": [
+        16,
+        1048576
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Turkey. 1st League",
+      "event": {
+        "home": "Antalyaspor",
+        "away": "Vanspor FK",
+        "commence": "2026-09-20T17:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "BetinAsia",
+          "odds": 1.632
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Betsson",
+          "odds": 2.65
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "ec2a82935a36971d9ca7c17e83f5a433",
+      "is_live": false,
+      "bk_ids": [
+        281474976710656,
+        72057594037927936
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Turkey. 1st League",
+      "event": {
+        "home": "Antalyaspor",
+        "away": "Vanspor FK",
+        "commence": "2026-09-20T17:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "Sportmarket",
+          "odds": 1.632
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Betsson",
+          "odds": 2.65
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d3982d90d958bfcc67341e9aaaaf157f",
+      "is_live": false,
+      "bk_ids": [
+        281474976710656,
+        4398046511104
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Hokej",
+      "league": "Sweden. SHL",
+      "event": {
+        "home": "Timra IK",
+        "away": "Orebro HK",
+        "commence": "2026-09-22T17:00:00+00:00"
+      },
+      "market": "6:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:150",
+          "odds": 2.02
+        },
+        {
+          "selection": "2",
+          "book": "Betcity",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "5e97781df7b1ad7ca3c49441c0b4dee5",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        16777216
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Volejbal",
+      "league": "Europe. European Championship",
+      "event": {
+        "home": "Poland",
+        "away": "Germany",
+        "commence": "2026-09-22T17:00:00+00:00"
+      },
+      "market": "9:2",
+      "legs": [
+        {
+          "selection": "AH 1 -3.5",
+          "book": "FortuneJack",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 3.5",
+          "book": "Betano",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "a02a2b2a7ff4efd472d5bde298c4945d",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Volejbal",
+      "league": "Europe. European Championship",
+      "event": {
+        "home": "Poland",
+        "away": "Germany",
+        "commence": "2026-09-22T17:00:00+00:00"
+      },
+      "market": "9:2",
+      "legs": [
+        {
+          "selection": "AH 1 -3.5",
+          "book": "FortuneJack",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 3.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d837ea9ce683ca629d42e2347e835560",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        2
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
       "league": "Germany. Bundesliga",
       "event": {
-        "home": "SC Paderborn 07",
-        "away": "TSG 1899 Hoffenheim",
-        "commence": "2026-09-20T17:30:00+00:00"
+        "home": "Bayer Leverkusen",
+        "away": "RB Leipzig",
+        "commence": "2026-09-20T13:30:00+00:00"
       },
-      "market": "7:8",
+      "market": "7:5",
       "legs": [
         {
-          "selection": "typ51 9.5",
-          "book": "bk:148",
+          "selection": "typ261 1.5",
+          "book": "PariMatch",
           "odds": 2.02
         },
         {
-          "selection": "typ52 9.5",
-          "book": "Superbet",
+          "selection": "typ262 -1.5",
+          "book": "Tipsport",
           "odds": 2.02
         }
       ],
@@ -10050,14 +9758,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T17:30:00+00:00",
+      "expires_hint": "2026-09-20T13:30:00+00:00",
       "source": "betburger",
-      "arb_id": "4bd5e807bcfe80e74f652e7e579a1b15",
+      "arb_id": "ffd1d18742390d3edfc08c7235eea148",
       "is_live": false,
       "bk_ids": [
-        0,
-        128,
-        4194304
+        549755944960,
+        0
       ],
       "direct_links": [
         "",
@@ -10066,117 +9773,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Denmark. Superliga",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Sonderjyske",
-        "away": "Randers FC",
-        "commence": "2026-09-20T12:00:00+00:00"
+        "home": "Houston Texans",
+        "away": "Cincinnati Bengals",
+        "commence": "2026-09-20T17:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "10:5",
       "legs": [
         {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 10.5",
-          "book": "Expekt",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T12:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "04fd11cbab06def5da6c96b06c5025d7",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        4194304,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Denmark. Superliga",
-      "event": {
-        "home": "Sonderjyske",
-        "away": "Randers FC",
-        "commence": "2026-09-20T12:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 10.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T12:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "445fa2bcc7add381131eed33267f833e",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        4194304
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Denmark. Superliga",
-      "event": {
-        "home": "Sonderjyske",
-        "away": "Randers FC",
-        "commence": "2026-09-20T12:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 10.5",
+          "selection": "typ637 3.5",
           "book": "Smarkets",
-          "odds": 2.02
+          "odds": 2.0
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "bk:492",
+          "odds": 2.04
         }
       ],
       "edge": {
@@ -10185,14 +9799,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T12:00:00+00:00",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "161b1de24e62984d5adef0c0e187b949",
+      "arb_id": "3c42cce3c04aef9e5996c41a5b16361f",
       "is_live": false,
       "bk_ids": [
         1125899906842624,
         0,
-        4194304
+        0,
+        0,
+        0,
+        0,
+        0,
+        2251799813685248
       ],
       "direct_links": [
         "",
@@ -10201,24 +9820,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Denmark. Superliga",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Sonderjyske",
-        "away": "Randers FC",
-        "commence": "2026-09-20T12:00:00+00:00"
+        "home": "Houston Texans",
+        "away": "Cincinnati Bengals",
+        "commence": "2026-09-20T17:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "10:5",
       "legs": [
         {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
-          "odds": 2.02
+          "selection": "typ637 3.5",
+          "book": "Superbet",
+          "odds": 2.0
         },
         {
-          "selection": "typ52 10.5",
-          "book": "bk:314",
-          "odds": 2.02
+          "selection": "typ638 3.5",
+          "book": "bk:492",
+          "odds": 2.04
         }
       ],
       "edge": {
@@ -10227,16 +9846,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T12:00:00+00:00",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "ff0286b8f193ad6c5b1174bed32345c3",
+      "arb_id": "3dbefd8f160802cea6f3c541e2db2b73",
       "is_live": false,
       "bk_ids": [
         0,
+        128,
         0,
-        4194304,
         0,
-        4611686018427387904
+        0,
+        0,
+        0,
+        2251799813685248
       ],
       "direct_links": [
         "",
@@ -10245,24 +9867,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Denmark. Superliga",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Sonderjyske",
-        "away": "Randers FC",
-        "commence": "2026-09-20T12:00:00+00:00"
+        "home": "Houston Texans",
+        "away": "Cincinnati Bengals",
+        "commence": "2026-09-20T17:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "10:5",
       "legs": [
         {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
-          "odds": 2.02
+          "selection": "typ637 3.5",
+          "book": "bk:746",
+          "odds": 2.0
         },
         {
-          "selection": "typ52 10.5",
-          "book": "BetFast",
-          "odds": 2.02
+          "selection": "typ638 3.5",
+          "book": "bk:492",
+          "odds": 2.04
         }
       ],
       "edge": {
@@ -10271,103 +9893,9 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-20T12:00:00+00:00",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "90417f337c07350ce571922b1d2971da",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        4194304,
-        0,
-        0,
-        0,
-        0,
-        33554432
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Netherlands",
-        "away": "Germany",
-        "commence": "2026-09-24T18:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-24T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "fd44377cf43eb38ad8a6403a778bebba",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8589934592,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Netherlands",
-        "away": "Germany",
-        "commence": "2026-09-24T18:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "bk:487",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-24T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "38f923864ac7d2151c69965f9cc83785",
+      "arb_id": "3eed0e4ed6e498ace3f9aff5f725ad12",
       "is_live": false,
       "bk_ids": [
         0,
@@ -10377,7 +9905,152 @@
         0,
         0,
         0,
-        70368744194048
+        2251799813685248,
+        0,
+        0,
+        0,
+        9007199254740992
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Houston Texans",
+        "away": "Cincinnati Bengals",
+        "commence": "2026-09-20T17:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "bk:24",
+          "odds": 2.0
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "bk:492",
+          "odds": 2.04
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "e438cdd653249b448406cedfaa69cde0",
+      "is_live": false,
+      "bk_ids": [
+        16777216,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2251799813685248
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Houston Texans",
+        "away": "Cincinnati Bengals",
+        "commence": "2026-09-20T17:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "bk:23",
+          "odds": 2.0
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "bk:492",
+          "odds": 2.04
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "58e5c6e9b56fdaaa7201e73a79e0e877",
+      "is_live": false,
+      "bk_ids": [
+        8388608,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2251799813685248
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Houston Texans",
+        "away": "Cincinnati Bengals",
+        "commence": "2026-09-20T17:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Smarkets",
+          "odds": 2.0
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "bk:492",
+          "odds": 2.04
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-20T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "8960e05dba1a986f3af34cc19fd1ec59",
+      "is_live": false,
+      "bk_ids": [
+        1125899906842624,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2251799813685248
       ],
       "direct_links": [
         "",
@@ -10387,22 +10060,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
+      "league": "Netherlands. Eredivisie",
       "event": {
-        "home": "Netherlands",
-        "away": "Germany",
-        "commence": "2026-09-24T18:45:00+00:00"
+        "home": "Feyenoord",
+        "away": "Utrecht",
+        "commence": "2026-09-20T10:15:00+00:00"
       },
-      "market": "7:8",
+      "market": "7:3",
       "legs": [
         {
-          "selection": "typ51 4.5",
-          "book": "BetRivers",
+          "selection": "Nad 1.5",
+          "book": "Stoiximan",
           "odds": 2.02
         },
         {
-          "selection": "typ52 4.5",
-          "book": "bk:455",
+          "selection": "Pod 1.5",
+          "book": "FB Sports",
           "odds": 2.02
         }
       ],
@@ -10412,207 +10085,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-24T18:45:00+00:00",
+      "expires_hint": "2026-09-20T10:15:00+00:00",
       "source": "betburger",
-      "arb_id": "0a8d808fcc2f4e59ec430e0df3b5006b",
+      "arb_id": "20e9b4bb21d919d366209f26756a4ed3",
       "is_live": false,
       "bk_ids": [
         0,
+        8192,
         0,
         0,
         0,
         0,
         0,
-        281474976710656,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Netherlands",
-        "away": "Germany",
-        "commence": "2026-09-24T18:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "Virginbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-24T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "1e85afa2ce8d14c2b3cc7feec1acfdf0",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        16,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Netherlands",
-        "away": "Germany",
-        "commence": "2026-09-24T18:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "Betplay",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-24T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "547f4bdc72f1b7c5b91e2f236562a72f",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372105216
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Netherlands",
-        "away": "Germany",
-        "commence": "2026-09-24T18:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "Unibet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-24T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "487f13a11c18b3f59e4b25bb2b9318c6",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Colombia. Primera A",
-      "event": {
-        "home": "Deportivo Pasto",
-        "away": "Once Caldas",
-        "commence": "2026-09-20T01:15:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "StarCasino",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "Betsson",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-20T01:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "3c655385af0257dc94b08720b2b6091e",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        65536
+        32
       ],
       "direct_links": [
         "",
