@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T13:38:56.305288+00:00",
+  "generated_at": "2026-09-22T17:14:23.407495+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -41,12 +41,24 @@
     "Betsson",
     "Betsson (IT)",
     "Betway",
+    "bk:12",
+    "bk:128",
+    "bk:131",
     "bk:148",
+    "bk:316",
     "bk:433",
     "bk:455",
+    "bk:485",
     "bk:487",
+    "bk:492",
+    "bk:57",
+    "bk:61",
     "bk:71",
     "bk:737",
+    "bk:74",
+    "bk:754",
+    "bk:759",
+    "bk:92",
     "Bwin",
     "DafaSports",
     "DaznBet",
@@ -151,37 +163,6 @@
       "stake_amount": 16.64,
       "n_books": 16,
       "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Romania Liga II",
-      "event": {
-        "home": "Dumbrăviţa",
-        "away": "CSM Reşiţa",
-        "commence": "2026-09-22T14:30:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Dumbrăviţa",
-          "book": "bet365",
-          "odds": 5.25,
-          "stake_pct": 0.63,
-          "fair_prob": 0.2107
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 10.63
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 4.745,
-      "stake_amount": 6.25,
-      "n_books": 14,
-      "official": false
     },
     {
       "type": "value",
@@ -460,6 +441,37 @@
       "fair_odds": 1.466,
       "stake_amount": 8.48,
       "n_books": 11,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "International UEFA Nations League",
+      "event": {
+        "home": "Armenia",
+        "away": "Latvia",
+        "commence": "2026-09-25T16:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Armenia",
+          "book": "Dafabet",
+          "odds": 1.78,
+          "stake_pct": 0.15,
+          "fair_prob": 0.5645
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.48
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.772,
+      "stake_amount": 1.53,
+      "n_books": 16,
       "official": false
     },
     {
@@ -6929,6 +6941,428 @@
       "sport": "Futbal",
       "league": "Europe. UEFA Nations League",
       "event": {
+        "home": "Turkey",
+        "away": "France",
+        "commence": "2026-09-25T18:45:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ53 3.5",
+          "book": "Fonbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ54 3.5",
+          "book": "bk:433",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-25T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "cafb0438e7d95de78b2b6352c492472a",
+      "is_live": false,
+      "bk_ids": [
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Champions League Women",
+      "event": {
+        "home": "Juventus Women",
+        "away": "SL Benfica Women",
+        "commence": "2026-09-22T19:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Nad 3",
+          "book": "bk:131",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 3",
+          "book": "bk:74",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T19:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d462322905a7d202fb42a34bcfb63caa",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        2048,
+        32
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Tolentino. Doubles",
+      "event": {
+        "home": "Serban, Isabella Maria/Struplova, Julie",
+        "away": "Fossa Huergo, Nicole/Herrero Linana, Alicia",
+        "commence": "2026-09-23T08:30:00+00:00"
+      },
+      "market": "8:6",
+      "legs": [
+        {
+          "selection": "typ129 -2",
+          "book": "bk:57",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ131 1.5",
+          "book": "bk:71",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-23T08:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "92d54b44eeac41a2e11c31f28b64793c",
+      "is_live": false,
+      "bk_ids": [
+        144115188075855872,
+        256
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:47",
+      "league": "Counter-Strike 2. CCT",
+      "event": {
+        "home": "Bestia Academy",
+        "away": "Zetta Games",
+        "commence": "2026-09-22T22:00:00+00:00"
+      },
+      "market": "47:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Polymarket",
+          "odds": 1.124
+        },
+        {
+          "selection": "2",
+          "book": "Pinnacle",
+          "odds": 9.99
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T22:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "8fda3c30e0693bbed26ff0ae630e5f6e",
+      "is_live": false,
+      "bk_ids": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4398046511104
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Stolný tenis",
+      "league": "Czech Republic. Czech Liga Pro. Singles",
+      "event": {
+        "home": "Bruzek, Petr",
+        "away": "Mazanek, Stanislav",
+        "commence": "2026-09-23T00:00:00+00:00"
+      },
+      "market": "13:2",
+      "legs": [
+        {
+          "selection": "AH 1 -1.5",
+          "book": "bk:737",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 3.5",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-23T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "19ec6608541e286f47c4727262cec1fe",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Stolný tenis",
+      "league": "Czech Republic. Czech Liga Pro. Singles",
+      "event": {
+        "home": "Bruzek, Petr",
+        "away": "Mazanek, Stanislav",
+        "commence": "2026-09-23T00:00:00+00:00"
+      },
+      "market": "13:2",
+      "legs": [
+        {
+          "selection": "AH 1 -1.5",
+          "book": "bk:737",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 3.5",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-23T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "357efd63e5532472db6da355c07cd353",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NCAA",
+      "event": {
+        "home": "Arkansas Razorbacks",
+        "away": "Tulsa Golden Hurricane",
+        "commence": "2026-09-27T00:00:00+00:00"
+      },
+      "market": "10:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:754",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 2.5",
+          "book": "bk:148",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-27T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "6bd48adc24d7c55c5ee5613a5d427c25",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        4194304,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2305843009213693952
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Baseball",
+      "league": "USA. MLB",
+      "event": {
+        "home": "Chicago Cubs",
+        "away": "Miami Marlins",
+        "commence": "2026-09-22T23:40:00+00:00"
+      },
+      "market": "1:3",
+      "legs": [
+        {
+          "selection": "Nad 3.5",
+          "book": "Fonbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 3.5",
+          "book": "bk:92",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T23:40:00+00:00",
+      "source": "betburger",
+      "arb_id": "ff662f8d15a59f23c9d9a62be93d9af4",
+      "is_live": false,
+      "bk_ids": [
+        64,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Nations League",
+      "event": {
+        "home": "Portugal",
+        "away": "Wales",
+        "commence": "2026-09-24T18:45:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ765 1.5",
+          "book": "bk:759",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ766 1.5",
+          "book": "bk:433",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-24T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "0c0e0f08fe774fdd1154cd105cce8f8c",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Nations League",
+      "event": {
         "home": "Portugal",
         "away": "Wales",
         "commence": "2026-09-24T18:45:00+00:00"
@@ -6972,23 +7406,64 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
+      "sport": "Baseball",
+      "league": "USA. MLB",
       "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
+        "home": "New York Yankees",
+        "away": "Tampa Bay Rays",
+        "commence": "2026-09-22T23:05:00+00:00"
       },
-      "market": "7:2",
+      "market": "1:3",
       "legs": [
         {
-          "selection": "AH 1 0.5",
-          "book": "BetRivers",
+          "selection": "Nad 6.5",
+          "book": "Smarkets",
+          "odds": 2.12
+        },
+        {
+          "selection": "Pod 6.5",
+          "book": "1xBet",
+          "odds": 1.929
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T23:05:00+00:00",
+      "source": "betburger",
+      "arb_id": "e1d5950f97685360ed0cfb34926df7e0",
+      "is_live": false,
+      "bk_ids": [
+        1125899908939776,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. UFC",
+      "event": {
+        "home": "Guaylupo, Piero",
+        "away": "Connor, Callum",
+        "commence": "2026-09-22T23:30:00+00:00"
+      },
+      "market": "45:3",
+      "legs": [
+        {
+          "selection": "Nad 2.5",
+          "book": "bk:128",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 -0.5",
-          "book": "Pamestoixima",
+          "selection": "Pod 2.5",
+          "book": "Fonbet",
           "odds": 2.02
         }
       ],
@@ -6998,18 +7473,14 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
+      "expires_hint": "2026-09-22T23:30:00+00:00",
       "source": "betburger",
-      "arb_id": "c6b140f677fed31edef3d5d80cd3245c",
+      "arb_id": "6a6506c95324ffde4cb4358205323871",
       "is_live": false,
       "bk_ids": [
+        64,
         0,
-        2147483648,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
+        4
       ],
       "direct_links": [
         "",
@@ -7018,23 +7489,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
+      "sport": "MMA",
+      "league": "World. UFC",
       "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
+        "home": "Guaylupo, Piero",
+        "away": "Connor, Callum",
+        "commence": "2026-09-22T23:30:00+00:00"
       },
-      "market": "7:2",
+      "market": "45:3",
       "legs": [
         {
-          "selection": "AH 1 0.5",
-          "book": "bk:487",
+          "selection": "Nad 2.5",
+          "book": "bk:485",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 -0.5",
-          "book": "Pamestoixima",
+          "selection": "Pod 2.5",
+          "book": "Fonbet",
           "odds": 2.02
         }
       ],
@@ -7044,19 +7515,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
+      "expires_hint": "2026-09-22T23:30:00+00:00",
       "source": "betburger",
-      "arb_id": "21b2d02a4923d18be8a60e25aee874a6",
+      "arb_id": "b18eb5acebe1492ca23e8da71951d12a",
       "is_live": false,
       "bk_ids": [
-        0,
-        2147483648,
-        0,
+        64,
         0,
         0,
         0,
         0,
-        70368744177664
+        0,
+        0,
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -7066,746 +7537,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
+      "league": "England. FA Cup",
       "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
       },
       "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Unibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "3eb40b751800b22cc777f6d6b40b4b33",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        0,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 0.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 -0.5",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "23a090559a457f25b042c5a7de8cea73",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 0.5",
-          "book": "Unibet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 -0.5",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "b85d0e311c7d2e169f0367d754cda8fe",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        2147483648
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "69a0a5d347c12b32edb13f2ad0782eb5",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8589934600
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betplay",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "a1b83c167b6081c0854a8756c05e05cf",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "bk:487",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "aeba9ae9a88e4c2e84fc00b4ca1212b5",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8,
-        0,
-        70368744177664
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betplay",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "afcd4010ea965630a6d492ffa6e1aa42",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "bk:487",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "bf8fae220f108d6c0ed0e454c74051ea",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        0,
-        0,
-        70368744177664
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "BetRivers",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "860ea09fed4fbd95fa6600797b6e9066",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 0.5",
-          "book": "Virginbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 -0.5",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "e6f6fd7475dd1b34dce44c34beaa1671",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        16
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Lvbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Virginbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "ef390b8eabf3a4fdd9ea367b5256d594",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        24
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Virginbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "2985ea0d60263d8ac291cf12b5623940",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        16
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "d4e20ebe5d4519deaacbeda9be16a1a2",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betplay",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 -0.5",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "74bbe45ea395fae45da5a47be5bedb90",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Unibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "046b06f6c1ee6c901cb60ffafdbdbca6",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        2147483648
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Uruguay. Primera Division",
-      "event": {
-        "home": "Central Espanol",
-        "away": "Liverpool Montevideo",
-        "commence": "2026-09-27T14:00:00+00:00"
-      },
-      "market": "7:1",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "BetRivers",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-27T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "9ce04fd75aa51dcd68c282e3605f2da2",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. WNBA Women",
-      "event": {
-        "home": "Indiana Fever Women",
-        "away": "Minnesota Lynx Women",
-        "commence": "2026-09-23T00:00:00+00:00"
-      },
-      "market": "2:1",
       "legs": [
         {
           "selection": "1",
-          "book": "Betano",
+          "book": "Olimpo",
           "odds": 2.02
         },
         {
-          "selection": "2",
-          "book": "Betfair",
+          "selection": "AH 2 0.5",
+          "book": "bk:12",
           "odds": 2.02
         }
       ],
@@ -7815,23 +7562,17 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-23T00:00:00+00:00",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
       "source": "betburger",
-      "arb_id": "ff384ee3a98cbf73646dffb34e0c96b3",
+      "arb_id": "c3270a49308b2857fc2797fc5280926a",
       "is_live": false,
       "bk_ids": [
-        2048,
+        4096,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
+        8589934592
       ],
       "direct_links": [
         "",
@@ -7841,23 +7582,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Colombia. Primera A",
+      "league": "England. FA Cup",
       "event": {
-        "home": "Jaguares de Cordoba",
-        "away": "Alianza Petrolera",
-        "commence": "2026-09-27T21:00:00+00:00"
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
       },
-      "market": "7:3",
+      "market": "7:1",
       "legs": [
         {
-          "selection": "Pod 8.5",
-          "book": "Polymarket",
-          "odds": 1.02
+          "selection": "1",
+          "book": "bk:487",
+          "odds": 2.02
         },
         {
-          "selection": "typ153 -7.999",
-          "book": "bk:455",
-          "odds": 99.0
+          "selection": "AH 2 0.5",
+          "book": "bk:12",
+          "odds": 2.02
         }
       ],
       "edge": {
@@ -7866,9 +7607,194 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-27T21:00:00+00:00",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
       "source": "betburger",
-      "arb_id": "f5cc5fedd7ec3a77eab8bd130a8e9397",
+      "arb_id": "745c153b3f1a1267f135d4e32a44a6e5",
+      "is_live": false,
+      "bk_ids": [
+        4096,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        70368744177664
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Betplay",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:12",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "61ca11b9bb70e3bd093f30389aceca0d",
+      "is_live": false,
+      "bk_ids": [
+        4096,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Unibet",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:316",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "9b1d266aa680d11892ab9bf40e4c5b49",
+      "is_live": false,
+      "bk_ids": [
+        524288,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "BetRivers",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:12",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "0f1f612b23c2846caddc7b0c643e56cd",
+      "is_live": false,
+      "bk_ids": [
+        4096,
+        0,
+        0,
+        0,
+        0,
+        0,
+        281474976710656
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Virginbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:316",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "020e7fd896217c197ac5c132f29e9f8b",
       "is_live": false,
       "bk_ids": [
         0,
@@ -7876,9 +7802,278 @@
         0,
         0,
         0,
+        18
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "BetRivers",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:316",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "4f0ba5ad586c77ad1460e308b37d07b7",
+      "is_live": false,
+      "bk_ids": [
         0,
         0,
-        4398046527488
+        0,
+        0,
+        0,
+        2,
+        281474976710656
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "bk:487",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:316",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "1d614da7987713e5e37e2f6003e00b76",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        70368744177664
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Betplay",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:316",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "893ca2a274239a6e995eac1173d1a8c1",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Olimpo",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:316",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "affe61ecefad089495aee3f71ab8aaf6",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8589934594
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Virginbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:12",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "3b0332a895c4b838c5007ff3fa86576f",
+      "is_live": false,
+      "bk_ids": [
+        4096,
+        0,
+        0,
+        0,
+        0,
+        16
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "England. FA Cup",
+      "event": {
+        "home": "Gainsborough Trinity",
+        "away": "Leamington",
+        "commence": "2026-09-22T18:45:00+00:00"
+      },
+      "market": "7:1",
+      "legs": [
+        {
+          "selection": "1",
+          "book": "Unibet",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0.5",
+          "book": "bk:12",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "source": "betburger",
+      "arb_id": "0eb448856dc5342a2cc5688dc61ee950",
+      "is_live": false,
+      "bk_ids": [
+        528384,
+        0
       ],
       "direct_links": [
         "",
@@ -7915,7 +8110,54 @@
       "label": "surebet",
       "expires_hint": "2026-09-27T21:00:00+00:00",
       "source": "betburger",
-      "arb_id": "deb35a2e97ad5d86f4fb3f3cd5e82b3a",
+      "arb_id": "ee4b4d76807c421788c2ec7a342e1671",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4398046527488
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Colombia. Primera A",
+      "event": {
+        "home": "Jaguares de Cordoba",
+        "away": "Alianza Petrolera",
+        "commence": "2026-09-27T21:00:00+00:00"
+      },
+      "market": "7:3",
+      "legs": [
+        {
+          "selection": "Pod 8.5",
+          "book": "Polymarket",
+          "odds": 1.02
+        },
+        {
+          "selection": "typ153 -7.999",
+          "book": "bk:455",
+          "odds": 99.0
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-27T21:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "6df06dcace2737b4628319108bdab6b1",
       "is_live": false,
       "bk_ids": [
         0,
@@ -7962,7 +8204,7 @@
       "label": "surebet",
       "expires_hint": "2026-09-27T21:00:00+00:00",
       "source": "betburger",
-      "arb_id": "f07305645c4e02d714bc1a532b171bdd",
+      "arb_id": "8a6cb3cf5f3c152ca2db38b56e38393d",
       "is_live": false,
       "bk_ids": [
         0,
@@ -7981,23 +8223,70 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "England. FA Cup",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Dagenham & Redbridge",
-        "away": "Waltham Abbey",
-        "commence": "2026-09-22T18:45:00+00:00"
+        "home": "Green Bay Packers",
+        "away": "Atlanta Falcons",
+        "commence": "2026-09-25T00:15:00+00:00"
+      },
+      "market": "10:6",
+      "legs": [
+        {
+          "selection": "Nepárne",
+          "book": "bk:61",
+          "odds": 2.0
+        },
+        {
+          "selection": "Párne",
+          "book": "bk:492",
+          "odds": 2.04
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-25T00:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "4bc8af511b5565106fac9cc391aebf79",
+      "is_live": false,
+      "bk_ids": [
+        2305843009213693952,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2251799813685248
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Uruguay. Primera Division",
+      "event": {
+        "home": "Central Espanol",
+        "away": "Liverpool Montevideo",
+        "commence": "2026-09-27T14:00:00+00:00"
       },
       "market": "7:2",
       "legs": [
         {
-          "selection": "1",
-          "book": "Betcity",
+          "selection": "2",
+          "book": "Pamestoixima",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 0.5",
-          "book": "Sportmarket",
+          "selection": "AH 1 0.5",
+          "book": "bk:487",
           "odds": 2.02
         }
       ],
@@ -8007,294 +8296,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-22T18:45:00+00:00",
+      "expires_hint": "2026-09-27T14:00:00+00:00",
       "source": "betburger",
-      "arb_id": "ef90f8b35966798e9fb3c3a70bf161a0",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. FA Cup",
-      "event": {
-        "home": "Dagenham & Redbridge",
-        "away": "Waltham Abbey",
-        "commence": "2026-09-22T18:45:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Betcity",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "HGA (Crown)",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-22T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "9f9a86ce0d616965905d34fdcbfb63b2",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. FA Cup",
-      "event": {
-        "home": "Dagenham & Redbridge",
-        "away": "Waltham Abbey",
-        "commence": "2026-09-22T18:45:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "1",
-          "book": "Betcity",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0.5",
-          "book": "BetinAsia",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-22T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "4fc64527f792d323b08978494b27fd60",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        72057594037927936
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Turkey",
-        "away": "France",
-        "commence": "2026-09-25T18:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ53 3.5",
-          "book": "Fonbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ54 3.5",
-          "book": "bk:433",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-25T18:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "cafb0438e7d95de78b2b6352c492472a",
-      "is_live": false,
-      "bk_ids": [
-        64,
-        0,
-        0,
-        0,
-        0,
-        0,
-        36028797018963968
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Lithuania. LKL",
-      "event": {
-        "home": "Neptunas Klaipeda",
-        "away": "Juventus",
-        "commence": "2026-09-23T15:30:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 43.5",
-          "book": "bk:71",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 43.5",
-          "book": "Betcity",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-23T15:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "4bd032e3becc466b2f9df255a9caa0c1",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        256
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. WNBA Women",
-      "event": {
-        "home": "Washington Mystics Women",
-        "away": "Connecticut Sun Women",
-        "commence": "2026-09-22T23:30:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 79.5",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 79.5",
-          "book": "Expekt",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-22T23:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "625b4ff93c10a9efc44882b9221e1c82",
+      "arb_id": "bf8fae220f108d6c0ed0e454c74051ea",
       "is_live": false,
       "bk_ids": [
         0,
-        0,
-        0,
-        0,
-        0,
-        16384,
-        0,
-        0,
-        0,
-        0,
-        0,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Stolný tenis",
-      "league": "Czech Republic. Czech Liga Pro. Singles",
-      "event": {
-        "home": "Forman, Lubos",
-        "away": "Kucera, Tomas",
-        "commence": "2026-09-23T08:00:00+00:00"
-      },
-      "market": "13:2",
-      "legs": [
-        {
-          "selection": "AH 1 -1.5",
-          "book": "bk:737",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 3.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-23T08:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "dbae3d8edb11e6332e33bb6541038481",
-      "is_live": false,
-      "bk_ids": [
+        2147483648,
         0,
         0,
         0,
         0,
         0,
-        16384,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
+        70368744177664
       ],
       "direct_links": [
         "",

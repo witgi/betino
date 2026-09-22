@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T13:38:56.305288+00:00",
+  "generated_at": "2026-09-22T17:14:23.407495+00:00",
   "bankroll": 1000,
   "kelly_fraction": 0.25,
   "sports": [
@@ -17,8 +17,8 @@
     "max_odds": 4.0,
     "min_books": 4
   },
-  "requests_remaining": "FS:3466",
-  "n_events_considered": 39,
+  "requests_remaining": "FS:3457",
+  "n_events_considered": 46,
   "n_picks": 7,
   "performance": {
     "settled_bets": 4798,
@@ -201,25 +201,6 @@
       "match_id": 8474945
     },
     {
-      "league": "Romania Liga II",
-      "sport_key": "soccer",
-      "home": "Dumbrăviţa",
-      "away": "CSM Reşiţa",
-      "commence": "2026-09-22T14:30:00+00:00",
-      "market": "h2h",
-      "selection": "Dumbrăviţa",
-      "best_odds": 5.25,
-      "bookmaker": "bet365",
-      "fair_prob": 0.2107,
-      "fair_odds": 4.745,
-      "ev_pct": 10.63,
-      "stake_pct": 0.63,
-      "stake_amount": 6.25,
-      "confidence": 0.8,
-      "n_books": 14,
-      "match_id": 8612430
-    },
-    {
       "league": "International UEFA Nations League",
       "sport_key": "soccer",
       "home": "Kosovo",
@@ -391,6 +372,25 @@
       "match_id": 8568990
     },
     {
+      "league": "International UEFA Nations League",
+      "sport_key": "soccer",
+      "home": "Armenia",
+      "away": "Latvia",
+      "commence": "2026-09-25T16:00:00+00:00",
+      "market": "h2h",
+      "selection": "Armenia",
+      "best_odds": 1.78,
+      "bookmaker": "Dafabet",
+      "fair_prob": 0.5645,
+      "fair_odds": 1.772,
+      "ev_pct": 0.48,
+      "stake_pct": 0.15,
+      "stake_amount": 1.53,
+      "confidence": 0.8,
+      "n_books": 16,
+      "match_id": 8507041
+    },
+    {
       "league": "International International Friendlies",
       "sport_key": "soccer",
       "home": "Gibraltar",
@@ -442,9 +442,9 @@
     "min_books": 4
   },
   "notes": [
-    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 13412 | v horizonte 28 | detailov 28 | s kurzami 21 | eventov 39",
-    "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['FT Result', 'Both Teams To Score', 'Goals Over/Under', 'Half Time Result', 'Corners', 'Second Half Result', 'Double Chance', '1st Half Goals', 'Both Teams to Score in 1st Half', 'Both Teams to Score in 2nd Half'], 'ft_type': 'dict', 'ft_keys': ['Home', 'Draw', 'Away'], 'ft_sample': \"{'bet365': '1.95', 'WilliamHill': '1.95', '1xbet': '1.92', 'BetVictor': '1.90', 'bwin': '1.88', 'Dafabet': '1.97', 'Cashpoint': '1.85', 'MelBet': '1.87', 'Sbo': '1.89', 'Coral': '1.85', 'Pinnacle': '1\"}",
+    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 13412 | v horizonte 37 | detailov 37 | s kurzami 25 | eventov 46",
+    "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['Goals Over/Under', 'FT Result', 'Second Half Result', '1st Half Goals', 'Double Chance', 'Half Time Result', 'Both Teams To Score', 'Both Teams to Score in 1st Half', 'Both Teams to Score in 2nd Half'], 'ft_type': 'dict', 'ft_keys': ['Away', 'Home', 'Draw'], 'ft_sample': \"{'Sbo': '5.99', 'Dafabet': '6.80', 'WilliamHill': '6.00', 'Betfair': '7.50', 'MelBet': '6.75', 'Pinnacle': '6.76', '1xbet': '6.75'}\"}",
     "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
-    "8 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
+    "7 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
   ]
 }
