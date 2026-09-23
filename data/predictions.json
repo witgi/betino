@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T10:16:31.636993+00:00",
+  "generated_at": "2026-09-23T13:50:26.086448+00:00",
   "bankroll": 1000,
   "kelly_fraction": 0.25,
   "sports": [
@@ -17,13 +17,13 @@
     "max_odds": 4.0,
     "min_books": 4
   },
-  "requests_remaining": "FS:3440",
-  "n_events_considered": 82,
-  "n_picks": 13,
+  "requests_remaining": "FS:3427",
+  "n_events_considered": 90,
+  "n_picks": 14,
   "performance": {
-    "settled_bets": 4799,
+    "settled_bets": 4802,
     "win_rate_pct": 44.1,
-    "roi_pct": 6.52,
+    "roi_pct": 6.5,
     "clv_beat_pct": null
   },
   "picks": [
@@ -163,6 +163,25 @@
     {
       "league": "International UEFA Nations League",
       "sport_key": "soccer",
+      "home": "Slovenia",
+      "away": "Scotland",
+      "commence": "2026-09-26T13:00:00+00:00",
+      "market": "h2h",
+      "selection": "Scotland",
+      "best_odds": 3.1,
+      "bookmaker": "10Bet",
+      "fair_prob": 0.3431,
+      "fair_odds": 2.915,
+      "ev_pct": 6.35,
+      "stake_pct": 0.76,
+      "stake_amount": 7.56,
+      "confidence": 0.8,
+      "n_books": 17,
+      "match_id": 8474918
+    },
+    {
+      "league": "International UEFA Nations League",
+      "sport_key": "soccer",
       "home": "Kosovo",
       "away": "Republic of Ireland",
       "commence": "2026-09-24T18:45:00+00:00",
@@ -294,6 +313,25 @@
       "confidence": 0.8,
       "n_books": 17,
       "match_id": 8474834
+    },
+    {
+      "league": "International UEFA Nations League",
+      "sport_key": "soccer",
+      "home": "Slovenia",
+      "away": "Scotland",
+      "commence": "2026-09-26T13:00:00+00:00",
+      "market": "h2h",
+      "selection": "Slovenia",
+      "best_odds": 3.2,
+      "bookmaker": "10Bet",
+      "fair_prob": 0.3633,
+      "fair_odds": 2.752,
+      "ev_pct": 16.27,
+      "stake_pct": 1.85,
+      "stake_amount": 18.49,
+      "confidence": 0.8,
+      "n_books": 17,
+      "match_id": 8474918
     },
     {
       "league": "International UEFA Nations League",
@@ -484,6 +522,25 @@
       "confidence": 0.8,
       "n_books": 17,
       "match_id": 8474938
+    },
+    {
+      "league": "International UEFA Nations League",
+      "sport_key": "soccer",
+      "home": "Slovenia",
+      "away": "Scotland",
+      "commence": "2026-09-26T13:00:00+00:00",
+      "market": "h2h",
+      "selection": "Scotland",
+      "best_odds": 3.1,
+      "bookmaker": "10Bet",
+      "fair_prob": 0.3431,
+      "fair_odds": 2.915,
+      "ev_pct": 6.35,
+      "stake_pct": 0.76,
+      "stake_amount": 7.56,
+      "confidence": 0.8,
+      "n_books": 17,
+      "match_id": 8474918
     },
     {
       "league": "Finland Ykkösliiga",
@@ -860,8 +917,8 @@
     "min_books": 4
   },
   "notes": [
-    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 13410 | v horizonte 54 | detailov 54 | s kurzami 45 | eventov 82",
-    "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['Goals Over/Under', '1st Half Goals', 'Half Time Result', '2nd Half Goals', 'Corners 1X2', 'Double Chance', 'Both Teams To Score', 'Both Teams to Score in 1st Half', 'FT Result', 'Win To Nil'], 'ft_type': 'dict', 'ft_keys': ['Home', 'Draw', 'Away'], 'ft_sample': \"{'Macauslot': '1.49', 'bet365': '1.40', 'Unibet': '1.48', 'Sbo': '1.45', '1xbet': '1.51', 'Pinnacle': '1.51', 'Coral': '1.48', 'bwin': '1.47', 'Ladbrokes': '1.48', 'WilliamHill': '1.44', 'Betfair': '1\"}",
+    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 13410 | v horizonte 67 | detailov 67 | s kurzami 49 | eventov 90",
+    "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['Goals Over/Under', 'Half Time Result', '1st Half Goals', 'FT Result', 'Second Half Result', '2nd Half Goals', 'Both Teams to Score in 1st Half', 'Double Chance', 'Both Teams To Score', 'Both Teams to Score in 2nd Half'], 'ft_type': 'dict', 'ft_keys': ['Away', 'Draw', 'Home'], 'ft_sample': \"{'Pinnacle': '3.07', 'bwin': '2.85', 'bet365': '3.10', 'MelBet': '2.68', 'WilliamHill': '2.90', 'Unibet': '2.90', 'Coral': '2.80', 'Betfair': '2.80', 'MansionBet': '2.90', '1xbet': '3.07', 'Sbo': '2.8\"}",
     "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
     "8 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
   ]
