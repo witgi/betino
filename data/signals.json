@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T19:49:35.086740+00:00",
+  "generated_at": "2026-09-28T22:16:53.967704+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -19,9 +19,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 5023,
+    "settled_bets": 5031,
     "win_rate_pct": 44.1,
-    "roi_pct": 6.85,
+    "roi_pct": 6.76,
     "clv_beat_pct": null
   },
   "all_books": [
@@ -43,8 +43,11 @@
     "Betway",
     "bk:12",
     "bk:22",
+    "bk:294",
     "bk:432",
     "bk:469",
+    "bk:485",
+    "bk:714",
     "bk:81",
     "Bwin",
     "DafaSports",
@@ -3351,10 +3354,10 @@
         ]
       ],
       "market_odds": {
-        "1": 40.0,
-        "x": 13.0,
+        "1": 35.0,
+        "x": 14.0,
         "2": 1.05,
-        "over25": 1.39,
+        "over25": 1.33,
         "btts_yes": 5.0
       },
       "fs_potential": {
@@ -5832,9 +5835,9 @@
       ],
       "market_odds": {
         "1": 1.48,
-        "x": 3.6,
-        "2": 5.5,
-        "over25": 2.29,
+        "x": 3.8,
+        "2": 6.0,
+        "over25": 2.26,
         "btts_yes": 2.15
       },
       "fs_potential": {
@@ -7205,21 +7208,21 @@
     {
       "type": "arb",
       "sport": "Hokej",
-      "league": "USA. NHL",
+      "league": "Austria. ICE Hockey League",
       "event": {
-        "home": "Vegas Golden Knights",
-        "away": "Chicago Blackhawks",
-        "commence": "2026-09-30T02:30:00+00:00"
+        "home": "Red Bull Salzburg",
+        "away": "HC Bolzano-Bozen Foxes",
+        "commence": "2026-09-30T17:15:00+00:00"
       },
-      "market": "6:4",
+      "market": "6:3",
       "legs": [
         {
-          "selection": "Nad 3.5 (dom.)",
-          "book": "Leon",
+          "selection": "Nad 5.5",
+          "book": "BetinAsia",
           "odds": 2.02
         },
         {
-          "selection": "Pod 3.5 (dom.)",
+          "selection": "Pod 5.5",
           "book": "Stoiximan",
           "odds": 2.02
         }
@@ -7230,54 +7233,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-30T02:30:00+00:00",
+      "expires_hint": "2026-09-30T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "dc1ebbc682f885ff1d79f9f07bd39ccd",
+      "arb_id": "dfa9eef5b981ac22480f9d4b7d2e55d7",
       "is_live": false,
       "bk_ids": [
-        1073741824,
-        8192
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "MMA",
-      "league": "World. UFC",
-      "event": {
-        "home": "Pinas, Damian",
-        "away": "Pulyaev, Andrey",
-        "commence": "2026-10-03T22:40:00+00:00"
-      },
-      "market": "45:3",
-      "legs": [
-        {
-          "selection": "Nad 1.5",
-          "book": "bk:12",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 1.5",
-          "book": "Fonbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-10-03T22:40:00+00:00",
-      "source": "betburger",
-      "arb_id": "80a01033e966c5feddb71b0d41a47ab5",
-      "is_live": false,
-      "bk_ids": [
-        4160,
-        0
+        0,
+        72057594037936128
       ],
       "direct_links": [
         "",
@@ -7287,21 +7249,62 @@
     {
       "type": "arb",
       "sport": "Hokej",
-      "league": "USA. NHL",
+      "league": "Austria. ICE Hockey League",
       "event": {
-        "home": "Vegas Golden Knights",
-        "away": "Chicago Blackhawks",
-        "commence": "2026-09-30T02:30:00+00:00"
+        "home": "Red Bull Salzburg",
+        "away": "HC Bolzano-Bozen Foxes",
+        "commence": "2026-09-30T17:15:00+00:00"
       },
-      "market": "6:4",
+      "market": "6:3",
       "legs": [
         {
-          "selection": "Nad 3.5 (dom.)",
-          "book": "Leon",
+          "selection": "Nad 5.5",
+          "book": "Sportmarket",
           "odds": 2.02
         },
         {
-          "selection": "Pod 3.5 (dom.)",
+          "selection": "Pod 5.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-30T17:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "d5b69c788175881427fd56be0e1d3d9b",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        4398046519296
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Hokej",
+      "league": "Austria. ICE Hockey League",
+      "event": {
+        "home": "Red Bull Salzburg",
+        "away": "HC Bolzano-Bozen Foxes",
+        "commence": "2026-09-30T17:15:00+00:00"
+      },
+      "market": "6:3",
+      "legs": [
+        {
+          "selection": "Nad 5.5",
+          "book": "Pinnacle",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 5.5",
           "book": "Betano",
           "odds": 2.02
         }
@@ -7312,12 +7315,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-30T02:30:00+00:00",
+      "expires_hint": "2026-09-30T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "dd4029e7ec40851d27347ec629ca3beb",
+      "arb_id": "e470d8671f7d2634940c2fbffd4f1ca4",
       "is_live": false,
       "bk_ids": [
-        1073741824,
+        2,
         0,
         0,
         0,
@@ -7348,12 +7351,12 @@
       "legs": [
         {
           "selection": "Oba skórujú – áno",
-          "book": "PariMatch",
+          "book": "Expekt",
           "odds": 2.02
         },
         {
           "selection": "Oba skórujú – nie",
-          "book": "HGA (Crown)",
+          "book": "Sportmarket",
           "odds": 2.02
         }
       ],
@@ -7365,10 +7368,11 @@
       "label": "surebet",
       "expires_hint": "2026-09-29T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "f1bd55e831cb692b48e7a1c8a6ecd70d",
+      "arb_id": "71e76dbb95bf00a120a50ac4ae216873",
       "is_live": false,
       "bk_ids": [
-        131072,
+        0,
+        4398046511104,
         0,
         0,
         0,
@@ -7378,8 +7382,7 @@
         0,
         0,
         0,
-        0,
-        35184372088832
+        128
       ],
       "direct_links": [
         "",
@@ -7462,7 +7465,7 @@
       "label": "surebet",
       "expires_hint": "2026-09-29T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "fde68b6bde5136f68e7fc352840d627b",
+      "arb_id": "dce67acf1c3020ceb4ad1d884790c4d4",
       "is_live": false,
       "bk_ids": [
         0,
@@ -7477,323 +7480,6 @@
         0,
         0,
         35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Spain. Cup Women",
-      "event": {
-        "home": "Huesca Women",
-        "away": "Osasuna Women",
-        "commence": "2026-09-29T17:00:00+00:00"
-      },
-      "market": "7:6",
-      "legs": [
-        {
-          "selection": "Oba skórujú – áno",
-          "book": "Expekt",
-          "odds": 2.02
-        },
-        {
-          "selection": "Oba skórujú – nie",
-          "book": "Sportmarket",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-29T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "71e76dbb95bf00a120a50ac4ae216873",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        4398046511104,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Spain. Cup Women",
-      "event": {
-        "home": "Huesca Women",
-        "away": "Osasuna Women",
-        "commence": "2026-09-29T17:00:00+00:00"
-      },
-      "market": "7:6",
-      "legs": [
-        {
-          "selection": "Oba skórujú – áno",
-          "book": "PariMatch",
-          "odds": 2.02
-        },
-        {
-          "selection": "Oba skórujú – nie",
-          "book": "Sportmarket",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-29T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "c03e02a3c46ff2540e13e8fb1e70132a",
-      "is_live": false,
-      "bk_ids": [
-        131072,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Spain. Cup Women",
-      "event": {
-        "home": "Huesca Women",
-        "away": "Osasuna Women",
-        "commence": "2026-09-29T17:00:00+00:00"
-      },
-      "market": "7:6",
-      "legs": [
-        {
-          "selection": "Oba skórujú – áno",
-          "book": "Expekt",
-          "odds": 2.02
-        },
-        {
-          "selection": "Oba skórujú – nie",
-          "book": "HGA (Crown)",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-29T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "10ed5d8b4e9bcde6b7931cf0e3ba9978",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088960
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP. Hangzhou. Singles",
-      "event": {
-        "home": "Medvedev, Daniil",
-        "away": "Rublev, Andrey",
-        "commence": "2026-09-29T11:30:00+00:00"
-      },
-      "market": "8:5",
-      "legs": [
-        {
-          "selection": "typ182 3.5",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ183 3.5",
-          "book": "Fonbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-29T11:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "0438cf067165d7ae317acdc448525f77",
-      "is_live": false,
-      "bk_ids": [
-        64,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Hokej",
-      "league": "Austria. ICE Hockey League",
-      "event": {
-        "home": "Red Bull Salzburg",
-        "away": "HC Bolzano-Bozen Foxes",
-        "commence": "2026-09-30T17:15:00+00:00"
-      },
-      "market": "6:3",
-      "legs": [
-        {
-          "selection": "Nad 5.5",
-          "book": "Pinnacle",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 5.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-30T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "9c6dc002b661b04f8e25a74158e8478a",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        8192
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Hokej",
-      "league": "Austria. ICE Hockey League",
-      "event": {
-        "home": "Red Bull Salzburg",
-        "away": "HC Bolzano-Bozen Foxes",
-        "commence": "2026-09-30T17:15:00+00:00"
-      },
-      "market": "6:3",
-      "legs": [
-        {
-          "selection": "Nad 5.5",
-          "book": "Sportmarket",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 5.5",
-          "book": "Betano",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-30T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "d00e5571b79dfe835b0cd7c5138b6cdf",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        4398046511104,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Hokej",
-      "league": "Austria. ICE Hockey League",
-      "event": {
-        "home": "Red Bull Salzburg",
-        "away": "HC Bolzano-Bozen Foxes",
-        "commence": "2026-09-30T17:15:00+00:00"
-      },
-      "market": "6:3",
-      "legs": [
-        {
-          "selection": "Nad 5.5",
-          "book": "BetinAsia",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 5.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-30T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "2d1820e37123d53874258bb12f8cca29",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037936128
       ],
       "direct_links": [
         "",
@@ -7869,7 +7555,7 @@
         },
         {
           "selection": "Pod 5.5",
-          "book": "Stoiximan",
+          "book": "Betano",
           "odds": 2.02
         }
       ],
@@ -7881,11 +7567,164 @@
       "label": "surebet",
       "expires_hint": "2026-09-30T17:15:00+00:00",
       "source": "betburger",
-      "arb_id": "d5b69c788175881427fd56be0e1d3d9b",
+      "arb_id": "d00e5571b79dfe835b0cd7c5138b6cdf",
       "is_live": false,
       "bk_ids": [
         0,
-        4398046519296
+        4398046511104,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Spain. Cup Women",
+      "event": {
+        "home": "Huesca Women",
+        "away": "Osasuna Women",
+        "commence": "2026-09-29T17:00:00+00:00"
+      },
+      "market": "7:6",
+      "legs": [
+        {
+          "selection": "Oba skórujú – áno",
+          "book": "Expekt",
+          "odds": 2.02
+        },
+        {
+          "selection": "Oba skórujú – nie",
+          "book": "HGA (Crown)",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "9505c5267a7a3a1326f06b27e21217de",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088960
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Spain. Cup Women",
+      "event": {
+        "home": "Huesca Women",
+        "away": "Osasuna Women",
+        "commence": "2026-09-29T17:00:00+00:00"
+      },
+      "market": "7:6",
+      "legs": [
+        {
+          "selection": "Oba skórujú – áno",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "Oba skórujú – nie",
+          "book": "HGA (Crown)",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "bb47e27b013b138de012d19b838f4b41",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Spain. Cup Women",
+      "event": {
+        "home": "Huesca Women",
+        "away": "Osasuna Women",
+        "commence": "2026-09-29T17:00:00+00:00"
+      },
+      "market": "7:6",
+      "legs": [
+        {
+          "selection": "Oba skórujú – áno",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "Oba skórujú – nie",
+          "book": "Sportmarket",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "c03e02a3c46ff2540e13e8fb1e70132a",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        4398046511104
       ],
       "direct_links": [
         "",
@@ -7927,139 +7766,6 @@
       "bk_ids": [
         2,
         8192
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Hokej",
-      "league": "Austria. ICE Hockey League",
-      "event": {
-        "home": "Red Bull Salzburg",
-        "away": "HC Bolzano-Bozen Foxes",
-        "commence": "2026-09-30T17:15:00+00:00"
-      },
-      "market": "6:3",
-      "legs": [
-        {
-          "selection": "Nad 5.5",
-          "book": "BetinAsia",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 5.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-30T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "dfa9eef5b981ac22480f9d4b7d2e55d7",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037936128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Hokej",
-      "league": "Austria. ICE Hockey League",
-      "event": {
-        "home": "Red Bull Salzburg",
-        "away": "HC Bolzano-Bozen Foxes",
-        "commence": "2026-09-30T17:15:00+00:00"
-      },
-      "market": "6:3",
-      "legs": [
-        {
-          "selection": "Nad 5.5",
-          "book": "Pinnacle",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 5.5",
-          "book": "Betano",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-30T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "e470d8671f7d2634940c2fbffd4f1ca4",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Hokej",
-      "league": "Austria. ICE Hockey League",
-      "event": {
-        "home": "Red Bull Salzburg",
-        "away": "HC Bolzano-Bozen Foxes",
-        "commence": "2026-09-30T17:15:00+00:00"
-      },
-      "market": "6:3",
-      "legs": [
-        {
-          "selection": "Nad 5.5",
-          "book": "Sportmarket",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 5.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-30T17:15:00+00:00",
-      "source": "betburger",
-      "arb_id": "92d9ab8e2c16ecf0ee1bdb6fb88544f0",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        4398046519296
       ],
       "direct_links": [
         "",
@@ -8114,22 +7820,22 @@
     {
       "type": "arb",
       "sport": "Tenis",
-      "league": "World. WTA. Beijing. Singles",
+      "league": "World. ATP. Hangzhou. Singles",
       "event": {
-        "home": "Zaytseva, Ksenia",
-        "away": "Hunter-Sanders, Storm",
-        "commence": "2026-09-29T05:20:00+00:00"
+        "home": "Medvedev, Daniil",
+        "away": "Rublev, Andrey",
+        "commence": "2026-09-29T11:30:00+00:00"
       },
-      "market": "8:4",
+      "market": "8:5",
       "legs": [
         {
-          "selection": "Nad 9.5 (dom.)",
-          "book": "Betcity",
+          "selection": "typ182 3.5",
+          "book": "Superbet",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5 (dom.)",
-          "book": "Marathon (IT)",
+          "selection": "typ183 3.5",
+          "book": "Fonbet",
           "odds": 2.02
         }
       ],
@@ -8139,18 +7845,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "expires_hint": "2026-09-29T11:30:00+00:00",
       "source": "betburger",
-      "arb_id": "84eaf2840e39d748f7800167583ddce3",
+      "arb_id": "0438cf067165d7ae317acdc448525f77",
       "is_live": false,
       "bk_ids": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        64,
         128
       ],
       "direct_links": [
@@ -8160,23 +7860,23 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Beijing. Singles",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Nations League",
       "event": {
-        "home": "Zaytseva, Ksenia",
-        "away": "Hunter-Sanders, Storm",
-        "commence": "2026-09-29T05:20:00+00:00"
+        "home": "Finland",
+        "away": "Belarus",
+        "commence": "2026-09-29T16:00:00+00:00"
       },
-      "market": "8:4",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "Nad 9.5 (dom.)",
-          "book": "Betcity",
+          "selection": "typ55 1.5",
+          "book": "bk:22",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5 (dom.)",
-          "book": "Olimp",
+          "selection": "typ56 1.5",
+          "book": "Leon",
           "odds": 2.02
         }
       ],
@@ -8186,12 +7886,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "expires_hint": "2026-09-29T16:00:00+00:00",
       "source": "betburger",
-      "arb_id": "a6f2b5f3f58ec7b2e45f6c5a48146233",
+      "arb_id": "c3f4cb343208a14dd866742a07bdda43",
       "is_live": false,
       "bk_ids": [
-        134217732,
+        1077936128,
         0
       ],
       "direct_links": [
@@ -8201,23 +7901,23 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Beijing. Singles",
+      "sport": "Futbal",
+      "league": "Africa. African Cup of Nations",
       "event": {
-        "home": "Zaytseva, Ksenia",
-        "away": "Hunter-Sanders, Storm",
-        "commence": "2026-09-29T05:20:00+00:00"
+        "home": "Eritrea",
+        "away": "South Africa",
+        "commence": "2026-09-30T16:00:00+00:00"
       },
-      "market": "8:4",
+      "market": "7:2",
       "legs": [
         {
-          "selection": "Nad 9.5 (dom.)",
-          "book": "Betcity",
+          "selection": "AH 1 3",
+          "book": "bk:294",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5 (dom.)",
-          "book": "bk:469",
+          "selection": "AH 2 -3",
+          "book": "Marathon",
           "odds": 2.02
         }
       ],
@@ -8227,19 +7927,16 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "expires_hint": "2026-09-30T16:00:00+00:00",
       "source": "betburger",
-      "arb_id": "64cbfbad4786cfee5effcaf6f8951d05",
+      "arb_id": "b81310e7d3caa0352ad3c5895d6ce69e",
       "is_live": false,
       "bk_ids": [
-        4,
+        16,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        268435456
+        4398046511104
       ],
       "direct_links": [
         "",
@@ -8248,23 +7945,23 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Beijing. Singles",
+      "sport": "Hokej",
+      "league": "Sweden. Allsvenskan",
       "event": {
-        "home": "Zaytseva, Ksenia",
-        "away": "Hunter-Sanders, Storm",
-        "commence": "2026-09-29T05:20:00+00:00"
+        "home": "Vimmerby HC",
+        "away": "MODO Hockey",
+        "commence": "2026-09-30T17:00:00+00:00"
       },
-      "market": "8:4",
+      "market": "6:1",
       "legs": [
         {
-          "selection": "Nad 9.5 (dom.)",
-          "book": "Betcity",
+          "selection": "2",
+          "book": "FB Sports",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5 (dom.)",
-          "book": "Betsson (IT)",
+          "selection": "1X",
+          "book": "bk:485",
           "odds": 2.02
         }
       ],
@@ -8274,19 +7971,205 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "expires_hint": "2026-09-30T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "d91ae13883974e3b13d1bc08267ff86a",
+      "arb_id": "4832e7cc7d016f3e0c087c4ef47ab3f7",
       "is_live": false,
       "bk_ids": [
-        4,
         0,
         0,
         0,
         0,
         0,
         0,
-        144115188075855872
+        0,
+        17592186044448
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Hokej",
+      "league": "Sweden. Allsvenskan",
+      "event": {
+        "home": "Vimmerby HC",
+        "away": "MODO Hockey",
+        "commence": "2026-09-30T17:00:00+00:00"
+      },
+      "market": "6:1",
+      "legs": [
+        {
+          "selection": "2",
+          "book": "bk:714",
+          "odds": 2.02
+        },
+        {
+          "selection": "1X",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-30T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "00146c1388fd05c0083d7831080f144b",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416,
+        0,
+        0,
+        0,
+        2097152
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Hokej",
+      "league": "Sweden. Allsvenskan",
+      "event": {
+        "home": "Vimmerby HC",
+        "away": "MODO Hockey",
+        "commence": "2026-09-30T17:00:00+00:00"
+      },
+      "market": "6:1",
+      "legs": [
+        {
+          "selection": "2",
+          "book": "Tipos",
+          "odds": 2.02
+        },
+        {
+          "selection": "1X",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-30T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f9194a3cf53994fc14c2b49820213652",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        299067162755072
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Hokej",
+      "league": "Sweden. Allsvenskan",
+      "event": {
+        "home": "Vimmerby HC",
+        "away": "MODO Hockey",
+        "commence": "2026-09-30T17:00:00+00:00"
+      },
+      "market": "6:2",
+      "legs": [
+        {
+          "selection": "1X",
+          "book": "bk:485",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 -0.5",
+          "book": "FB Sports",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-30T17:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "c9db91c0cbcb6cc21aab0e02c615858e",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044448
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. UFC",
+      "event": {
+        "home": "Pinas, Damian",
+        "away": "Pulyaev, Andrey",
+        "commence": "2026-10-03T22:40:00+00:00"
+      },
+      "market": "45:3",
+      "legs": [
+        {
+          "selection": "Nad 1.5",
+          "book": "bk:12",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 1.5",
+          "book": "Fonbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-10-03T22:40:00+00:00",
+      "source": "betburger",
+      "arb_id": "80a01033e966c5feddb71b0d41a47ab5",
+      "is_live": false,
+      "bk_ids": [
+        4160,
+        0
       ],
       "direct_links": [
         "",
@@ -8356,7 +8239,7 @@
         },
         {
           "selection": "Pod 9.5 (dom.)",
-          "book": "Superbet",
+          "book": "Fortuna",
           "odds": 2.02
         }
       ],
@@ -8368,99 +8251,11 @@
       "label": "surebet",
       "expires_hint": "2026-09-29T05:20:00+00:00",
       "source": "betburger",
-      "arb_id": "2febbf2f51ccafe8bc84a63f7f551866",
+      "arb_id": "e2189bbed91f232dd731b5219864b784",
       "is_live": false,
       "bk_ids": [
         4,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Beijing. Singles",
-      "event": {
-        "home": "Zaytseva, Ksenia",
-        "away": "Hunter-Sanders, Storm",
-        "commence": "2026-09-29T05:20:00+00:00"
-      },
-      "market": "8:4",
-      "legs": [
-        {
-          "selection": "Nad 9.5 (dom.)",
-          "book": "Betcity",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 9.5 (dom.)",
-          "book": "bk:81",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-29T05:20:00+00:00",
-      "source": "betburger",
-      "arb_id": "c17c1bd5c25e1c89eb0b0dbbe7c40d51",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        262144
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Beijing. Singles",
-      "event": {
-        "home": "Zaytseva, Ksenia",
-        "away": "Hunter-Sanders, Storm",
-        "commence": "2026-09-29T05:20:00+00:00"
-      },
-      "market": "8:4",
-      "legs": [
-        {
-          "selection": "Nad 9.5 (dom.)",
-          "book": "Betcity",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 9.5 (dom.)",
-          "book": "StarCasino",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-09-29T05:20:00+00:00",
-      "source": "betburger",
-      "arb_id": "985dcb354dd4ff65ed8cdb6adb029b62",
-      "is_live": false,
-      "bk_ids": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        65536
+        131072
       ],
       "direct_links": [
         "",
@@ -8532,7 +8327,7 @@
         },
         {
           "selection": "Pod 9.5 (dom.)",
-          "book": "Fortuna",
+          "book": "bk:81",
           "odds": 2.02
         }
       ],
@@ -8544,11 +8339,234 @@
       "label": "surebet",
       "expires_hint": "2026-09-29T05:20:00+00:00",
       "source": "betburger",
-      "arb_id": "e2189bbed91f232dd731b5219864b784",
+      "arb_id": "c17c1bd5c25e1c89eb0b0dbbe7c40d51",
       "is_live": false,
       "bk_ids": [
         4,
-        131072
+        262144
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Beijing. Singles",
+      "event": {
+        "home": "Zaytseva, Ksenia",
+        "away": "Hunter-Sanders, Storm",
+        "commence": "2026-09-29T05:20:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 9.5 (dom.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 9.5 (dom.)",
+          "book": "Superbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "source": "betburger",
+      "arb_id": "2febbf2f51ccafe8bc84a63f7f551866",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        128
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Beijing. Singles",
+      "event": {
+        "home": "Zaytseva, Ksenia",
+        "away": "Hunter-Sanders, Storm",
+        "commence": "2026-09-29T05:20:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 9.5 (dom.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 9.5 (dom.)",
+          "book": "bk:469",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "source": "betburger",
+      "arb_id": "64cbfbad4786cfee5effcaf6f8951d05",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        268435456
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Beijing. Singles",
+      "event": {
+        "home": "Zaytseva, Ksenia",
+        "away": "Hunter-Sanders, Storm",
+        "commence": "2026-09-29T05:20:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 9.5 (dom.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 9.5 (dom.)",
+          "book": "Marathon (IT)",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "source": "betburger",
+      "arb_id": "84eaf2840e39d748f7800167583ddce3",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        128
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Beijing. Singles",
+      "event": {
+        "home": "Zaytseva, Ksenia",
+        "away": "Hunter-Sanders, Storm",
+        "commence": "2026-09-29T05:20:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 9.5 (dom.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 9.5 (dom.)",
+          "book": "Betsson (IT)",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "source": "betburger",
+      "arb_id": "d91ae13883974e3b13d1bc08267ff86a",
+      "is_live": false,
+      "bk_ids": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        144115188075855872
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Beijing. Singles",
+      "event": {
+        "home": "Zaytseva, Ksenia",
+        "away": "Hunter-Sanders, Storm",
+        "commence": "2026-09-29T05:20:00+00:00"
+      },
+      "market": "8:4",
+      "legs": [
+        {
+          "selection": "Nad 9.5 (dom.)",
+          "book": "Betcity",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 9.5 (dom.)",
+          "book": "Olimp",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-09-29T05:20:00+00:00",
+      "source": "betburger",
+      "arb_id": "a6f2b5f3f58ec7b2e45f6c5a48146233",
+      "is_live": false,
+      "bk_ids": [
+        134217732,
+        0
       ],
       "direct_links": [
         "",
