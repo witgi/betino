@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T21:41:19.759405+00:00",
+  "generated_at": "2026-10-05T22:54:04.787726+00:00",
   "bankroll": 1000,
   "kelly_fraction": 0.25,
   "sports": [
@@ -17,13 +17,13 @@
     "max_odds": 4.0,
     "min_books": 4
   },
-  "requests_remaining": "FS:3450",
-  "n_events_considered": 80,
+  "requests_remaining": "FS:3447",
+  "n_events_considered": 86,
   "n_picks": 6,
   "performance": {
-    "settled_bets": 5373,
+    "settled_bets": 5397,
     "win_rate_pct": 43.9,
-    "roi_pct": 6.27,
+    "roi_pct": 6.41,
     "clv_beat_pct": null
   },
   "picks": [
@@ -353,6 +353,25 @@
       "match_id": 8633561
     },
     {
+      "league": "Brazil Serie A",
+      "sport_key": "soccer",
+      "home": "Santos",
+      "away": "Flamengo",
+      "commence": "2026-10-08T22:30:00+00:00",
+      "market": "h2h",
+      "selection": "Santos",
+      "best_odds": 4.5,
+      "bookmaker": "bet365",
+      "fair_prob": 0.2269,
+      "fair_odds": 4.407,
+      "ev_pct": 2.12,
+      "stake_pct": 0.15,
+      "stake_amount": 1.51,
+      "confidence": 0.8,
+      "n_books": 13,
+      "match_id": 8409639
+    },
+    {
       "league": "International International Friendlies",
       "sport_key": "soccer",
       "home": "Algeria",
@@ -632,7 +651,7 @@
     "min_books": 4
   },
   "notes": [
-    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 12923 | v horizonte 44 | detailov 44 | s kurzami 41 | eventov 80",
+    "value zdroj: FootyStats — 98 líg | nadchádzajúcich 12923 | v horizonte 47 | detailov 47 | s kurzami 44 | eventov 86",
     "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['Goals Over/Under', 'Half Time Result', '2nd Half Goals', 'Double Chance', 'Both Teams to Score in 1st Half', 'Corners', 'Both Teams To Score', '1st Half Goals', 'Both Teams to Score in 2nd Half', 'Corners 1X2'], 'ft_type': 'dict', 'ft_keys': ['Away', 'Home', 'Draw'], 'ft_sample': \"{'Coral': '2.30', 'Interwetten': '2.45', 'MansionBet': '2.35', 'Pinnacle': '2.56', 'bwin': '2.40', 'CloudBet': '2.50', 'bet365': '2.55', '10Bet': '2.50', 'BetVictor': '2.45', 'Betfair': '2.50', 'Willi\"}",
     "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
     "3 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
