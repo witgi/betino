@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T20:02:12.411530+00:00",
+  "generated_at": "2026-11-04T22:11:36.834096+00:00",
   "bankroll": 1000,
   "kelly_fraction": 0.25,
   "sports": [
@@ -17,13 +17,13 @@
     "max_odds": 4.0,
     "min_books": 4
   },
-  "requests_remaining": "FS:3145",
-  "n_events_considered": 614,
+  "requests_remaining": "FS:3140",
+  "n_events_considered": 624,
   "n_picks": 14,
   "performance": {
-    "settled_bets": 8122,
+    "settled_bets": 8129,
     "win_rate_pct": 43.1,
-    "roi_pct": 5.39,
+    "roi_pct": 5.37,
     "clv_beat_pct": null
   },
   "picks": [
@@ -446,6 +446,25 @@
       "confidence": 0.8,
       "n_books": 16,
       "match_id": 8409607
+    },
+    {
+      "league": "Spain Segunda División",
+      "sport_key": "soccer",
+      "home": "Granada CF",
+      "away": "CD Tenerife",
+      "commence": "2026-11-07T20:00:00+00:00",
+      "market": "h2h",
+      "selection": "CD Tenerife",
+      "best_odds": 4.75,
+      "bookmaker": "bet365",
+      "fair_prob": 0.2178,
+      "fair_odds": 4.592,
+      "ev_pct": 3.44,
+      "stake_pct": 0.23,
+      "stake_amount": 2.3,
+      "confidence": 0.8,
+      "n_books": 13,
+      "match_id": 8584326
     },
     {
       "league": "England Championship",
@@ -1227,6 +1246,25 @@
       "match_id": 8701084
     },
     {
+      "league": "Spain Segunda División",
+      "sport_key": "soccer",
+      "home": "Granada CF",
+      "away": "CD Tenerife",
+      "commence": "2026-11-07T20:00:00+00:00",
+      "market": "totals",
+      "selection": "Under 2.5",
+      "best_odds": 1.83,
+      "bookmaker": "1xbet",
+      "fair_prob": 0.5515,
+      "fair_odds": 1.813,
+      "ev_pct": 0.93,
+      "stake_pct": 0.28,
+      "stake_amount": 2.79,
+      "confidence": 0.613,
+      "n_books": 5,
+      "match_id": 8584326
+    },
+    {
       "league": "Australia A-League",
       "sport_key": "soccer",
       "home": "Melbourne City FC",
@@ -1664,6 +1702,25 @@
       "match_id": 8583539
     },
     {
+      "league": "Spain La Liga",
+      "sport_key": "soccer",
+      "home": "Valencia CF",
+      "away": "Real Madrid",
+      "commence": "2026-11-07T20:00:00+00:00",
+      "market": "h2h",
+      "selection": "Real Madrid",
+      "best_odds": 1.36,
+      "bookmaker": "1xbet",
+      "fair_prob": 0.7364,
+      "fair_odds": 1.358,
+      "ev_pct": 0.15,
+      "stake_pct": 0.1,
+      "stake_amount": 1.04,
+      "confidence": 0.8,
+      "n_books": 13,
+      "match_id": 8570362
+    },
+    {
       "league": "France Ligue 1",
       "sport_key": "soccer",
       "home": "Toulouse",
@@ -1886,7 +1943,7 @@
     "min_books": 4
   },
   "notes": [
-    "value zdroj: FootyStats — 97 líg | nadchádzajúcich 10283 | v horizonte 350 | detailov 350 | s kurzami 321 | eventov 632",
+    "value zdroj: FootyStats — 97 líg | nadchádzajúcich 10268 | v horizonte 355 | detailov 355 | s kurzami 317 | eventov 624",
     "[value-debug] odds_comparison tvar: {'type': 'dict', 'markets': ['FT Result', 'Both Teams To Score', '1st Half Goals', 'Goals Over/Under', '2nd Half Goals', 'Double Chance', 'Half Time Result', 'Both Teams to Score in 1st Half', 'Both Teams to Score in 2nd Half', 'Second Half Result'], 'ft_type': 'dict', 'ft_keys': ['Away', 'Home', 'Draw'], 'ft_sample': \"{'MansionBet': '3.20', 'Betfair': '3.20', 'bwin': '3.20', 'WilliamHill': '3.30', 'Coral': '3.20', 'MelBet': '3.24', 'Pinnacle': '3.45', '1xbet': '3.24', 'BetVictor': '3.25', 'Dafabet': '3.45', 'bet365\"}",
     "ratings.json chyba -> model preskoceny, pouziva sa cisty trh (OK pre MS).",
     "62 zapasov preskocenych (ostra kniha nepokryva vsetky vybery)."
