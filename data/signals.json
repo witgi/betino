@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T20:16:42.555801+00:00",
+  "generated_at": "2026-11-05T22:18:32.065843+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -19,9 +19,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 8157,
+    "settled_bets": 8180,
     "win_rate_pct": 43.1,
-    "roi_pct": 5.35,
+    "roi_pct": 5.33,
     "clv_beat_pct": null
   },
   "all_books": [
@@ -42,16 +42,16 @@
     "Betsson (IT)",
     "Betway",
     "bk:131",
-    "bk:294",
-    "bk:433",
-    "bk:455",
+    "bk:150",
+    "bk:485",
     "bk:492",
     "bk:496",
     "bk:61",
-    "bk:71",
-    "bk:737",
+    "bk:74",
     "bk:759",
     "bk:761",
+    "bk:785",
+    "bk:92",
     "Bwin",
     "DafaSports",
     "DaznBet",
@@ -2237,6 +2237,37 @@
     {
       "type": "value",
       "sport": "soccer",
+      "league": "Portugal Liga NOS",
+      "event": {
+        "home": "Rio Ave FC",
+        "away": "Sporting Braga",
+        "commence": "2026-11-08T20:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Sporting Braga",
+          "book": "1xbet",
+          "odds": 1.6,
+          "stake_pct": 0.51,
+          "fair_prob": 0.6326
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.22
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.581,
+      "stake_amount": 5.1,
+      "n_books": 13,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
       "league": "England Championship",
       "event": {
         "home": "Queens Park Rangers",
@@ -3099,6 +3130,37 @@
       "expires_hint": null,
       "fair_odds": 2.833,
       "stake_amount": 0.8,
+      "n_books": 13,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Portugal Liga NOS",
+      "event": {
+        "home": "Estrela Amadora",
+        "away": "Benfica",
+        "commence": "2026-11-08T20:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Benfica",
+          "book": "Ladbrokes",
+          "odds": 1.28,
+          "stake_pct": 0.5,
+          "fair_prob": 0.7856
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.56
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.273,
+      "stake_amount": 4.97,
       "n_books": 13,
       "official": false
     },
@@ -4987,147 +5049,67 @@
       "sport": "soccer",
       "league": "",
       "event": {
-        "home": "Saburtalo",
-        "away": "Red Star Belgrade",
-        "commence": "2026-12-10T17:45:00+00:00"
+        "home": "AGF",
+        "away": "Twente",
+        "commence": "2026-12-10T20:00:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Red Star Belgrade",
+          "selection": "Twente",
           "book": "(trh)",
           "odds": 0.0,
-          "fair_prob": 0.735
+          "fair_prob": 0.7397
         }
       ],
       "edge": {
         "metric": "model_prob",
-        "value": 0.735
+        "value": 0.74
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-12-10T17:45:00+00:00",
+      "expires_hint": "2026-12-10T20:00:00+00:00",
       "source": "footystats",
-      "match_id": 8701107,
+      "match_id": 8701068,
       "xg": {
-        "home": 0.52,
-        "away": 2.05
+        "home": 1.03,
+        "away": 2.79
       },
       "pick": "away",
       "model_ev_pct": null,
       "probs_1x2": {
-        "home": 0.082,
-        "draw": 0.183,
-        "away": 0.735
+        "home": 0.113,
+        "draw": 0.148,
+        "away": 0.74
       },
       "ou25": {
-        "over": 0.474,
-        "under": 0.526
+        "over": 0.734,
+        "under": 0.266
       },
       "btts": {
-        "yes": 0.353,
-        "no": 0.647
+        "yes": 0.603,
+        "no": 0.397
       },
       "top_scores": [
         [
-          "0-2",
-          0.161
-        ],
-        [
-          "0-1",
-          0.157
-        ],
-        [
-          "0-3",
-          0.11
-        ],
-        [
           "1-2",
-          0.084
+          0.088
         ],
         [
-          "1-1",
+          "0-2",
+          0.085
+        ],
+        [
+          "1-3",
           0.082
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 50,
-        "btts": 75
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Kauno Žalgiris",
-        "away": "Riga",
-        "commence": "2026-11-26T17:45:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Riga",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.7318
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.732
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-11-26T17:45:00+00:00",
-      "source": "footystats",
-      "match_id": 8701100,
-      "xg": {
-        "home": 0.77,
-        "away": 2.38
-      },
-      "pick": "away",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.103,
-        "draw": 0.166,
-        "away": 0.732
-      },
-      "ou25": {
-        "over": 0.61,
-        "under": 0.39
-      },
-      "btts": {
-        "yes": 0.487,
-        "no": 0.513
-      },
-      "top_scores": [
-        [
-          "0-2",
-          0.121
-        ],
-        [
-          "0-1",
-          0.102
         ],
         [
           "0-3",
-          0.096
-        ],
-        [
-          "1-2",
-          0.093
+          0.079
         ],
         [
           "1-1",
-          0.079
+          0.063
         ]
       ],
       "market_odds": {
@@ -5138,8 +5120,8 @@
         "btts_yes": 0.0
       },
       "fs_potential": {
-        "o25": 69,
-        "btts": 63
+        "o25": 36,
+        "btts": 45
       }
     },
     {
@@ -5947,6 +5929,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Saburtalo",
+        "away": "Red Star Belgrade",
+        "commence": "2026-12-10T17:45:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Red Star Belgrade",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7222
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.722
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-12-10T17:45:00+00:00",
+      "source": "footystats",
+      "match_id": 8701107,
+      "xg": {
+        "home": 0.57,
+        "away": 2.05
+      },
+      "pick": "away",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.092,
+        "draw": 0.186,
+        "away": 0.722
+      },
+      "ou25": {
+        "over": 0.487,
+        "under": 0.513
+      },
+      "btts": {
+        "yes": 0.379,
+        "no": 0.621
+      },
+      "top_scores": [
+        [
+          "0-2",
+          0.153
+        ],
+        [
+          "0-1",
+          0.149
+        ],
+        [
+          "0-3",
+          0.105
+        ],
+        [
+          "1-2",
+          0.087
+        ],
+        [
+          "1-1",
+          0.085
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 67,
+        "btts": 84
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Bayern München",
         "away": "Hamburger SV",
         "commence": "2027-04-03T00:00:00+00:00"
@@ -6092,14 +6154,94 @@
       ],
       "market_odds": {
         "1": 1.2,
-        "x": 6.0,
-        "2": 11.0,
+        "x": 6.7,
+        "2": 16.0,
         "over25": 1.57,
         "btts_yes": 2.38
       },
       "fs_potential": {
         "o25": 63,
         "btts": 0
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
+        "home": "Twente",
+        "away": "Kairat",
+        "commence": "2026-12-17T20:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Twente",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7215
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.721
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-12-17T20:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8701027,
+      "xg": {
+        "home": 2.79,
+        "away": 1.12
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.721,
+        "draw": 0.152,
+        "away": 0.126
+      },
+      "ou25": {
+        "over": 0.748,
+        "under": 0.252
+      },
+      "btts": {
+        "yes": 0.632,
+        "no": 0.368
+      },
+      "top_scores": [
+        [
+          "2-1",
+          0.087
+        ],
+        [
+          "3-1",
+          0.081
+        ],
+        [
+          "2-0",
+          0.078
+        ],
+        [
+          "3-0",
+          0.073
+        ],
+        [
+          "1-1",
+          0.063
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 52,
+        "btts": 79
       }
     },
     {
@@ -6187,17 +6329,17 @@
       "sport": "soccer",
       "league": "",
       "event": {
-        "home": "AGF",
-        "away": "Twente",
-        "commence": "2026-12-10T20:00:00+00:00"
+        "home": "Kauno Žalgiris",
+        "away": "Riga",
+        "commence": "2026-11-26T17:45:00+00:00"
       },
       "market": "h2h",
       "legs": [
         {
-          "selection": "Twente",
+          "selection": "Riga",
           "book": "(trh)",
           "odds": 0.0,
-          "fair_prob": 0.7199
+          "fair_prob": 0.7201
         }
       ],
       "edge": {
@@ -6206,48 +6348,48 @@
       },
       "confidence": 1.0,
       "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-12-10T20:00:00+00:00",
+      "expires_hint": "2026-11-26T17:45:00+00:00",
       "source": "footystats",
-      "match_id": 8701068,
+      "match_id": 8701100,
       "xg": {
-        "home": 1.03,
-        "away": 2.66
+        "home": 0.74,
+        "away": 2.27
       },
       "pick": "away",
       "model_ev_pct": null,
       "probs_1x2": {
-        "home": 0.123,
-        "draw": 0.157,
+        "home": 0.106,
+        "draw": 0.174,
         "away": 0.72
       },
       "ou25": {
-        "over": 0.713,
-        "under": 0.287
+        "over": 0.579,
+        "under": 0.421
       },
       "btts": {
-        "yes": 0.598,
-        "no": 0.402
+        "yes": 0.469,
+        "no": 0.531
       },
       "top_scores": [
         [
-          "1-2",
-          0.091
-        ],
-        [
           "0-2",
-          0.088
+          0.127
         ],
         [
-          "1-3",
-          0.081
+          "0-1",
+          0.112
         ],
         [
           "0-3",
-          0.078
+          0.096
+        ],
+        [
+          "1-2",
+          0.094
         ],
         [
           "1-1",
-          0.068
+          0.083
         ]
       ],
       "market_odds": {
@@ -6258,8 +6400,8 @@
         "btts_yes": 0.0
       },
       "fs_potential": {
-        "o25": 34,
-        "btts": 42
+        "o25": 67,
+        "btts": 56
       }
     },
     {
@@ -7467,6 +7609,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Kauno Žalgiris",
+        "away": "Freiburg",
+        "commence": "2026-12-17T20:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Freiburg",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.7077
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.708
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-12-17T20:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8701049,
+      "xg": {
+        "home": 0.74,
+        "away": 2.2
+      },
+      "pick": "away",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.111,
+        "draw": 0.181,
+        "away": 0.708
+      },
+      "ou25": {
+        "over": 0.563,
+        "under": 0.437
+      },
+      "btts": {
+        "yes": 0.465,
+        "no": 0.535
+      },
+      "top_scores": [
+        [
+          "0-2",
+          0.128
+        ],
+        [
+          "0-1",
+          0.116
+        ],
+        [
+          "1-2",
+          0.095
+        ],
+        [
+          "0-3",
+          0.094
+        ],
+        [
+          "1-1",
+          0.086
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 90,
+        "btts": 47
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Benfica",
         "away": "Rio Ave FC",
         "commence": "2027-05-02T00:00:00+00:00"
@@ -7708,86 +7930,6 @@
       "league": "",
       "event": {
         "home": "Twente",
-        "away": "Kairat",
-        "commence": "2026-12-17T20:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Twente",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.7011
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.701
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-12-17T20:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8701027,
-      "xg": {
-        "home": 2.66,
-        "away": 1.12
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.701,
-        "draw": 0.162,
-        "away": 0.137
-      },
-      "ou25": {
-        "over": 0.728,
-        "under": 0.272
-      },
-      "btts": {
-        "yes": 0.627,
-        "no": 0.373
-      },
-      "top_scores": [
-        [
-          "2-1",
-          0.09
-        ],
-        [
-          "2-0",
-          0.081
-        ],
-        [
-          "3-1",
-          0.08
-        ],
-        [
-          "3-0",
-          0.072
-        ],
-        [
-          "1-1",
-          0.068
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 50,
-        "btts": 75
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Twente",
         "away": "Fortuna Sittard",
         "commence": "2027-01-08T19:00:00+00:00"
       },
@@ -7860,86 +8002,6 @@
       "fs_potential": {
         "o25": 64,
         "btts": 72
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
-        "home": "Kauno Žalgiris",
-        "away": "Freiburg",
-        "commence": "2026-12-17T20:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Freiburg",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.7005
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.7
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-12-17T20:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8701049,
-      "xg": {
-        "home": 0.77,
-        "away": 2.2
-      },
-      "pick": "away",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.117,
-        "draw": 0.183,
-        "away": 0.7
-      },
-      "ou25": {
-        "over": 0.57,
-        "under": 0.43
-      },
-      "btts": {
-        "yes": 0.477,
-        "no": 0.523
-      },
-      "top_scores": [
-        [
-          "0-2",
-          0.124
-        ],
-        [
-          "0-1",
-          0.113
-        ],
-        [
-          "1-2",
-          0.096
-        ],
-        [
-          "0-3",
-          0.091
-        ],
-        [
-          "1-1",
-          0.087
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 90,
-        "btts": 55
       }
     },
     {
@@ -10267,6 +10329,86 @@
       "sport": "soccer",
       "league": "",
       "event": {
+        "home": "Benfica",
+        "away": "OFI",
+        "commence": "2026-12-10T20:00:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Benfica",
+          "book": "(trh)",
+          "odds": 0.0,
+          "fair_prob": 0.6797
+        }
+      ],
+      "edge": {
+        "metric": "model_prob",
+        "value": 0.68
+      },
+      "confidence": 1.0,
+      "label": "predikcia (neoverená value)",
+      "expires_hint": "2026-12-10T20:00:00+00:00",
+      "source": "footystats",
+      "match_id": 8700954,
+      "xg": {
+        "home": 2.33,
+        "away": 0.96
+      },
+      "pick": "home",
+      "model_ev_pct": null,
+      "probs_1x2": {
+        "home": 0.68,
+        "draw": 0.181,
+        "away": 0.14
+      },
+      "ou25": {
+        "over": 0.639,
+        "under": 0.361
+      },
+      "btts": {
+        "yes": 0.557,
+        "no": 0.443
+      },
+      "top_scores": [
+        [
+          "2-0",
+          0.101
+        ],
+        [
+          "2-1",
+          0.097
+        ],
+        [
+          "1-0",
+          0.087
+        ],
+        [
+          "1-1",
+          0.083
+        ],
+        [
+          "3-0",
+          0.079
+        ]
+      ],
+      "market_odds": {
+        "1": 0.0,
+        "x": 0.0,
+        "2": 0.0,
+        "over25": 0.0,
+        "btts_yes": 0.0
+      },
+      "fs_potential": {
+        "o25": 57,
+        "btts": 49
+      }
+    },
+    {
+      "type": "prediction",
+      "sport": "soccer",
+      "league": "",
+      "event": {
         "home": "Köln",
         "away": "Union Berlin",
         "commence": "2027-03-06T00:00:00+00:00"
@@ -10507,86 +10649,6 @@
       "sport": "soccer",
       "league": "",
       "event": {
-        "home": "Benfica",
-        "away": "OFI",
-        "commence": "2026-12-10T20:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Benfica",
-          "book": "(trh)",
-          "odds": 0.0,
-          "fair_prob": 0.6788
-        }
-      ],
-      "edge": {
-        "metric": "model_prob",
-        "value": 0.679
-      },
-      "confidence": 1.0,
-      "label": "predikcia (neoverená value)",
-      "expires_hint": "2026-12-10T20:00:00+00:00",
-      "source": "footystats",
-      "match_id": 8700954,
-      "xg": {
-        "home": 2.3,
-        "away": 0.94
-      },
-      "pick": "home",
-      "model_ev_pct": null,
-      "probs_1x2": {
-        "home": 0.679,
-        "draw": 0.182,
-        "away": 0.139
-      },
-      "ou25": {
-        "over": 0.628,
-        "under": 0.372
-      },
-      "btts": {
-        "yes": 0.548,
-        "no": 0.452
-      },
-      "top_scores": [
-        [
-          "2-0",
-          0.104
-        ],
-        [
-          "2-1",
-          0.097
-        ],
-        [
-          "1-0",
-          0.09
-        ],
-        [
-          "1-1",
-          0.085
-        ],
-        [
-          "3-0",
-          0.079
-        ]
-      ],
-      "market_odds": {
-        "1": 0.0,
-        "x": 0.0,
-        "2": 0.0,
-        "over25": 0.0,
-        "btts_yes": 0.0
-      },
-      "fs_potential": {
-        "o25": 59,
-        "btts": 49
-      }
-    },
-    {
-      "type": "prediction",
-      "sport": "soccer",
-      "league": "",
-      "event": {
         "home": "Hamburger SV",
         "away": "Bayern München",
         "commence": "2026-11-28T14:30:00+00:00"
@@ -10744,6 +10806,283 @@
     },
     {
       "type": "arb",
+      "sport": "Futbal",
+      "league": "France. Ligue 1",
+      "event": {
+        "home": "Brest",
+        "away": "Lyon",
+        "commence": "2026-11-08T16:15:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ761 3.5",
+          "book": "BetinAsia",
+          "odds": 1.632
+        },
+        {
+          "selection": "typ762 3.5",
+          "book": "bk:785",
+          "odds": 2.65
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-08T16:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "e3fc56df5c6b55b6e89fbf6030a42288",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        72057594037927936,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "France. Ligue 1",
+      "event": {
+        "home": "Brest",
+        "away": "Lyon",
+        "commence": "2026-11-08T16:15:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ761 3.5",
+          "book": "Sportmarket",
+          "odds": 1.632
+        },
+        {
+          "selection": "typ762 3.5",
+          "book": "bk:785",
+          "odds": 2.65
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-08T16:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "eadd848f57d674c427692c10fc97d0ee",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        4398046511104,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Tenis",
+      "league": "World. WTA. Chennai. Singles",
+      "event": {
+        "home": "Zakharova, Anastasia",
+        "away": "Stefanini, Lucrezia",
+        "commence": "2026-11-06T14:00:00+00:00"
+      },
+      "market": "8:3",
+      "legs": [
+        {
+          "selection": "Nad 21.5",
+          "book": "Betfair",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 21.5",
+          "book": "bk:131",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-06T14:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d586656ee92da6569aacecf50d39a548",
+      "is_live": false,
+      "bk_ids": [
+        2048,
+        0,
+        32
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "USA. NBA",
+      "event": {
+        "home": "Golden State Warriors",
+        "away": "Miami Heat",
+        "commence": "2026-11-06T03:00:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 114.5",
+          "book": "StarCasino",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 114.5",
+          "book": "bk:150",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-06T03:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "5d8999d6bcdbed6174bcc6818c599497",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        16777216,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "USA. NBA",
+      "event": {
+        "home": "Golden State Warriors",
+        "away": "Miami Heat",
+        "commence": "2026-11-06T03:00:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 114.5",
+          "book": "bk:74",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 114.5",
+          "book": "bk:150",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-06T03:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f859aceeeea413102b490303ebf46cce",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        2048,
+        16777216
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "USA. NBA",
+      "event": {
+        "home": "Golden State Warriors",
+        "away": "Miami Heat",
+        "commence": "2026-11-06T03:00:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 114.5",
+          "book": "bk:92",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 114.5",
+          "book": "bk:150",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-06T03:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "a434ea38a77593ad0a023a324e1e1e31",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        536870912,
+        16777216
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
       "sport": "Hokej",
       "league": "USA. NHL",
       "event": {
@@ -10797,461 +11136,21 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "England. Premier League",
+      "league": "Argentina. Primera Division",
       "event": {
-        "home": "Brighton",
-        "away": "Brentford",
-        "commence": "2026-11-08T14:00:00+00:00"
+        "home": "Barracas Central",
+        "away": "Racing Club Avellaneda",
+        "commence": "2026-11-06T18:00:00+00:00"
       },
       "market": "7:5",
       "legs": [
         {
-          "selection": "typ279 3.5",
-          "book": "Superbet",
+          "selection": "typ249 4.5",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
-          "selection": "typ280 3.5",
-          "book": "bk:737",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "686cb59780299298bf8de5101a58c04b",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
-      "event": {
-        "home": "Brighton",
-        "away": "Brentford",
-        "commence": "2026-11-08T14:00:00+00:00"
-      },
-      "market": "7:5",
-      "legs": [
-        {
-          "selection": "typ279 3.5",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ280 3.5",
-          "book": "bk:294",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "8010adc4579940600c1a5324a5833567",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. WTA. Chennai. Singles",
-      "event": {
-        "home": "Zakharova, Anastasia",
-        "away": "Stefanini, Lucrezia",
-        "commence": "2026-11-06T14:00:00+00:00"
-      },
-      "market": "8:3",
-      "legs": [
-        {
-          "selection": "Nad 21.5",
-          "book": "Betfair",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 21.5",
-          "book": "bk:131",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-06T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "d586656ee92da6569aacecf50d39a548",
-      "is_live": false,
-      "bk_ids": [
-        2048,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
-      "event": {
-        "home": "Brighton",
-        "away": "Brentford",
-        "commence": "2026-11-08T14:00:00+00:00"
-      },
-      "market": "7:5",
-      "legs": [
-        {
-          "selection": "typ279 3.5",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ280 3.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T14:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "485f1a6e1abfc2b8b2dc735a12a368bb",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048704
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Am. futbal",
-      "league": "USA. NFL",
-      "event": {
-        "home": "Kansas City Chiefs",
-        "away": "New York Jets",
-        "commence": "2026-11-08T18:00:00+00:00"
-      },
-      "market": "10:6",
-      "legs": [
-        {
-          "selection": "Nepárne",
-          "book": "bk:61",
-          "odds": 2.0
-        },
-        {
-          "selection": "Párne",
-          "book": "bk:492",
-          "odds": 2.04
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T18:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "4f5df2143299f3a75dd0f5e5e33712e0",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2251799813685248
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "Treviso",
-        "away": "Novara",
-        "commence": "2026-11-08T16:30:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 -1",
-          "book": "Novibet",
-          "odds": 2.65
-        },
-        {
-          "selection": "AH 2 1",
-          "book": "BetinAsia",
-          "odds": 1.632
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T16:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "6d8a19be92830133021e528c009262be",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594038976512
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "Treviso",
-        "away": "Novara",
-        "commence": "2026-11-08T16:30:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 -1",
-          "book": "Novibet",
-          "odds": 2.65
-        },
-        {
-          "selection": "AH 2 1",
-          "book": "Pinnacle",
-          "odds": 1.632
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T16:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "b9ef8363bd624d1f66bc7ee233543372",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        1048576
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "Treviso",
-        "away": "Novara",
-        "commence": "2026-11-08T16:30:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "AH 1 -1",
-          "book": "Novibet",
-          "odds": 2.65
-        },
-        {
-          "selection": "AH 2 1",
-          "book": "Sportmarket",
-          "odds": 1.632
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T16:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "eaf39bf3d75a46a758bd4e7ea9604edf",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        4398047559680
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Šípky",
-      "league": "World. ADC Global Championship",
-      "event": {
-        "home": "Gallagher, Dean",
-        "away": "Heneghan, Conor",
-        "commence": "2026-11-05T22:30:00+00:00"
-      },
-      "market": "12:6",
-      "legs": [
-        {
-          "selection": "typ743 2.5",
-          "book": "Smarkets",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ744 2.5",
-          "book": "Expekt",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-05T22:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "3305173194321bfe68184decdb91a644",
-      "is_live": false,
-      "bk_ids": [
-        1125899906842624,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Am. futbal",
-      "league": "USA. NFL",
-      "event": {
-        "home": "Chicago Bears",
-        "away": "Tampa Bay Buccaneers",
-        "commence": "2026-11-09T01:20:00+00:00"
-      },
-      "market": "10:3",
-      "legs": [
-        {
-          "selection": "Nad 47.5",
-          "book": "Leon",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 47.5",
-          "book": "Betfair",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-09T01:20:00+00:00",
-      "source": "betburger",
-      "arb_id": "fcd689bf0d8398da20c2a735f0f9f1be",
-      "is_live": false,
-      "bk_ids": [
-        1073743872,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pumas UNAM",
-        "away": "Club America",
-        "commence": "2026-11-08T03:10:00+00:00"
-      },
-      "market": "7:9",
-      "legs": [
-        {
-          "selection": "typ761 4.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ762 4.5",
+          "selection": "typ250 4.5",
           "book": "Stoiximan",
           "odds": 2.02
         }
@@ -11262,69 +11161,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-08T03:10:00+00:00",
+      "expires_hint": "2026-11-06T18:00:00+00:00",
       "source": "betburger",
-      "arb_id": "cbd394775120f2a681a62553489d8039",
+      "arb_id": "c38bf437842506d443abe3fb4838475f",
       "is_live": false,
       "bk_ids": [
-        0,
-        8192,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pumas UNAM",
-        "away": "Club America",
-        "commence": "2026-11-08T03:10:00+00:00"
-      },
-      "market": "7:9",
-      "legs": [
-        {
-          "selection": "typ761 4.5",
-          "book": "bk:433",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ762 4.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-08T03:10:00+00:00",
-      "source": "betburger",
-      "arb_id": "abdf92c97142a990741194b635024231",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        8192,
-        0,
-        0,
-        0,
-        0,
-        36028797018963968
+        281474976710656,
+        8192
       ],
       "direct_links": [
         "",
@@ -11336,208 +11179,21 @@
       "sport": "Futbal",
       "league": "Argentina. Primera Division",
       "event": {
-        "home": "Banfield",
-        "away": "Atletico Tucuman",
-        "commence": "2026-11-07T01:00:00+00:00"
+        "home": "Barracas Central",
+        "away": "Racing Club Avellaneda",
+        "commence": "2026-11-06T18:00:00+00:00"
       },
-      "market": "7:9",
+      "market": "7:5",
       "legs": [
         {
-          "selection": "typ769 2.5",
-          "book": "bk:759",
+          "selection": "typ249 4.5",
+          "book": "Betsson",
           "odds": 2.02
         },
         {
-          "selection": "typ770 2.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-07T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "d222db1e8072c6a6f42826f631a88261",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
-      "event": {
-        "home": "Everton",
-        "away": "Coventry City",
-        "commence": "2026-11-06T20:00:00+00:00"
-      },
-      "market": "7:9",
-      "legs": [
-        {
-          "selection": "typ761 4",
-          "book": "bk:455",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ762 4",
-          "book": "BetinAsia",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-06T20:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "f1c440bf822008126e268e49ce513875",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037927936,
-        0,
-        0,
-        0,
-        0,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
-      "event": {
-        "home": "Everton",
-        "away": "Coventry City",
-        "commence": "2026-11-06T20:00:00+00:00"
-      },
-      "market": "7:9",
-      "legs": [
-        {
-          "selection": "typ761 4",
-          "book": "bk:455",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ762 4",
-          "book": "Sportmarket",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-06T20:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "d8a0f1c1be64c7633b285a795d9baf6f",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        4398046511104,
-        0,
-        0,
-        0,
-        0,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
-      },
-      "market": "7:3",
-      "legs": [
-        {
-          "selection": "Nad 2.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 2.5",
-          "book": "BetinAsia",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "892276604f8c23116449604d245e7893",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        72057594037936128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
-      },
-      "market": "7:3",
-      "legs": [
-        {
-          "selection": "Nad 2.5",
+          "selection": "typ250 4.5",
           "book": "Betano",
           "odds": 2.02
-        },
-        {
-          "selection": "Pod 2.5",
-          "book": "Sportmarket",
-          "odds": 2.02
         }
       ],
       "edge": {
@@ -11546,13 +11202,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
+      "expires_hint": "2026-11-06T18:00:00+00:00",
       "source": "betburger",
-      "arb_id": "17c387d248dffad6ffab2a07bc980e8b",
+      "arb_id": "d35c4f94532187fd0b05f6b4b4d4c975",
       "is_live": false,
       "bk_ids": [
+        281474976710656,
         0,
-        4398046511104,
         0,
         0,
         0,
@@ -11571,24 +11227,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
+      "sport": "Tenis",
+      "league": "World. ATP. Paris. Singles",
       "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
+        "home": "Shelton, Ben",
+        "away": "Paul, Tommy",
+        "commence": "2026-11-06T13:00:00+00:00"
       },
-      "market": "7:3",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "Nad 2.5",
-          "book": "Stoiximan",
-          "odds": 2.02
+          "selection": "Nad 10.5",
+          "book": "Betcity",
+          "odds": 2.65
         },
         {
-          "selection": "Pod 2.5",
+          "selection": "Pod 10.5",
           "book": "Pinnacle",
-          "odds": 2.02
+          "odds": 1.632
         }
       ],
       "edge": {
@@ -11597,13 +11253,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
+      "expires_hint": "2026-11-06T13:00:00+00:00",
       "source": "betburger",
-      "arb_id": "642816cbed000f4a26d980e8848f9f2a",
+      "arb_id": "1fe57075b12e4cfc24d3054155057b32",
       "is_live": false,
       "bk_ids": [
-        2,
-        8192
+        6,
+        0
       ],
       "direct_links": [
         "",
@@ -11612,24 +11268,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
+      "sport": "Tenis",
+      "league": "World. ATP. Paris. Singles",
       "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
+        "home": "Shelton, Ben",
+        "away": "Paul, Tommy",
+        "commence": "2026-11-06T13:00:00+00:00"
       },
-      "market": "7:3",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "Nad 2.5",
-          "book": "Betano",
-          "odds": 2.02
+          "selection": "Nad 10.5",
+          "book": "Betcity",
+          "odds": 2.65
         },
         {
-          "selection": "Pod 2.5",
+          "selection": "Pod 10.5",
           "book": "BetinAsia",
-          "odds": 2.02
+          "odds": 1.632
         }
       ],
       "edge": {
@@ -11638,23 +11294,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
+      "expires_hint": "2026-11-06T13:00:00+00:00",
       "source": "betburger",
-      "arb_id": "8c85d8c84e8d8feb02de3f7b092d8c0b",
+      "arb_id": "89fdda5283cee96acc7a170cac529282",
       "is_live": false,
       "bk_ids": [
-        0,
-        72057594037927936,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
+        4,
+        72057594037927936
       ],
       "direct_links": [
         "",
@@ -11663,24 +11309,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
+      "sport": "Tenis",
+      "league": "World. ATP. Paris. Singles",
       "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
+        "home": "Shelton, Ben",
+        "away": "Paul, Tommy",
+        "commence": "2026-11-06T13:00:00+00:00"
       },
-      "market": "7:3",
+      "market": "8:3",
       "legs": [
         {
-          "selection": "Nad 2.5",
-          "book": "Stoiximan",
-          "odds": 2.02
+          "selection": "Nad 10.5",
+          "book": "Betcity",
+          "odds": 2.65
         },
         {
-          "selection": "Pod 2.5",
+          "selection": "Pod 10.5",
           "book": "Sportmarket",
-          "odds": 2.02
+          "odds": 1.632
         }
       ],
       "edge": {
@@ -11689,13 +11335,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
+      "expires_hint": "2026-11-06T13:00:00+00:00",
       "source": "betburger",
-      "arb_id": "90f9b26fd81e01f25d965d45eebb0fde",
+      "arb_id": "f817ff5aafcaa11d1427c67603506682",
       "is_live": false,
       "bk_ids": [
-        0,
-        4398046519296
+        4,
+        4398046511104
       ],
       "direct_links": [
         "",
@@ -11705,219 +11351,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Italy. Serie C",
+      "league": "Poland. IV Liga",
       "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
-      },
-      "market": "7:3",
-      "legs": [
-        {
-          "selection": "Nad 2.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 2.5",
-          "book": "Pinnacle",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "6331fce33ef0cd39621f47ad063297fa",
-      "is_live": false,
-      "bk_ids": [
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
-      },
-      "market": "7:3",
-      "legs": [
-        {
-          "selection": "Nad 1",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 1",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "5a30013e5276f1cdf27b7b8ec017ce20",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        16384,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Italy. Serie C",
-      "event": {
-        "home": "ASD Pineto Calcio",
-        "away": "Vis Pesaro",
-        "commence": "2026-11-09T19:30:00+00:00"
-      },
-      "market": "7:3",
-      "legs": [
-        {
-          "selection": "Nad 1",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 1",
-          "book": "bk:455",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-09T19:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "14ad7e3c52aec026c076fbd4f2d46ab9",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        8192,
-        0,
-        0,
-        0,
-        0,
-        0,
-        16384
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Finland. Korisliiga",
-      "event": {
-        "home": "Joensuun Kataja Basket",
-        "away": "UU-Korihait",
-        "commence": "2026-11-07T15:00:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 43.5",
-          "book": "bk:71",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 43.5",
-          "book": "FB Sports",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-07T15:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "7f99bf15dc15f9a14adec5bfea45e37c",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        256,
-        0,
-        0,
-        0,
-        0,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Belgium. Second Amateur Division",
-      "event": {
-        "home": "Diegem Sport",
-        "away": "Cappellen",
-        "commence": "2026-11-08T14:00:00+00:00"
+        "home": "Strug Tyczyn",
+        "away": "Igloopol Debica",
+        "commence": "2026-11-06T17:00:00+00:00"
       },
       "market": "7:1",
       "legs": [
         {
           "selection": "1",
-          "book": "Superbet",
-          "odds": 2.02
+          "book": "Bet365",
+          "odds": 19.0
         },
         {
           "selection": "X2",
-          "book": "Leon",
-          "odds": 2.02
+          "book": "bk:496",
+          "odds": 1.067
         }
       ],
       "edge": {
@@ -11926,54 +11376,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-08T14:00:00+00:00",
+      "expires_hint": "2026-11-06T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "b2ceca0193e5631f3d7b7cd57d2a1f61",
+      "arb_id": "cfbea26d9fb64f31f7d22fe04fe60be5",
       "is_live": false,
       "bk_ids": [
-        1073741824,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
-      "event": {
-        "home": "Mississippi State Bulldogs",
-        "away": "Northwestern State Demons",
-        "commence": "2026-11-06T00:30:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 151.5",
-          "book": "DafaSports",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 151.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-06T00:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "668b787787aa2ec6330a9a5a6af9562e",
-      "is_live": false,
-      "bk_ids": [
-        1048576,
-        128
+        1024,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36028797018963968
       ],
       "direct_links": [
         "",
@@ -12105,6 +11520,643 @@
       "bk_ids": [
         2305843009213694976,
         0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Germany. Bundesliga",
+      "event": {
+        "home": "Mainz 05",
+        "away": "Bayern Munich",
+        "commence": "2026-11-07T14:30:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ761 1",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ762 1",
+          "book": "Stoiximan",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T14:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "e4e838975db0403bedfc80aecf63b9e6",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Germany. Bundesliga",
+      "event": {
+        "home": "Mainz 05",
+        "away": "Bayern Munich",
+        "commence": "2026-11-07T14:30:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ761 1",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ762 1",
+          "book": "Betano",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T14:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "2ee2507b305d1fbf2ea45d437c9b5db7",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Chicago Bears",
+        "away": "Tampa Bay Buccaneers",
+        "commence": "2026-11-09T01:20:00+00:00"
+      },
+      "market": "10:3",
+      "legs": [
+        {
+          "selection": "Nad 47.5",
+          "book": "Leon",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 47.5",
+          "book": "Betfair",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-09T01:20:00+00:00",
+      "source": "betburger",
+      "arb_id": "fcd689bf0d8398da20c2a735f0f9f1be",
+      "is_live": false,
+      "bk_ids": [
+        1073743872,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Basketbal",
+      "league": "Great Britain. SLB",
+      "event": {
+        "home": "Newcastle Eagles",
+        "away": "Bristol Flyers",
+        "commence": "2026-11-06T19:30:00+00:00"
+      },
+      "market": "2:3",
+      "legs": [
+        {
+          "selection": "Nad 40.5",
+          "book": "bk:759",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 40.5",
+          "book": "Leon",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-06T19:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "3d4b686785b7c79481771bd32201746c",
+      "is_live": false,
+      "bk_ids": [
+        1073741824,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Kansas City Chiefs",
+        "away": "New York Jets",
+        "commence": "2026-11-08T18:00:00+00:00"
+      },
+      "market": "10:6",
+      "legs": [
+        {
+          "selection": "Nepárne",
+          "book": "bk:61",
+          "odds": 2.0
+        },
+        {
+          "selection": "Párne",
+          "book": "bk:492",
+          "odds": 2.04
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-08T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "4f5df2143299f3a75dd0f5e5e33712e0",
+      "is_live": false,
+      "bk_ids": [
+        2305843009213693952,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2251799813685248
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Italy. Serie C",
+      "event": {
+        "home": "Treviso",
+        "away": "Novara",
+        "commence": "2026-11-08T16:30:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "AH 1 -1",
+          "book": "Novibet",
+          "odds": 2.65
+        },
+        {
+          "selection": "AH 2 1",
+          "book": "Sportmarket",
+          "odds": 1.632
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-08T16:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "eaf39bf3d75a46a758bd4e7ea9604edf",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        4398047559680
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Italy. Serie C",
+      "event": {
+        "home": "Treviso",
+        "away": "Novara",
+        "commence": "2026-11-08T16:30:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "AH 1 -1",
+          "book": "Novibet",
+          "odds": 2.65
+        },
+        {
+          "selection": "AH 2 1",
+          "book": "Pinnacle",
+          "odds": 1.632
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-08T16:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "b9ef8363bd624d1f66bc7ee233543372",
+      "is_live": false,
+      "bk_ids": [
+        2,
+        1048576
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Italy. Serie C",
+      "event": {
+        "home": "Treviso",
+        "away": "Novara",
+        "commence": "2026-11-08T16:30:00+00:00"
+      },
+      "market": "7:2",
+      "legs": [
+        {
+          "selection": "AH 1 -1",
+          "book": "Novibet",
+          "odds": 2.65
+        },
+        {
+          "selection": "AH 2 1",
+          "book": "BetinAsia",
+          "odds": 1.632
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-08T16:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "6d8a19be92830133021e528c009262be",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        72057594038976512
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Mexico. Liga MX",
+      "event": {
+        "home": "Atlas Guadalajara",
+        "away": "Pachuca",
+        "commence": "2026-11-07T23:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Betplay",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T23:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "46566977bd8be752b9d728824af27edc",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Hokej",
+      "league": "USA. NHL",
+      "event": {
+        "home": "Montreal Canadiens",
+        "away": "Utah Mammoth",
+        "commence": "2026-11-06T00:00:00+00:00"
+      },
+      "market": "6:5",
+      "legs": [
+        {
+          "selection": "typ247 2.5",
+          "book": "bk:761",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ248 54.5",
+          "book": "Fonbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-06T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "4a78829325855c46cd31edaf7d0977d3",
+      "is_live": false,
+      "bk_ids": [
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        32
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Mexico. Liga MX",
+      "event": {
+        "home": "Atlas Guadalajara",
+        "away": "Pachuca",
+        "commence": "2026-11-07T23:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "bk:485",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T23:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "cf8188c15ab3e6ab9277e51087b657ee",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Mexico. Liga MX",
+      "event": {
+        "home": "Atlas Guadalajara",
+        "away": "Pachuca",
+        "commence": "2026-11-07T23:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Olimpo",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T23:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f57521e14625440b4041ee6c7fb708da",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        8589934592
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Mexico. Liga MX",
+      "event": {
+        "home": "Atlas Guadalajara",
+        "away": "Pachuca",
+        "commence": "2026-11-07T23:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "Unibet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T23:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "99e83d15e108400cab8e3d0516704cda",
+      "is_live": false,
+      "bk_ids": [
+        655360,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Mexico. Liga MX",
+      "event": {
+        "home": "Atlas Guadalajara",
+        "away": "Pachuca",
+        "commence": "2026-11-07T23:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 4.5",
+          "book": "BetRivers",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 4.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-07T23:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "29f9c32dd1d8ae0f38fa5180ffb58d37",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        281474976710656
       ],
       "direct_links": [
         "",
