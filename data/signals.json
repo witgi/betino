@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:50:49.283112+00:00",
+  "generated_at": "2026-11-11T23:01:07.272360+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -42,16 +42,16 @@
     "Betsson (IT)",
     "Betway",
     "bk:128",
-    "bk:148",
-    "bk:22",
     "bk:26",
-    "bk:295",
-    "bk:458",
+    "bk:316",
+    "bk:455",
+    "bk:479",
     "bk:485",
-    "bk:71",
+    "bk:69",
     "bk:74",
-    "bk:759",
+    "bk:776",
     "bk:785",
+    "bk:790",
     "bk:81",
     "Bwin",
     "DafaSports",
@@ -96,37 +96,6 @@
     "Winamax"
   ],
   "signals": [
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie B",
-      "event": {
-        "home": "Londrina",
-        "away": "Náutico",
-        "commence": "2026-11-11T22:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Náutico",
-          "book": "Betsson",
-          "odds": 5.3,
-          "stake_pct": 0.88,
-          "fair_prob": 0.2174
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 15.2
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 4.601,
-      "stake_amount": 8.84,
-      "n_books": 16,
-      "official": false
-    },
     {
       "type": "value",
       "sport": "soccer",
@@ -467,37 +436,6 @@
       "stake_amount": 9.66,
       "n_books": 11,
       "official": true
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie B",
-      "event": {
-        "home": "Londrina",
-        "away": "Náutico",
-        "commence": "2026-11-11T22:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Draw",
-          "book": "Macauslot",
-          "odds": 4.1,
-          "stake_pct": 0.25,
-          "fair_prob": 0.2516
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 3.15
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 3.975,
-      "stake_amount": 2.54,
-      "n_books": 16,
-      "official": false
     },
     {
       "type": "value",
@@ -1086,6 +1024,37 @@
       "fair_odds": 4.519,
       "stake_amount": 1.25,
       "n_books": 15,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Brazil Serie A",
+      "event": {
+        "home": "Mirassol",
+        "away": "Atlético Mineiro",
+        "commence": "2026-11-14T21:30:00+00:00"
+      },
+      "market": "h2h",
+      "legs": [
+        {
+          "selection": "Mirassol",
+          "book": "Unibet",
+          "odds": 2.1,
+          "stake_pct": 0.4,
+          "fair_prob": 0.4846
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 1.76
+      },
+      "confidence": 0.8,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 2.064,
+      "stake_amount": 4.0,
+      "n_books": 14,
       "official": false
     },
     {
@@ -1954,6 +1923,37 @@
       "fair_odds": 1.826,
       "stake_amount": 0.72,
       "n_books": 4,
+      "official": false
+    },
+    {
+      "type": "value",
+      "sport": "soccer",
+      "league": "Spain Segunda División",
+      "event": {
+        "home": "Real Oviedo",
+        "away": "Girona FC",
+        "commence": "2026-11-14T20:00:00+00:00"
+      },
+      "market": "totals",
+      "legs": [
+        {
+          "selection": "Under 2.5",
+          "book": "1xbet",
+          "odds": 1.91,
+          "stake_pct": 0.05,
+          "fair_prob": 0.5245
+        }
+      ],
+      "edge": {
+        "metric": "ev_pct",
+        "value": 0.17
+      },
+      "confidence": 0.613,
+      "label": "overená value",
+      "expires_hint": null,
+      "fair_odds": 1.907,
+      "stake_amount": 0.48,
+      "n_books": 5,
       "official": false
     },
     {
@@ -8420,397 +8420,23 @@
     },
     {
       "type": "arb",
-      "sport": "Basketbal",
-      "league": "Mexico. LNBP",
-      "event": {
-        "home": "Soles de Mexicali",
-        "away": "Astros",
-        "commence": "2026-11-13T04:00:00+00:00"
-      },
-      "market": "2:4",
-      "legs": [
-        {
-          "selection": "Nad 39.5 (hos.)",
-          "book": "bk:759",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 39.5 (hos.)",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-13T04:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "9a95c0e1ef0513d18563379015c05ff3",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Europe. EuroLeague",
-      "event": {
-        "home": "Maccabi Tel Aviv",
-        "away": "Hapoel Tel Aviv",
-        "commence": "2026-11-12T19:05:00+00:00"
-      },
-      "market": "2:10",
-      "legs": [
-        {
-          "selection": "typ1380 7.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ1381 7.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T19:05:00+00:00",
-      "source": "betburger",
-      "arb_id": "d8c7d3d598b1871fe38b1ac5e8b3514a",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Europe. EuroLeague",
-      "event": {
-        "home": "Maccabi Tel Aviv",
-        "away": "Hapoel Tel Aviv",
-        "commence": "2026-11-12T19:05:00+00:00"
-      },
-      "market": "2:10",
-      "legs": [
-        {
-          "selection": "typ1380 7.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ1381 7.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T19:05:00+00:00",
-      "source": "betburger",
-      "arb_id": "2b0a673d42ab2b64eeeededc739f165f",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1056768
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Denmark. Basketball League",
-      "event": {
-        "home": "BK Vejen 81",
-        "away": "Bakken Bears",
-        "commence": "2026-11-13T18:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 9.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 -9.5",
-          "book": "bk:759",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-13T18:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "7ee8d0c283cf61c80511ad8c96347e89",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Denmark. Basketball League",
-      "event": {
-        "home": "BK Vejen 81",
-        "away": "Bakken Bears",
-        "commence": "2026-11-13T18:00:00+00:00"
-      },
-      "market": "2:2",
-      "legs": [
-        {
-          "selection": "AH 1 9.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 -9.5",
-          "book": "bk:759",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-13T18:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "c445380c353f6d7aa0a4373df8ce329c",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        8192,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        8
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "Australia. NBL",
-      "event": {
-        "home": "Adelaide 36ers",
-        "away": "Melbourne United",
-        "commence": "2026-11-12T08:30:00+00:00"
-      },
-      "market": "2:4",
-      "legs": [
-        {
-          "selection": "Nad 47.5 (hos.)",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 47.5 (hos.)",
-          "book": "bk:295",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T08:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "f95781f450941ca84e7b42446e18ccca",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        8796093022208
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
       "sport": "Futbal",
-      "league": "World. Friendly International",
+      "league": "Peru. Primera Division",
       "event": {
-        "home": "France U20",
-        "away": "Denmark U20",
-        "commence": "2026-11-12T16:00:00+00:00"
-      },
-      "market": "7:4",
-      "legs": [
-        {
-          "selection": "Nad 1 (dom.)",
-          "book": "1xBet",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 1 (dom.)",
-          "book": "bk:22",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T16:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "fa94bce1d0a5fcfae0aff37f08008d12",
-      "is_live": false,
-      "bk_ids": [
-        6291456,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "World. Friendly International",
-      "event": {
-        "home": "France U20",
-        "away": "Denmark U20",
-        "commence": "2026-11-12T16:00:00+00:00"
-      },
-      "market": "7:4",
-      "legs": [
-        {
-          "selection": "Nad 1 (dom.)",
-          "book": "1xBet",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 1 (dom.)",
-          "book": "Betcity",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T16:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "e6fd45630c6003d7dcd36e99d8b6f623",
-      "is_live": false,
-      "bk_ids": [
-        2097156,
-        0
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Brazil. Serie B",
-      "event": {
-        "home": "America Mineiro MG",
-        "away": "Avai SC",
-        "commence": "2026-11-14T19:30:00+00:00"
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
       },
       "market": "7:8",
       "legs": [
         {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
+          "selection": "typ55 3.5",
+          "book": "Leon",
           "odds": 2.02
         },
         {
-          "selection": "typ52 10.5",
-          "book": "Stoiximan",
+          "selection": "typ56 3.5",
+          "book": "Unibet",
           "odds": 2.02
         }
       ],
@@ -8820,146 +8446,12 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-14T19:30:00+00:00",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
       "source": "betburger",
-      "arb_id": "11b9bcb736bd6459d5f6a96c3025a850",
+      "arb_id": "3015485f3075c614bce41cc60ed9d46f",
       "is_live": false,
       "bk_ids": [
-        0,
-        8192,
-        4194304
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Brazil. Serie B",
-      "event": {
-        "home": "America Mineiro MG",
-        "away": "Avai SC",
-        "commence": "2026-11-14T19:30:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 10.5",
-          "book": "bk:148",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 10.5",
-          "book": "Betano",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-14T19:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "cc4fa97d44e54428a7d298849148ee39",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        4194304,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Belarus",
-        "away": "Albania",
-        "commence": "2026-11-15T17:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "bk:71",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betfair",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-15T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "a98eb7be000fd51d41eb6660b8048348",
-      "is_live": false,
-      "bk_ids": [
-        2048,
-        256
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Belarus",
-        "away": "Albania",
-        "commence": "2026-11-15T17:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Olimp",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betfair",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-15T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "dc9beb946a55d91afda62c6577afccf3",
-      "is_live": false,
-      "bk_ids": [
-        134219776,
+        1074266112,
         0
       ],
       "direct_links": [
@@ -8970,22 +8462,22 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
+      "league": "Peru. Primera Division",
       "event": {
-        "home": "Belarus",
-        "away": "Albania",
-        "commence": "2026-11-15T17:00:00+00:00"
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
       },
-      "market": "7:2",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "2",
-          "book": "Synottip",
+          "selection": "typ55 3.5",
+          "book": "PariMatch",
           "odds": 2.02
         },
         {
-          "selection": "AH 1 0.5",
-          "book": "Betfair",
+          "selection": "typ56 3.5",
+          "book": "Unibet",
           "odds": 2.02
         }
       ],
@@ -8995,16 +8487,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-15T17:00:00+00:00",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
       "source": "betburger",
-      "arb_id": "c633010787e1079945ac2e28f9184ab5",
+      "arb_id": "e840ed883d19650fde6bae12d06680fe",
       "is_live": false,
       "bk_ids": [
-        2048,
-        0,
-        0,
-        0,
-        576460752303423488
+        655360,
+        0
       ],
       "direct_links": [
         "",
@@ -9014,158 +8503,23 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
+      "league": "Peru. Primera Division",
       "event": {
-        "home": "Belarus",
-        "away": "Albania",
-        "commence": "2026-11-15T17:00:00+00:00"
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
       },
-      "market": "7:2",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "2",
-          "book": "bk:458",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betfair",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-15T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "f29517070b2ff80794ff4417e9040013",
-      "is_live": false,
-      "bk_ids": [
-        2048,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        131072
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Belarus",
-        "away": "Albania",
-        "commence": "2026-11-15T17:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Tipos",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betfair",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-15T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "58b7b95e2eb68d8df655003644e6da57",
-      "is_live": false,
-      "bk_ids": [
-        2048,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Nations League",
-      "event": {
-        "home": "Belarus",
-        "away": "Albania",
-        "commence": "2026-11-15T17:00:00+00:00"
-      },
-      "market": "7:2",
-      "legs": [
-        {
-          "selection": "2",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 1 0.5",
-          "book": "Betfair",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-15T17:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "a452c686daeda50d461c6a4abb3182e6",
-      "is_live": false,
-      "bk_ids": [
-        2048,
-        128
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "MMA",
-      "league": "World. UFC",
-      "event": {
-        "home": "Johnson, Donte",
-        "away": "Almeida, Cesar",
-        "commence": "2026-11-15T00:00:00+00:00"
-      },
-      "market": "45:3",
-      "legs": [
-        {
-          "selection": "Nad 1.5",
-          "book": "Marathon",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 1.5",
+          "selection": "typ55 3.5",
           "book": "bk:785",
           "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Betplay",
+          "odds": 2.02
         }
       ],
       "edge": {
@@ -9174,12 +8528,442 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-15T00:00:00+00:00",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
       "source": "betburger",
-      "arb_id": "26f6fc598d40580698a996b46e5668ad",
+      "arb_id": "cf17a65997b668a961a100a0cd4e09e4",
       "is_live": false,
       "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Betplay",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "75dfa67a1862561918777a5798ebdc32",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "Leon",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Virginbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "127d2ceb197942a3b4ac68f2f21f849b",
+      "is_live": false,
+      "bk_ids": [
+        1073741824,
+        0,
+        0,
+        0,
+        0,
+        16
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "bk:785",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Virginbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "8f21f8c5cf41b9f0dee349e0c78ff4f3",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
         16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "bk:785",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "b28b12639d3d26d4fa40c02817cd23d8",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "Leon",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Olimpo",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "3128caa2e52cdbc3d6bfcd19ebc976aa",
+      "is_live": false,
+      "bk_ids": [
+        1073741824,
+        0,
+        0,
+        0,
+        0,
+        8589934592
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Virginbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "212fb3d6a297a6262e63b1c32084b796",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        16
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Olimpo",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "1d6838e805ea7fd868ddc101871a670c",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        8589934592
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "Leon",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Betplay",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "8415b6a81ee795af2ee389d661616cb3",
+      "is_live": false,
+      "bk_ids": [
+        1073741824,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "bk:785",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Unibet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "e8aec35103661ba36dfbb77a2500aa1f",
+      "is_live": false,
+      "bk_ids": [
+        524288,
         0,
         0,
         0,
@@ -9192,6 +8976,152 @@
         0,
         0,
         536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "bk:785",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "Olimpo",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "031eb1e3549335aae1c1d3324536f356",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8589934592,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "Leon",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "d3b3de2555540d87175f9f2fa4e80634",
+      "is_live": false,
+      "bk_ids": [
+        1073741824,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Peru. Primera Division",
+      "event": {
+        "home": "Cesar Vallejo Moquegua",
+        "away": "Atletico Grau",
+        "commence": "2026-11-16T20:15:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ55 3.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ56 3.5",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-16T20:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "d3d2cdf5f058537961509b38e773afa2",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -9304,6 +9234,88 @@
         },
         {
           "selection": "Pod 1.5",
+          "book": "bk:26",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-15T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d4a4fc500e3175760e2903e8a96f6021",
+      "is_live": false,
+      "bk_ids": [
+        67108880,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. UFC",
+      "event": {
+        "home": "Johnson, Donte",
+        "away": "Almeida, Cesar",
+        "commence": "2026-11-15T00:00:00+00:00"
+      },
+      "market": "45:3",
+      "legs": [
+        {
+          "selection": "Nad 1.5",
+          "book": "Marathon",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 1.5",
+          "book": "Pamestoixima",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-15T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "49898a85ca195578c5d58afc03b91ad8",
+      "is_live": false,
+      "bk_ids": [
+        16,
+        2147483648
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "MMA",
+      "league": "World. UFC",
+      "event": {
+        "home": "Johnson, Donte",
+        "away": "Almeida, Cesar",
+        "commence": "2026-11-15T00:00:00+00:00"
+      },
+      "market": "45:3",
+      "legs": [
+        {
+          "selection": "Nad 1.5",
+          "book": "Marathon",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 1.5",
           "book": "bk:74",
           "odds": 2.02
         }
@@ -9387,7 +9399,7 @@
         },
         {
           "selection": "Pod 1.5",
-          "book": "bk:26",
+          "book": "bk:785",
           "odds": 2.02
         }
       ],
@@ -9399,10 +9411,62 @@
       "label": "surebet",
       "expires_hint": "2026-11-15T00:00:00+00:00",
       "source": "betburger",
-      "arb_id": "d4a4fc500e3175760e2903e8a96f6021",
+      "arb_id": "26f6fc598d40580698a996b46e5668ad",
       "is_live": false,
       "bk_ids": [
-        67108880,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        536870912
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "World. Friendly International",
+      "event": {
+        "home": "France U20",
+        "away": "Denmark U20",
+        "commence": "2026-11-12T16:00:00+00:00"
+      },
+      "market": "7:4",
+      "legs": [
+        {
+          "selection": "Nad 1 (dom.)",
+          "book": "1xBet",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 1 (dom.)",
+          "book": "Betcity",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-12T16:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "e6fd45630c6003d7dcd36e99d8b6f623",
+      "is_live": false,
+      "bk_ids": [
+        2097156,
         0
       ],
       "direct_links": [
@@ -9413,22 +9477,63 @@
     {
       "type": "arb",
       "sport": "Futbal",
-      "league": "Brazil. Serie B",
+      "league": "World. Friendly International",
       "event": {
-        "home": "Londrina PR",
-        "away": "Nautico PE",
-        "commence": "2026-11-11T22:00:00+00:00"
+        "home": "Colombia",
+        "away": "Chile",
+        "commence": "2026-11-14T00:00:00+00:00"
       },
-      "market": "7:2",
+      "market": "7:1",
       "legs": [
         {
-          "selection": "AH 1 -0.75",
-          "book": "Superbet",
+          "selection": "1",
+          "book": "1xBet",
+          "odds": 1.502
+        },
+        {
+          "selection": "X2",
+          "book": "Betfair",
+          "odds": 3.083
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-14T00:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "d274ec9cb06a525ff92475bb12cae8a2",
+      "is_live": false,
+      "bk_ids": [
+        2099200,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Cincinnati Bengals",
+        "away": "Pittsburgh Steelers",
+        "commence": "2026-11-16T01:20:00+00:00"
+      },
+      "market": "10:2",
+      "legs": [
+        {
+          "selection": "AH 1 -3.5",
+          "book": "Betfair",
           "odds": 2.02
         },
         {
-          "selection": "AH 2 0.75",
-          "book": "Betfair",
+          "selection": "AH 2 3.5",
+          "book": "bk:790",
           "odds": 2.02
         }
       ],
@@ -9438,13 +9543,24 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-11T22:00:00+00:00",
+      "expires_hint": "2026-11-16T01:20:00+00:00",
       "source": "betburger",
-      "arb_id": "2b2f1153a2ce886d6c94569a924611c2",
+      "arb_id": "ad32bac52cbb4a23b34e81f0421efb4b",
       "is_live": false,
       "bk_ids": [
         2048,
-        128
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17179869184
       ],
       "direct_links": [
         "",
@@ -9453,23 +9569,23 @@
     },
     {
       "type": "arb",
-      "sport": "MMA",
-      "league": "World. UFC",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Johnson, Donte",
-        "away": "Almeida, Cesar",
-        "commence": "2026-11-15T00:00:00+00:00"
+        "home": "Cincinnati Bengals",
+        "away": "Pittsburgh Steelers",
+        "commence": "2026-11-16T01:20:00+00:00"
       },
-      "market": "45:3",
+      "market": "10:2",
       "legs": [
         {
-          "selection": "Nad 1.5",
-          "book": "Marathon",
+          "selection": "AH 1 -3.5",
+          "book": "Betfair",
           "odds": 2.02
         },
         {
-          "selection": "Pod 1.5",
-          "book": "Pamestoixima",
+          "selection": "AH 2 3.5",
+          "book": "bk:316",
           "odds": 2.02
         }
       ],
@@ -9479,13 +9595,17 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-15T00:00:00+00:00",
+      "expires_hint": "2026-11-16T01:20:00+00:00",
       "source": "betburger",
-      "arb_id": "49898a85ca195578c5d58afc03b91ad8",
+      "arb_id": "3d78a7231eb0ba7623b8ec7fd4d9d4d6",
       "is_live": false,
       "bk_ids": [
-        16,
-        2147483648
+        2048,
+        0,
+        0,
+        0,
+        0,
+        2
       ],
       "direct_links": [
         "",
@@ -9494,23 +9614,23 @@
     },
     {
       "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Southern Miss Golden Eagles",
-        "away": "Jackson State Tigers",
-        "commence": "2026-11-12T01:00:00+00:00"
+        "home": "Cincinnati Bengals",
+        "away": "Pittsburgh Steelers",
+        "commence": "2026-11-16T01:20:00+00:00"
       },
-      "market": "2:3",
+      "market": "10:2",
       "legs": [
         {
-          "selection": "Nad 75.5",
-          "book": "Stoiximan",
+          "selection": "AH 1 -3.5",
+          "book": "Betfair",
           "odds": 2.02
         },
         {
-          "selection": "Pod 75.5",
-          "book": "BetRivers",
+          "selection": "AH 2 3.5",
+          "book": "bk:776",
           "odds": 2.02
         }
       ],
@@ -9520,18 +9640,24 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-12T01:00:00+00:00",
+      "expires_hint": "2026-11-16T01:20:00+00:00",
       "source": "betburger",
-      "arb_id": "f30677502f8d317d4aac83ea38ecb2d5",
+      "arb_id": "6ccd4e2777b34e00db92f874bd12ed7b",
       "is_live": false,
       "bk_ids": [
-        0,
-        8192,
-        0,
+        2048,
         0,
         0,
         0,
-        281474976710656
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1048576
       ],
       "direct_links": [
         "",
@@ -9540,23 +9666,70 @@
     },
     {
       "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
+      "sport": "Futbal",
+      "league": "Uruguay. Primera Division",
       "event": {
-        "home": "Southern Miss Golden Eagles",
-        "away": "Jackson State Tigers",
-        "commence": "2026-11-12T01:00:00+00:00"
+        "home": "Central Espanol",
+        "away": "Boston River",
+        "commence": "2026-11-14T13:00:00+00:00"
       },
-      "market": "2:3",
+      "market": "7:6",
       "legs": [
         {
-          "selection": "Nad 75.5",
-          "book": "Betano",
+          "selection": "Presný skór -2002",
+          "book": "Leon",
+          "odds": 23.4
+        },
+        {
+          "selection": "typ70 -2002",
+          "book": "bk:479",
+          "odds": 1.056
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-14T13:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "9ff79c205456caeada14fc751d0a3c6c",
+      "is_live": false,
+      "bk_ids": [
+        1073741824,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        274877906944
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Nations League",
+      "event": {
+        "home": "Moldova",
+        "away": "Kazakhstan",
+        "commence": "2026-11-13T17:00:00+00:00"
+      },
+      "market": "7:8",
+      "legs": [
+        {
+          "selection": "typ43",
+          "book": "bk:69",
           "odds": 2.02
         },
         {
-          "selection": "Pod 75.5",
-          "book": "bk:485",
+          "selection": "typ48",
+          "book": "Olimp",
           "odds": 2.02
         }
       ],
@@ -9566,23 +9739,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-12T01:00:00+00:00",
+      "expires_hint": "2026-11-13T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "14a8d419fbc04538dd6912ea655073d7",
+      "arb_id": "9c4cd45dace5a544bc90d0b7cf7c80c7",
       "is_live": false,
       "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        17592186044416,
-        0,
-        0,
-        0,
-        68719476736
+        134217728,
+        64
       ],
       "direct_links": [
         "",
@@ -9591,23 +9754,23 @@
     },
     {
       "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Nations League",
       "event": {
-        "home": "Southern Miss Golden Eagles",
-        "away": "Jackson State Tigers",
-        "commence": "2026-11-12T01:00:00+00:00"
+        "home": "Moldova",
+        "away": "Kazakhstan",
+        "commence": "2026-11-13T17:00:00+00:00"
       },
-      "market": "2:3",
+      "market": "7:8",
       "legs": [
         {
-          "selection": "Nad 75.5",
-          "book": "Betano",
+          "selection": "typ51 4.5",
+          "book": "bk:455",
           "odds": 2.02
         },
         {
-          "selection": "Pod 75.5",
-          "book": "Virginbet",
+          "selection": "typ52 4.5",
+          "book": "Lvbet",
           "odds": 2.02
         }
       ],
@@ -9617,9 +9780,9 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-12T01:00:00+00:00",
+      "expires_hint": "2026-11-13T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "099dbabff51457305e8be79692538493",
+      "arb_id": "00f2c5e980cc837f9771cb61f10d72cf",
       "is_live": false,
       "bk_ids": [
         0,
@@ -9627,160 +9790,9 @@
         0,
         0,
         0,
-        16,
+        8,
         0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
-      "event": {
-        "home": "Southern Miss Golden Eagles",
-        "away": "Jackson State Tigers",
-        "commence": "2026-11-12T01:00:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 75.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 75.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "bdf1b2fb925ecefa411ab206ce911557",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        8589934592,
-        0,
-        0,
-        0,
-        0,
-        0,
-        68719476736
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
-      "event": {
-        "home": "Southern Miss Golden Eagles",
-        "away": "Jackson State Tigers",
-        "commence": "2026-11-12T01:00:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 75.5",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 75.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "7f58a7707cdaa8628877d883cf826678",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        8192,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NCAA",
-      "event": {
-        "home": "Southern Miss Golden Eagles",
-        "away": "Jackson State Tigers",
-        "commence": "2026-11-12T01:00:00+00:00"
-      },
-      "market": "2:3",
-      "legs": [
-        {
-          "selection": "Nad 75.5",
-          "book": "Betano",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 75.5",
-          "book": "BetRivers",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-12T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "28545b2322fedcbf978b1b9859f3c625",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        281474976710656,
-        0,
-        0,
-        0,
-        0,
-        68719476736
+        16384
       ],
       "direct_links": [
         "",
