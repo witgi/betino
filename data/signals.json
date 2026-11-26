@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T21:58:26.489783+00:00",
+  "generated_at": "2026-11-26T00:40:10.410711+00:00",
   "legs_enabled": [
     "value",
     "prediction",
@@ -19,9 +19,9 @@
     "max_stake_pct": 2.5
   },
   "performance": {
-    "settled_bets": 9470,
+    "settled_bets": 9506,
     "win_rate_pct": 43.4,
-    "roi_pct": 5.28,
+    "roi_pct": 5.44,
     "clv_beat_pct": null
   },
   "all_books": [
@@ -41,18 +41,19 @@
     "Betsson",
     "Betsson (IT)",
     "Betway",
+    "bk:162",
     "bk:26",
+    "bk:295",
     "bk:433",
+    "bk:455",
     "bk:458",
-    "bk:473",
     "bk:485",
+    "bk:487",
     "bk:492",
     "bk:61",
     "bk:776",
-    "bk:785",
     "bk:796",
-    "bk:798",
-    "bk:92",
+    "bk:800",
     "Bwin",
     "DafaSports",
     "DaznBet",
@@ -1799,37 +1800,6 @@
       "fair_odds": 4.229,
       "stake_amount": 1.27,
       "n_books": 10,
-      "official": false
-    },
-    {
-      "type": "value",
-      "sport": "soccer",
-      "league": "Brazil Serie A",
-      "event": {
-        "home": "Atlético Mineiro",
-        "away": "Corinthians",
-        "commence": "2026-11-25T23:00:00+00:00"
-      },
-      "market": "h2h",
-      "legs": [
-        {
-          "selection": "Corinthians",
-          "book": "MansionBet",
-          "odds": 2.92,
-          "stake_pct": 0.21,
-          "fair_prob": 0.3481
-        }
-      ],
-      "edge": {
-        "metric": "ev_pct",
-        "value": 1.63
-      },
-      "confidence": 0.8,
-      "label": "overená value",
-      "expires_hint": null,
-      "fair_odds": 2.873,
-      "stake_amount": 2.12,
-      "n_books": 14,
       "official": false
     },
     {
@@ -10083,9 +10053,9 @@
       "market_odds": {
         "1": 1.08,
         "x": 9.0,
-        "2": 19.0,
+        "2": 15.0,
         "over25": 1.17,
-        "btts_yes": 1.84
+        "btts_yes": 1.91
       },
       "fs_potential": {
         "o25": 77,
@@ -10094,70 +10064,379 @@
     },
     {
       "type": "arb",
+      "sport": "šport:40",
+      "league": "World. E-Hockey",
+      "event": {
+        "home": "New York Rangers (Di-Akon)",
+        "away": "Florida Panthers (Smolik)",
+        "commence": "2026-11-26T05:00:00+00:00"
+      },
+      "market": "40:2",
+      "legs": [
+        {
+          "selection": "AH 1 0",
+          "book": "bk:458",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0",
+          "book": "bk:796",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T05:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "ed70c235183242de7fdcb36e5ab6372c",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        131072,
+        0,
+        0,
+        0,
+        0,
+        1099511627776
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:40",
+      "league": "World. E-Hockey",
+      "event": {
+        "home": "New York Rangers (Di-Akon)",
+        "away": "Florida Panthers (Smolik)",
+        "commence": "2026-11-26T05:00:00+00:00"
+      },
+      "market": "40:2",
+      "legs": [
+        {
+          "selection": "AH 1 0",
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0",
+          "book": "bk:796",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T05:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "e9b5c854edde7046f74c0e496ba6f364",
+      "is_live": false,
+      "bk_ids": [
+        281474976710656,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1099511627776
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:40",
+      "league": "World. E-Hockey",
+      "event": {
+        "home": "New York Rangers (Di-Akon)",
+        "away": "Florida Panthers (Smolik)",
+        "commence": "2026-11-26T05:00:00+00:00"
+      },
+      "market": "40:2",
+      "legs": [
+        {
+          "selection": "AH 1 0",
+          "book": "bk:26",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0",
+          "book": "bk:796",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T05:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "a8792ff0408db181fff7e9e89d3e75dd",
+      "is_live": false,
+      "bk_ids": [
+        67108864,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1099511627776
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:40",
+      "league": "World. E-Hockey",
+      "event": {
+        "home": "New York Rangers (Di-Akon)",
+        "away": "Florida Panthers (Smolik)",
+        "commence": "2026-11-26T05:00:00+00:00"
+      },
+      "market": "40:2",
+      "legs": [
+        {
+          "selection": "AH 1 0",
+          "book": "1win",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0",
+          "book": "bk:796",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T05:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "5aed9fe60de3157836182d5fe6a12024",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        140737488355328,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1099511627776
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "šport:40",
+      "league": "World. E-Hockey",
+      "event": {
+        "home": "New York Rangers (Di-Akon)",
+        "away": "Florida Panthers (Smolik)",
+        "commence": "2026-11-26T05:00:00+00:00"
+      },
+      "market": "40:2",
+      "legs": [
+        {
+          "selection": "AH 1 0",
+          "book": "PariMatch",
+          "odds": 2.02
+        },
+        {
+          "selection": "AH 2 0",
+          "book": "bk:796",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T05:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "9f0fc023842752d3f7361d68629a297e",
+      "is_live": false,
+      "bk_ids": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1099511627776
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Europa League",
+      "event": {
+        "home": "OFI Crete",
+        "away": "Anderlecht",
+        "commence": "2026-11-26T20:00:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ761 1.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ762 1.5",
+          "book": "Stoiximan",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T20:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f2ebc3af06dbb2164788ecc72e63d342",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        8192,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Europa League",
+      "event": {
+        "home": "OFI Crete",
+        "away": "Anderlecht",
+        "commence": "2026-11-26T20:00:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ761 1.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ762 1.5",
+          "book": "Betano",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T20:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f30164e799e734b57d7c27f925fee498",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        68719476736
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
       "sport": "Am. futbal",
-      "league": "USA. NFL",
+      "league": "USA. NCAA",
       "event": {
-        "home": "Dallas Cowboys",
-        "away": "Philadelphia Eagles",
-        "commence": "2026-11-26T21:30:00+00:00"
+        "home": "UTSA Roadrunners",
+        "away": "Tulsa Golden Hurricane",
+        "commence": "2026-11-27T17:00:00+00:00"
       },
-      "market": "10:6",
+      "market": "10:3",
       "legs": [
         {
-          "selection": "Nepárne",
-          "book": "bk:61",
-          "odds": 2.0
-        },
-        {
-          "selection": "Párne",
-          "book": "bk:492",
-          "odds": 2.04
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T21:30:00+00:00",
-      "source": "betburger",
-      "arb_id": "36b7e18c082d70c04c4986f6704c6b3a",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2251799813685248
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Am. futbal",
-      "league": "USA. NFL",
-      "event": {
-        "home": "Buffalo Bills",
-        "away": "Kansas City Chiefs",
-        "commence": "2026-11-27T01:20:00+00:00"
-      },
-      "market": "10:10",
-      "legs": [
-        {
-          "selection": "typ1510 1.5",
-          "book": "bk:798",
+          "selection": "Nad 13.5",
+          "book": "bk:800",
           "odds": 2.02
         },
         {
-          "selection": "typ1511 1.5",
-          "book": "Superbet",
+          "selection": "Pod 13.5",
+          "book": "Unibet",
           "odds": 2.02
         }
       ],
@@ -10167,157 +10446,18 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-27T01:20:00+00:00",
+      "expires_hint": "2026-11-27T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "3927453df54bf82aa5291d7876bf135e",
+      "arb_id": "734f1b9284b287ef1881d600ea78be0d",
       "is_live": false,
       "bk_ids": [
-        0,
-        128,
-        0,
+        524288,
         0,
         0,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        4398046511104
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pachuca",
-        "away": "Chivas Guadalajara",
-        "commence": "2026-11-27T01:00:00+00:00"
-      },
-      "market": "7:10",
-      "legs": [
-        {
-          "selection": "typ966 0.5",
-          "book": "Betplay",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ967 0.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-27T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "fe7170a24cfa41bdd901e1f72c4a469c",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        0,
-        0,
-        35184372088832
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pachuca",
-        "away": "Chivas Guadalajara",
-        "commence": "2026-11-27T01:00:00+00:00"
-      },
-      "market": "7:10",
-      "legs": [
-        {
-          "selection": "typ966 0.5",
-          "book": "Olimpo",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ967 0.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-27T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "58964b4948fe315e1c38b040dc9e68bf",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        8589934592
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pachuca",
-        "away": "Chivas Guadalajara",
-        "commence": "2026-11-27T01:00:00+00:00"
-      },
-      "market": "7:10",
-      "legs": [
-        {
-          "selection": "typ966 0.5",
-          "book": "bk:485",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ967 0.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-27T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "6af77beb7b8525319333067d6b9bb78d",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
         0,
         0,
         0,
@@ -10332,260 +10472,22 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pachuca",
-        "away": "Chivas Guadalajara",
-        "commence": "2026-11-27T01:00:00+00:00"
-      },
-      "market": "7:10",
-      "legs": [
-        {
-          "selection": "typ966 0.5",
-          "book": "Unibet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ967 0.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-27T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "25f6e7024f570b7ab0bc02741ee91d01",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        1048576
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Mexico. Liga MX",
-      "event": {
-        "home": "Pachuca",
-        "away": "Chivas Guadalajara",
-        "commence": "2026-11-27T01:00:00+00:00"
-      },
-      "market": "7:10",
-      "legs": [
-        {
-          "selection": "typ966 0.5",
-          "book": "BetRivers",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ967 0.5",
-          "book": "Novibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-27T01:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "39d8e964116fd041dbe56be0f9b80ac6",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        1048576,
-        0,
-        0,
-        0,
-        0,
-        281474976710656
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Box",
-      "league": "World. Boxing",
-      "event": {
-        "home": "Yabuki, Masamichi",
-        "away": "Fajardo, Miel",
-        "commence": "2026-11-26T12:00:00+00:00"
-      },
-      "market": "44:3",
-      "legs": [
-        {
-          "selection": "Nad 10.5",
-          "book": "bk:776",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 10.5",
-          "book": "Pamestoixima",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T12:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "a54b1a8d3695eec403d497bdc28a7482",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        2147483648,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1048576
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Box",
-      "league": "World. Boxing",
-      "event": {
-        "home": "Yabuki, Masamichi",
-        "away": "Fajardo, Miel",
-        "commence": "2026-11-26T12:00:00+00:00"
-      },
-      "market": "44:3",
-      "legs": [
-        {
-          "selection": "Nad 10.5",
-          "book": "bk:776",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 10.5",
-          "book": "Superbet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T12:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "4f3165624113c17a6b3b81a168d19348",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1048576
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
       "sport": "Am. futbal",
-      "league": "USA. NFL",
+      "league": "USA. NCAA",
       "event": {
-        "home": "Houston Texans",
-        "away": "Baltimore Ravens",
-        "commence": "2026-11-29T18:00:00+00:00"
+        "home": "UTSA Roadrunners",
+        "away": "Tulsa Golden Hurricane",
+        "commence": "2026-11-27T17:00:00+00:00"
       },
-      "market": "10:6",
+      "market": "10:3",
       "legs": [
         {
-          "selection": "Nepárne",
-          "book": "bk:61",
-          "odds": 2.0
-        },
-        {
-          "selection": "Párne",
-          "book": "bk:492",
-          "odds": 2.04
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-29T18:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "736d854fe6c95ad24c1bf99fdcb39df5",
-      "is_live": false,
-      "bk_ids": [
-        2305843009213693952,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2251799813685248
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Ankara. Singles",
-      "event": {
-        "home": "Guna, Robert",
-        "away": "Wiskandt, Max",
-        "commence": "2026-11-26T09:10:00+00:00"
-      },
-      "market": "8:3",
-      "legs": [
-        {
-          "selection": "Nad 9.5",
-          "book": "bk:473",
+          "selection": "Nad 13.5",
+          "book": "bk:800",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5",
+          "selection": "Pod 13.5",
           "book": "Virginbet",
           "odds": 2.02
         }
@@ -10596,9 +10498,9 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-26T09:10:00+00:00",
+      "expires_hint": "2026-11-27T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "915b32d45552ef5c8d44a1b0ae0ea054",
+      "arb_id": "f7ea3e03a75891dc044644a173b826be",
       "is_live": false,
       "bk_ids": [
         0,
@@ -10608,7 +10510,12 @@
         0,
         16,
         0,
-        4294967296
+        0,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -10617,22 +10524,161 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Ankara. Singles",
+      "sport": "Baseball",
+      "league": "Mexico. LMP Mexican Pacific League",
       "event": {
-        "home": "Guna, Robert",
-        "away": "Wiskandt, Max",
-        "commence": "2026-11-26T09:10:00+00:00"
+        "home": "Mayos de Navojoa",
+        "away": "Tomateros de Culiacan",
+        "commence": "2026-11-26T02:30:00+00:00"
       },
-      "market": "8:3",
+      "market": "1:2",
       "legs": [
         {
-          "selection": "Nad 9.5",
-          "book": "bk:473",
+          "selection": "AH 1 1.5",
+          "book": "Fonbet",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5",
+          "selection": "AH 2 -1.5",
+          "book": "1win",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T02:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "c96b31fb0898d9540082366ab39b6317",
+      "is_live": false,
+      "bk_ids": [
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        140737488355328
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Europe. UEFA Europa League",
+      "event": {
+        "home": "Crystal Palace",
+        "away": "Real Sociedad",
+        "commence": "2026-11-26T20:00:00+00:00"
+      },
+      "market": "7:9",
+      "legs": [
+        {
+          "selection": "typ769 2.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ770 2.5",
+          "book": "bk:433",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T20:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "3bbe6df50060d69625300053300a3c3d",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        36028797018963968
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Futbal",
+      "league": "Bolivia. Liga Division Profesional",
+      "event": {
+        "home": "Club Bolivar",
+        "away": "Always Ready",
+        "commence": "2026-11-29T21:15:00+00:00"
+      },
+      "market": "7:6",
+      "legs": [
+        {
+          "selection": "typ91",
+          "book": "bk:162",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ92",
+          "book": "bk:455",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T21:15:00+00:00",
+      "source": "betburger",
+      "arb_id": "100a603ad37276fdacdb74d13a43e0d4",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        68719476736,
+        0,
+        0,
+        0,
+        0,
+        16384
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NCAA",
+      "event": {
+        "home": "UTSA Roadrunners",
+        "away": "Tulsa Golden Hurricane",
+        "commence": "2026-11-27T17:00:00+00:00"
+      },
+      "market": "10:3",
+      "legs": [
+        {
+          "selection": "Nad 13.5",
+          "book": "bk:800",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 13.5",
           "book": "Betplay",
           "odds": 2.02
         }
@@ -10643,9 +10689,9 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-26T09:10:00+00:00",
+      "expires_hint": "2026-11-27T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "a8741a4e6d2609fd123636ad6adeefdd",
+      "arb_id": "bfff92ea633fe9c5ac216cd720bea941",
       "is_live": false,
       "bk_ids": [
         0,
@@ -10655,7 +10701,12 @@
         0,
         0,
         0,
-        35188667056128
+        35184372088832,
+        0,
+        0,
+        0,
+        0,
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -10664,23 +10715,23 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Ankara. Singles",
+      "sport": "Baseball",
+      "league": "Mexico. LMP Mexican Pacific League",
       "event": {
-        "home": "Guna, Robert",
-        "away": "Wiskandt, Max",
-        "commence": "2026-11-26T09:10:00+00:00"
+        "home": "Mayos de Navojoa",
+        "away": "Tomateros de Culiacan",
+        "commence": "2026-11-26T02:30:00+00:00"
       },
-      "market": "8:3",
+      "market": "1:2",
       "legs": [
         {
-          "selection": "Nad 9.5",
-          "book": "bk:473",
+          "selection": "AH 1 1.5",
+          "book": "Fonbet",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5",
-          "book": "Olimpo",
+          "selection": "AH 2 -1.5",
+          "book": "Lvbet",
           "odds": 2.02
         }
       ],
@@ -10690,19 +10741,17 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-26T09:10:00+00:00",
+      "expires_hint": "2026-11-26T02:30:00+00:00",
       "source": "betburger",
-      "arb_id": "6453698920a4a6d17d1bb513605ae459",
+      "arb_id": "06ffbb7869d5499cc12b4f4c770027f1",
       "is_live": false,
       "bk_ids": [
+        64,
         0,
         0,
         0,
         0,
-        0,
-        8589934592,
-        0,
-        4294967296
+        8
       ],
       "direct_links": [
         "",
@@ -10711,22 +10760,63 @@
     },
     {
       "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Ankara. Singles",
+      "sport": "Baseball",
+      "league": "Mexico. LMP Mexican Pacific League",
       "event": {
-        "home": "Guna, Robert",
-        "away": "Wiskandt, Max",
-        "commence": "2026-11-26T09:10:00+00:00"
+        "home": "Mayos de Navojoa",
+        "away": "Tomateros de Culiacan",
+        "commence": "2026-11-26T02:30:00+00:00"
       },
-      "market": "8:3",
+      "market": "1:2",
       "legs": [
         {
-          "selection": "Nad 9.5",
-          "book": "bk:473",
+          "selection": "AH 1 1.5",
+          "book": "Fonbet",
           "odds": 2.02
         },
         {
-          "selection": "Pod 9.5",
+          "selection": "AH 2 -1.5",
+          "book": "PariMatch",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-26T02:30:00+00:00",
+      "source": "betburger",
+      "arb_id": "40552e8c50d9514d55d124ffa5516e81",
+      "is_live": false,
+      "bk_ids": [
+        131136,
+        0
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NCAA",
+      "event": {
+        "home": "UTSA Roadrunners",
+        "away": "Tulsa Golden Hurricane",
+        "commence": "2026-11-27T17:00:00+00:00"
+      },
+      "market": "10:3",
+      "legs": [
+        {
+          "selection": "Nad 13.5",
+          "book": "bk:800",
+          "odds": 2.02
+        },
+        {
+          "selection": "Pod 13.5",
           "book": "bk:485",
           "odds": 2.02
         }
@@ -10737,9 +10827,9 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-26T09:10:00+00:00",
+      "expires_hint": "2026-11-27T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "be96c8c54292665c0b45fba2957eec25",
+      "arb_id": "28f14cac1467063fe37c1d2e1646eef4",
       "is_live": false,
       "bk_ids": [
         0,
@@ -10749,189 +10839,12 @@
         0,
         0,
         0,
-        17596481011712
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Ankara. Singles",
-      "event": {
-        "home": "Guna, Robert",
-        "away": "Wiskandt, Max",
-        "commence": "2026-11-26T09:10:00+00:00"
-      },
-      "market": "8:3",
-      "legs": [
-        {
-          "selection": "Nad 9.5",
-          "book": "bk:473",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 9.5",
-          "book": "BetRivers",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T09:10:00+00:00",
-      "source": "betburger",
-      "arb_id": "8094d2ea7ffd37d8a612f48da0ba6fc2",
-      "is_live": false,
-      "bk_ids": [
+        17592186044416,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        281474976710656,
-        4294967296
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Tenis",
-      "league": "World. ATP Challenger. Ankara. Singles",
-      "event": {
-        "home": "Guna, Robert",
-        "away": "Wiskandt, Max",
-        "commence": "2026-11-26T09:10:00+00:00"
-      },
-      "market": "8:3",
-      "legs": [
-        {
-          "selection": "Nad 9.5",
-          "book": "bk:473",
-          "odds": 2.02
-        },
-        {
-          "selection": "Pod 9.5",
-          "book": "Unibet",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T09:10:00+00:00",
-      "source": "betburger",
-      "arb_id": "bbc1192c6303b659c42f74c2d96355d2",
-      "is_live": false,
-      "bk_ids": [
-        524288,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4294967296
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "Europe. UEFA Conference League",
-      "event": {
-        "home": "Egnatia Rrogozhine",
-        "away": "Lincoln Red Imps",
-        "commence": "2026-11-26T17:45:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 4.5",
-          "book": "Superbet",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 4.5",
-          "book": "FB Sports",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T17:45:00+00:00",
-      "source": "betburger",
-      "arb_id": "c4ee74ff1f30f36f8522f51dd81dee8e",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        128,
-        0,
-        0,
-        0,
-        0,
-        0,
-        32
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
-      "event": {
-        "home": "Manchester United",
-        "away": "Brentford",
-        "commence": "2026-11-28T15:00:00+00:00"
-      },
-      "market": "7:8",
-      "legs": [
-        {
-          "selection": "typ51 10",
-          "book": "Stoiximan",
-          "odds": 2.02
-        },
-        {
-          "selection": "typ52 10",
-          "book": "bk:92",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-28T15:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "f99360b93ca24fa8bb4691773b1f5250",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        536879104
+        17592186044416
       ],
       "direct_links": [
         "",
@@ -10943,20 +10856,20 @@
       "sport": "Basketbal",
       "league": "USA. NBA",
       "event": {
-        "home": "Golden State Warriors",
-        "away": "Sacramento Kings",
-        "commence": "2026-11-26T03:00:00+00:00"
+        "home": "Memphis Grizzlies",
+        "away": "Los Angeles Clippers",
+        "commence": "2026-11-26T01:00:00+00:00"
       },
-      "market": "2:5",
+      "market": "2:4",
       "legs": [
         {
-          "selection": "typ727 14.5",
-          "book": "Stoiximan",
+          "selection": "Nad 54.5 (hos.)",
+          "book": "bk:295",
           "odds": 2.02
         },
         {
-          "selection": "typ728 14.5",
-          "book": "Betcity",
+          "selection": "Pod 55.5 (hos.)",
+          "book": "Superbet",
           "odds": 2.02
         }
       ],
@@ -10966,13 +10879,16 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-26T03:00:00+00:00",
+      "expires_hint": "2026-11-26T01:00:00+00:00",
       "source": "betburger",
-      "arb_id": "e6f3dfa13195c80afb4c71f55aab7c24",
+      "arb_id": "f000c42da88bb6e9719953e19421e2bb",
       "is_live": false,
       "bk_ids": [
-        4,
-        8192
+        0,
+        128,
+        0,
+        0,
+        8796093022208
       ],
       "direct_links": [
         "",
@@ -10981,23 +10897,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "England. Premier League",
+      "sport": "Am. futbal",
+      "league": "USA. NCAA",
       "event": {
-        "home": "Manchester United",
-        "away": "Brentford",
-        "commence": "2026-11-28T15:00:00+00:00"
+        "home": "UTSA Roadrunners",
+        "away": "Tulsa Golden Hurricane",
+        "commence": "2026-11-27T17:00:00+00:00"
       },
-      "market": "7:8",
+      "market": "10:3",
       "legs": [
         {
-          "selection": "typ51 10",
-          "book": "Betano",
+          "selection": "Nad 13.5",
+          "book": "bk:800",
           "odds": 2.02
         },
         {
-          "selection": "typ52 10",
-          "book": "bk:92",
+          "selection": "Pod 13.5",
+          "book": "BetRivers",
           "odds": 2.02
         }
       ],
@@ -11007,23 +10923,346 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-28T15:00:00+00:00",
+      "expires_hint": "2026-11-27T17:00:00+00:00",
       "source": "betburger",
-      "arb_id": "d4be4dc31950532b61b23f200464a3c8",
+      "arb_id": "5dd599e9e469ca09ba6a30b4a2983610",
       "is_live": false,
       "bk_ids": [
         0,
-        536870912,
         0,
         0,
         0,
         0,
         0,
+        281474976710656,
         0,
         0,
         0,
         0,
-        68719476736
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "Unibet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "7cfafdea063296e183218fab9ca2aaa6",
+      "is_live": false,
+      "bk_ids": [
+        524288,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "bk:487",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "2d3ac7ba7fb5eeeace1cac043b821460",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        70368744177664
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "BetRivers",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "622af9364589cc2e89d84b475a0cc666",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        281474976710656
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "Betplay",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "9651ec88f1da4d0be3165ed511914756",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        35184372088832
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "bk:485",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "fa555adc742f91749139a45f7b4de664",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        17592186044416
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "Olimpo",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "f0f4c840c55694773d58cda8a80ab4e7",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8589934600
+      ],
+      "direct_links": [
+        "",
+        ""
+      ]
+    },
+    {
+      "type": "arb",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
+      "event": {
+        "home": "Miami Dolphins",
+        "away": "New York Jets",
+        "commence": "2026-11-29T18:00:00+00:00"
+      },
+      "market": "10:5",
+      "legs": [
+        {
+          "selection": "typ637 3.5",
+          "book": "Lvbet",
+          "odds": 2.02
+        },
+        {
+          "selection": "typ638 3.5",
+          "book": "Virginbet",
+          "odds": 2.02
+        }
+      ],
+      "edge": {
+        "metric": "arb_profit_pct",
+        "value": 1.0
+      },
+      "confidence": null,
+      "label": "surebet",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
+      "source": "betburger",
+      "arb_id": "8bb1d063975d1423ff4e919bfbbaf25d",
+      "is_live": false,
+      "bk_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        24
       ],
       "direct_links": [
         "",
@@ -11129,23 +11368,23 @@
     },
     {
       "type": "arb",
-      "sport": "Basketbal",
-      "league": "USA. NBA",
+      "sport": "Box",
+      "league": "World. Boxing",
       "event": {
-        "home": "Golden State Warriors",
-        "away": "Sacramento Kings",
-        "commence": "2026-11-26T03:00:00+00:00"
+        "home": "Yabuki, Masamichi",
+        "away": "Fajardo, Miel",
+        "commence": "2026-11-26T08:30:00+00:00"
       },
-      "market": "2:5",
+      "market": "44:3",
       "legs": [
         {
-          "selection": "typ727 14.5",
-          "book": "Betano",
+          "selection": "Nad 10.5",
+          "book": "bk:776",
           "odds": 2.02
         },
         {
-          "selection": "typ728 14.5",
-          "book": "Betcity",
+          "selection": "Pod 10.5",
+          "book": "Pamestoixima",
           "odds": 2.02
         }
       ],
@@ -11155,12 +11394,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-26T03:00:00+00:00",
+      "expires_hint": "2026-11-26T08:30:00+00:00",
       "source": "betburger",
-      "arb_id": "d0b91feceaa025e0d370e779d7e56042",
+      "arb_id": "a54b1a8d3695eec403d497bdc28a7482",
       "is_live": false,
       "bk_ids": [
-        4,
+        0,
+        2147483648,
         0,
         0,
         0,
@@ -11171,7 +11411,7 @@
         0,
         0,
         0,
-        68719476736
+        1048576
       ],
       "direct_links": [
         "",
@@ -11180,23 +11420,23 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "South America. Copa Libertadores",
+      "sport": "Box",
+      "league": "World. Boxing",
       "event": {
-        "home": "Palmeiras SP",
-        "away": "Estudiantes La Plata",
-        "commence": "2026-11-28T20:00:00+00:00"
+        "home": "Yabuki, Masamichi",
+        "away": "Fajardo, Miel",
+        "commence": "2026-11-26T08:30:00+00:00"
       },
-      "market": "7:5",
+      "market": "44:3",
       "legs": [
         {
-          "selection": "typ251 3.5",
-          "book": "bk:785",
+          "selection": "Nad 10.5",
+          "book": "bk:776",
           "odds": 2.02
         },
         {
-          "selection": "typ252 3.5",
-          "book": "Betano",
+          "selection": "Pod 10.5",
+          "book": "Superbet",
           "odds": 2.02
         }
       ],
@@ -11206,12 +11446,13 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-28T20:00:00+00:00",
+      "expires_hint": "2026-11-26T08:30:00+00:00",
       "source": "betburger",
-      "arb_id": "93a8afdd472791d0fcc9015d1ffec302",
+      "arb_id": "4f3165624113c17a6b3b81a168d19348",
       "is_live": false,
       "bk_ids": [
         0,
+        128,
         0,
         0,
         0,
@@ -11222,8 +11463,7 @@
         0,
         0,
         0,
-        68719476736,
-        536870912
+        1048576
       ],
       "direct_links": [
         "",
@@ -11232,24 +11472,24 @@
     },
     {
       "type": "arb",
-      "sport": "Futbal",
-      "league": "South America. Copa Libertadores",
+      "sport": "Am. futbal",
+      "league": "USA. NFL",
       "event": {
-        "home": "Palmeiras SP",
-        "away": "Estudiantes La Plata",
-        "commence": "2026-11-28T20:00:00+00:00"
+        "home": "Houston Texans",
+        "away": "Baltimore Ravens",
+        "commence": "2026-11-29T18:00:00+00:00"
       },
-      "market": "7:5",
+      "market": "10:6",
       "legs": [
         {
-          "selection": "typ251 3.5",
-          "book": "bk:785",
-          "odds": 2.02
+          "selection": "Nepárne",
+          "book": "bk:61",
+          "odds": 2.0
         },
         {
-          "selection": "typ252 3.5",
-          "book": "Stoiximan",
-          "odds": 2.02
+          "selection": "Párne",
+          "book": "bk:492",
+          "odds": 2.04
         }
       ],
       "edge": {
@@ -11258,284 +11498,19 @@
       },
       "confidence": null,
       "label": "surebet",
-      "expires_hint": "2026-11-28T20:00:00+00:00",
+      "expires_hint": "2026-11-29T18:00:00+00:00",
       "source": "betburger",
-      "arb_id": "8dce3fa39e239835c6bb5a0b0c4102fd",
+      "arb_id": "736d854fe6c95ad24c1bf99fdcb39df5",
       "is_live": false,
       "bk_ids": [
+        2305843009213693952,
         0,
-        8192,
         0,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        536870912
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:40",
-      "league": "World. E-Hockey",
-      "event": {
-        "home": "New York Rangers (Di-Akon)",
-        "away": "Florida Panthers (Smolik)",
-        "commence": "2026-11-26T05:00:00+00:00"
-      },
-      "market": "40:2",
-      "legs": [
-        {
-          "selection": "AH 1 0",
-          "book": "Betsson",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0",
-          "book": "bk:796",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T05:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "e9b5c854edde7046f74c0e496ba6f364",
-      "is_live": false,
-      "bk_ids": [
-        281474976710656,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1099511627776
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:40",
-      "league": "World. E-Hockey",
-      "event": {
-        "home": "New York Rangers (Di-Akon)",
-        "away": "Florida Panthers (Smolik)",
-        "commence": "2026-11-26T05:00:00+00:00"
-      },
-      "market": "40:2",
-      "legs": [
-        {
-          "selection": "AH 1 0",
-          "book": "1win",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0",
-          "book": "bk:796",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T05:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "5aed9fe60de3157836182d5fe6a12024",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        140737488355328,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1099511627776
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:40",
-      "league": "World. E-Hockey",
-      "event": {
-        "home": "New York Rangers (Di-Akon)",
-        "away": "Florida Panthers (Smolik)",
-        "commence": "2026-11-26T05:00:00+00:00"
-      },
-      "market": "40:2",
-      "legs": [
-        {
-          "selection": "AH 1 0",
-          "book": "bk:458",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0",
-          "book": "bk:796",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T05:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "ed70c235183242de7fdcb36e5ab6372c",
-      "is_live": false,
-      "bk_ids": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        131072,
-        0,
-        0,
-        0,
-        0,
-        1099511627776
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:40",
-      "league": "World. E-Hockey",
-      "event": {
-        "home": "New York Rangers (Di-Akon)",
-        "away": "Florida Panthers (Smolik)",
-        "commence": "2026-11-26T05:00:00+00:00"
-      },
-      "market": "40:2",
-      "legs": [
-        {
-          "selection": "AH 1 0",
-          "book": "bk:26",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0",
-          "book": "bk:796",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T05:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "a8792ff0408db181fff7e9e89d3e75dd",
-      "is_live": false,
-      "bk_ids": [
-        67108864,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1099511627776
-      ],
-      "direct_links": [
-        "",
-        ""
-      ]
-    },
-    {
-      "type": "arb",
-      "sport": "šport:40",
-      "league": "World. E-Hockey",
-      "event": {
-        "home": "New York Rangers (Di-Akon)",
-        "away": "Florida Panthers (Smolik)",
-        "commence": "2026-11-26T05:00:00+00:00"
-      },
-      "market": "40:2",
-      "legs": [
-        {
-          "selection": "AH 1 0",
-          "book": "PariMatch",
-          "odds": 2.02
-        },
-        {
-          "selection": "AH 2 0",
-          "book": "bk:796",
-          "odds": 2.02
-        }
-      ],
-      "edge": {
-        "metric": "arb_profit_pct",
-        "value": 1.0
-      },
-      "confidence": null,
-      "label": "surebet",
-      "expires_hint": "2026-11-26T05:00:00+00:00",
-      "source": "betburger",
-      "arb_id": "9f0fc023842752d3f7361d68629a297e",
-      "is_live": false,
-      "bk_ids": [
-        131072,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1099511627776
+        2251799813685248
       ],
       "direct_links": [
         "",
